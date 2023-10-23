@@ -24,6 +24,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       with:
+        repository: ${{ github.repository }}
         fetch-depth: 0 # Faster code checkout fetching only latest commit
     # Setup node
     - name: Setup Node
