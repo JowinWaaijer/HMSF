@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <version>59.0</version>
+    <types>
+        <members>Account.BrightfoxHardis__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Account.Franki</members>
+        <members>Account.Heijmans</members>
+        <members>Account.Heijmans_concurrent</members>
+        <members>Account.Heijmans_klant</members>
+        <members>Account.Heijmans_onderdeel</members>
+        <members>Account.Heijmans_partner</members>
+        <name>RecordType</name>
+    </types>
+</Package>
