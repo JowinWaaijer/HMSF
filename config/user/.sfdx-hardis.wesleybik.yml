@@ -1,0 +1,8 @@
+localStorageBranchTargets:
+  features/config/auth-orgs-cicd: integration
+scratchOrgAlias: null
+scratchOrgUsername: null
+installedApps:
+  - git
+  - openssl
+userEmail: wesley.bik@brightfox.eu
