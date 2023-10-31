@@ -133,6 +133,7 @@
         <members>Contact.Fax</members>
         <members>Contact.Firmen_Datensatztyp__c</members>
         <members>Contact.Franki_report__c</members>
+        <members>Contact.Function__c</members>
         <members>Contact.GenderIdentity</members>
         <members>Contact.Groepering__c</members>
         <members>Contact.HasOptedOutOfEmail</members>
@@ -155,6 +156,7 @@
         <members>Contact.Naam_informeel__c</members>
         <members>Contact.Name</members>
         <members>Contact.Org__c</members>
+        <members>Contact.OrganizationLevelPick__c</members>
         <members>Contact.OtherAddress</members>
         <members>Contact.OtherContacts__c</members>
         <members>Contact.OtherPhone</members>
@@ -182,6 +184,8 @@
         <members>Contact.Weihnachtskarte__c</members>
         <members>Contact.Working_weekhours__c</members>
         <members>Contact.ZZP__c</members>
+        <members>Fault_Email_Address__mdt.Email__c</members>
+        <members>Fault_Email_Address__mdt.OrgRegionName__c</members>
         <members>FormerPosition__c.AccountRef__c</members>
         <members>FormerPosition__c.Comment__c</members>
         <members>FormerPosition__c.ContactRef__c</members>
@@ -243,6 +247,7 @@
         <members>BusinessUnits__mdt</members>
         <members>BypassSettings__c</members>
         <members>Contact</members>
+        <members>Fault_Email_Address__mdt</members>
         <members>FormerPosition__c</members>
         <name>CustomObject</name>
     </types>
