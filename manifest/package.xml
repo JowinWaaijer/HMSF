@@ -2,10 +2,6 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <version>59.0</version>
     <types>
-        <members>AppSwitcher</members>
-        <name>AppMenu</name>
-    </types>
-    <types>
         <members>Account.Heijmans_Account_Compact_Layout</members>
         <members>BusinessUnitSpecificAttribute__c.Heijmans_Business_Unit_Specific_Attribute_Compact_Layout</members>
         <members>Contact.Heijmans_Contact_Compact_Layout</members>
@@ -293,10 +289,6 @@
         <name>Flow</name>
     </types>
     <types>
-        <members>Feedback_SCFL02_Vote_on_Feedback_via_Lightning_Page</members>
-        <name>FlowDefinition</name>
-    </types>
-    <types>
         <members>BusinessUnits</members>
         <members>FocusClient</members>
         <name>GlobalValueSet</name>
@@ -408,8 +400,6 @@
         <members>Account_Oppty_Aanbieding_Discipline</members>
         <members>Account_Oppty_KPI</members>
         <members>Account_Oppty_TFDT</members>
-        <members>Accounts_Activiteiten</members>
-        <members>Accounts_Contactpersonen_Activiteiten</members>
         <members>Accounts_Oppty</members>
         <members>Accounts_Oppty_Aanbieding</members>
         <members>Accounts_Oppty_Aanbieding_Discipline</members>
@@ -455,7 +445,6 @@
         <name>StaticResource</name>
     </types>
     <types>
-        <members>de</members>
         <members>nl_NL</members>
         <name>Translations</name>
     </types>
