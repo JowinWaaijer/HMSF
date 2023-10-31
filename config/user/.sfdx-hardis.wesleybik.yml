@@ -1,5 +1,6 @@
 localStorageBranchTargets:
   features/config/auth-orgs-cicd: integration
+  features/config/full-copy-of-created-features: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:

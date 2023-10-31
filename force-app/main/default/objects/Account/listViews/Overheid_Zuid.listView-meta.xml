@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Overheid_Zuid</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.INDUSTRY</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>Regio_Infra__c</columns>
+    <columns>Provincie__c</columns>
+    <columns>Accountmanager__c</columns>
+    <columns>Strategisch_Accountmanager__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.INDUSTRY</field>
+        <operation>equals</operation>
+        <value>Rijksoverheid,Defensie,Provincie,Gemeente,Waterschap</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Heijmans_klant</value>
+    </filters>
+    <filters>
+        <field>Regio_Infra__c</field>
+        <operation>includes</operation>
+        <value>Zuid</value>
+    </filters>
+    <label>Overheid Zuid</label>
+</ListView>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_sector__c</fullName>
+    <externalId>false</externalId>
+    <label>Partner sector</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Civiel</fullName>
+                <default>false</default>
+                <label>Civiel</label>
+            </value>
+            <value>
+                <fullName>Civiel MKB</fullName>
+                <default>false</default>
+                <label>Civiel MKB</label>
+            </value>
+            <value>
+                <fullName>GWW</fullName>
+                <default>false</default>
+                <label>GWW</label>
+            </value>
+            <value>
+                <fullName>Natte Waterbouw</fullName>
+                <default>false</default>
+                <label>Natte Waterbouw</label>
+            </value>
+            <value>
+                <fullName>Ontwerp</fullName>
+                <default>false</default>
+                <label>Ontwerp</label>
+            </value>
+            <value>
+                <fullName>Architect</fullName>
+                <default>false</default>
+                <label>Architect</label>
+            </value>
+            <value>
+                <fullName>EMVI</fullName>
+                <default>false</default>
+                <label>EMVI</label>
+            </value>
+            <value>
+                <fullName>Adviseur Geotechniek</fullName>
+                <default>false</default>
+                <label>Adviseur Geotechniek</label>
+            </value>
+            <value>
+                <fullName>Adviseur Verkeer</fullName>
+                <default>false</default>
+                <label>Adviseur Verkeer</label>
+            </value>
+            <value>
+                <fullName>Adviseur PM/RM/ICT</fullName>
+                <default>false</default>
+                <label>Adviseur PM/RM/ICT</label>
+            </value>
+            <value>
+                <fullName>Adviseur</fullName>
+                <default>false</default>
+                <label>Adviseur</label>
+            </value>
+            <value>
+                <fullName>Installaties</fullName>
+                <default>false</default>
+                <label>Installaties</label>
+            </value>
+            <value>
+                <fullName>Staal</fullName>
+                <default>false</default>
+                <label>Staal</label>
+            </value>
+            <value>
+                <fullName>Rail</fullName>
+                <default>false</default>
+                <label>Rail</label>
+            </value>
+            <value>
+                <fullName>Transport / montage</fullName>
+                <default>false</default>
+                <label>Transport / montage</label>
+            </value>
+            <value>
+                <fullName>Bouw en Vastgoed</fullName>
+                <default>false</default>
+                <label>Bouw en Vastgoed</label>
+            </value>
+            <value>
+                <fullName>Industrie</fullName>
+                <default>false</default>
+                <label>Industrie</label>
+            </value>
+            <value>
+                <fullName>Prefab beton</fullName>
+                <default>false</default>
+                <label>Prefab beton</label>
+            </value>
+            <value>
+                <fullName>Concessie</fullName>
+                <default>false</default>
+                <label>Concessie</label>
+            </value>
+            <value>
+                <fullName>Finance / Legal</fullName>
+                <default>false</default>
+                <label>Finance / Legal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

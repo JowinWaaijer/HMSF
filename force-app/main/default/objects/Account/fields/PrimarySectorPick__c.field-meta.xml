@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PrimarySectorPick__c</fullName>
+    <description>The &quot;Primary Sector&quot; field categorizes records based on their primary sector affiliation. This classification helps distinguish entities or organizations by their operational structure &amp; ownership. Select one of the following values:</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Public: Use this option if the record primarily belongs to the public sector, which typically includes government agencies, public services, and organizations funded by taxpayers.
+Semi-public: Use this option if the record primarily pertains to semi-public entities, such as non-profit organizations, public-private partnerships, or institutions with mixed funding sources.
+Private: Use this option if the record primarily represents private sector entities, including for-profit businesses, privately owned</inlineHelpText>
+    <label>Primary Sector</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Public Sector</fullName>
+                <default>false</default>
+                <label>Public Sector</label>
+            </value>
+            <value>
+                <fullName>Semi-Public Sector</fullName>
+                <default>false</default>
+                <label>Semi-Public Sector</label>
+            </value>
+            <value>
+                <fullName>Private Sector</fullName>
+                <default>false</default>
+                <label>Private Sector</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

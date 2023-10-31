@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Waarde_voor__c</fullName>
+    <description>Ranking Waarde voor de Klant</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Classificatie Waarde voor de Klant</inlineHelpText>
+    <label>OUD Waarde voor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Trede 0: Suspect</fullName>
+                <default>false</default>
+                <label>Trede 0: Suspect</label>
+            </value>
+            <value>
+                <fullName>Trede 0: Prospect</fullName>
+                <default>false</default>
+                <label>Trede 0: Prospect</label>
+            </value>
+            <value>
+                <fullName>Trede 1</fullName>
+                <default>false</default>
+                <label>Trede 1</label>
+            </value>
+            <value>
+                <fullName>Trede 2</fullName>
+                <default>false</default>
+                <label>Trede 2</label>
+            </value>
+            <value>
+                <fullName>Trede 3</fullName>
+                <default>false</default>
+                <label>Trede 3</label>
+            </value>
+            <value>
+                <fullName>Trede 4</fullName>
+                <default>false</default>
+                <label>Trede 4</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

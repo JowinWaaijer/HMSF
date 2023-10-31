@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR01_ACC_PhoneFormat</fullName>
+    <active>true</active>
+    <description>This validation rule prevents users from formatting the phone number without country and area code. According to the E.164 (Default)</description>
+    <errorConditionFormula>AND (
+Not (ISBLANK (Phone)),
+$Setup.BypassSettings__c.ValidationRules__c = False,
+NOT(REGEX(Phone, &quot;^\\+?[1-9]\\d{1,14}$&quot;)))</errorConditionFormula>
+    <errorDisplayField>Phone</errorDisplayField>
+    <errorMessage>You need to insert the phone number in the correct format. See example: +31735435111 [VR01]</errorMessage>
+</ValidationRule>
