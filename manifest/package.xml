@@ -292,6 +292,10 @@
         <name>Flow</name>
     </types>
     <types>
+        <members>Feedback_SCFL02_Vote_on_Feedback_via_Lightning_Page</members>
+        <name>FlowDefinition</name>
+    </types>
+    <types>
         <members>BusinessUnits</members>
         <members>FocusClient</members>
         <name>GlobalValueSet</name>
