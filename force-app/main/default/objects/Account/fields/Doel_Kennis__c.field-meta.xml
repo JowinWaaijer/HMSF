@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Doel_Kennis__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Accountplan doelstelling op Kennis</inlineHelpText>
+    <label>Doel Kennis</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Innovatie</fullName>
+                <default>false</default>
+                <label>Innovatie</label>
+            </value>
+            <value>
+                <fullName>Specialisme</fullName>
+                <default>false</default>
+                <label>Specialisme</label>
+            </value>
+            <value>
+                <fullName>Contractvorm</fullName>
+                <default>false</default>
+                <label>Contractvorm</label>
+            </value>
+            <value>
+                <fullName>Overig</fullName>
+                <default>false</default>
+                <label>Overig</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

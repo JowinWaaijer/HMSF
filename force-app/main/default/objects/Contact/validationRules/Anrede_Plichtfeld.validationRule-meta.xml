@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Anrede_Plichtfeld</fullName>
+    <active>true</active>
+    <description>Aanhef is verplicht</description>
+    <errorConditionFormula>AND(
+ISBLANK(TEXT(Salutation)),
+Account_Recordtype__c = &quot;Franki&quot;)</errorConditionFormula>
+    <errorMessage>Anrede ist ein Plichtfeld.</errorMessage>
+</ValidationRule>

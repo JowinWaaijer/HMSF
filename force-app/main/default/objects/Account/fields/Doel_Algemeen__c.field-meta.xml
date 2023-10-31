@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Doel_Algemeen__c</fullName>
+    <description>Accountplan Doelstelling Algemeen</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Accountplan Doelstelling Algemeen</inlineHelpText>
+    <label>Doel Algemeen</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1e opdracht</fullName>
+                <default>false</default>
+                <label>1e opdracht</label>
+            </value>
+            <value>
+                <fullName>Consolideren</fullName>
+                <default>false</default>
+                <label>Consolideren</label>
+            </value>
+            <value>
+                <fullName>Groei</fullName>
+                <default>false</default>
+                <label>Groei</label>
+            </value>
+            <value>
+                <fullName>Cherry picking</fullName>
+                <default>false</default>
+                <label>Cherry picking</label>
+            </value>
+            <value>
+                <fullName>Overig</fullName>
+                <default>false</default>
+                <label>Overig</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

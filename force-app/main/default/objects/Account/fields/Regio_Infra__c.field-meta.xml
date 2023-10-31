@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Regio_Infra__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>In welke Infra Regio is de account gevestigd</inlineHelpText>
+    <label>Regio Infra</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Midden Oost</fullName>
+                <default>false</default>
+                <label>Midden Oost</label>
+            </value>
+            <value>
+                <fullName>Noord West</fullName>
+                <default>false</default>
+                <label>Noord West</label>
+            </value>
+            <value>
+                <fullName>Zuid West</fullName>
+                <default>false</default>
+                <label>Zuid West</label>
+            </value>
+            <value>
+                <fullName>Zuid</fullName>
+                <default>false</default>
+                <label>Zuid</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

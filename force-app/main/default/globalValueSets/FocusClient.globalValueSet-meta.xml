@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Prio 1</fullName>
+        <default>false</default>
+        <label>Prio 1</label>
+    </customValue>
+    <customValue>
+        <fullName>Prio 2</fullName>
+        <default>false</default>
+        <label>Prio 2</label>
+    </customValue>
+    <customValue>
+        <fullName>Prio 3</fullName>
+        <default>false</default>
+        <label>Prio 3</label>
+    </customValue>
+    <description>Global picklist to define the focus for a client within the Heijmans org.</description>
+    <masterLabel>Focus Client</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

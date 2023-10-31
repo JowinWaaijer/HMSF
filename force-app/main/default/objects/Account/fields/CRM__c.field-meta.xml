@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRM__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Accountmanagement georganiseerd door Heijmans</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Valt deze account in accountmanagement / marktteams Heijmans?</inlineHelpText>
+    <label>CRM</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

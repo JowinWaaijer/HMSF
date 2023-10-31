@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>The metadata type &quot;Business Units&quot; encompasses organizational subdivisions or departments within a company. It categorizes and organizes units based on their specific functions or areas of operation.</description>
+    <label>Business Unit</label>
+    <pluralLabel>Business Units</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FrankiBranche__c</fullName>
+    <externalId>false</externalId>
+    <label>Branche</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Öffentliche Räume: Wohnungsbau</fullName>
+                <default>false</default>
+                <label>Öffentliche Räume: Wohnungsbau</label>
+            </value>
+            <value>
+                <fullName>Öffentliche Räume:Bürogebäude</fullName>
+                <default>false</default>
+                <label>Öffentliche Räume:Bürogebäude</label>
+            </value>
+            <value>
+                <fullName>Öffentliche Räume: Sonstige</fullName>
+                <default>false</default>
+                <label>Öffentliche Räume: Sonstige</label>
+            </value>
+            <value>
+                <fullName>Öffentliche Räume:Bauen im Bestand</fullName>
+                <default>false</default>
+                <label>Öffentliche Räume:Bauen im Bestand</label>
+            </value>
+            <value>
+                <fullName>Energie: Windenergie</fullName>
+                <default>false</default>
+                <label>Energie: Windenergie</label>
+            </value>
+            <value>
+                <fullName>Energie:Kraftwerke</fullName>
+                <default>false</default>
+                <label>Energie:Kraftwerke</label>
+            </value>
+            <value>
+                <fullName>Energie:Müllverbrennung</fullName>
+                <default>false</default>
+                <label>Energie:Müllverbrennung</label>
+            </value>
+            <value>
+                <fullName>Energie:Masten</fullName>
+                <default>false</default>
+                <label>Energie:Masten</label>
+            </value>
+            <value>
+                <fullName>Energie:Umspannwerke</fullName>
+                <default>false</default>
+                <label>Energie:Umspannwerke</label>
+            </value>
+            <value>
+                <fullName>Energie:Pumpspeicherkraftwerk</fullName>
+                <default>false</default>
+                <label>Energie:Pumpspeicherkraftwerk</label>
+            </value>
+            <value>
+                <fullName>Energie: Sonstige</fullName>
+                <default>false</default>
+                <label>Energie: Sonstige</label>
+            </value>
+            <value>
+                <fullName>Logistik: Logistikhalle</fullName>
+                <default>false</default>
+                <label>Logistik: Logistikhalle</label>
+            </value>
+            <value>
+                <fullName>Logistik:Hochregallager</fullName>
+                <default>false</default>
+                <label>Logistik:Hochregallager</label>
+            </value>
+            <value>
+                <fullName>Wasser: Hafenbau</fullName>
+                <default>false</default>
+                <label>Wasser: Hafenbau</label>
+            </value>
+            <value>
+                <fullName>Logistik:Flughafen</fullName>
+                <default>false</default>
+                <label>Logistik:Flughafen</label>
+            </value>
+            <value>
+                <fullName>Logistik:Silo</fullName>
+                <default>false</default>
+                <label>Logistik:Silo</label>
+            </value>
+            <value>
+                <fullName>Logistik: Sonstige</fullName>
+                <default>false</default>
+                <label>Logistik: Sonstige</label>
+            </value>
+            <value>
+                <fullName>Industrie: Öl und Gas</fullName>
+                <default>false</default>
+                <label>Industrie: Öl und Gas</label>
+            </value>
+            <value>
+                <fullName>Industrie:Petrochemie</fullName>
+                <default>false</default>
+                <label>Industrie:Petrochemie</label>
+            </value>
+            <value>
+                <fullName>Industrie:Automobil</fullName>
+                <default>false</default>
+                <label>Industrie:Automobil</label>
+            </value>
+            <value>
+                <fullName>Industrie:Lebensmittel</fullName>
+                <default>false</default>
+                <label>Industrie:Lebensmittel</label>
+            </value>
+            <value>
+                <fullName>Industrie:Produktion</fullName>
+                <default>false</default>
+                <label>Industrie:Produktion</label>
+            </value>
+            <value>
+                <fullName>Industrie:Maschinenbau</fullName>
+                <default>false</default>
+                <label>Industrie:Maschinenbau</label>
+            </value>
+            <value>
+                <fullName>Industrie: Sonstige</fullName>
+                <default>false</default>
+                <label>Industrie: Sonstige</label>
+            </value>
+            <value>
+                <fullName>Mobilität: Straßen</fullName>
+                <default>false</default>
+                <label>Mobilität: Straßen</label>
+            </value>
+            <value>
+                <fullName>Mobilität:Brücken</fullName>
+                <default>false</default>
+                <label>Mobilität:Brücken</label>
+            </value>
+            <value>
+                <fullName>Mobilität:Trogbauwerke</fullName>
+                <default>false</default>
+                <label>Mobilität:Trogbauwerke</label>
+            </value>
+            <value>
+                <fullName>Mobilität:DB Deutsche Bahn</fullName>
+                <default>false</default>
+                <label>Mobilität:DB Deutsche Bahn</label>
+            </value>
+            <value>
+                <fullName>Mobilität:U-Bahn</fullName>
+                <default>false</default>
+                <label>Mobilität:U-Bahn</label>
+            </value>
+            <value>
+                <fullName>Mobilität:Schleuse</fullName>
+                <default>false</default>
+                <label>Mobilität:Schleuse</label>
+            </value>
+            <value>
+                <fullName>Mobilität:Sonstige</fullName>
+                <default>false</default>
+                <label>Mobilität:Sonstige</label>
+            </value>
+            <value>
+                <fullName>Wasser: Schächte für Rohrvortrieb</fullName>
+                <default>false</default>
+                <label>Wasser: Schächte für Rohrvortrieb</label>
+            </value>
+            <value>
+                <fullName>Wasser:Kläranlagen</fullName>
+                <default>false</default>
+                <label>Wasser:Kläranlagen</label>
+            </value>
+            <value>
+                <fullName>Wasser:Deiche</fullName>
+                <default>false</default>
+                <label>Wasser:Deiche</label>
+            </value>
+            <value>
+                <fullName>Wasser:Deponien</fullName>
+                <default>false</default>
+                <label>Wasser:Deponien</label>
+            </value>
+            <value>
+                <fullName>Wasser:Pumpwerke</fullName>
+                <default>false</default>
+                <label>Wasser:Pumpwerke</label>
+            </value>
+            <value>
+                <fullName>Wasser: Sonstige</fullName>
+                <default>false</default>
+                <label>Wasser: Sonstige</label>
+            </value>
+            <value>
+                <fullName>Wasser: Brücken (Bauherr WSV)</fullName>
+                <default>false</default>
+                <label>Wasser: Brücken (Bauherr WSV)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

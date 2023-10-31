@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_contact__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Status contact beheerder</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Uit relatiemanagement wordt status contact van de Beheerder overgenomen</inlineHelpText>
+    <label>Relatiemanagement</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Relatiemanagement__c.Beheerder_contact__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Relatiemanagement__c</referenceTo>
+    <relationshipLabel>Contactpersonen</relationshipLabel>
+    <relationshipName>Contactpersonen</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

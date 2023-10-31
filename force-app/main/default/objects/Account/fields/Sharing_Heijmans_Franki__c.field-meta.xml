@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sharing_Heijmans_Franki__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Account zichtbaar in database Heijmans en Franki</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Gezamenlijk gebruik: De account zichtbaar en bewerkbaar in database Heijmans en Franki.
+Gemeinsame Nutzung: Dieses Account sichtbar und editierbar im Database Franki und Heijmans.</inlineHelpText>
+    <label>Sharing Heijmans-Franki</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -2,7 +2,7 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Heijmans_klant</fullName>
     <active>true</active>
-    <compactLayoutAssignment>Heijmans_klant</compactLayoutAssignment>
+    <compactLayoutAssignment>Heijmans_Account_Compact_Layout</compactLayoutAssignment>
     <description>Indien het account een klant is van Heijmans</description>
     <label>Heijmans klant</label>
     <picklistValues>
@@ -73,17 +73,6 @@
         </values>
         <values>
             <fullName>Yammer</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>BrightfoxHardis__c</picklist>
-        <values>
-            <fullName>Doesn%27t work</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Works</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -820,6 +809,21 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>PrimarySectorPick__c</picklist>
+        <values>
+            <fullName>Private Sector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Sector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi-Public Sector</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Provincie__c</picklist>
         <values>
             <fullName>Drenthe</fullName>
@@ -960,6 +964,21 @@
         </values>
         <values>
             <fullName>Van Project Potentieel naar Project Partner</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subsector__c</picklist>
+        <values>
+            <fullName>X</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Y</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z</fullName>
             <default>false</default>
         </values>
     </picklistValues>
