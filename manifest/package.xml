@@ -186,6 +186,16 @@
         <members>Contact.ZZP__c</members>
         <members>Fault_Email_Address__mdt.Email__c</members>
         <members>Fault_Email_Address__mdt.OrgRegionName__c</members>
+        <members>FeedbackVote__c.Feedback__c</members>
+        <members>FeedbackVote__c.VoteScore__c</members>
+        <members>FeedbackVote__c.VoterRef__c</members>
+        <members>Feedback__c.CloseDateTime__c</members>
+        <members>Feedback__c.Description__c</members>
+        <members>Feedback__c.ObjectName__c</members>
+        <members>Feedback__c.RecordId__c</members>
+        <members>Feedback__c.RecordURLform__c</members>
+        <members>Feedback__c.ScoreAuto__c</members>
+        <members>Feedback__c.StatusPick__c</members>
         <members>FormerPosition__c.AccountRef__c</members>
         <members>FormerPosition__c.Comment__c</members>
         <members>FormerPosition__c.ContactRef__c</members>
@@ -248,6 +258,8 @@
         <members>BypassSettings__c</members>
         <members>Contact</members>
         <members>Fault_Email_Address__mdt</members>
+        <members>FeedbackVote__c</members>
+        <members>Feedback__c</members>
         <members>FormerPosition__c</members>
         <name>CustomObject</name>
     </types>
@@ -373,6 +385,10 @@
         <members>Account.Heijmans_partner</members>
         <members>Contact.Extern_contact</members>
         <members>Contact.Heijmans_contact</members>
+        <members>Feedback__c.Bug</members>
+        <members>Feedback__c.BusinessIdea</members>
+        <members>Feedback__c.Compliment</members>
+        <members>Feedback__c.FeatureRequest</members>
         <name>RecordType</name>
     </types>
     <types>
