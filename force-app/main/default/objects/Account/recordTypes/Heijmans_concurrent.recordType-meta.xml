@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Heijmans_concurrent</fullName>
-    <active>false</active>
+    <active>true</active>
     <compactLayoutAssignment>Heijmans_Account_Compact_Layout</compactLayoutAssignment>
     <description>Indien het account een concurrent is van een onderdeel van Heijmans</description>
     <label>Heijmans concurrent</label>
