@@ -269,10 +269,16 @@
         <name>CustomObjectTranslation</name>
     </types>
     <types>
+        <members>Feedback__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
         <members>Contact_Record_Page</members>
         <members>Heijmans_Account_Record_Page</members>
         <members>Heijmans_Business_Unit_Specific_Attribute_Record_Page</members>
         <members>Heijmans_Contact_Record_Page</members>
+        <members>Heijmans_Feedback_Record_Page</members>
+        <members>Heijmans_Feedback_Vote_Record_Page</members>
         <members>Heijmans_UtilityBar</members>
         <name>FlexiPage</name>
     </types>
