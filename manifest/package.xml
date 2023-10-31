@@ -288,6 +288,7 @@
         <members>CON_SCFL01_Create_Former_Position</members>
         <members>FAULT_CONNECTOR</members>
         <members>Feedback_SCFL01_Add_Feedback_via_Utility_Bar</members>
+        <members>Feedback_SCFL03_Total_Score_Feedback</members>
         <name>Flow</name>
     </types>
     <types>
