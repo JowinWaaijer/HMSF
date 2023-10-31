@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OrganizationLevelPick__c</fullName>
+    <description>Pick the Organization Level</description>
+    <externalId>false</externalId>
+    <label>Organization Level</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Raad van Commissarissen</fullName>
+                <default>false</default>
+                <label>Raad van Commissarissen</label>
+            </value>
+            <value>
+                <fullName>Raad van Bestuur</fullName>
+                <default>false</default>
+                <label>Raad van Bestuur</label>
+            </value>
+            <value>
+                <fullName>Directie</fullName>
+                <default>false</default>
+                <label>Directie</label>
+            </value>
+            <value>
+                <fullName>Management</fullName>
+                <default>false</default>
+                <label>Management</label>
+            </value>
+            <value>
+                <fullName>Contractmanagement</fullName>
+                <default>false</default>
+                <label>Contractmanagement</label>
+            </value>
+            <value>
+                <fullName>Commercie / Marketing</fullName>
+                <default>false</default>
+                <label>Commercie / Marketing</label>
+            </value>
+            <value>
+                <fullName>Bedrijfsleiding</fullName>
+                <default>false</default>
+                <label>Bedrijfsleiding</label>
+            </value>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+                <label>Engineering</label>
+            </value>
+            <value>
+                <fullName>Projectmanagement</fullName>
+                <default>false</default>
+                <label>Projectmanagement</label>
+            </value>
+            <value>
+                <fullName>Logistiek</fullName>
+                <default>false</default>
+                <label>Logistiek</label>
+            </value>
+            <value>
+                <fullName>Advies</fullName>
+                <default>false</default>
+                <label>Advies</label>
+            </value>
+            <value>
+                <fullName>Beheer</fullName>
+                <default>false</default>
+                <label>Beheer</label>
+            </value>
+            <value>
+                <fullName>Ondersteunende dienst</fullName>
+                <default>false</default>
+                <label>Ondersteunende dienst</label>
+            </value>
+            <value>
+                <fullName>Uitvoerend</fullName>
+                <default>false</default>
+                <label>Uitvoerend</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
