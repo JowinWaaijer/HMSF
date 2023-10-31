@@ -466,6 +466,76 @@
                         <name>imageName</name>
                         <value/>
                     </inputParameters>
+                    <name>Logo10</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>btnExitEN</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>btnExitNL</name>
+                </fields>
+                <fields>
+                    <name>scrErrorEN</name>
+                </fields>
+                <fields>
+                    <name>scrErrorNL</name>
+                </fields>
+                <name>Copy_1_of_scrSucces</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
                     <name>Copy_1_of_diIconHeijmans4</name>
                 </fields>
                 <fields>
@@ -731,7 +801,16 @@
                     <name>dtCreateAccountNL</name>
                 </fields>
                 <fields>
-                    <name>fieldAccountName</name>
+                    <name>plPrimarySector</name>
+                </fields>
+                <fields>
+                    <name>plSubsector</name>
+                </fields>
+                <fields>
+                    <name>txtAccountName</name>
+                </fields>
+                <fields>
+                    <name>txtBusinessName</name>
                 </fields>
                 <name>scrCreateAccount</name>
             </screens>
@@ -1055,10 +1134,6 @@
                     </inputParameters>
                     <inputParameters>
                         <name>objectApiName</name>
-                        <value/>
-                    </inputParameters>
-                    <inputParameters>
-                        <name>recordId</name>
                         <value/>
                     </inputParameters>
                     <inputParameters>
@@ -2774,10 +2849,6 @@
             </screens>
         </flows>
         <fullName>Strategie</fullName>
-    </flowDefinitions>
-    <flowDefinitions>
-        <flows/>
-        <fullName>TEST_FAULT</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows>

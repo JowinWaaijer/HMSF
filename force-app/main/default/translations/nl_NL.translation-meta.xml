@@ -2793,10 +2793,6 @@
         <fullName>Strategie</fullName>
     </flowDefinitions>
     <flowDefinitions>
-        <flows/>
-        <fullName>TEST_FAULT</fullName>
-    </flowDefinitions>
-    <flowDefinitions>
         <flows>
             <choices>
                 <name>Geen_bijzonderheden</name>
