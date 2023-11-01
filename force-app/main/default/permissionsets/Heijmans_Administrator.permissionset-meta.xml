@@ -363,7 +363,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Account.testdata_del__c</field>
+        <field>Account.testdata__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
