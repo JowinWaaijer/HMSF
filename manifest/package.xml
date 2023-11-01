@@ -352,6 +352,8 @@
         <members>Heijmans_Business_Unit_Attirbutes_User</members>
         <members>Heijmans_Feedback_Manager</members>
         <members>Heijmans_Feedback_User</members>
+        <members>Heijmans_Former_Positions_Manager</members>
+        <members>Heijmans_Former_Positions_User</members>
         <name>PermissionSet</name>
     </types>
     <types>
