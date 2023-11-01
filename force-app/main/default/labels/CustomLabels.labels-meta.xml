@@ -104,4 +104,12 @@
         <shortDescription>Organization Chart</shortDescription>
         <value>Organization Chart</value>
     </labels>
+    <labels>
+        <fullName>Hierarchy</fullName>
+        <categories>Tab</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Hierarchy</shortDescription>
+        <value>Hierarchy</value>
+    </labels>
 </CustomLabels>

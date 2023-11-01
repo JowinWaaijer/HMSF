@@ -13,79 +13,34 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Raad van Commissarissen</fullName>
+                <fullName>BoardLevel</fullName>
                 <default>false</default>
-                <label>Raad van Commissarissen</label>
+                <label>Board level</label>
             </value>
             <value>
-                <fullName>Raad van Bestuur</fullName>
+                <fullName>SeniorManagement</fullName>
                 <default>false</default>
-                <label>Raad van Bestuur</label>
+                <label>Senior Management</label>
             </value>
             <value>
-                <fullName>Directie</fullName>
+                <fullName>MiddleManagement</fullName>
                 <default>false</default>
-                <label>Directie</label>
+                <label>Middle Management</label>
             </value>
             <value>
-                <fullName>Management</fullName>
+                <fullName>OperationalLevel</fullName>
                 <default>false</default>
-                <label>Management</label>
+                <label>Operational Level</label>
             </value>
             <value>
-                <fullName>Contractmanagement</fullName>
+                <fullName>ProfessionalLevel</fullName>
                 <default>false</default>
-                <label>Contractmanagement</label>
+                <label>Professional Level</label>
             </value>
             <value>
-                <fullName>Commercie / Marketing</fullName>
+                <fullName>Other</fullName>
                 <default>false</default>
-                <label>Commercie / Marketing</label>
-            </value>
-            <value>
-                <fullName>Bedrijfsleiding</fullName>
-                <default>false</default>
-                <label>Bedrijfsleiding</label>
-            </value>
-            <value>
-                <fullName>Finance</fullName>
-                <default>false</default>
-                <label>Finance</label>
-            </value>
-            <value>
-                <fullName>Engineering</fullName>
-                <default>false</default>
-                <label>Engineering</label>
-            </value>
-            <value>
-                <fullName>Projectmanagement</fullName>
-                <default>false</default>
-                <label>Projectmanagement</label>
-            </value>
-            <value>
-                <fullName>Logistiek</fullName>
-                <default>false</default>
-                <label>Logistiek</label>
-            </value>
-            <value>
-                <fullName>Advies</fullName>
-                <default>false</default>
-                <label>Advies</label>
-            </value>
-            <value>
-                <fullName>Beheer</fullName>
-                <default>false</default>
-                <label>Beheer</label>
-            </value>
-            <value>
-                <fullName>Ondersteunende dienst</fullName>
-                <default>false</default>
-                <label>Ondersteunende dienst</label>
-            </value>
-            <value>
-                <fullName>Uitvoerend</fullName>
-                <default>false</default>
-                <label>Uitvoerend</label>
+                <label>Other</label>
             </value>
         </valueSetDefinition>
     </valueSet>
