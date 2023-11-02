@@ -758,6 +758,12 @@
             </value>
         </inputAssignments>
         <inputAssignments>
+            <field>PictureURL__c</field>
+            <value>
+                <elementReference>recordId.PictureURL__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>Title</field>
             <value>
                 <elementReference>Title</elementReference>
@@ -993,6 +999,12 @@
                 <elementReference>recordId.Id</elementReference>
             </value>
         </filters>
+        <inputAssignments>
+            <field>FirstName</field>
+            <value>
+                <elementReference>fmAdjustFirstName</elementReference>
+            </value>
+        </inputAssignments>
         <inputAssignments>
             <field>IsNoLongerWorking__c</field>
             <value>
@@ -2542,7 +2554,7 @@
             <inputParameters>
                 <name>buttons</name>
                 <value>
-                    <stringValue>[{&quot;label&quot;:&quot;Aanmaken&quot;,&quot;value&quot;:&quot;Create New Postion&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;brand&quot;,&quot;iconName&quot;:&quot;utility:adduser&quot;,&quot;index&quot;:0},{&quot;label&quot;:&quot;Stop&quot;,&quot;value&quot;:&quot;Cancel&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;destructive&quot;,&quot;iconName&quot;:&quot;utility:close&quot;,&quot;index&quot;:1}]</stringValue>
+                    <stringValue>[{&quot;label&quot;:&quot;Aanmaken&quot;,&quot;value&quot;:&quot;Save&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;brand&quot;,&quot;iconName&quot;:&quot;utility:adduser&quot;,&quot;index&quot;:0},{&quot;label&quot;:&quot;Stop&quot;,&quot;value&quot;:&quot;Cancel&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;destructive&quot;,&quot;iconName&quot;:&quot;utility:close&quot;,&quot;index&quot;:1}]</stringValue>
                 </value>
             </inputParameters>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
