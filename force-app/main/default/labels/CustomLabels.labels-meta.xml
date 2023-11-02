@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>BusinessUnitSpecificAttributes</fullName>
+        <categories>Tab</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Business Unit Specific Attributes</shortDescription>
+        <value>Business Unit Specific Attributes</value>
+    </labels>
+    <labels>
+        <fullName>Contacts</fullName>
+        <categories>Tab</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contacts</shortDescription>
+        <value>Contacts</value>
+    </labels>
+    <labels>
+        <fullName>Description</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Description</shortDescription>
+        <value>Description</value>
+    </labels>
+    <labels>
+        <fullName>FeedbackBugDescription</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Feedback: Bug Description</shortDescription>
+        <value>Something not working correctly? We hate that too! Let us know what&apos;s going on and we will fix it for you.</value>
+    </labels>
+    <labels>
+        <fullName>FeedbackBugTitle</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Feedback: Bug Title</shortDescription>
+        <value>Report a Bug</value>
+    </labels>
+    <labels>
+        <fullName>FeedbackCompliment</fullName>
+        <categories>Flow</categories>
+        <language>nl_NL</language>
+        <protected>false</protected>
+        <shortDescription>Feedback: Compliment</shortDescription>
+        <value>Give a Compliment</value>
+    </labels>
+    <labels>
+        <fullName>FeedbackComplimentDescription</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Feedback: Compliment Description</shortDescription>
+        <value>Do you want to give a colleague a compliment, or do you like how things are going or do you like certain (new) features in Salesforce? Let us know!</value>
+    </labels>
+    <labels>
+        <fullName>FeedbackComplimentTitle</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Feedback Compliment Title</shortDescription>
+        <value>Give a Compliment</value>
+    </labels>
+    <labels>
+        <fullName>FeedbackFeatureDescription</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Feedback: Feature Description</shortDescription>
+        <value>Do you have a great idea for Salesforce? We would love to hear about it.</value>
+    </labels>
+    <labels>
+        <fullName>FeedbackIdeaDescription</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Feedback: Idea Description</shortDescription>
+        <value>Do you have a great idea to improve our way of working or business? Please share it.</value>
+    </labels>
+    <labels>
+        <fullName>FeedbackIdeaTitle</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Feedback: Idea Title</shortDescription>
+        <value>Share Business Idea</value>
+    </labels>
+    <labels>
+        <fullName>FeedbackRequestTitle</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Feedback: Request Title</shortDescription>
+        <value>Request a new Feature</value>
+    </labels>
+    <labels>
+        <fullName>OrganizationChart</fullName>
+        <categories>Organization Charts</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Organization Chart</shortDescription>
+        <value>Organization Chart</value>
+    </labels>
+    <labels>
+        <fullName>Hierarchy</fullName>
+        <categories>Tab</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Hierarchy</shortDescription>
+        <value>Hierarchy</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Historie__c</fullName>
+    <description>Ervaringen van de klant</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Ervaringen met de klant</inlineHelpText>
+    <label>Historie</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Goede ervaringen</fullName>
+                <default>false</default>
+                <label>Goede ervaringen</label>
+            </value>
+            <value>
+                <fullName>Wisselende ervaringen</fullName>
+                <default>false</default>
+                <label>Wisselende ervaringen</label>
+            </value>
+            <value>
+                <fullName>Slechte ervaringen</fullName>
+                <default>false</default>
+                <label>Slechte ervaringen</label>
+            </value>
+            <value>
+                <fullName>Geen ervaringen</fullName>
+                <default>false</default>
+                <label>Geen ervaringen</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

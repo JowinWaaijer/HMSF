@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BusinessUnitPick__c</fullName>
+    <description>List of all the specfic business units within Heijmans Infra.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>List of all the specfic business units within Heijmans Infra.</inlineHelpText>
+    <label>Business Unit</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RP Procurement</fullName>
+                <default>true</default>
+                <label>RP Procurement</label>
+            </value>
+            <value>
+                <fullName>RP North-East-Central</fullName>
+                <default>false</default>
+                <label>RP North-East-Central</label>
+            </value>
+            <value>
+                <fullName>RP South-West</fullName>
+                <default>false</default>
+                <label>RP South-West</label>
+            </value>
+            <value>
+                <fullName>RP South</fullName>
+                <default>false</default>
+                <label>RP South</label>
+            </value>
+            <value>
+                <fullName>RP North-West</fullName>
+                <default>false</default>
+                <label>RP North-West</label>
+            </value>
+            <value>
+                <fullName>RP Integrated Regional Projects</fullName>
+                <default>false</default>
+                <label>RP Integrated Regional Projects</label>
+            </value>
+            <value>
+                <fullName>CP Procurement</fullName>
+                <default>false</default>
+                <label>CP Procurement</label>
+            </value>
+            <value>
+                <fullName>CP Design</fullName>
+                <default>false</default>
+                <label>CP Design</label>
+            </value>
+            <value>
+                <fullName>CP PROM</fullName>
+                <default>false</default>
+                <label>CP PROM</label>
+            </value>
+            <value>
+                <fullName>CP Realisation</fullName>
+                <default>false</default>
+                <label>CP Realisation</label>
+            </value>
+            <value>
+                <fullName>AM Assetmanagement</fullName>
+                <default>false</default>
+                <label>AM Assetmanagement</label>
+            </value>
+            <value>
+                <fullName>AM Schiphol</fullName>
+                <default>false</default>
+                <label>AM Schiphol</label>
+            </value>
+            <value>
+                <fullName>TE SI&amp;T</fullName>
+                <default>false</default>
+                <label>TE SI&amp;T</label>
+            </value>
+            <value>
+                <fullName>TE E&amp;I</fullName>
+                <default>false</default>
+                <label>TE E&amp;I</label>
+            </value>
+            <value>
+                <fullName>EN Connections</fullName>
+                <default>false</default>
+                <label>EN Connections</label>
+            </value>
+            <value>
+                <fullName>EN Stations</fullName>
+                <default>false</default>
+                <label>EN Stations</label>
+            </value>
+            <value>
+                <fullName>EN Area Development</fullName>
+                <default>false</default>
+                <label>EN Area Development</label>
+            </value>
+            <value>
+                <fullName>EN Services &amp; Distribution</fullName>
+                <default>false</default>
+                <label>EN Services &amp; Distribution</label>
+            </value>
+            <value>
+                <fullName>WS Road Specializations</fullName>
+                <default>false</default>
+                <label>WS Road Specializations</label>
+            </value>
+            <value>
+                <fullName>BS Soil Specializations</fullName>
+                <default>false</default>
+                <label>BS Soil Specializations</label>
+            </value>
+            <value>
+                <fullName>CS Civil Engineering Specializations</fullName>
+                <default>false</default>
+                <label>CS Civil Engineering Specializations</label>
+            </value>
+            <value>
+                <fullName>Asphalt Technology</fullName>
+                <default>false</default>
+                <label>Asphalt Technology</label>
+            </value>
+            <value>
+                <fullName>Heijmans Equipment Management</fullName>
+                <default>false</default>
+                <label>Heijmans Equipment Management</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

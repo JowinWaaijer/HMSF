@@ -1,0 +1,1100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Heijmans</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Heijmans_Account_Compact_Layout</compactLayoutAssignment>
+    <label>Heijmans</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Aankondiging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advertentie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cobouw Nieuwbouw</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collega</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leverancier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Linkedin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offerte aanvraag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onderhandse uitnodiging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overig</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ProRail aanbestedingskalender</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Twitter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uit Klantgesprek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vakbeurs%5Ccongres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yammer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Doel_Algemeen__c</picklist>
+        <values>
+            <fullName>1e opdracht</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cherry picking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consolideren</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Groei</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overig</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Doel_Contact_Operationeel__c</picklist>
+        <values>
+            <fullName>Intensiveren</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onderhouden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opbouwen nieuw contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>n%2Ev%2Et%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Doel_Contact_Strategisch__c</picklist>
+        <values>
+            <fullName>Intensiveren</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onderhouden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opbouwen nieuw contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>n%2Ev%2Et%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Doel_Contact_Tactisch__c</picklist>
+        <values>
+            <fullName>Intensiveren</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onderhouden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opbouwen nieuw contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>n%2Ev%2Et%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Doel_Kennis__c</picklist>
+        <values>
+            <fullName>Contractvorm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Innovatie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overig</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specialisme</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Focusklant_Infra__c</picklist>
+        <values>
+            <fullName>Ja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nee</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Focusklant__c</picklist>
+        <values>
+            <fullName>2017</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2019</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2021</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2023</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FrankiBranche__c</picklist>
+        <values>
+            <fullName>Energie%3A Sonstige</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energie%3A Windenergie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energie%3AKraftwerke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energie%3AMasten</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energie%3AMüllverbrennung</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energie%3APumpspeicherkraftwerk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energie%3AUmspannwerke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrie%3A Sonstige</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrie%3A Öl und Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrie%3AAutomobil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrie%3ALebensmittel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrie%3AMaschinenbau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrie%3APetrochemie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrie%3AProduktion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistik%3A Logistikhalle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistik%3A Sonstige</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistik%3AFlughafen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistik%3AHochregallager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistik%3ASilo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobilität%3A Straßen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobilität%3ABrücken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobilität%3ADB Deutsche Bahn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobilität%3ASchleuse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobilität%3ASonstige</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobilität%3ATrogbauwerke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobilität%3AU-Bahn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wasser%3A Brücken %28Bauherr WSV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wasser%3A Hafenbau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wasser%3A Schächte für Rohrvortrieb</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wasser%3A Sonstige</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wasser%3ADeiche</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wasser%3ADeponien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wasser%3AKläranlagen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wasser%3APumpwerke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Öffentliche Räume%3A Sonstige</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Öffentliche Räume%3A Wohnungsbau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Öffentliche Räume%3ABauen im Bestand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Öffentliche Räume%3ABürogebäude</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Historie__c</picklist>
+        <values>
+            <fullName>Geen ervaringen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Goede ervaringen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slechte ervaringen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wisselende ervaringen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Bouwnijverheid%3A GWW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bouwnijverheid%3A Overig</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bouwnijverheid%3A Utiliteit en Woningbouw</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consultancy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defensie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dienstverlening</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energie%3A Distributie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energie%3A Opslag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energie%3A Productie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energie%3A Transport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financiele instelling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gemeente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haven en terminals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heijmans Infra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heijmans NV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Tech Clean Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I%2FA - ICT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leisure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistieke dienstverleners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Luchthavens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Natuurontwikkeling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nutsbedrijven</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onderwijs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ontwikkelaars en beleggers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overheid buitenland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Particulier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Privaat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provincie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rijksoverheid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stichtingen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waterschap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zorg%3A Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zorg%3A Cure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zorg%3A Overig</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Klantgroep__c</picklist>
+        <values>
+            <fullName>Bouwnijverheid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defensie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gemeente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heijmans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ICT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistiek en Handel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nutsbedrijven</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onderwijs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ontwikkelaars en Beleggers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overig</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provincie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rijksoverheid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waterschappen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zorg</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Markt__c</picklist>
+        <values>
+            <fullName>Energie%3A Distributie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energie%3A Hoofdtransport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energie%3A Productie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobiliteit%3A A-wegen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobiliteit%3A Hoofd-hubs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobiliteit%3A N-wegen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobiliteit%3A Rail en OV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stedelijk%3A Afvalwater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stedelijk%3A Binnenstedelijk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stedelijk%3A Drinkwater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stedelijk%3A Industrieel gebied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stedelijk%3A Publieke Ruimte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vervanging %26 Renovatie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waterveiligheid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OG_Publiek_Privaat__c</picklist>
+        <values>
+            <fullName>Privaat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publiek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi Publiek</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Dochteronderneming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Openbaar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overig</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Privé</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Partner_sector__c</picklist>
+        <values>
+            <fullName>Adviseur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adviseur Geotechniek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adviseur PM%2FRM%2FICT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adviseur Verkeer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Architect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bouw en Vastgoed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Civiel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Civiel MKB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concessie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMVI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance %2F Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GWW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installaties</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Natte Waterbouw</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ontwerp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prefab beton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Staal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transport %2F montage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Preferred__c</picklist>
+        <values>
+            <fullName>Adviseur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PrimarySectorPick__c</picklist>
+        <values>
+            <fullName>Private Sector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Sector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi-Public Sector</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Provincie__c</picklist>
+        <values>
+            <fullName>Drenthe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flevoland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friesland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gelderland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Groningen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landelijk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limburg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noord Brabant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noord Holland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overijssel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utrecht</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zeeland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zuid Holland</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Geen beoordeling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium Potentieel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Potentieel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Regio_Infra__c</picklist>
+        <values>
+            <fullName>Midden Oost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noord West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zuid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zuid West</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Segmentatietabel__c</picklist>
+        <values>
+            <fullName>Premium Partner behouden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium Potentieel behouden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Partner behouden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Potentieel behouden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Van Premium Potentieel naar Premium Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Van Premium Potentieel naar Project Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Van Project Partner naar Premium Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Van Project Partner naar Premium Potentieel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Van Project Potentieel naar Premium Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Van Project Potentieel naar Premium Potentieel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Van Project Potentieel naar Project Partner</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subsector__c</picklist>
+        <values>
+            <fullName>X</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Y</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Aannemer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adviseur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Applicateur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leverancier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opdrachtgever</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overig</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Waarde_van__c</picklist>
+        <values>
+            <fullName>Trede 0%3A prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trede 0%3A suspect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trede 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trede 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trede 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trede 4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Waarde_voor__c</picklist>
+        <values>
+            <fullName>Trede 0%3A Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trede 0%3A Suspect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trede 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trede 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trede 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trede 4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ab__c</picklist>
+        <values>
+            <fullName>a</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>b</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>c</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>d</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>e</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>f</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>g</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>h</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

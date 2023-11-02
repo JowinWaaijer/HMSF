@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PictureURL__c</fullName>
+    <description>This field contains the url of the contact&apos;s picture. It will be used in a flow to display the image of the contact on the lighting record page</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Insert here the url of the contact&apos;s image. In order to copy an image from LinkedIn, first click on the contact&apos;s picture so it pops up, then right mouse click on &quot;Copy Image Address&quot; and paste this url into this field.</inlineHelpText>
+    <label>Picture URL</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

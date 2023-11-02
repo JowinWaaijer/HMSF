@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Segmentatietabel__c</fullName>
+    <externalId>false</externalId>
+    <label>Segmentatietabel</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Project Potentieel behouden</fullName>
+                <default>false</default>
+                <label>Project Potentieel behouden</label>
+            </value>
+            <value>
+                <fullName>Project Partner behouden</fullName>
+                <default>false</default>
+                <label>Project Partner behouden</label>
+            </value>
+            <value>
+                <fullName>Premium Potentieel behouden</fullName>
+                <default>false</default>
+                <label>Premium Potentieel behouden</label>
+            </value>
+            <value>
+                <fullName>Premium Partner behouden</fullName>
+                <default>false</default>
+                <label>Premium Partner behouden</label>
+            </value>
+            <value>
+                <fullName>Van Project Potentieel naar Premium Potentieel</fullName>
+                <default>false</default>
+                <label>Van Project Potentieel naar Premium Potentieel</label>
+            </value>
+            <value>
+                <fullName>Van Project Potentieel naar Project Partner</fullName>
+                <default>false</default>
+                <label>Van Project Potentieel naar Project Partner</label>
+            </value>
+            <value>
+                <fullName>Van Project Potentieel naar Premium Partner</fullName>
+                <default>false</default>
+                <label>Van Project Potentieel naar Premium Partner</label>
+            </value>
+            <value>
+                <fullName>Van Project Partner naar Premium Potentieel</fullName>
+                <default>false</default>
+                <label>Van Project Partner naar Premium Potentieel</label>
+            </value>
+            <value>
+                <fullName>Van Project Partner naar Premium Partner</fullName>
+                <default>false</default>
+                <label>Van Project Partner naar Premium Partner</label>
+            </value>
+            <value>
+                <fullName>Van Premium Potentieel naar Premium Partner</fullName>
+                <default>false</default>
+                <label>Van Premium Potentieel naar Premium Partner</label>
+            </value>
+            <value>
+                <fullName>Van Premium Potentieel naar Project Partner</fullName>
+                <default>false</default>
+                <label>Van Premium Potentieel naar Project Partner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

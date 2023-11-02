@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Handelsnaam__c</fullName>
+    <description>The &quot;Business Name&quot; field in our CRM allows users to input a more readable or customized name for a client account. This field provides flexibility to include alternative names or additional details that may not be present in the official register. It enhances user experience by accommodating personalized client information while maintaining data accuracy and integrity.</description>
+    <externalId>false</externalId>
+    <label>Business Name</label>
+    <length>80</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

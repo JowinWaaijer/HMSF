@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>AccountLayout Franki</layout>
+        <sections>
+            <label></label>
+            <section>CRM</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Accountlayout</layout>
+        <sections>
+            <label></label>
+            <section>Accountmanagement</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Accountlayout Chatter +</layout>
+        <sections>
+            <label></label>
+            <section>Accountmanagement</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Heijmans - Account Layout</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Segmentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Heijmans concurrent</layout>
+        <sections>
+            <label></label>
+            <section>Adresgegevens</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Systeem info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Heijmans klant</layout>
+        <sections>
+            <label></label>
+            <section>Accountplan Algemeen</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Accountplan Doorkijk en DMU</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Accountplan doelstellingen</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Adresgegevens</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Beschrijving</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Systeem info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Heijmans onderdeel</layout>
+        <sections>
+            <label></label>
+            <section>Adresgegevens</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Systeem info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Heijmans partner</layout>
+        <sections>
+            <label></label>
+            <section>Adresgegevens</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Beschrijving</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Systeem info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Heijmans_Account</layout>
+        <sections>
+            <label></label>
+            <section>Accountmanagement</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Adresgegevens</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Overig</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sharing Heijmans-Franki</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>Franki</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Heijmans</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Heijmans_concurrent</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Heijmans_klant</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Heijmans_onderdeel</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Heijmans_partner</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VR01_ACC_PhoneFormat</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Niew_Gespreksverslag</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>SDOC__Email_Docs</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>SDOC__S_Docs</name>
+    </webLinks>
+</CustomObjectTranslation>

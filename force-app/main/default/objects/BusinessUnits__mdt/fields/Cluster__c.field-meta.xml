@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cluster__c</fullName>
+    <description>A cluster within Heijmans refers to a grouping or departmental subdivision.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>A cluster within Heijmans refers to a grouping or departmental subdivision.</inlineHelpText>
+    <label>Cluster</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Regional projects</fullName>
+                <default>true</default>
+                <label>Regional projects</label>
+            </value>
+            <value>
+                <fullName>Central projects</fullName>
+                <default>false</default>
+                <label>Central projects</label>
+            </value>
+            <value>
+                <fullName>Assetmanagement</fullName>
+                <default>false</default>
+                <label>Assetmanagement</label>
+            </value>
+            <value>
+                <fullName>Technical</fullName>
+                <default>false</default>
+                <label>Technical</label>
+            </value>
+            <value>
+                <fullName>Energy</fullName>
+                <default>false</default>
+                <label>Energy</label>
+            </value>
+            <value>
+                <fullName>Specialism</fullName>
+                <default>false</default>
+                <label>Specialism</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
