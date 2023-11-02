@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR02_ACR_MobilePhoneFormat</fullName>
+    <active>true</active>
+    <description>This validation rule prevents users from formatting the Mobile phone number without country and area code. According to the E.164 (Default)</description>
+    <errorConditionFormula>AND (
+Not (ISBLANK ( PhoneofRelation__c )),
+$Setup.BypassSettings__c.ValidationRules__c = False,
+NOT(REGEX( PhoneofRelation__c , &quot;^\\+?[1-9]\\d{1,14}$&quot;)))</errorConditionFormula>
+    <errorDisplayField>MobileofRelation__c</errorDisplayField>
+    <errorMessage>You need to insert the Mobile phone number in the correct format. See example: +31611111111[VR02]</errorMessage>
+</ValidationRule>

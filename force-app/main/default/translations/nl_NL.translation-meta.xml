@@ -113,6 +113,10 @@
         <name>GeneratePDF</name>
     </customLabels>
     <customLabels>
+        <label>Hiërarchie</label>
+        <name>Hierarchy</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Login --></label>
         <name>Login</name>
     </customLabels>
@@ -445,6 +449,10 @@
         <fullName>ACC_RTFL02_Manually_Create_BUSA_records</fullName>
     </flowDefinitions>
     <flowDefinitions>
+        <flows/>
+        <fullName>AccountContactRelationship_RTFL01_Set_to_Inactive_on_Enddate</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
         <flows>
             <choices>
                 <name>HasPassedAway</name>
@@ -725,15 +733,58 @@
                     <name>btnCreateAccountNL</name>
                 </fields>
                 <fields>
+                    <inputParameters>
+                        <name>dependencyWrapperApiName</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>middlePicklistApiName</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>topPicklistApiName</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>topRequired</name>
+                        <value/>
+                    </inputParameters>
+                    <name>dplPrimarySector</name>
+                </fields>
+                <fields>
                     <name>dtCreateAccountEN</name>
                 </fields>
                 <fields>
                     <name>dtCreateAccountNL</name>
                 </fields>
                 <fields>
-                    <name>fieldAccountName</name>
+                    <name>txtAccountName</name>
+                </fields>
+                <fields>
+                    <name>txtBusinessName</name>
                 </fields>
                 <name>scrCreateAccount</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
+                    <name>diLogo</name>
+                </fields>
+                <fields>
+                    <name>dtErrorMessage</name>
+                </fields>
+                <name>scrErrorMessage</name>
             </screens>
             <screens>
                 <fields>
@@ -1058,10 +1109,6 @@
                         <value/>
                     </inputParameters>
                     <inputParameters>
-                        <name>recordId</name>
-                        <value/>
-                    </inputParameters>
-                    <inputParameters>
                         <name>required</name>
                         <value/>
                     </inputParameters>
@@ -1231,6 +1278,33 @@
             </screens>
         </flows>
         <fullName>CON_SCFL01_Create_Former_Position</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>align</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>height</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>url</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>dpPictureviaURL</name>
+                </fields>
+                <name>scrImage</name>
+            </screens>
+        </flows>
+        <fullName>Contact_SCFL02_Display_Contact_s_Picture</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows>
@@ -1660,6 +1734,17 @@
             </textTemplates>
         </flows>
         <fullName>FAULT_CONNECTOR</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>tmpEmailBodyAdmin</name>
+            </textTemplates>
+            <textTemplates>
+                <name>tmpEmailBodyCurrentUser</name>
+            </textTemplates>
+        </flows>
+        <fullName>FAULT_CONNECTOR_SCREENFLOW</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows>
@@ -2925,7 +3010,7 @@
         <name>NewContact</name>
     </quickActions>
     <quickActions>
-        <label><!-- NewContact --></label>
+        <label><!-- New Contact --></label>
         <name>NewContact</name>
     </quickActions>
     <quickActions>
@@ -3626,6 +3711,10 @@
         <sections>
             <label><!-- Gebruikers --></label>
             <name>Gebruikers</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
         </sections>
     </reportTypes>
     <reportTypes>

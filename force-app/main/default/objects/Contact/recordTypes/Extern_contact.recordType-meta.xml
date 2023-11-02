@@ -166,63 +166,27 @@
     <picklistValues>
         <picklist>OrganizationLevelPick__c</picklist>
         <values>
-            <fullName>Advies</fullName>
+            <fullName>BoardLevel</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Bedrijfsleiding</fullName>
+            <fullName>MiddleManagement</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Beheer</fullName>
+            <fullName>OperationalLevel</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Commercie %2F Marketing</fullName>
+            <fullName>Other</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Contractmanagement</fullName>
+            <fullName>ProfessionalLevel</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Directie</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Engineering</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Finance</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Logistiek</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Management</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Ondersteunende dienst</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Projectmanagement</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Raad van Bestuur</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Raad van Commissarissen</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Uitvoerend</fullName>
+            <fullName>SeniorManagement</fullName>
             <default>false</default>
         </values>
     </picklistValues>

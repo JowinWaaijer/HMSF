@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <actionCalls>
         <name>navigateToRecordOld</name>
         <label>navigateToRecordOld</label>
-        <locationX>1139</locationX>
-        <locationY>3338</locationY>
+        <locationX>2426</locationX>
+        <locationY>3494</locationY>
         <actionName>c:navigateToRecord</actionName>
         <actionType>component</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -21,15 +21,15 @@
     <actionCalls>
         <name>navigateToRecrod</name>
         <label>navigateToRecrod</label>
-        <locationX>182</locationX>
-        <locationY>2846</locationY>
+        <locationX>314</locationX>
+        <locationY>3002</locationY>
         <actionName>c:navigateToRecord</actionName>
         <actionType>component</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>recordId</name>
             <value>
-                <elementReference>crContact</elementReference>
+                <elementReference>rcContact</elementReference>
             </value>
         </inputParameters>
         <nameSegment>c:navigateToRecord</nameSegment>
@@ -40,7 +40,7 @@
     <assignments>
         <name>assIcons</name>
         <label>assIcons</label>
-        <locationX>1672</locationX>
+        <locationX>3306</locationX>
         <locationY>350</locationY>
         <assignmentItems>
             <assignToReference>colIcons</assignToReference>
@@ -110,11 +110,45 @@
         </connector>
     </assignments>
     <assignments>
+        <description>Sets the AccountId used in the scrSetupNew Role</description>
+        <name>assSelectedAccountId</name>
+        <label>ssSelectedAccountId</label>
+        <locationX>666</locationX>
+        <locationY>998</locationY>
+        <assignmentItems>
+            <assignToReference>varSelectedAccountId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>luFindAccount.recordId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>scrSetupNewRole</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Sets the AccountId used in the scrSetupNew Role</description>
+        <name>assSelectedAccountIdNew</name>
+        <label>assSelectedAccountIdNew</label>
+        <locationX>930</locationX>
+        <locationY>1322</locationY>
+        <assignmentItems>
+            <assignToReference>varSelectedAccountId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varNewAccountId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>scrSetupNewRole</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <description>Sets the contact id to the new contact.</description>
         <name>assSetContactId</name>
         <label>assSetContactId</label>
         <locationX>138</locationX>
-        <locationY>2246</locationY>
+        <locationY>2354</locationY>
         <assignmentItems>
             <assignToReference>rFormerPosition.Id</assignToReference>
             <operator>Assign</operator>
@@ -126,7 +160,7 @@
             <assignToReference>rFormerPosition.ContactRef__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>crContact</elementReference>
+                <elementReference>rcContact</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -161,8 +195,8 @@
     <decisions>
         <name>dcs</name>
         <label>dcsSelectedOption</label>
-        <locationX>336</locationX>
-        <locationY>1598</locationY>
+        <locationX>930</locationX>
+        <locationY>1706</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Created</name>
@@ -182,7 +216,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>crContact</targetReference>
+                <targetReference>rcContact</targetReference>
             </connector>
             <label>Created</label>
         </rules>
@@ -190,7 +224,7 @@
     <decisions>
         <name>dcsContineDeceased</name>
         <label>dcsContineDeceased</label>
-        <locationX>1414</locationX>
+        <locationX>3130</locationX>
         <locationY>890</locationY>
         <defaultConnectorLabel>Stop</defaultConnectorLabel>
         <rules>
@@ -243,7 +277,7 @@
         <description>Check if the users wants to continue the process.</description>
         <name>dcsContinueProcess</name>
         <label>dcsContinueProcess</label>
-        <locationX>1672</locationX>
+        <locationX>3306</locationX>
         <locationY>566</locationY>
         <defaultConnectorLabel>Exit</defaultConnectorLabel>
         <rules>
@@ -273,7 +307,7 @@
         <description>Check what value the user selected in the button bar.</description>
         <name>dcsCreateAccount</name>
         <label>dcsCreateAccount</label>
-        <locationX>490</locationX>
+        <locationX>1194</locationX>
         <locationY>1106</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
@@ -298,7 +332,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>crAccount</targetReference>
+                <targetReference>rcAccount</targetReference>
             </connector>
             <label>Create</label>
         </rules>
@@ -307,8 +341,8 @@
         <description>Check if there are any Former Positions to update.</description>
         <name>dcsFormerPositionsFound</name>
         <label>dcsFormerPositionsFound</label>
-        <locationX>182</locationX>
-        <locationY>2030</locationY>
+        <locationX>314</locationX>
+        <locationY>2138</locationY>
         <defaultConnector>
             <targetReference>ruSetContactToInactive</targetReference>
         </defaultConnector>
@@ -333,7 +367,7 @@
         <description>Check if the contact needs to be moved to another organization or if the contact is not related anymore.</description>
         <name>dcsMoveContact</name>
         <label>dcsMoveContact</label>
-        <locationX>2071</locationX>
+        <locationX>3878</locationX>
         <locationY>242</locationY>
         <defaultConnectorLabel>Cancel Operation</defaultConnectorLabel>
         <rules>
@@ -363,7 +397,7 @@
         <description>Check what the user selected in the previous screen.</description>
         <name>dcsNewAccountCreation</name>
         <label>dcsNewAccountCreation</label>
-        <locationX>336</locationX>
+        <locationX>930</locationX>
         <locationY>890</locationY>
         <defaultConnector>
             <targetReference>scrCreateAccount</targetReference>
@@ -387,7 +421,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>scrSetupNewRole</targetReference>
+                <targetReference>assSelectedAccountId</targetReference>
             </connector>
             <label>Use Existing</label>
         </rules>
@@ -396,7 +430,7 @@
         <description>Check what value the user selected in the icon screen.</description>
         <name>dcsSelectedType</name>
         <label>dcsSelectedType</label>
-        <locationX>1139</locationX>
+        <locationX>2426</locationX>
         <locationY>674</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
@@ -450,7 +484,28 @@
         </rules>
     </decisions>
     <description>Creates a former position for a contact via a screenflow linked on the contact lighting page.</description>
+    <dynamicChoiceSets>
+        <name>plcPrimarySector</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>PrimarySectorPick__c</picklistField>
+        <picklistObject>Account</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>plcSubsector</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Subsector__c</picklistField>
+        <picklistObject>Account</picklistObject>
+    </dynamicChoiceSets>
     <environments>Default</environments>
+    <formulas>
+        <name>fmAdjustFirstName</name>
+        <dataType>String</dataType>
+        <expression>&apos;❌ &apos;  &amp; {!recordId.FirstName}</expression>
+    </formulas>
     <formulas>
         <description>Sets the description of the icon element</description>
         <name>fmDescriptionDeceased</name>
@@ -484,6 +539,11 @@
         <dataType>String</dataType>
         <expression>CASE({!fmUserLanguageCode}, &quot;nl_NL&quot;, &quot;Nieuwe baan&quot;, &quot;en_US&quot;, &quot;New Job&quot;,
 &quot;New Job&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>fmInvalidEmail</name>
+        <dataType>String</dataType>
+        <expression>{!recordId.Email} &amp; &quot;.invalid&quot;</expression>
     </formulas>
     <formulas>
         <description>Sets the label of the icon element.</description>
@@ -528,7 +588,7 @@
         <name>lpFormerPositions</name>
         <label>lpFormerPositions</label>
         <locationX>50</locationX>
-        <locationY>2138</locationY>
+        <locationY>2246</locationY>
         <collectionReference>getFormerPositions</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -558,32 +618,109 @@
     </processMetadataValues>
     <processType>Flow</processType>
     <recordCreates>
-        <description>Creates a new account record</description>
-        <name>crAccount</name>
-        <label>crAccount</label>
-        <locationX>358</locationX>
-        <locationY>1214</locationY>
+        <description>Creates a former position for the deceased contact.</description>
+        <name>crFormerPositionDeceased</name>
+        <label>crFormerPositionDeceased</label>
+        <locationX>2602</locationX>
+        <locationY>1106</locationY>
         <connector>
-            <targetReference>scrSetupNewRole</targetReference>
+            <targetReference>scrSuccesRetireOrDeceasedNL</targetReference>
         </connector>
+        <faultConnector>
+            <targetReference>subFaultConnector</targetReference>
+        </faultConnector>
         <inputAssignments>
-            <field>Name</field>
+            <field>AccountRef__c</field>
             <value>
-                <elementReference>fieldAccountName</elementReference>
+                <elementReference>recordId.Account.Id</elementReference>
             </value>
         </inputAssignments>
-        <object>Account</object>
+        <inputAssignments>
+            <field>Comment__c</field>
+            <value>
+                <elementReference>fmLabelDeceased</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactRef__c</field>
+            <value>
+                <elementReference>recordId.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>EndDate__c</field>
+            <value>
+                <elementReference>fmToday</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>StartDate__c</field>
+            <value>
+                <elementReference>fmStartDateEstimatedContact</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Title__c</field>
+            <value>
+                <elementReference>recordId.Title</elementReference>
+            </value>
+        </inputAssignments>
+        <object>FormerPosition__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordCreates>
-        <description>Creates a new Contact</description>
-        <name>crContact</name>
-        <label>crContact</label>
-        <locationX>182</locationX>
-        <locationY>1706</locationY>
+        <description>Creates a new account record</description>
+        <name>rcAccount</name>
+        <label>rcAccount</label>
+        <locationX>930</locationX>
+        <locationY>1214</locationY>
+        <assignRecordIdToReference>varNewAccountId</assignRecordIdToReference>
         <connector>
-            <targetReference>crFormerPositionNewJob</targetReference>
+            <targetReference>assSelectedAccountIdNew</targetReference>
         </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>subFaultConnector</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>Handelsnaam__c</field>
+            <value>
+                <elementReference>txtBusinessName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>txtAccountName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PrimarySectorPick__c</field>
+            <value>
+                <elementReference>varPrimarySector</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subsector__c</field>
+            <value>
+                <elementReference>varSubsector</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordCreates>
+    <recordCreates>
+        <description>Creates a new Contact</description>
+        <name>rcContact</name>
+        <label>rcContact</label>
+        <locationX>314</locationX>
+        <locationY>1814</locationY>
+        <connector>
+            <targetReference>rcFormerPositionNewJob</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>subFaultConnector</targetReference>
+        </faultConnector>
         <inputAssignments>
             <field>AccountId</field>
             <value>
@@ -630,62 +767,18 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordCreates>
-        <description>Creates a former position for the deceased contact.</description>
-        <name>crFormerPositionDeceased</name>
-        <label>crFormerPositionDeceased</label>
-        <locationX>1150</locationX>
-        <locationY>1106</locationY>
-        <connector>
-            <targetReference>scrSuccesRetireOrDeceasedNL</targetReference>
-        </connector>
-        <inputAssignments>
-            <field>AccountRef__c</field>
-            <value>
-                <elementReference>recordId.Account.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Comment__c</field>
-            <value>
-                <elementReference>fmLabelDeceased</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>ContactRef__c</field>
-            <value>
-                <elementReference>recordId.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>EndDate__c</field>
-            <value>
-                <elementReference>fmToday</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>StartDate__c</field>
-            <value>
-                <elementReference>fmStartDateEstimatedContact</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Title__c</field>
-            <value>
-                <elementReference>recordId.Title</elementReference>
-            </value>
-        </inputAssignments>
-        <object>FormerPosition__c</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordCreates>
-    <recordCreates>
         <description>Creates a former postition related to the newly created contact.</description>
-        <name>crFormerPositionNewJob</name>
-        <label>crFormerPositionNewJob</label>
-        <locationX>182</locationX>
-        <locationY>1814</locationY>
+        <name>rcFormerPositionNewJob</name>
+        <label>rcFormerPositionNewJob</label>
+        <locationX>314</locationX>
+        <locationY>1922</locationY>
         <connector>
             <targetReference>getFormerPositions</targetReference>
         </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>subFaultConnector</targetReference>
+        </faultConnector>
         <inputAssignments>
             <field>AccountRef__c</field>
             <value>
@@ -695,7 +788,7 @@
         <inputAssignments>
             <field>ContactRef__c</field>
             <value>
-                <elementReference>crContact</elementReference>
+                <elementReference>rcContact</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -721,13 +814,17 @@
     </recordCreates>
     <recordCreates>
         <description>Creates a former position for the retired contact.</description>
-        <name>crFormerPositionRetired</name>
-        <label>crFormerPositionRetired</label>
-        <locationX>886</locationX>
+        <name>rcFormerPositionRetired</name>
+        <label>rcFormerPositionRetired</label>
+        <locationX>1810</locationX>
         <locationY>998</locationY>
         <connector>
             <targetReference>scrSuccesRetireOrDeceasedNL</targetReference>
         </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>subFaultConnector</targetReference>
+        </faultConnector>
         <inputAssignments>
             <field>AccountRef__c</field>
             <value>
@@ -770,8 +867,8 @@
     <recordLookups>
         <name>getFormerPositions</name>
         <label>getFormerPositions</label>
-        <locationX>182</locationX>
-        <locationY>1922</locationY>
+        <locationX>314</locationX>
+        <locationY>2030</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>dcsFormerPositionsFound</targetReference>
@@ -792,11 +889,15 @@
         <description>Sets the contact to deceased.</description>
         <name>ruContactDeceased</name>
         <label>ruContactDeceased</label>
-        <locationX>1150</locationX>
+        <locationX>2602</locationX>
         <locationY>998</locationY>
         <connector>
             <targetReference>crFormerPositionDeceased</targetReference>
         </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>subFaultConnector</targetReference>
+        </faultConnector>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -805,6 +906,12 @@
                 <elementReference>recordId.Id</elementReference>
             </value>
         </filters>
+        <inputAssignments>
+            <field>FirstName</field>
+            <value>
+                <elementReference>fmAdjustFirstName</elementReference>
+            </value>
+        </inputAssignments>
         <inputAssignments>
             <field>IsNoLongerWorking__c</field>
             <value>
@@ -823,11 +930,15 @@
         <description>Sets the contact to retired.</description>
         <name>ruContactRetire</name>
         <label>ruContactRetire</label>
-        <locationX>886</locationX>
+        <locationX>1810</locationX>
         <locationY>890</locationY>
         <connector>
-            <targetReference>crFormerPositionRetired</targetReference>
+            <targetReference>rcFormerPositionRetired</targetReference>
         </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>subFaultConnector</targetReference>
+        </faultConnector>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -836,6 +947,18 @@
                 <elementReference>recordId.Id</elementReference>
             </value>
         </filters>
+        <inputAssignments>
+            <field>Email</field>
+            <value>
+                <elementReference>fmInvalidEmail</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FirstName</field>
+            <value>
+                <elementReference>fmAdjustFirstName</elementReference>
+            </value>
+        </inputAssignments>
         <inputAssignments>
             <field>IsNoLongerWorking__c</field>
             <value>
@@ -853,11 +976,15 @@
     <recordUpdates>
         <name>ruSetContactToInactive</name>
         <label>ruSetContactToInactive</label>
-        <locationX>182</locationX>
-        <locationY>2630</locationY>
+        <locationX>314</locationX>
+        <locationY>2786</locationY>
         <connector>
             <targetReference>scrSucces</targetReference>
         </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>subFaultConnector</targetReference>
+        </faultConnector>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -884,17 +1011,21 @@
         <name>ruSetNewContactIdFormerPosition</name>
         <label>ruSetNewContactIdFormerPosition</label>
         <locationX>50</locationX>
-        <locationY>2438</locationY>
+        <locationY>2546</locationY>
         <connector>
             <targetReference>ruSetContactToInactive</targetReference>
         </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>subFaultConnector</targetReference>
+        </faultConnector>
         <inputReference>rcFormerPosition</inputReference>
     </recordUpdates>
     <screens>
         <description>Double check if the contact needs to be set to deceased.</description>
         <name>dtCheckDeceased</name>
         <label>dtCheckDeceased</label>
-        <locationX>1414</locationX>
+        <locationX>3130</locationX>
         <locationY>782</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
@@ -1061,7 +1192,7 @@
         <description>Double check if the contact needs to be retired.</description>
         <name>dtCheckRetire</name>
         <label>dtCheckRetire</label>
-        <locationX>886</locationX>
+        <locationX>1810</locationX>
         <locationY>782</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
@@ -1227,7 +1358,7 @@
     <screens>
         <name>scrCreateAccount</name>
         <label>scrCreateAccount</label>
-        <locationX>490</locationX>
+        <locationX>1194</locationX>
         <locationY>998</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
@@ -1292,12 +1423,67 @@
             </visibilityRule>
         </fields>
         <fields>
-            <name>fieldAccountName</name>
+            <name>txtAccountName</name>
             <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>luFindAccount.recordId</elementReference>
+            </defaultValue>
             <fieldText>Account Name</fieldText>
             <fieldType>InputField</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>txtBusinessName</name>
+            <dataType>String</dataType>
+            <fieldText>Business Name</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>dplPrimarySector</name>
+            <extensionName>flowruntime:dependentPicklists</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>dependencyWrapperApiName</name>
+                <value>
+                    <stringValue>Account</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>topPicklistApiName</name>
+                <value>
+                    <stringValue>PrimarySectorPick__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>middlePicklistApiName</name>
+                <value>
+                    <stringValue>SubsectorPick__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>topRequired</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>topValue</name>
+                <value>
+                    <elementReference>varPrimarySector</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>middleValue</name>
+                <value>
+                    <elementReference>varSubsector</elementReference>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
         <fields>
             <name>btnCreateAccountNL</name>
@@ -1402,7 +1588,7 @@
         <description>Asks the user if the contact is no longer working for this organization.</description>
         <name>scrCreateANewPosition</name>
         <label>scrCreateANewPosition</label>
-        <locationX>2071</locationX>
+        <locationX>3878</locationX>
         <locationY>134</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
@@ -1566,10 +1752,52 @@
         <showHeader>false</showHeader>
     </screens>
     <screens>
+        <name>scrErrorMessage</name>
+        <label>scrErrorMessage</label>
+        <locationX>2866</locationX>
+        <locationY>1322</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>diLogo</name>
+            <extensionName>flowruntime:image</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>imageName</name>
+                <value>
+                    <stringValue>HeijmansLogo</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>horizontalAlignment</name>
+                <value>
+                    <stringValue>center</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>imageHeight</name>
+                <value>
+                    <stringValue>20</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>dtErrorMessage</name>
+            <fieldText>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: verdana;&quot;&gt;&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;Oops, something just went wrong. Please review the error message:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;font-family: verdana;&quot;&gt;Error:&lt;/strong&gt;&lt;span style=&quot;font-family: verdana;&quot;&gt;  {!$Flow.FaultMessage}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;font-family: verdana;&quot;&gt;Error Time:&lt;/strong&gt;&lt;span style=&quot;font-family: verdana;&quot;&gt; {!$Flow.CurrentDateTime}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: verdana;&quot;&gt;In the mean time we&apos;ve already created a bug record. So your administrator has been noticed as well. &lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
         <description>Checks if a new account is needed for this new job.</description>
         <name>scrNewAccountNeeded</name>
         <label>scrNewAccountNeeded</label>
-        <locationX>336</locationX>
+        <locationX>930</locationX>
         <locationY>782</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
@@ -1690,7 +1918,7 @@
             <inputParameters>
                 <name>buttons</name>
                 <value>
-                    <stringValue>[{&quot;label&quot;:&quot;Create Account&quot;,&quot;value&quot;:&quot;Create Account&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;brand&quot;,&quot;iconName&quot;:&quot;utility:company&quot;,&quot;index&quot;:0},{&quot;label&quot;:&quot;Use Existing Account&quot;,&quot;value&quot;:&quot;Use Existing Account&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;brand-outline&quot;,&quot;iconName&quot;:&quot;utility:company&quot;,&quot;index&quot;:1}]</stringValue>
+                    <stringValue>[{&quot;label&quot;:&quot;Create New Account&quot;,&quot;value&quot;:&quot;Create Account&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;brand&quot;,&quot;iconName&quot;:&quot;utility:company&quot;,&quot;index&quot;:0},{&quot;label&quot;:&quot;Use Account Above&quot;,&quot;value&quot;:&quot;Use Existing Account&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;brand-outline&quot;,&quot;iconName&quot;:&quot;utility:company&quot;,&quot;index&quot;:1}]</stringValue>
                 </value>
             </inputParameters>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
@@ -1738,7 +1966,7 @@
             <inputParameters>
                 <name>buttons</name>
                 <value>
-                    <stringValue>[{&quot;label&quot;:&quot;Nieuw Account&quot;,&quot;value&quot;:&quot;Create Account&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;brand&quot;,&quot;iconName&quot;:&quot;utility:company&quot;,&quot;index&quot;:0},{&quot;label&quot;:&quot;Bestaand Account&quot;,&quot;value&quot;:&quot;Use Existing Account&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;brand-outline&quot;,&quot;iconName&quot;:&quot;utility:company&quot;,&quot;index&quot;:1}]</stringValue>
+                    <stringValue>[{&quot;label&quot;:&quot;Maak Nieuw Account aan&quot;,&quot;value&quot;:&quot;Create Account&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;brand&quot;,&quot;iconName&quot;:&quot;utility:company&quot;,&quot;index&quot;:0},{&quot;label&quot;:&quot;Koppel aan bovenstaand Account&quot;,&quot;value&quot;:&quot;Use Existing Account&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;brand-outline&quot;,&quot;iconName&quot;:&quot;utility:company&quot;,&quot;index&quot;:1}]</stringValue>
                 </value>
             </inputParameters>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
@@ -1761,7 +1989,7 @@
     <screens>
         <name>scrQuickChoice</name>
         <label>scrQuickChoice</label>
-        <locationX>1672</locationX>
+        <locationX>3306</locationX>
         <locationY>458</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
@@ -1996,8 +2224,8 @@
         <description>Screen to setup the new role of the contact.</description>
         <name>scrSetupNewRole</name>
         <label>scrSetupNewRole</label>
-        <locationX>336</locationX>
-        <locationY>1490</locationY>
+        <locationX>930</locationX>
+        <locationY>1598</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -2097,7 +2325,7 @@
                     <inputParameters>
                         <name>recordId</name>
                         <value>
-                            <elementReference>luFindAccount.recordId</elementReference>
+                            <elementReference>varSelectedAccountId</elementReference>
                         </value>
                     </inputParameters>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
@@ -2337,8 +2565,8 @@
     <screens>
         <name>scrSucces</name>
         <label>scrSucces!</label>
-        <locationX>182</locationX>
-        <locationY>2738</locationY>
+        <locationX>314</locationX>
+        <locationY>2894</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -2503,8 +2731,8 @@
     <screens>
         <name>scrSuccesRetireOrDeceasedNL</name>
         <label>scrSuccesRetireOrDeceasedNL</label>
-        <locationX>1139</locationX>
-        <locationY>3230</locationY>
+        <locationX>2426</locationX>
+        <locationY>3386</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -2667,13 +2895,60 @@
         <showHeader>false</showHeader>
     </screens>
     <start>
-        <locationX>1945</locationX>
+        <locationX>3752</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>scrCreateANewPosition</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
+    <subflows>
+        <description>This is a subflow to start the fault handling when a create / update / delete is giving an error. In this case a feedback record will be created.</description>
+        <name>subFaultConnector</name>
+        <label>subFaultConnector</label>
+        <locationX>2866</locationX>
+        <locationY>1214</locationY>
+        <connector>
+            <targetReference>scrErrorMessage</targetReference>
+        </connector>
+        <flowName>FAULT_CONNECTOR_SCREENFLOW</flowName>
+        <inputAssignments>
+            <name>varErrorLocation</name>
+            <value>
+                <elementReference>$Flow.CurrentStage</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varFlowFaultMessage</name>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varFlowName</name>
+            <value>
+                <stringValue>Contact - SCFL01 - Create Former Position</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varNameCurrentUser</name>
+            <value>
+                <elementReference>$User.Username</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varObject</name>
+            <value>
+                <stringValue>Contact</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varRecordId</name>
+            <value>
+                <elementReference>recordId.Id</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
     <variables>
         <name>colDescription</name>
         <dataType>String</dataType>
@@ -2719,5 +2994,34 @@
         <isInput>false</isInput>
         <isOutput>false</isOutput>
         <objectType>FormerPosition__c</objectType>
+    </variables>
+    <variables>
+        <name>varNewAccountId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varPrimarySector</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>AccountId used in the scrSetupNewRole</description>
+        <name>varSelectedAccountId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varSubsector</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
     </variables>
 </Flow>

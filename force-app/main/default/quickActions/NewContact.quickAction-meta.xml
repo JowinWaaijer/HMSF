@@ -39,5 +39,6 @@
     </quickActionLayout>
     <standardLabel>New</standardLabel>
     <targetObject>Contact</targetObject>
+    <targetRecordType>Contact.Extern_contact</targetRecordType>
     <type>Create</type>
 </QuickAction>

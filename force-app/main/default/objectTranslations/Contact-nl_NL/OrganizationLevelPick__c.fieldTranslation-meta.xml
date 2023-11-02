@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>OrganizationLevelPick__c</name>
+    <picklistValues>
+        <masterLabel>Board level</masterLabel>
+        <translation>Directieniveau</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Middle Management</masterLabel>
+        <translation>Midden management</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operational Level</masterLabel>
+        <translation>Operationeel niveau</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>Anders</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professional Level</masterLabel>
+        <translation>Professioneel niveau</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Senior Management</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

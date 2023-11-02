@@ -2,6 +2,10 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <version>59.0</version>
     <types>
+        <members>DisplayPictureViaURL</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
         <members>Account.Heijmans_Account_Compact_Layout</members>
         <members>BusinessUnitSpecificAttribute__c.Heijmans_Business_Unit_Specific_Attribute_Compact_Layout</members>
         <members>Contact.Heijmans_Contact_Compact_Layout</members>
@@ -93,6 +97,10 @@
         <members>Account.ab__c</members>
         <members>Account.of_days_since_last_visit__c</members>
         <members>Account.testdata__c</members>
+        <members>AccountContactRelation.EmailofRelation__c</members>
+        <members>AccountContactRelation.MobileofRelation__c</members>
+        <members>AccountContactRelation.PhoneofRelation__c</members>
+        <members>AccountContactRelation.Title__c</members>
         <members>BusinessUnitSpecificAttribute__c.AccountRef__c</members>
         <members>BusinessUnitSpecificAttribute__c.BusinessUnitOwnerRef__c</members>
         <members>BusinessUnitSpecificAttribute__c.BusinessUnit__c</members>
@@ -129,7 +137,6 @@
         <members>Contact.Fax</members>
         <members>Contact.Firmen_Datensatztyp__c</members>
         <members>Contact.Franki_report__c</members>
-        <members>Contact.Function__c</members>
         <members>Contact.GenderIdentity</members>
         <members>Contact.Groepering__c</members>
         <members>Contact.HasOptedOutOfEmail</members>
@@ -161,6 +168,7 @@
         <members>Contact.Parent_Contact__c</members>
         <members>Contact.Pensioen__c</members>
         <members>Contact.Phone</members>
+        <members>Contact.PictureURL__c</members>
         <members>Contact.PostcodeCheck__c</members>
         <members>Contact.Pronouns</members>
         <members>Contact.Regio_MO__c</members>
@@ -198,6 +206,7 @@
         <members>FormerPosition__c.EndDate__c</members>
         <members>FormerPosition__c.StartDate__c</members>
         <members>FormerPosition__c.Title__c</members>
+        <members>User.FullNameForm__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -217,6 +226,7 @@
         <members>FeedbackIdeaDescription</members>
         <members>FeedbackIdeaTitle</members>
         <members>FeedbackRequestTitle</members>
+        <members>Hierarchy</members>
         <members>OrganizationChart</members>
         <name>CustomLabel</name>
     </types>
@@ -261,12 +271,18 @@
     </types>
     <types>
         <members>Account-nl_NL</members>
+        <members>AccountContactRelation-nl_NL</members>
         <members>BusinessUnitSpecificAttribute__c-nl_NL</members>
+        <members>Contact-nl_NL</members>
         <name>CustomObjectTranslation</name>
     </types>
     <types>
         <members>Feedback__c</members>
         <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Contact.Heijmans_Contact_Duplicate_Detection</members>
+        <name>DuplicateRule</name>
     </types>
     <types>
         <members>Contact_Record_Page</members>
@@ -275,14 +291,18 @@
         <members>Heijmans_Contact_Record_Page</members>
         <members>Heijmans_Feedback_Record_Page</members>
         <members>Heijmans_Feedback_Vote_Record_Page</members>
+        <members>Heijmans_Multi_Contact_Record_Page</members>
         <members>Heijmans_UtilityBar</members>
         <name>FlexiPage</name>
     </types>
     <types>
         <members>ACC_RTFL01_Create_BUSA_records</members>
         <members>ACC_RTFL02_Manually_Create_BUSA_records</members>
+        <members>AccountContactRelationship_RTFL01_Set_to_Inactive_on_Enddate</members>
         <members>CON_SCFL01_Create_Former_Position</members>
+        <members>Contact_SCFL02_Display_Contact_s_Picture</members>
         <members>FAULT_CONNECTOR</members>
+        <members>FAULT_CONNECTOR_SCREENFLOW</members>
         <members>Feedback_SCFL01_Add_Feedback_via_Utility_Bar</members>
         <members>Feedback_SCFL02_Vote_on_Feedback_via_Lightning_Page</members>
         <members>Feedback_SCFL03_Total_Score_Feedback</members>
@@ -306,10 +326,12 @@
         <members>Account-Heijmans onderdeel</members>
         <members>Account-Heijmans partner</members>
         <members>Account-Heijmans_Account</members>
+        <members>AccountContactRelation-Heijmans - Contact Relationship Layout</members>
         <members>BusinessUnitSpecificAttribute__c-Heijmans - Business Unit Specific Attribute Layout</members>
         <members>BusinessUnits__mdt-Lay-out voor Business Unit</members>
         <members>Contact-Extern contact</members>
         <members>Contact-Franki Layout</members>
+        <members>Contact-Heijmans - Contact Layout</members>
         <members>Contact-Heijmans Layout</members>
         <members>Contact-SDOC__Contact Layout SDoc</members>
         <members>Fault_Email_Address__mdt-Heijmans - Fault Email Address Layout</members>
@@ -348,13 +370,27 @@
         <name>ListView</name>
     </types>
     <types>
+        <members>Contact.Contact_Email_and_Phone_Matching</members>
+        <members>Contact.Heijmans_Standard_Contact_Matching</members>
+        <name>MatchingRule</name>
+    </types>
+    <types>
+        <members>Contact</members>
+        <name>MatchingRules</name>
+    </types>
+    <types>
+        <members>Heijmans_Accountmanagement_User</members>
         <members>Heijmans_Administrator</members>
-        <members>Heijmans_Business_Unit_Attirbutes_User</members>
+        <members>Heijmans_Contactmanagement_Manager</members>
+        <members>Heijmans_Contactmanagement_User</members>
         <members>Heijmans_Feedback_Manager</members>
         <members>Heijmans_Feedback_User</members>
-        <members>Heijmans_Former_Positions_Manager</members>
-        <members>Heijmans_Former_Positions_User</members>
+        <members>Heijmans_User_Fields</members>
         <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>Heijmans_Testers</members>
+        <name>PermissionSetGroup</name>
     </types>
     <types>
         <members>Accountmanagement Civiel</members>
@@ -379,7 +415,9 @@
     </types>
     <types>
         <members>Contact.MoveContact</members>
+        <members>Contact.UpdateContact</members>
         <members>NewContact</members>
+        <members>NewTask</members>
         <name>QuickAction</name>
     </types>
     <types>
@@ -452,7 +490,12 @@
     </types>
     <types>
         <members>Account.VR01_ACC_PhoneFormat</members>
+        <members>AccountContactRelation.VR01_ACR_PhoneFormat</members>
+        <members>AccountContactRelation.VR02_ACR_MobilePhoneFormat</members>
+        <members>AccountContactRelation.VR03_ACR_Contact_Inactive</members>
         <members>Contact.Anrede_Plichtfeld</members>
+        <members>Contact.VR01_CON_PhoneFormat</members>
+        <members>Contact.VR02_CON_MobileFormat</members>
         <name>ValidationRule</name>
     </types>
     <types>
