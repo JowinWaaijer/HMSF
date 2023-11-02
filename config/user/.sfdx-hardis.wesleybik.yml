@@ -3,6 +3,7 @@ localStorageBranchTargets:
   features/config/full-copy-of-created-features: integration
   features/config/US-69013: integration
   features/config/sprint-1-additional-components: integration
+  features/config/account-page-update: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
