@@ -2,11 +2,5 @@ developmentBranch: integration
 autoCleanTypes:
   - destructivechanges
 deploymentPlan:
-  packages:
-    - label: Delta file
-      packageXmlFile: /manifest/package/package.xml
-      order: 1
-    - label: Destructive file
-      packageXmlFile: /manifest/destructiveChanges/destructiveChanges.xml
-      order: 2
+  packages: []
   
