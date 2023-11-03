@@ -4,9 +4,9 @@ autoCleanTypes:
 deploymentPlan:
   packages:
     - label: Delta file
-      packageXmlFile: ./manifest/package/package.xml
+      packageXmlFile: /manifest/package/package.xml
       order: 1
     - label: Destructive file
-      packageXmlFile: ./manifest/destructiveChanges/destructiveChanges.xml
+      packageXmlFile: /manifest/destructiveChanges/destructiveChanges.xml
       order: 2
   
