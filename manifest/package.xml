@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Contact.OrganizationLevelPick__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>FeedbackVote__c-Heijmans - Feedback Vote Layout</members>
+        <members>Feedback__c-Heijmans - Feedback Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Bug</members>
+        <members>Bulb</members>
+        <members>Compliment</members>
+        <members>Dislike</members>
+        <members>Feature</members>
+        <members>Warning</members>
+        <name>StaticResource</name>
+    </types>
+    <version>59.0</version>
+</Package>
