@@ -6,6 +6,7 @@ localStorageBranchTargets:
   features/config/hot-fixes-from-demo: integration
   features/config/US-69987: integration
   features/config/us-wesley: integration
+  features/config/US-68774-contact-listviews: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
