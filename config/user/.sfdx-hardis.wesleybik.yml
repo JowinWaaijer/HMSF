@@ -5,6 +5,7 @@ localStorageBranchTargets:
   features/config/sprint-1-additional-components: integration
   features/config/hot-fixes-from-demo: integration
   features/config/US-69987: integration
+  features/config/us-wesley: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
