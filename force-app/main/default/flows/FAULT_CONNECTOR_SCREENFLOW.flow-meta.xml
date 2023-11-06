@@ -105,20 +105,6 @@
         <text>&lt;p&gt;Dear &lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;{!varNameCurrentUser}&lt;/span&gt;,&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;While you were using Salesforce, an error occurred in a Flow called {!varFlowName}. Your Salesforce administrator has been made aware of the issue. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Best regards,&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;The Sellsior Salesforce Team&lt;/p&gt;</text>
     </textTemplates>
     <variables>
-        <name>varEmailCurrentUser</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>true</isInput>
-        <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>varEmailRecipients</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-    </variables>
-    <variables>
         <description>This container is used to store the name of the element where the error occurs.</description>
         <name>varErrorLocation</name>
         <dataType>String</dataType>
