@@ -7,6 +7,7 @@ localStorageBranchTargets:
   features/config/US-69987: integration
   features/config/us-wesley: integration
   features/config/US-68774-contact-listviews: integration
+  features/config/US-70158-Partnerships: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
