@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alle_active_juridische_samenwerkingen</fullName>
+    <columns>NAME</columns>
+    <columns>TypePick__c</columns>
+    <columns>IsActive__c</columns>
+    <columns>StartDate__c</columns>
+    <columns>EndDate__c</columns>
+    <columns>IsLegalEntity__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>IsActive__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>IsLegalEntity__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Alle active juridische samenwerkingen</label>
+</ListView>
