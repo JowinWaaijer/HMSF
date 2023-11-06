@@ -20,3 +20,6 @@ mergeRequests:
   - branch: features/config/US-69987
     urlCreate: >-
       https://github.com/JowinWaaijer/heijmans-infra/pull/new/features/config/US-69987
+  - branch: features/config/US-70158-Partnerships
+    urlCreate: >-
+      https://github.com/JowinWaaijer/heijmans-infra/pull/new/features/config/US-70158-Partnerships
