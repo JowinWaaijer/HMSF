@@ -1,13 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
+        <members>AppSwitcher</members>
+        <name>AppMenu</name>
+    </types>
+    <types>
+        <members>InvolvedPartner__c.Heijmans_Involved_Partner_Compact_Layout</members>
+        <members>Partnership__c.Heijmans_Partnerships_Compact_Layout</members>
+        <name>CompactLayout</name>
+    </types>
+    <types>
+        <members>Heijmans_Accountmanagement</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
         <members>Contact.OrganizationLevelPick__c</members>
+        <members>InvolvedPartner__c.AccountRef__c</members>
+        <members>InvolvedPartner__c.EndDate__c</members>
+        <members>InvolvedPartner__c.IsActive__c</members>
+        <members>InvolvedPartner__c.IsPrimaryAccount__c</members>
+        <members>InvolvedPartner__c.PartnershipActiveForm__c</members>
+        <members>InvolvedPartner__c.PartnershipRef__c</members>
+        <members>InvolvedPartner__c.PrimaryContactRef__c</members>
+        <members>InvolvedPartner__c.StartDate__c</members>
+        <members>Partnership__c.Description__c</members>
+        <members>Partnership__c.Email__c</members>
+        <members>Partnership__c.EndDate__c</members>
+        <members>Partnership__c.IsActive__c</members>
+        <members>Partnership__c.IsLegalEntity__c</members>
+        <members>Partnership__c.Mobile__c</members>
+        <members>Partnership__c.Phone__c</members>
+        <members>Partnership__c.StartDate__c</members>
+        <members>Partnership__c.TypePick__c</members>
+        <members>Partnership__c.Website__c</members>
         <name>CustomField</name>
     </types>
     <types>
+        <members>Partnerships</members>
+        <name>CustomLabel</name>
+    </types>
+    <types>
+        <members>InvolvedPartner__c</members>
+        <members>Partnership__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>InvolvedPartner__c-nl_NL</members>
+        <members>Partnership__c-en_US</members>
+        <members>Partnership__c-nl_NL</members>
+        <name>CustomObjectTranslation</name>
+    </types>
+    <types>
+        <members>InvolvedPartner__c</members>
+        <members>Partnership__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Heijmans_Account_Record_Page</members>
+        <members>Heijmans_Involved_Partner_Record_Page</members>
+        <members>Heijmans_Partnership_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Partnerships_STFL01_Set_Partnership_to_Inactive</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Account-Heijmans - Account Layout</members>
         <members>FeedbackVote__c-Heijmans - Feedback Vote Layout</members>
         <members>Feedback__c-Heijmans - Feedback Layout</members>
         <members>Global-Global Layout</members>
+        <members>InvolvedPartner__c-Heijmans - Involved Partner Layout</members>
+        <members>InvolvedPartner__c-Involved Partner Layout</members>
+        <members>Partnership__c-Heijmans - Partnership Layout</members>
+        <members>Partnership__c-Partnership Layout</members>
         <name>Layout</name>
     </types>
     <types>
@@ -15,7 +81,20 @@
         <members>Contact.Alle_contacten_Senior_management</members>
         <members>Contact.Alle_incomplete_contactpersonen</members>
         <members>Contact.Mijn_nieuwe_contacten_afgelopen_14_dgn</members>
+        <members>InvolvedPartner__c.All</members>
+        <members>Partnership__c.All</members>
+        <members>Partnership__c.Alle_actieve_samenwerkingsverbanden</members>
+        <members>Partnership__c.Alle_active_doorlopende_samenwerkingen</members>
+        <members>Partnership__c.Alle_active_juridische_samenwerkingen</members>
+        <members>Partnership__c.Alle_active_tijdelijke_samenwerkingen</members>
+        <members>Partnership__c.Alle_inactieve_samenwerkingsverbanden</members>
+        <members>Partnership__c.Alle_samenwerkingen_zonder_startdatum</members>
         <name>ListView</name>
+    </types>
+    <types>
+        <members>Heijmans_Accountmanagement_User</members>
+        <members>Heijmans_Administrator</members>
+        <name>PermissionSet</name>
     </types>
     <types>
         <members>Bug</members>
@@ -25,6 +104,18 @@
         <members>Feature</members>
         <members>Warning</members>
         <name>StaticResource</name>
+    </types>
+    <types>
+        <members>nl_NL</members>
+        <name>Translations</name>
+    </types>
+    <types>
+        <members>InvolvedPartner__c.INP_VR01_EndDateBeforeStartDate</members>
+        <members>Partnership__c.PAR_VR01_EndDateBeforeStartDate</members>
+        <members>Partnership__c.PAR_VR02_PhoneFormat</members>
+        <members>Partnership__c.PAR_VR03_MobileFormat</members>
+        <members>Partnership__c.PAR_VR04_StardAndEndDateRequiredTemp</members>
+        <name>ValidationRule</name>
     </types>
     <version>59.0</version>
 </Package>
