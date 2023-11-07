@@ -5,6 +5,10 @@
         <name>AppMenu</name>
     </types>
     <types>
+        <members>showToast</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
         <members>InvolvedPartner__c.Heijmans_Involved_Partner_Compact_Layout</members>
         <members>Partnership__c.Heijmans_Partnerships_Compact_Layout</members>
         <name>CompactLayout</name>
