@@ -5,7 +5,7 @@
     <description>Is this account still active within the Partnership?</description>
     <externalId>false</externalId>
     <label>Active</label>
-    <trackHistory>false</trackHistory>
+    <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Checkbox</type>
 </CustomField>

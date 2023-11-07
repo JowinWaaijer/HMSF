@@ -9,6 +9,7 @@ localStorageBranchTargets:
   features/config/US-68774-contact-listviews: integration
   features/config/US-70158-Partnerships: integration
   features/config/US-70158-typo-fix: integration
+  features/config/us-70158-history-and-flow-partnerships: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:

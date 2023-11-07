@@ -45,6 +45,7 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>InvolvedPartner__c-en_US</members>
         <members>InvolvedPartner__c-nl_NL</members>
         <members>Partnership__c-en_US</members>
         <members>Partnership__c-nl_NL</members>

@@ -5,7 +5,7 @@
     <description>This checkbox needs to be checked when the Partnership is active. This field is partially controlled by start and end dates.</description>
     <externalId>false</externalId>
     <label>Active</label>
-    <trackHistory>false</trackHistory>
+    <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Checkbox</type>
 </CustomField>

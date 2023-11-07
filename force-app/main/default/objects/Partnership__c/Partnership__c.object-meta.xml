@@ -156,7 +156,7 @@
     <label>Samenwerkingsverband</label>
     <nameField>
         <label>Partnership Name</label>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Samenwerkingsverbanden</pluralLabel>
