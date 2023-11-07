@@ -1,4 +1,5 @@
 localStorageBranchTargets:
+  features/config/US-68040-NEW: integration
   features/config/US-68040-AlertObject: integration
   features/config/US-68040-LWC: integration
   features/config/US-68040-ToastNew: integration
