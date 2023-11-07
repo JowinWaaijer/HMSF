@@ -183,7 +183,7 @@
             <label>New</label>
         </rules>
     </decisions>
-    <description>This screenflow gives the user the option to add a new Alert (toast message) to the account record.</description>
+    <description>This screenflow gives the user the option to add a new Alert (toast message) to the account record. This is added on the lightning page.</description>
     <dynamicChoiceSets>
         <name>plcIcon</name>
         <dataType>Picklist</dataType>
