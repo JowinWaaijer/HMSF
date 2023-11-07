@@ -163,7 +163,7 @@
     <nameField>
         <displayFormat>IPN-{0000000}</displayFormat>
         <label>Involved Partner Name</label>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Betrokken Partners</pluralLabel>

@@ -6,7 +6,7 @@
     <externalId>false</externalId>
     <inlineHelpText>This checkbox needs to be checked if the partnership is registered as a legal entity.</inlineHelpText>
     <label>Legal Entity</label>
-    <trackHistory>false</trackHistory>
+    <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Checkbox</type>
 </CustomField>
