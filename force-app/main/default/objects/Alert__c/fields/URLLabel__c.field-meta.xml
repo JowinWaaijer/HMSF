@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>URLLabel__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Dit is het label voor de link in je bericht. Om een klikbare link in het bericht op te nemen, plaats je de tekens {url} in je bericht. Tijdens het uitvoeren zal het bericht worden bijgewerkt om {url} te vervangen door de waarde van je &quot;URL Label&quot; en het zal linken naar het adres dat je hebt opgegeven in de URL Link.</inlineHelpText>
+    <label>URL Label</label>
+    <length>100</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
