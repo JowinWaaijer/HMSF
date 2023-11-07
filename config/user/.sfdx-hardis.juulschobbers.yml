@@ -4,6 +4,7 @@ localStorageBranchTargets:
   features/config/US-68040-LWC: integration
   features/config/US-68040-ToastNew: integration
   features/config/US-Hotfix-AppAssignment: integration
+  features/config/US-Hotfix-AlertFlow: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
