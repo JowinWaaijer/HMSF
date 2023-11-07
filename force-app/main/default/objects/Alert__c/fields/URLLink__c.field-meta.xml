@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>URLLink__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Dit is de URL voor de link in je bericht.</inlineHelpText>
+    <label>URL Link</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Url</type>
+</CustomField>
