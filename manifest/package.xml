@@ -119,9 +119,9 @@
         <members>Contact-Heijmans Layout</members>
         <members>Contact-SDOC__Contact Layout SDoc</members>
         <members>Fault_Email_Address__mdt-Heijmans - Fault Email Address Layout</members>
-        <members>FormerPosition__c-Former Position Layout</members>
         <members>FeedbackVote__c-Heijmans - Feedback Vote Layout</members>
         <members>Feedback__c-Heijmans - Feedback Layout</members>
+        <members>FormerPosition__c-Former Position Layout</members>
         <members>Global-Global Layout</members>
         <members>InvolvedPartner__c-Heijmans - Involved Partner Layout</members>
         <members>InvolvedPartner__c-Involved Partner Layout</members>
@@ -248,6 +248,11 @@
     </types>
     <types>
         <members>Active</members>
+        <members>Bug</members>
+        <members>Bulb</members>
+        <members>Compliment</members>
+        <members>Dislike</members>
+        <members>Feature</members>
         <members>HeijmansCalendar</members>
         <members>HeijmansClock</members>
         <members>HeijmansEuro</members>
@@ -262,11 +267,6 @@
         <members>HeijmansWarning</members>
         <members>IconDelete</members>
         <members>IconEdit</members>
-        <members>Bug</members>
-        <members>Bulb</members>
-        <members>Compliment</members>
-        <members>Dislike</members>
-        <members>Feature</members>
         <members>Warning</members>
         <name>StaticResource</name>
     </types>
