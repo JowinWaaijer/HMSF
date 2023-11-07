@@ -6,7 +6,7 @@
     <externalId>false</externalId>
     <label>Account</label>
     <referenceTo>Account</referenceTo>
-    <relationshipLabel>Involved Parters</relationshipLabel>
+    <relationshipLabel>Involved Partners</relationshipLabel>
     <relationshipName>Involved_Partners</relationshipName>
     <required>false</required>
     <trackHistory>false</trackHistory>
