@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Hoeveel seconden moet het bericht getoond worden? Dit geldt alleen voor de modi Dismissible en Pester.</help>
+    <label>Duur (in Secondes)</label>
+    <name>Duration__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>- Dismissible: geeft het bericht weer totdat er op de knop Sluiten wordt geklikt of totdat de tijdsduur is verstreken. - Pester: wordt weergegeven totdat de tijdsduur is verstreken. Er is geen sluitknop beschikbaar. - Sticky: blijft weergegeven tot er op de sluitknop wordt gedrukt.</help>
+    <label>Modus</label>
+    <name>ModePick__c</name>
+    <picklistValues>
+        <masterLabel>Dismissible</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pester</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sticky</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

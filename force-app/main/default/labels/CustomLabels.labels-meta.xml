@@ -112,4 +112,11 @@
         <shortDescription>Hierarchy</shortDescription>
         <value>Hierarchy</value>
     </labels>
+    <labels>
+        <fullName>Partnerships</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Partnerships</shortDescription>
+        <value>Partnerships</value>
+    </labels>
 </CustomLabels>
