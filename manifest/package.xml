@@ -92,6 +92,10 @@
         <name>Layout</name>
     </types>
     <types>
+        <members>fsc_toastMessage</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
         <members>Contact.Alle_contacten_Directieniveau</members>
         <members>Contact.Alle_contacten_Senior_management</members>
         <members>Contact.Alle_incomplete_contactpersonen</members>

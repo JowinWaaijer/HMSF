@@ -1,5 +1,6 @@
 localStorageBranchTargets:
   features/config/US-68040-AlertObject: integration
+  features/config/US-68040-LWC: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
