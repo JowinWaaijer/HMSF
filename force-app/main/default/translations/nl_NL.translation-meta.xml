@@ -149,6 +149,10 @@
         <name>OrganizationChart</name>
     </customLabels>
     <customLabels>
+        <label>Samenwerkingsverbanden</label>
+        <name>Partnerships</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Password --></label>
         <name>Password</name>
     </customLabels>
@@ -3191,6 +3195,10 @@
     <flowDefinitions>
         <flows/>
         <fullName>Gewonnenes_Angebot</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Partnerships_STFL01_Set_Partnership_to_Inactive</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows>

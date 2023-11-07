@@ -1,272 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <version>59.0</version>
     <types>
-        <members>DisplayPictureViaURL</members>
-        <name>AuraDefinitionBundle</name>
+        <members>AppSwitcher</members>
+        <name>AppMenu</name>
     </types>
     <types>
-        <members>Account.Heijmans_Account_Compact_Layout</members>
-        <members>BusinessUnitSpecificAttribute__c.Heijmans_Business_Unit_Specific_Attribute_Compact_Layout</members>
-        <members>Contact.Heijmans_Contact_Compact_Layout</members>
+        <members>InvolvedPartner__c.Heijmans_Involved_Partner_Compact_Layout</members>
+        <members>Partnership__c.Heijmans_Partnerships_Compact_Layout</members>
         <name>CompactLayout</name>
-    </types>
-    <types>
-        <members>Heijmans_Logo</members>
-        <name>ContentAsset</name>
     </types>
     <types>
         <members>Heijmans_Accountmanagement</members>
         <name>CustomApplication</name>
     </types>
     <types>
-        <members>Account.Aanbestedingen__c</members>
-        <members>Account.AccountNumber</members>
-        <members>Account.AccountSource</members>
-        <members>Account.Accountmanager__c</members>
-        <members>Account.Afdeling__c</members>
-        <members>Account.AnnualRevenue</members>
-        <members>Account.BillingAddress</members>
-        <members>Account.BrightfoxHardis__c</members>
-        <members>Account.Budget_GAP__c</members>
-        <members>Account.CRM__c</members>
-        <members>Account.Commercie__c</members>
-        <members>Account.Concurrenten__c</members>
-        <members>Account.Description</members>
-        <members>Account.Doel_Algemeen__c</members>
-        <members>Account.Doel_Contact_Operationeel__c</members>
-        <members>Account.Doel_Contact_Strategisch__c</members>
-        <members>Account.Doel_Contact_Tactisch__c</members>
-        <members>Account.Doel_DMU__c</members>
-        <members>Account.Doel_Kennis__c</members>
-        <members>Account.Doel_Projectendoorkijk__c</members>
-        <members>Account.E_mail__c</members>
-        <members>Account.Fax</members>
-        <members>Account.Focus_2018__c</members>
-        <members>Account.Focus_2020__c</members>
-        <members>Account.Focus_2021__c</members>
-        <members>Account.Focusklant_Infra__c</members>
-        <members>Account.Focusklant__c</members>
-        <members>Account.Focusklant_huidig_jaar__c</members>
-        <members>Account.FrankiBranche__c</members>
-        <members>Account.Handelsnaam__c</members>
-        <members>Account.HasToggledHierarchyView__c</members>
-        <members>Account.Historie__c</members>
-        <members>Account.Huisadviseurs__c</members>
-        <members>Account.Industry</members>
-        <members>Account.Inkoopbeleid__c</members>
-        <members>Account.IsBusaAutomationTrig__c</members>
-        <members>Account.Jigsaw</members>
-        <members>Account.Klantgroep__c</members>
-        <members>Account.Klanttevredenheid__c</members>
-        <members>Account.Last_visit_date__c</members>
-        <members>Account.Markt__c</members>
-        <members>Account.Marktteam_site__c</members>
-        <members>Account.Name</members>
-        <members>Account.NumberOfEmployees</members>
-        <members>Account.OG_Publiek_Privaat__c</members>
-        <members>Account.Old_Id__c</members>
-        <members>Account.OwnerId</members>
-        <members>Account.Ownership</members>
-        <members>Account.ParentId</members>
-        <members>Account.Partner_sector__c</members>
-        <members>Account.Phone</members>
-        <members>Account.PostcodeCheck__c</members>
-        <members>Account.Preferred__c</members>
-        <members>Account.PrimarySectorPick__c</members>
-        <members>Account.Provincie__c</members>
-        <members>Account.Rating</members>
-        <members>Account.Regio_Infra__c</members>
-        <members>Account.SAPId__c</members>
-        <members>Account.Segmentatietabel__c</members>
-        <members>Account.Sharing_Heijmans_Franki__c</members>
-        <members>Account.ShippingAddress</members>
-        <members>Account.Sic</members>
-        <members>Account.SicDesc</members>
-        <members>Account.Site</members>
-        <members>Account.Speerpunten__c</members>
-        <members>Account.Strategisch_Accountmanager__c</members>
-        <members>Account.Subsector__c</members>
-        <members>Account.TickerSymbol</members>
-        <members>Account.Tier</members>
-        <members>Account.Type</members>
-        <members>Account.Waarde_van__c</members>
-        <members>Account.Waarde_voor__c</members>
-        <members>Account.Website</members>
-        <members>Account.Zugewiesen_an__c</members>
-        <members>Account.ab__c</members>
-        <members>Account.of_days_since_last_visit__c</members>
-        <members>Account.testdata__c</members>
-        <members>AccountContactRelation.EmailofRelation__c</members>
-        <members>AccountContactRelation.MobileofRelation__c</members>
-        <members>AccountContactRelation.PhoneofRelation__c</members>
-        <members>AccountContactRelation.Title__c</members>
-        <members>BusinessUnitSpecificAttribute__c.AccountRef__c</members>
-        <members>BusinessUnitSpecificAttribute__c.BusinessUnitOwnerRef__c</members>
-        <members>BusinessUnitSpecificAttribute__c.BusinessUnit__c</members>
-        <members>BusinessUnitSpecificAttribute__c.FocusClientPick__c</members>
-        <members>BusinessUnitSpecificAttribute__c.StatusPick__c</members>
-        <members>BusinessUnits__mdt.BusinessUnitPick__c</members>
-        <members>BusinessUnits__mdt.BusinessUnitTranslation__c</members>
-        <members>BusinessUnits__mdt.Cluster__c</members>
-        <members>BypassSettings__c.Flows__c</members>
-        <members>BypassSettings__c.Triggers__c</members>
-        <members>BypassSettings__c.ValidationRules__c</members>
-        <members>Contact.AccountId</members>
-        <members>Contact.Account_Record_Type__c</members>
-        <members>Contact.Account_Recordtype__c</members>
-        <members>Contact.Accountmanagement__c</members>
-        <members>Contact.Afkorting__c</members>
-        <members>Contact.Anschrift__c</members>
-        <members>Contact.AssistantName</members>
-        <members>Contact.AssistantPhone</members>
-        <members>Contact.Beheerder_Contact__c</members>
-        <members>Contact.Birthdate</members>
-        <members>Contact.Briefanrede__c</members>
-        <members>Contact.CMO__c</members>
-        <members>Contact.ContactManager__c</members>
-        <members>Contact.ContactStatusForm__c</members>
-        <members>Contact.DMU_Positie__c</members>
-        <members>Contact.DMU__c</members>
-        <members>Contact.Department</members>
-        <members>Contact.Description</members>
-        <members>Contact.DoNotCall</members>
-        <members>Contact.EMail_Newsletter__c</members>
-        <members>Contact.Email</members>
-        <members>Contact.Ervaring__c</members>
-        <members>Contact.Fax</members>
-        <members>Contact.Firmen_Datensatztyp__c</members>
-        <members>Contact.Franki_report__c</members>
-        <members>Contact.GenderIdentity</members>
-        <members>Contact.Groepering__c</members>
-        <members>Contact.HasOptedOutOfEmail</members>
-        <members>Contact.HasOptedOutOfFax</members>
-        <members>Contact.HomePhone</members>
-        <members>Contact.IndividualId</members>
-        <members>Contact.IsNoLongerWorking__c</members>
-        <members>Contact.IsTest__c</members>
-        <members>Contact.Jigsaw</members>
-        <members>Contact.Kalender__c</members>
-        <members>Contact.LastCURequestDate</members>
-        <members>Contact.LastCUUpdateDate</members>
-        <members>Contact.LeadSource</members>
-        <members>Contact.Linked_in__c</members>
-        <members>Contact.Load_Id__c</members>
-        <members>Contact.MailingAddress</members>
-        <members>Contact.Marketing__c</members>
-        <members>Contact.MobilePhone</members>
-        <members>Contact.Naam_formeel__c</members>
-        <members>Contact.Naam_informeel__c</members>
-        <members>Contact.Name</members>
-        <members>Contact.Org__c</members>
         <members>Contact.OrganizationLevelPick__c</members>
-        <members>Contact.OtherAddress</members>
-        <members>Contact.OtherContacts__c</members>
-        <members>Contact.OtherPhone</members>
-        <members>Contact.Overige_Contactpersonen__c</members>
-        <members>Contact.OwnerId</members>
-        <members>Contact.Parent_Contact__c</members>
-        <members>Contact.Pensioen__c</members>
-        <members>Contact.Phone</members>
-        <members>Contact.PictureURL__c</members>
-        <members>Contact.PostcodeCheck__c</members>
-        <members>Contact.Pronouns</members>
-        <members>Contact.Regio_MO__c</members>
-        <members>Contact.Regio_NW__c</members>
-        <members>Contact.Regio_ZW__c</members>
-        <members>Contact.Regio_Z__c</members>
-        <members>Contact.ReportsToId</members>
-        <members>Contact.Sharing_Heijmans_Franki__c</members>
-        <members>Contact.StatusPick__c</members>
-        <members>Contact.Status_contact__c</members>
-        <members>Contact.Status_relatie__c</members>
-        <members>Contact.Titel__c</members>
-        <members>Contact.Title</members>
-        <members>Contact.Type_persoon__c</members>
-        <members>Contact.User__c</members>
-        <members>Contact.Voorletter_s__c</members>
-        <members>Contact.Weihnachtskarte__c</members>
-        <members>Contact.Working_weekhours__c</members>
-        <members>Contact.ZZP__c</members>
-        <members>Fault_Email_Address__mdt.Email__c</members>
-        <members>Fault_Email_Address__mdt.OrgRegionName__c</members>
-        <members>FeedbackVote__c.Feedback__c</members>
-        <members>FeedbackVote__c.VoteScore__c</members>
-        <members>FeedbackVote__c.VoterRef__c</members>
-        <members>Feedback__c.CloseDateTime__c</members>
-        <members>Feedback__c.Description__c</members>
-        <members>Feedback__c.ObjectName__c</members>
-        <members>Feedback__c.RecordId__c</members>
-        <members>Feedback__c.RecordURLform__c</members>
-        <members>Feedback__c.ScoreAuto__c</members>
-        <members>Feedback__c.StatusPick__c</members>
-        <members>FormerPosition__c.AccountRef__c</members>
-        <members>FormerPosition__c.Comment__c</members>
-        <members>FormerPosition__c.ContactRef__c</members>
-        <members>FormerPosition__c.EndDate__c</members>
-        <members>FormerPosition__c.StartDate__c</members>
-        <members>FormerPosition__c.Title__c</members>
-        <members>User.FullNameForm__c</members>
+        <members>InvolvedPartner__c.AccountRef__c</members>
+        <members>InvolvedPartner__c.EndDate__c</members>
+        <members>InvolvedPartner__c.IsActive__c</members>
+        <members>InvolvedPartner__c.IsPrimaryAccount__c</members>
+        <members>InvolvedPartner__c.PartnershipActiveForm__c</members>
+        <members>InvolvedPartner__c.PartnershipRef__c</members>
+        <members>InvolvedPartner__c.PrimaryContactRef__c</members>
+        <members>InvolvedPartner__c.StartDate__c</members>
+        <members>Partnership__c.Description__c</members>
+        <members>Partnership__c.Email__c</members>
+        <members>Partnership__c.EndDate__c</members>
+        <members>Partnership__c.IsActive__c</members>
+        <members>Partnership__c.IsLegalEntity__c</members>
+        <members>Partnership__c.Mobile__c</members>
+        <members>Partnership__c.Phone__c</members>
+        <members>Partnership__c.StartDate__c</members>
+        <members>Partnership__c.TypePick__c</members>
+        <members>Partnership__c.Website__c</members>
         <name>CustomField</name>
     </types>
     <types>
-        <members>Account.SAPId__c</members>
-        <name>CustomIndex </name>
-    </types>
-    <types>
-        <members>BusinessUnitSpecificAttributes</members>
-        <members>Contacts</members>
-        <members>Description</members>
-        <members>FeedbackBugDescription</members>
-        <members>FeedbackBugTitle</members>
-        <members>FeedbackCompliment</members>
-        <members>FeedbackComplimentDescription</members>
-        <members>FeedbackComplimentTitle</members>
-        <members>FeedbackFeatureDescription</members>
-        <members>FeedbackIdeaDescription</members>
-        <members>FeedbackIdeaTitle</members>
-        <members>FeedbackRequestTitle</members>
-        <members>Hierarchy</members>
-        <members>OrganizationChart</members>
+        <members>Partnerships</members>
         <name>CustomLabel</name>
     </types>
     <types>
-        <members>BusinessUnits.AMAssetmanagement</members>
-        <members>BusinessUnits.AMSchiphol</members>
-        <members>BusinessUnits.AsphaltTechnology</members>
-        <members>BusinessUnits.BSSoilSpecializations</members>
-        <members>BusinessUnits.CPDesign</members>
-        <members>BusinessUnits.CPPROM</members>
-        <members>BusinessUnits.CPRealisation</members>
-        <members>BusinessUnits.CP_Procurement</members>
-        <members>BusinessUnits.CSCivilEngineeringSpecializations</members>
-        <members>BusinessUnits.ENAreaDevelopment</members>
-        <members>BusinessUnits.ENConnections</members>
-        <members>BusinessUnits.ENServicesDistribution</members>
-        <members>BusinessUnits.ENStations</members>
-        <members>BusinessUnits.HeijmansEquipmentManagement</members>
-        <members>BusinessUnits.RPIntegratedRegional_Projects</members>
-        <members>BusinessUnits.RPNorthEastCentral</members>
-        <members>BusinessUnits.RPProcurement</members>
-        <members>BusinessUnits.RPSouth</members>
-        <members>BusinessUnits.RPSouthWest</members>
-        <members>BusinessUnits.RP_North_West</members>
-        <members>BusinessUnits.TESIT</members>
-        <members>BusinessUnits.TE_E_I</members>
-        <members>BusinessUnits.WSRoadSpecializations</members>
-        <members>Fault_Email_Address.Heijmans</members>
-        <name>CustomMetadata</name>
-    </types>
-    <types>
-        <members>Account</members>
-        <members>BusinessUnitSpecificAttribute__c</members>
-        <members>BusinessUnits__mdt</members>
-        <members>BypassSettings__c</members>
-        <members>Contact</members>
-        <members>Fault_Email_Address__mdt</members>
-        <members>FeedbackVote__c</members>
-        <members>Feedback__c</members>
-        <members>FormerPosition__c</members>
+        <members>InvolvedPartner__c</members>
+        <members>Partnership__c</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -275,25 +50,21 @@
         <members>Alert__c-nl_NL</members>
         <members>BusinessUnitSpecificAttribute__c-nl_NL</members>
         <members>Contact-nl_NL</members>
+        <members>InvolvedPartner__c-en_US</members>
+        <members>InvolvedPartner__c-nl_NL</members>
+        <members>Partnership__c-en_US</members>
+        <members>Partnership__c-nl_NL</members>
         <name>CustomObjectTranslation</name>
     </types>
     <types>
-        <members>Feedback__c</members>
+        <members>InvolvedPartner__c</members>
+        <members>Partnership__c</members>
         <name>CustomTab</name>
     </types>
     <types>
-        <members>Contact.Heijmans_Contact_Duplicate_Detection</members>
-        <name>DuplicateRule</name>
-    </types>
-    <types>
-        <members>Contact_Record_Page</members>
         <members>Heijmans_Account_Record_Page</members>
-        <members>Heijmans_Business_Unit_Specific_Attribute_Record_Page</members>
-        <members>Heijmans_Contact_Record_Page</members>
-        <members>Heijmans_Feedback_Record_Page</members>
-        <members>Heijmans_Feedback_Vote_Record_Page</members>
-        <members>Heijmans_Multi_Contact_Record_Page</members>
-        <members>Heijmans_UtilityBar</members>
+        <members>Heijmans_Involved_Partner_Record_Page</members>
+        <members>Heijmans_Partnership_Record_Page</members>
         <name>FlexiPage</name>
     </types>
     <types>
@@ -310,20 +81,10 @@
         <members>Feedback_SCFL01_Add_Feedback_via_Utility_Bar</members>
         <members>Feedback_SCFL02_Vote_on_Feedback_via_Lightning_Page</members>
         <members>Feedback_SCFL03_Total_Score_Feedback</members>
+        <members>Partnerships_STFL01_Set_Partnership_to_Inactive</members>
         <name>Flow</name>
     </types>
     <types>
-        <members>BusinessUnits</members>
-        <members>FocusClient</members>
-        <name>GlobalValueSet</name>
-    </types>
-    <types>
-        <members>BusinessUnits-nl_NL</members>
-        <name>GlobalValueSetTranslation</name>
-    </types>
-    <types>
-        <members>Account-AccountLayout Franki</members>
-        <members>Account-Accountlayout</members>
         <members>Account-Heijmans - Account Layout</members>
         <members>Account-Heijmans concurrent</members>
         <members>Account-Heijmans klant</members>
@@ -341,56 +102,33 @@
         <members>Contact-SDOC__Contact Layout SDoc</members>
         <members>Fault_Email_Address__mdt-Heijmans - Fault Email Address Layout</members>
         <members>FormerPosition__c-Former Position Layout</members>
+        <members>FeedbackVote__c-Heijmans - Feedback Vote Layout</members>
+        <members>Feedback__c-Heijmans - Feedback Layout</members>
+        <members>Global-Global Layout</members>
+        <members>InvolvedPartner__c-Heijmans - Involved Partner Layout</members>
+        <members>InvolvedPartner__c-Involved Partner Layout</members>
+        <members>Partnership__c-Heijmans - Partnership Layout</members>
+        <members>Partnership__c-Partnership Layout</members>
         <name>Layout</name>
     </types>
     <types>
-        <members>Account.AllAccounts</members>
-        <members>Account.All_Opdrachtgevers</members>
-        <members>Account.Alle_Provincies</members>
-        <members>Account.Alle_Waterschappen</members>
-        <members>Account.Focusklanten_Infra</members>
-        <members>Account.Gemeente_Nijmegen</members>
-        <members>Account.Gemeenten</members>
-        <members>Account.Heijmans</members>
-        <members>Account.MyAccounts</members>
-        <members>Account.NewThisWeek</members>
-        <members>Account.Overheid_Midden_Oost</members>
-        <members>Account.Overheid_Noord_West</members>
-        <members>Account.Overheid_Rijk</members>
-        <members>Account.Overheid_Zuid</members>
-        <members>Account.Overheid_Zuid_West</members>
-        <members>Account.Partners_Civiel_en_GWW</members>
-        <members>Account.Partners_Staal</members>
-        <members>Account.Zuid_Focusklanten</members>
-        <members>Contact.AllContacts</members>
-        <members>Contact.Alle_Kontakte_No_Account</members>
-        <members>Contact.Contacten_Rijksoverheid</members>
-        <members>Contact.Contacts_met_tussenvoegsel</members>
-        <members>Contact.FRANKI_EMail_Newsletter</members>
-        <members>Contact.Heijmans_Infra</members>
-        <members>Contact.NewThisWeek</members>
-        <members>Contact.ProRail</members>
-        <members>Contact.ProRail_Accountmanagement</members>
-        <members>Contact.Regio_Zuid_Alle_contactpersonen</members>
+        <members>Contact.Alle_contacten_Directieniveau</members>
+        <members>Contact.Alle_contacten_Senior_management</members>
+        <members>Contact.Alle_incomplete_contactpersonen</members>
+        <members>Contact.Mijn_nieuwe_contacten_afgelopen_14_dgn</members>
+        <members>InvolvedPartner__c.All</members>
+        <members>Partnership__c.All</members>
+        <members>Partnership__c.Alle_actieve_samenwerkingsverbanden</members>
+        <members>Partnership__c.Alle_active_doorlopende_samenwerkingen</members>
+        <members>Partnership__c.Alle_active_juridische_samenwerkingen</members>
+        <members>Partnership__c.Alle_active_tijdelijke_samenwerkingen</members>
+        <members>Partnership__c.Alle_inactieve_samenwerkingsverbanden</members>
+        <members>Partnership__c.Alle_samenwerkingen_zonder_startdatum</members>
         <name>ListView</name>
-    </types>
-    <types>
-        <members>Contact.Contact_Email_and_Phone_Matching</members>
-        <members>Contact.Heijmans_Standard_Contact_Matching</members>
-        <name>MatchingRule</name>
-    </types>
-    <types>
-        <members>Contact</members>
-        <name>MatchingRules</name>
     </types>
     <types>
         <members>Heijmans_Accountmanagement_User</members>
         <members>Heijmans_Administrator</members>
-        <members>Heijmans_Contactmanagement_Manager</members>
-        <members>Heijmans_Contactmanagement_User</members>
-        <members>Heijmans_Feedback_Manager</members>
-        <members>Heijmans_Feedback_User</members>
-        <members>Heijmans_User_Fields</members>
         <name>PermissionSet</name>
     </types>
     <types>
@@ -502,6 +240,12 @@
         <members>HeijmansWarning</members>
         <members>IconDelete</members>
         <members>IconEdit</members>
+        <members>Bug</members>
+        <members>Bulb</members>
+        <members>Compliment</members>
+        <members>Dislike</members>
+        <members>Feature</members>
+        <members>Warning</members>
         <name>StaticResource</name>
     </types>
     <types>
@@ -509,34 +253,12 @@
         <name>Translations</name>
     </types>
     <types>
-        <members>Account.VR01_ACC_PhoneFormat</members>
-        <members>AccountContactRelation.VR01_ACR_PhoneFormat</members>
-        <members>AccountContactRelation.VR02_ACR_MobilePhoneFormat</members>
-        <members>AccountContactRelation.VR03_ACR_Contact_Inactive</members>
-        <members>Contact.Anrede_Plichtfeld</members>
-        <members>Contact.VR01_CON_PhoneFormat</members>
-        <members>Contact.VR02_CON_MobileFormat</members>
+        <members>InvolvedPartner__c.INP_VR01_EndDateBeforeStartDate</members>
+        <members>Partnership__c.PAR_VR01_EndDateBeforeStartDate</members>
+        <members>Partnership__c.PAR_VR02_PhoneFormat</members>
+        <members>Partnership__c.PAR_VR03_MobileFormat</members>
+        <members>Partnership__c.PAR_VR04_StardAndEndDateRequiredTemp</members>
         <name>ValidationRule</name>
     </types>
-    <types>
-        <members>Account.AltavistaNews</members>
-        <members>Account.GoogleMaps</members>
-        <members>Account.GoogleNews</members>
-        <members>Account.GoogleSearch</members>
-        <members>Account.HooversProfile</members>
-        <members>Account.Niew_Gespreksverslag</members>
-        <members>Account.SDOC__Email_Docs</members>
-        <members>Account.SDOC__S_Docs</members>
-        <members>BusinessUnitSpecificAttribute__c.Business_Revenue_Margin</members>
-        <members>Contact.GoogleMaps</members>
-        <members>Contact.GoogleSearch</members>
-        <members>Contact.SDOC__Add_to_Mass_Merge_List</members>
-        <members>Contact.SDOC__Email_Docs</members>
-        <members>Contact.SDOC__S_Docs</members>
-        <members>Contact.SDOC__View_Mass_Merge_List</members>
-        <members>Contact.SendGmail</members>
-        <members>Contact.YahooMaps</members>
-        <members>Contact.YahooWeather</members>
-        <name>WebLink</name>
-    </types>
+    <version>59.0</version>
 </Package>
