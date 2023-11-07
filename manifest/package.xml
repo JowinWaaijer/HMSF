@@ -272,6 +272,7 @@
     <types>
         <members>Account-nl_NL</members>
         <members>AccountContactRelation-nl_NL</members>
+        <members>Alert__c-nl_NL</members>
         <members>BusinessUnitSpecificAttribute__c-nl_NL</members>
         <members>Contact-nl_NL</members>
         <name>CustomObjectTranslation</name>
@@ -299,6 +300,9 @@
         <members>ACC_RTFL01_Create_BUSA_records</members>
         <members>ACC_RTFL02_Manually_Create_BUSA_records</members>
         <members>AccountContactRelationship_RTFL01_Set_to_Inactive_on_Enddate</members>
+        <members>Account_SCFL01_Add_New_Alert_to_Account_Record</members>
+        <members>Account_SCFL02_Show_Alert_on_Account_Record</members>
+        <members>Account_STFL01_Activate_Deactivate_Alert_Message</members>
         <members>CON_SCFL01_Create_Former_Position</members>
         <members>Contact_SCFL02_Display_Contact_s_Picture</members>
         <members>FAULT_CONNECTOR</members>
@@ -327,6 +331,7 @@
         <members>Account-Heijmans partner</members>
         <members>Account-Heijmans_Account</members>
         <members>AccountContactRelation-Heijmans - Contact Relationship Layout</members>
+        <members>Alert__c-Heijmans - Alert Layout</members>
         <members>BusinessUnitSpecificAttribute__c-Heijmans - Business Unit Specific Attribute Layout</members>
         <members>BusinessUnits__mdt-Lay-out voor Business Unit</members>
         <members>Contact-Extern contact</members>
@@ -414,6 +419,7 @@
         <name>Profile</name>
     </types>
     <types>
+        <members>Account.AddAlert</members>
         <members>Contact.MoveContact</members>
         <members>Contact.UpdateContact</members>
         <members>NewContact</members>
@@ -482,6 +488,20 @@
     </types>
     <types>
         <members>Active</members>
+        <members>HeijmansCalendar</members>
+        <members>HeijmansClock</members>
+        <members>HeijmansEuro</members>
+        <members>HeijmansFlag</members>
+        <members>HeijmansGear</members>
+        <members>HeijmansHelmet</members>
+        <members>HeijmansLeaf</members>
+        <members>HeijmansPawn</members>
+        <members>HeijmansPerson</members>
+        <members>HeijmansTodo</members>
+        <members>HeijmansTools</members>
+        <members>HeijmansWarning</members>
+        <members>IconDelete</members>
+        <members>IconEdit</members>
         <name>StaticResource</name>
     </types>
     <types>
