@@ -103,6 +103,10 @@
         <name>Flow</name>
     </types>
     <types>
+        <members>Account_SCFL01_Add_New_Alert_to_Account_Record</members>
+        <name>FlowDefinition</name>
+    </types>
+    <types>
         <members>Account-Heijmans - Account Layout</members>
         <members>Account-Heijmans concurrent</members>
         <members>Account-Heijmans klant</members>
