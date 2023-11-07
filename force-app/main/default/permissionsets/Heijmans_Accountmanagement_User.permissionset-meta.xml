@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>Heijmans_Accountmanagement</application>
+        <visible>true</visible>
+    </applicationVisibilities>
     <description>Permission set with all the functionalities to manage accounts and related account objects.</description>
     <fieldPermissions>
         <editable>true</editable>
