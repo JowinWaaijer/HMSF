@@ -286,7 +286,6 @@
         <members>IconNotification</members>
         <members>IconPriority</members>
         <members>Warning</members>
-        <members>jQuery_BlogForce9_162</members>
         <name>StaticResource</name>
     </types>
     <types>
