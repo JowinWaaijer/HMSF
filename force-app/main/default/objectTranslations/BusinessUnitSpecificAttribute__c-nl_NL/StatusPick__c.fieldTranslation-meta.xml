@@ -4,18 +4,22 @@
     <name>StatusPick__c</name>
     <picklistValues>
         <masterLabel>Customer</masterLabel>
-        <translation></translation>
+        <translation>Klant</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Ex-Customer</masterLabel>
-        <translation></translation>
+        <translation>Ex-Klant</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>No Relation</masterLabel>
-        <translation></translation>
+        <translation>Geen Relatie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partner</masterLabel>
+        <translation>Partner</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Prospect</masterLabel>
-        <translation></translation>
+        <translation>Prospect</translation>
     </picklistValues>
 </CustomFieldTranslation>
