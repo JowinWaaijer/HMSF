@@ -160,7 +160,30 @@
             <label>Deactivate</label>
         </rules>
     </decisions>
-    <description>This screenflow gives the user the option to add a new Alert (toast message) to the account record.</description>
+    <decisions>
+        <description>This element checks which button is pressed.</description>
+        <name>dcsButtonPressed</name>
+        <label>dcsButtonPressed</label>
+        <locationX>294</locationX>
+        <locationY>1024</locationY>
+        <defaultConnectorLabel>Close</defaultConnectorLabel>
+        <rules>
+            <name>New</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>btnSuccess.value</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>New</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>scrAlert</targetReference>
+            </connector>
+            <label>New</label>
+        </rules>
+    </decisions>
+    <description>This screenflow gives the user the option to add a new Alert (toast message) to the account record. This is added on the lightning page.</description>
     <dynamicChoiceSets>
         <name>plcIcon</name>
         <dataType>Picklist</dataType>
@@ -239,6 +262,9 @@
         <label>rcAlert</label>
         <locationX>50</locationX>
         <locationY>1238</locationY>
+        <connector>
+            <targetReference>scrSuccess_0</targetReference>
+        </connector>
         <faultConnector>
             <targetReference>subFaultConnector</targetReference>
         </faultConnector>
@@ -353,7 +379,7 @@
         <locationX>50</locationX>
         <locationY>1022</locationY>
         <connector>
-            <targetReference>scrAlert</targetReference>
+            <targetReference>scrSuccess</targetReference>
         </connector>
         <faultConnector>
             <targetReference>subFaultConnector</targetReference>
@@ -531,13 +557,6 @@
                                 <stringValue>nl_NL</stringValue>
                             </rightValue>
                         </conditions>
-                        <conditions>
-                            <leftValueReference>btnNewEN.value</leftValueReference>
-                            <operator>NotEqualTo</operator>
-                            <rightValue>
-                                <stringValue>NewAlert</stringValue>
-                            </rightValue>
-                        </conditions>
                     </visibilityRule>
                 </fields>
                 <inputParameters>
@@ -689,13 +708,6 @@
                             <operator>EqualTo</operator>
                             <rightValue>
                                 <stringValue>nl_NL</stringValue>
-                            </rightValue>
-                        </conditions>
-                        <conditions>
-                            <leftValueReference>btnSaveNL.value</leftValueReference>
-                            <operator>NotEqualTo</operator>
-                            <rightValue>
-                                <stringValue>NewAlert</stringValue>
                             </rightValue>
                         </conditions>
                     </visibilityRule>
@@ -1895,6 +1907,169 @@
             </outputParameters>
         </fields>
         <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>scrSuccess</name>
+        <label>scrSuccess</label>
+        <locationX>185</locationX>
+        <locationY>1021</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>dcsButtonPressed</targetReference>
+        </connector>
+        <fields>
+            <name>diBu</name>
+            <extensionName>flowruntime:image</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>imageName</name>
+                <value>
+                    <stringValue>HeijmansPerson</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>horizontalAlignment</name>
+                <value>
+                    <stringValue>center</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>imageHeight</name>
+                <value>
+                    <stringValue>80</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>dtSuccess</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-family: verdana;&quot;&gt;The alert(s) have been deactivated. &lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>btnSuccess</name>
+            <extensionName>c:fsc_flowButtonBar</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>alignment</name>
+                <value>
+                    <stringValue>center</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>orientation</name>
+                <value>
+                    <stringValue>horizontal</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>showLines</name>
+                <value>
+                    <stringValue>neither</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>actionMode</name>
+                <value>
+                    <stringValue>navigation</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>buttons</name>
+                <value>
+                    <stringValue>[{&quot;label&quot;:&quot;New&quot;,&quot;value&quot;:&quot;New&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;success&quot;,&quot;iconName&quot;:&quot;utility:new&quot;,&quot;index&quot;:0},{&quot;label&quot;:&quot;Close&quot;,&quot;value&quot;:&quot;Close&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;destructive&quot;,&quot;iconName&quot;:&quot;utility:close&quot;,&quot;index&quot;:1}]</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>scrSuccess_0</name>
+        <label>scrSuccess</label>
+        <locationX>50</locationX>
+        <locationY>1371</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>diClock1</name>
+            <extensionName>flowruntime:image</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>imageName</name>
+                <value>
+                    <stringValue>HeijmansClock</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>horizontalAlignment</name>
+                <value>
+                    <stringValue>center</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>imageHeight</name>
+                <value>
+                    <stringValue>80</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>dtCreate</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-family: verdana;&quot;&gt;The alert has successfully been created. &lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-family: verdana;&quot;&gt;The activation process is scheduled, so it can take up to a minute to see the new alert on the screen. &lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>btnSuccess_0</name>
+            <extensionName>c:fsc_flowButtonBar</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>alignment</name>
+                <value>
+                    <stringValue>center</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>orientation</name>
+                <value>
+                    <stringValue>horizontal</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>showLines</name>
+                <value>
+                    <stringValue>neither</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>actionMode</name>
+                <value>
+                    <stringValue>navigation</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>buttons</name>
+                <value>
+                    <stringValue>[{&quot;label&quot;:&quot;New&quot;,&quot;value&quot;:&quot;New&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;success&quot;,&quot;iconName&quot;:&quot;utility:new&quot;,&quot;index&quot;:0},{&quot;label&quot;:&quot;Close&quot;,&quot;value&quot;:&quot;Close&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;destructive&quot;,&quot;iconName&quot;:&quot;utility:close&quot;,&quot;index&quot;:1}]</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <showFooter>false</showFooter>
         <showHeader>false</showHeader>
     </screens>
     <start>
