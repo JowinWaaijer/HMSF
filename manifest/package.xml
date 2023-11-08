@@ -285,6 +285,11 @@
         <members>IconLock</members>
         <members>IconNotification</members>
         <members>IconPriority</members>
+        <members>TypeError</members>
+        <members>TypeInfo</members>
+        <members>TypeOther</members>
+        <members>TypeSuccess</members>
+        <members>TypeWarning</members>
         <members>Warning</members>
         <name>StaticResource</name>
     </types>

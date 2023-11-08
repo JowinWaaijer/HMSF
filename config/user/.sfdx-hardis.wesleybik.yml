@@ -11,6 +11,7 @@ localStorageBranchTargets:
   features/config/US-70158-typo-fix: integration
   features/config/us-70158-history-and-flow-partnerships: integration
   features/config/sprint-1-fixes-icons-layouts: integration
+  features/config/icon-set-2: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
