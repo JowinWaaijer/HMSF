@@ -67,6 +67,7 @@
     <types>
         <members>Account-nl_NL</members>
         <members>AccountContactRelation-nl_NL</members>
+        <members>Activity-nl_NL</members>
         <members>Alert__c-nl_NL</members>
         <members>BusinessUnitSpecificAttribute__c-nl_NL</members>
         <members>Contact-nl_NL</members>
