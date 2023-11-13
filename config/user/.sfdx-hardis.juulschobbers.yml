@@ -8,6 +8,7 @@ localStorageBranchTargets:
   features/config/US-Hotfix-Alertflowv2: integration
   features/config/US-Hotfix-TaskTranslationReset: integration
   features/config/US-69987-BugfixQuickChoice: integration
+  features/config/US-69987-BugFixQuickChoiceV2: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
