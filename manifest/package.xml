@@ -60,6 +60,7 @@
     </types>
     <types>
         <members>Alert__c</members>
+        <members>Feedback__c</members>
         <members>InvolvedPartner__c</members>
         <members>Partnership__c</members>
         <name>CustomObject</name>
@@ -84,6 +85,7 @@
     </types>
     <types>
         <members>Heijmans_Account_Record_Page</members>
+        <members>Heijmans_Feedback_Record_Page</members>
         <members>Heijmans_Involved_Partner_Record_Page</members>
         <members>Heijmans_Multi_Contact_Record_Page</members>
         <members>Heijmans_Partnership_Record_Page</members>
@@ -101,6 +103,7 @@
         <members>FAULT_CONNECTOR</members>
         <members>FAULT_CONNECTOR_SCREENFLOW</members>
         <members>Feedback_SCFL01_Add_Feedback_via_Utility_Bar</members>
+        <members>Feedback_SCFL02_Vote_on_Feedback_on_Lightning_Page</members>
         <members>Feedback_SCFL02_Vote_on_Feedback_via_Lightning_Page</members>
         <members>Feedback_SCFL03_Total_Score_Feedback</members>
         <members>Partnerships_STFL01_Set_Partnership_to_Inactive</members>
@@ -146,6 +149,7 @@
         <members>Contact.Alle_contacten_Senior_management</members>
         <members>Contact.Alle_incomplete_contactpersonen</members>
         <members>Contact.Mijn_nieuwe_contacten_afgelopen_14_dgn</members>
+        <members>Feedback__c.All</members>
         <members>InvolvedPartner__c.All</members>
         <members>Partnership__c.All</members>
         <members>Partnership__c.Alle_actieve_samenwerkingsverbanden</members>
