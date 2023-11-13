@@ -67,6 +67,7 @@
     <types>
         <members>Account-nl_NL</members>
         <members>AccountContactRelation-nl_NL</members>
+        <members>Activity-nl_NL</members>
         <members>Alert__c-nl_NL</members>
         <members>BusinessUnitSpecificAttribute__c-nl_NL</members>
         <members>Contact-nl_NL</members>
@@ -100,6 +101,7 @@
         <members>FAULT_CONNECTOR</members>
         <members>FAULT_CONNECTOR_SCREENFLOW</members>
         <members>Feedback_SCFL01_Add_Feedback_via_Utility_Bar</members>
+        <members>Feedback_SCFL02_Vote_on_Feedback_on_Lightning_Page</members>
         <members>Feedback_SCFL02_Vote_on_Feedback_via_Lightning_Page</members>
         <members>Feedback_SCFL03_Total_Score_Feedback</members>
         <members>Partnerships_STFL01_Set_Partnership_to_Inactive</members>
