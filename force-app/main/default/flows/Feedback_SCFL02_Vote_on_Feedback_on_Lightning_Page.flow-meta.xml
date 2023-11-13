@@ -2,11 +2,10 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>58.0</apiVersion>
     <assignments>
-        <description>This assignment will add the feedback icons and description to up or downvote an idea.</description>
-        <name>assFeedbackIcons</name>
-        <label>assFeedbackIcons</label>
-        <locationX>690</locationX>
-        <locationY>206</locationY>
+        <name>assIcons</name>
+        <label>assIcons</label>
+        <locationX>710</locationX>
+        <locationY>134</locationY>
         <assignmentItems>
             <assignToReference>colIcons</assignToReference>
             <operator>Add</operator>
@@ -39,26 +38,26 @@
             <assignToReference>colDescription</assignToReference>
             <operator>Add</operator>
             <value>
-                <stringValue>You&apos;ve got my Support :)</stringValue>
+                <elementReference>fmDescriptionUpvote</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
             <assignToReference>colDescription</assignToReference>
             <operator>Add</operator>
             <value>
-                <stringValue>Nwah... Not my piece of Cake ;(</stringValue>
+                <elementReference>fmDescriptionDownvote</elementReference>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>scrChoice</targetReference>
+            <targetReference>scrQuickChoice</targetReference>
         </connector>
     </assignments>
     <decisions>
         <description>This element checks if the voter has already voted.</description>
         <name>dcsDuplicateCheckDownVoter</name>
         <label>dcsDuplicateCheckDownVoter</label>
-        <locationX>1084</locationX>
-        <locationY>614</locationY>
+        <locationX>1106</locationX>
+        <locationY>566</locationY>
         <defaultConnector>
             <targetReference>rcFeedbackDownVote</targetReference>
         </defaultConnector>
@@ -67,7 +66,7 @@
             <name>DownVoted</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>getFeedbackDownVote</leftValueReference>
+                <leftValueReference>getFeedbackVote</leftValueReference>
                 <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
@@ -81,7 +80,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>scrWarningDownVote</targetReference>
+                <targetReference>scrWarningDownVoted</targetReference>
             </connector>
             <label>DownVoted</label>
         </rules>
@@ -112,8 +111,8 @@
         <description>This element checks if the voter has already voted.</description>
         <name>dcsDuplicateCheckVoter</name>
         <label>dcsDuplicateCheckVoter</label>
-        <locationX>292</locationX>
-        <locationY>614</locationY>
+        <locationX>314</locationX>
+        <locationY>566</locationY>
         <defaultConnector>
             <targetReference>rcFeedbackVote</targetReference>
         </defaultConnector>
@@ -158,7 +157,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>ruVoteScorePositivee</targetReference>
+                <targetReference>ruVoteScorePositive</targetReference>
             </connector>
             <label>Vote Changed</label>
         </rules>
@@ -167,8 +166,8 @@
         <description>This element checks which label is selected.</description>
         <name>dcsQuickChoice</name>
         <label>dcsQuickChoice</label>
-        <locationX>682</locationX>
-        <locationY>464</locationY>
+        <locationX>710</locationX>
+        <locationY>350</locationY>
         <defaultConnector>
             <targetReference>getFeedbackDownVote</targetReference>
         </defaultConnector>
@@ -177,7 +176,7 @@
             <name>Upvote</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>qcChoice.value</leftValueReference>
+                <leftValueReference>qcSelection.value</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <stringValue>Upvote</stringValue>
@@ -191,8 +190,32 @@
     </decisions>
     <description>This screen flow is placed on the lightning page and gives the user the ability to upvote or downvote an idea.</description>
     <environments>Default</environments>
+    <formulas>
+        <description>Sets the description in the icon element.</description>
+        <name>fmDescriptionDownvote</name>
+        <dataType>String</dataType>
+        <expression>CASE({!fmUserLanguageCode}, 
+&quot;nl_NL&quot;, &quot;Nwah.... Niet mijn ding ;(&quot;, 
+&quot;en_US&quot;, &quot;Nwah... Not my piece of Cake ;(&quot;,
+&quot;Nwah... Not my piece of Cake ;(&quot;)</expression>
+    </formulas>
+    <formulas>
+        <description>Sets description of the icon element.</description>
+        <name>fmDescriptionUpvote</name>
+        <dataType>String</dataType>
+        <expression>CASE({!fmUserLanguageCode}, 
+&quot;nl_NL&quot;, &quot;Ik stem voor :)&quot;, 
+&quot;en_US&quot;, &quot;You&apos;ve got my Support :)&quot;,
+&quot;You&apos;ve got my Support :)&quot;)</expression>
+    </formulas>
+    <formulas>
+        <description>Extracts this user language code from the current user.</description>
+        <name>fmUserLanguageCode</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!$User.LanguageLocaleKey})</expression>
+    </formulas>
     <interviewLabel>Feedback - SCFL02 - Vote on Feedback via Lightning Page {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Feedback - SCFL02 - Vote on Feedback via Lightning Page</label>
+    <label>Feedback - SCFL02 - Vote on Feedback on Lightning Page</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -202,7 +225,7 @@
     <processMetadataValues>
         <name>CanvasMode</name>
         <value>
-            <stringValue>FREE_FORM_CANVAS</stringValue>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
         </value>
     </processMetadataValues>
     <processMetadataValues>
@@ -216,8 +239,8 @@
         <description>This element will create a feedback score</description>
         <name>rcFeedbackDownVote</name>
         <label>rcFeedbackDownVote</label>
-        <locationX>1348</locationX>
-        <locationY>722</locationY>
+        <locationX>1370</locationX>
+        <locationY>674</locationY>
         <inputAssignments>
             <field>Feedback__c</field>
             <value>
@@ -243,11 +266,10 @@
         <description>This element will create a feedback score</description>
         <name>rcFeedbackVote</name>
         <label>rcFeedbackVote</label>
-        <locationX>556</locationX>
-        <locationY>722</locationY>
-        <assignRecordIdToReference>varFeedbackVoteId</assignRecordIdToReference>
+        <locationX>578</locationX>
+        <locationY>674</locationY>
         <connector>
-            <targetReference>scrConfetti</targetReference>
+            <targetReference>scrConfetti1</targetReference>
         </connector>
         <inputAssignments>
             <field>Feedback__c</field>
@@ -268,13 +290,14 @@
             </value>
         </inputAssignments>
         <object>FeedbackVote__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordLookups>
         <description>With this get we&apos;re trying to check if the current logged in user already has voted.</description>
         <name>getFeedbackDownVote</name>
         <label>getFeedbackDownVote</label>
-        <locationX>1084</locationX>
-        <locationY>506</locationY>
+        <locationX>1106</locationX>
+        <locationY>458</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>dcsDuplicateCheckDownVoter</targetReference>
@@ -302,8 +325,8 @@
         <description>With this get we&apos;re trying to check if the current logged in user already has voted.</description>
         <name>getFeedbackVote</name>
         <label>getFeedbackVote</label>
-        <locationX>292</locationX>
-        <locationY>506</locationY>
+        <locationX>314</locationX>
+        <locationY>458</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>dcsDuplicateCheckVoter</targetReference>
@@ -331,8 +354,8 @@
         <description>This element will set the score from +10 to -10.</description>
         <name>ruVoteScoreNegative</name>
         <label>ruVoteScoreNegative</label>
-        <locationX>1084</locationX>
-        <locationY>722</locationY>
+        <locationX>1106</locationX>
+        <locationY>674</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
@@ -351,12 +374,12 @@
     </recordUpdates>
     <recordUpdates>
         <description>This element will set the score from -10 to +10.</description>
-        <name>ruVoteScorePositivee</name>
-        <label>ruVoteScorePositivee</label>
-        <locationX>292</locationX>
-        <locationY>722</locationY>
+        <name>ruVoteScorePositive</name>
+        <label>ruVoteScorePositive</label>
+        <locationX>314</locationX>
+        <locationY>674</locationY>
         <connector>
-            <targetReference>scrConfetti3</targetReference>
+            <targetReference>scrConfetti1</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -375,10 +398,35 @@
         <object>FeedbackVote__c</object>
     </recordUpdates>
     <screens>
-        <name>scrChoice</name>
-        <label>scrChoice</label>
-        <locationX>691</locationX>
-        <locationY>328</locationY>
+        <name>scrConfetti1</name>
+        <label>scrConfetti1</label>
+        <locationX>314</locationX>
+        <locationY>974</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>actConfetti1</name>
+            <extensionName>c:FlowConfettiCMP</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>confettiEffect</name>
+                <value>
+                    <stringValue>Fireworks</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>scrQuickChoice</name>
+        <label>scrQuickChoice</label>
+        <locationX>710</locationX>
+        <locationY>242</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -386,13 +434,13 @@
             <targetReference>dcsQuickChoice</targetReference>
         </connector>
         <fields>
-            <name>qcChoice</name>
+            <name>qcSelection</name>
             <extensionName>c:fsc_quickChoiceFSC</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>displayMode</name>
                 <value>
-                    <stringValue>Picklist</stringValue>
+                    <stringValue>Visual</stringValue>
                 </value>
             </inputParameters>
             <inputParameters>
@@ -408,15 +456,9 @@
                 </value>
             </inputParameters>
             <inputParameters>
-                <name>navOnSelect</name>
+                <name>isResponsive</name>
                 <value>
                     <booleanValue>true</booleanValue>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>choiceIcons</name>
-                <value>
-                    <elementReference>colIcons</elementReference>
                 </value>
             </inputParameters>
             <inputParameters>
@@ -432,6 +474,12 @@
                 </value>
             </inputParameters>
             <inputParameters>
+                <name>choiceIcons</name>
+                <value>
+                    <elementReference>colIcons</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
                 <name>choiceLabels</name>
                 <value>
                     <elementReference>colLabels</elementReference>
@@ -444,64 +492,19 @@
                 </value>
             </inputParameters>
             <inputParameters>
-                <name>style_width</name>
+                <name>navOnSelect</name>
                 <value>
-                    <numberValue>10.0</numberValue>
+                    <booleanValue>true</booleanValue>
                 </value>
             </inputParameters>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
-        <showFooter>false</showFooter>
-        <showHeader>false</showHeader>
-    </screens>
-    <screens>
-        <name>scrConfetti</name>
-        <label>scrConfetti</label>
-        <locationX>556</locationX>
-        <locationY>830</locationY>
-        <allowBack>true</allowBack>
-        <allowFinish>true</allowFinish>
-        <allowPause>true</allowPause>
         <fields>
-            <name>conf</name>
-            <extensionName>c:FlowConfettiCMP</extensionName>
-            <fieldType>ComponentInstance</fieldType>
-            <inputParameters>
-                <name>confettiEffect</name>
-                <value>
-                    <stringValue>Fireworks</stringValue>
-                </value>
-            </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
-            <isRequired>true</isRequired>
-            <storeOutputAutomatically>true</storeOutputAutomatically>
-        </fields>
-        <showFooter>false</showFooter>
-        <showHeader>false</showHeader>
-    </screens>
-    <screens>
-        <name>scrConfetti3</name>
-        <label>scrConfetti</label>
-        <locationX>290</locationX>
-        <locationY>872</locationY>
-        <allowBack>true</allowBack>
-        <allowFinish>true</allowFinish>
-        <allowPause>true</allowPause>
-        <fields>
-            <name>Copy_2_of_conf</name>
-            <extensionName>c:FlowConfettiCMP</extensionName>
-            <fieldType>ComponentInstance</fieldType>
-            <inputParameters>
-                <name>confettiEffect</name>
-                <value>
-                    <stringValue>Fireworks</stringValue>
-                </value>
-            </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
-            <isRequired>true</isRequired>
-            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <name>dtDummy</name>
+            <fieldText>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>false</showFooter>
         <showHeader>false</showHeader>
@@ -509,11 +512,11 @@
     <screens>
         <name>scrWarning</name>
         <label>scrWarning</label>
-        <locationX>28</locationX>
-        <locationY>722</locationY>
-        <allowBack>false</allowBack>
+        <locationX>50</locationX>
+        <locationY>674</locationY>
+        <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
-        <allowPause>false</allowPause>
+        <allowPause>true</allowPause>
         <fields>
             <name>diWarning</name>
             <extensionName>flowruntime:image</extensionName>
@@ -521,25 +524,19 @@
             <inputParameters>
                 <name>imageName</name>
                 <value>
-                    <stringValue>Warning</stringValue>
+                    <stringValue>HeijmansWarning</stringValue>
                 </value>
             </inputParameters>
             <inputParameters>
                 <name>horizontalAlignment</name>
                 <value>
-                    <stringValue>Center</stringValue>
+                    <stringValue>center</stringValue>
                 </value>
             </inputParameters>
             <inputParameters>
                 <name>imageHeight</name>
                 <value>
-                    <stringValue>50</stringValue>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>imageWidth</name>
-                <value>
-                    <stringValue>50</stringValue>
+                    <stringValue>60</stringValue>
                 </value>
             </inputParameters>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
@@ -555,39 +552,33 @@
         <showHeader>false</showHeader>
     </screens>
     <screens>
-        <name>scrWarningDownVote</name>
-        <label>scrWarningDownVote</label>
-        <locationX>820</locationX>
-        <locationY>722</locationY>
-        <allowBack>false</allowBack>
+        <name>scrWarningDownVoted</name>
+        <label>scrWarningDownVoted</label>
+        <locationX>842</locationX>
+        <locationY>674</locationY>
+        <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
-        <allowPause>false</allowPause>
+        <allowPause>true</allowPause>
         <fields>
-            <name>diWarning2</name>
+            <name>Copy_1_of_diWarning</name>
             <extensionName>flowruntime:image</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>imageName</name>
                 <value>
-                    <stringValue>Warning</stringValue>
+                    <stringValue>HeijmansWarning</stringValue>
                 </value>
             </inputParameters>
             <inputParameters>
                 <name>horizontalAlignment</name>
                 <value>
-                    <stringValue>Center</stringValue>
+                    <stringValue>center</stringValue>
                 </value>
             </inputParameters>
             <inputParameters>
                 <name>imageHeight</name>
                 <value>
-                    <stringValue>50</stringValue>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>imageWidth</name>
-                <value>
-                    <stringValue>50</stringValue>
+                    <stringValue>60</stringValue>
                 </value>
             </inputParameters>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
@@ -595,7 +586,7 @@
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
         <fields>
-            <name>dtWarning2</name>
+            <name>dtWarningDownvoted</name>
             <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255); font-size: 14px; font-family: verdana;&quot;&gt;Sorry you&apos;ve already downvoted on this record!&lt;/strong&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
@@ -603,13 +594,13 @@
         <showHeader>false</showHeader>
     </screens>
     <start>
-        <locationX>562</locationX>
-        <locationY>48</locationY>
+        <locationX>584</locationX>
+        <locationY>0</locationY>
         <connector>
-            <targetReference>assFeedbackIcons</targetReference>
+            <targetReference>assIcons</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>colDescription</name>
         <dataType>String</dataType>
@@ -632,7 +623,7 @@
         <isOutput>true</isOutput>
     </variables>
     <variables>
-        <description>Variable to hold the Feedback__c Record Id that is being edited (via quick action or a lightning component).</description>
+        <description>Variable to hold the Feedback Record Id that is being edited (via quick action or a lightning component).</description>
         <name>recordId</name>
         <dataType>SObject</dataType>
         <isCollection>false</isCollection>
