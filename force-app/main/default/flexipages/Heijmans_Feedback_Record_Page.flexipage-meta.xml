@@ -193,7 +193,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>flowName</name>
-                    <value>Feedback_SCFL02_Vote_on_Feedback_via_Lightning_Page</value>
+                    <value>Feedback_SCFL02_Vote_on_Feedback_on_Lightning_Page</value>
                 </componentInstanceProperties>
                 <componentName>flowruntime:interview</componentName>
                 <identifier>flowruntime_interview2</identifier>

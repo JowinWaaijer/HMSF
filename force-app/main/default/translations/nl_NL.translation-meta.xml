@@ -2044,6 +2044,10 @@
         <fullName>CON_SCFL01_Create_Former_Position</fullName>
     </flowDefinitions>
     <flowDefinitions>
+        <flows/>
+        <fullName>Contact_RTF03_Update_Accountchart_Department</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
         <flows>
             <screens>
                 <fields>
@@ -2983,24 +2987,97 @@
                         <name>confettiEffect</name>
                         <value/>
                     </inputParameters>
-                    <name>conf</name>
+                    <name>actConfetti1</name>
                 </fields>
-                <name>scrConfetti</name>
-            </screens>
-            <screens>
-                <fields>
-                    <inputParameters>
-                        <name>confettiEffect</name>
-                        <value/>
-                    </inputParameters>
-                    <name>Copy_2_of_conf</name>
-                </fields>
-                <name>scrConfetti3</name>
+                <name>scrConfetti1</name>
             </screens>
             <screens>
                 <fields>
                     <name>dtDummy</name>
                 </fields>
+                <fields>
+                    <inputParameters>
+                        <name>displayMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>iconSize</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>includeIcons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>inputMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>isResponsive</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>navOnSelect</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>numberOfColumns</name>
+                        <value/>
+                    </inputParameters>
+                    <name>qcSelection</name>
+                </fields>
+                <name>scrQuickChoice</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
+                    <name>diWarning</name>
+                </fields>
+                <fields>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-family: verdana; font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Sorry, je hebt al op dit item gestemd!&lt;/strong&gt;&lt;/p&gt;</fieldText>
+                    <name>dtWarning</name>
+                </fields>
+                <name>scrWarning</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_diWarning</name>
+                </fields>
+                <fields>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-family: verdana; font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Sorry, je hebt al op dit item gestemd!&lt;/strong&gt;&lt;/p&gt;</fieldText>
+                    <name>dtWarningDownvoted</name>
+                </fields>
+                <name>scrWarningDownVoted</name>
+            </screens>
+        </flows>
+        <fullName>Feedback_SCFL02_Vote_on_Feedback_on_Lightning_Page</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
                 <fields>
                     <inputParameters>
                         <name>displayMode</name>
@@ -3032,7 +3109,27 @@
                     </inputParameters>
                     <name>qcChoice</name>
                 </fields>
-                <name>scrSelection</name>
+                <name>scrChoice</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>confettiEffect</name>
+                        <value/>
+                    </inputParameters>
+                    <name>conf</name>
+                </fields>
+                <name>scrConfetti</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>confettiEffect</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_2_of_conf</name>
+                </fields>
+                <name>scrConfetti3</name>
             </screens>
             <screens>
                 <fields>
