@@ -84,6 +84,7 @@
     </types>
     <types>
         <members>Heijmans_Account_Record_Page</members>
+        <members>Heijmans_Feedback_Record_Page</members>
         <members>Heijmans_Involved_Partner_Record_Page</members>
         <members>Heijmans_Multi_Contact_Record_Page</members>
         <members>Heijmans_Partnership_Record_Page</members>
@@ -128,6 +129,7 @@
         <members>Contact-Heijmans Layout</members>
         <members>Contact-SDOC__Contact Layout SDoc</members>
         <members>Fault_Email_Address__mdt-Heijmans - Fault Email Address Layout</members>
+        <members>FeedbackVote__c-Feedback Vote Layout</members>
         <members>FeedbackVote__c-Heijmans - Feedback Vote Layout</members>
         <members>Feedback__c-Heijmans - Feedback Layout</members>
         <members>FormerPosition__c-Former Position Layout</members>
