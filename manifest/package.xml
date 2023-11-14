@@ -83,6 +83,10 @@
         <name>CustomTab</name>
     </types>
     <types>
+        <members>Salesforce1_Branding_Resources/Heijmans_Logo_Mobile_png</members>
+        <name>Document</name>
+    </types>
+    <types>
         <members>Heijmans_Account_Record_Page</members>
         <members>Heijmans_Feedback_Record_Page</members>
         <members>Heijmans_Involved_Partner_Record_Page</members>
@@ -251,6 +255,7 @@
         <members>Activities</members>
         <members>Address</members>
         <members>Name</members>
+        <members>Security</members>
         <name>Settings</name>
     </types>
     <types>
