@@ -3666,22 +3666,6 @@
         <fullName>Set_all_to_Angebot</fullName>
     </flowDefinitions>
     <flowDefinitions>
-        <flows>
-            <textTemplates>
-                <name>ttDescriptionText</name>
-            </textTemplates>
-        </flows>
-        <fullName>Signal</fullName>
-    </flowDefinitions>
-    <flowDefinitions>
-        <flows>
-            <textTemplates>
-                <name>ttDescriptionText</name>
-            </textTemplates>
-        </flows>
-        <fullName>Signal_STFL01_Create_Task</fullName>
-    </flowDefinitions>
-    <flowDefinitions>
         <flows/>
         <fullName>Start_SET_ALL_TO_ANGEBOT_Flow</fullName>
     </flowDefinitions>
@@ -3707,10 +3691,6 @@
             </screens>
         </flows>
         <fullName>Strategie</fullName>
-    </flowDefinitions>
-    <flowDefinitions>
-        <flows/>
-        <fullName>TEST_FAULT</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows>
