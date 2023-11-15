@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusPick__c</fullName>
+    <description>This field will show the status of the Signal.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Choose the value that fits your Signal.</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Waarde 1</fullName>
+                <default>true</default>
+                <label>Waarde 1</label>
+            </value>
+            <value>
+                <fullName>Waarde 2</fullName>
+                <default>false</default>
+                <label>Waarde 2</label>
+            </value>
+            <value>
+                <fullName>Waarde 3</fullName>
+                <default>false</default>
+                <label>Waarde 3</label>
+            </value>
+            <value>
+                <fullName>Create Opportunity</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Create Opportunity</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
