@@ -78,6 +78,7 @@
         <members>FormerPosition__c</members>
         <members>InvolvedPartner__c</members>
         <members>Partnership__c</members>
+        <members>Signal__c</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -98,6 +99,7 @@
     <types>
         <members>InvolvedPartner__c</members>
         <members>Partnership__c</members>
+        <members>Signal__c</members>
         <name>CustomTab</name>
     </types>
     <types>
