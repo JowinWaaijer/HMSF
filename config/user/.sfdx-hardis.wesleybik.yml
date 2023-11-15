@@ -13,6 +13,7 @@ localStorageBranchTargets:
   features/config/sprint-1-fixes-icons-layouts: integration
   features/config/icon-set-2: integration
   features/config/US-Former-Positions-Feedback: integration
+  features/config/flow-translations: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
