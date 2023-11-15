@@ -69,7 +69,7 @@
         <label>Status</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>StatusPick__c</field>
             </layoutItems>
         </layoutColumns>
@@ -246,6 +246,13 @@
         </relatedContentItems>
     </relatedContent>
     <relatedLists>
+        <fields>NAME</fields>
+        <fields>Plaats_Project__c</fields>
+        <fields>AccountId__c</fields>
+        <fields>Dossiernummer__c</fields>
+        <relatedList>OpportunityClone__c.Contact__c</relatedList>
+    </relatedLists>
+    <relatedLists>
         <fields>OPPORTUNITY.NAME</fields>
         <fields>OPPORTUNITY.STAGE_NAME</fields>
         <fields>OPPORTUNITY.AMOUNT</fields>
@@ -265,13 +272,34 @@
         <relatedList>RelatedNoteList</relatedList>
     </relatedLists>
     <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
+        <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
         <fields>AccountRef__c</fields>
         <fields>Title__c</fields>
-        <fields>StartDate__c</fields>
         <fields>EndDate__c</fields>
-        <fields>Comment__c</fields>
         <relatedList>FormerPosition__c.ContactRef__c</relatedList>
+        <sortField>EndDate__c</sortField>
+        <sortOrder>Desc</sortOrder>
+    </relatedLists>
+    <relatedLists>
+        <fields>ACCOUNT.NAME</fields>
+        <fields>Markt__c</fields>
+        <fields>ACCOUNT.ADDRESS1_STREET</fields>
+        <fields>ACCOUNT.ADDRESS1_CITY</fields>
+        <relatedList>Account.Accountmanager__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>ACCOUNT.NAME</fields>
+        <fields>ACCCONRELATION.IS_DIRECT</fields>
+        <relatedList>RelatedContactAccountRelationList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <relatedList>RelatedEntityHistoryList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>Gespreksverslag__c</fields>
+        <relatedList>Gespreksverslag__c.Contact__c</relatedList>
     </relatedLists>
     <relatedObjects>AccountId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>

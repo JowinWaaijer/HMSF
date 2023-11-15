@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>De laatste vermelding in de contactgegevens die gekoppeld is aan alle voorgaande functies binnen de organisatie.</help>
+    <label></label>
+    <name>ContactRef__c</name>
+    <relationshipLabel>Voorgaande Posities</relationshipLabel>
+</CustomFieldTranslation>
