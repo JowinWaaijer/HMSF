@@ -55,6 +55,7 @@
         <name>CustomField</name>
     </types>
     <types>
+        <members>Former_Positions</members>
         <members>Partnerships</members>
         <name>CustomLabel</name>
     </types>
