@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Wat is de bron van dit signaal?</help>
+    <label>Bron</label>
+    <name>SourcePick__c</name>
+    <picklistValues>
+        <masterLabel>Conversation</masterLabel>
+        <translation>Gesprek</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Newspaper article</masterLabel>
+        <translation>Krantenartikel</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Media</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

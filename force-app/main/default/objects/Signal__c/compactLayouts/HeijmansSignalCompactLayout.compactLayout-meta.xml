@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HeijmansSignalCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>AccountRef__c</fields>
+    <fields>PartnershipRef__c</fields>
+    <fields>StatusPick__c</fields>
+    <fields>ExpectedChangeDate__c</fields>
+    <label>Heijmans - Signal Compact Layout</label>
+</CompactLayout>

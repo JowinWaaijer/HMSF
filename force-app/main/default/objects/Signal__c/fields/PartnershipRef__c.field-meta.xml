@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PartnershipRef__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This field will create a lookup between the objects Signal and Partnership.</description>
+    <externalId>false</externalId>
+    <label>Partnership</label>
+    <referenceTo>Partnership__c</referenceTo>
+    <relationshipLabel>Signals</relationshipLabel>
+    <relationshipName>Signals</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
