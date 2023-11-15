@@ -6,6 +6,10 @@
         <name>CustomField</name>
     </types>
     <types>
+        <members>Heijmans_Account_3_Lightning_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
         <members>Heijmans_Business_Unit_Attirbutes_User</members>
         <members>Heijmans_Former_Positions_Manager</members>
         <members>Heijmans_Former_Positions_User</members>

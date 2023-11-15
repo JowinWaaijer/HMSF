@@ -121,6 +121,10 @@
         <name>Hierarchy</name>
     </customLabels>
     <customLabels>
+        <label>Betrokkenheid</label>
+        <name>Involvement</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Login --></label>
         <name>Login</name>
     </customLabels>
@@ -464,6 +468,7 @@
         <flows>
             <screens>
                 <fields>
+                    <fieldText>Account</fieldText>
                     <name>Account</name>
                 </fields>
                 <fields>
@@ -474,6 +479,7 @@
                     <name>Account_Column1</name>
                 </fields>
                 <fields>
+                    <fieldText>Bericht</fieldText>
                     <name>Message</name>
                 </fields>
                 <fields>
@@ -484,6 +490,7 @@
                     <name>Message_Column1</name>
                 </fields>
                 <fields>
+                    <fieldText>Settings</fieldText>
                     <name>Settings</name>
                 </fields>
                 <fields>
@@ -501,6 +508,7 @@
                     <name>Settings_Column2</name>
                 </fields>
                 <fields>
+                    <fieldText>Zichtbaarheidsperiode</fieldText>
                     <name>VisibilityPeriod</name>
                 </fields>
                 <fields>
@@ -872,15 +880,21 @@
                     <name>diWarning</name>
                 </fields>
                 <fields>
+                    <fieldText>&lt;ul&gt;&lt;li&gt;&lt;strong style=&quot;color: rgb(14, 15, 31); font-family: inherit; font-size: inherit;&quot;&gt;Dismissible&amp;nbsp;&lt;/strong&gt;geeft het bericht weer totdat er op de knop Sluiten wordt geklikt of totdat de tijdsduur is verstreken.&lt;/li&gt;&lt;li&gt;&lt;strong style=&quot;color: rgb(14, 15, 31); font-family: inherit; font-size: inherit;&quot;&gt;Pester&amp;nbsp;&lt;/strong&gt;wordt weergegeven totdat de tijdsduur is verstreken. Er is geen sluitknop beschikbaar.&lt;/li&gt;&lt;li&gt;&lt;strong style=&quot;color: rgb(14, 15, 31); font-family: inherit; font-size: inherit;&quot;&gt;Sticky&amp;nbsp;&lt;/strong&gt;blijft weergegeven tot er op de sluitknop wordt gedrukt.&lt;/li&gt;&lt;/ul&gt;</fieldText>
                     <name>dtMode</name>
                 </fields>
                 <fields>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-family: verdana;&quot;&gt;Selecteer svp of je een nieuwe alert wilt toevoegen of bestaande alert(s) wilt deactiveren.&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-family: verdana;&quot;&gt;&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</fieldText>
                     <name>dtTitle</name>
                 </fields>
                 <fields>
+                    <fieldText>Einddatum</fieldText>
+                    <helpText>Tot wanneer moeten we deze waarschuwing weergeven?</helpText>
                     <name>dtiEndDate</name>
                 </fields>
                 <fields>
+                    <fieldText>Startdatum</fieldText>
+                    <helpText>Vanaf welk tijdstip moeten we deze waarschuwing weergeven?</helpText>
                     <name>dtiStartDate</name>
                 </fields>
                 <fields>
@@ -911,18 +925,25 @@
                     <name>luAccount</name>
                 </fields>
                 <fields>
+                    <fieldText>Duur (in Seconden)</fieldText>
+                    <helpText>&lt;p&gt;Hoeveel seconden moet het bericht getoond worden?&lt;/p</helpText>
                     <name>nrDuration</name>
                 </fields>
                 <fields>
+                    <fieldText>Volgorde</fieldText>
+                    <helpText>&lt;p&gt;De volgorde bepaalt welke alert als eerste wordt weergegeven. Er zijn slechts 4 actieve alerts toegestaan.&lt;/p&gt;</helpText>
                     <name>nrSequence</name>
                 </fields>
                 <fields>
+                    <fieldText>Icoon</fieldText>
                     <name>plIcon</name>
                 </fields>
                 <fields>
+                    <fieldText>Modus</fieldText>
                     <name>plMode</name>
                 </fields>
                 <fields>
+                    <fieldText>Type</fieldText>
                     <name>plType</name>
                 </fields>
                 <fields>
@@ -1022,15 +1043,22 @@
                     <name>scrAlert_Section6_Column2</name>
                 </fields>
                 <fields>
+                    <fieldText>Bericht</fieldText>
                     <name>txtMessage</name>
                 </fields>
                 <fields>
+                    <fieldText>Titel</fieldText>
+                    <helpText>&lt;p&gt;De titel is optioneel. Als je een titel opgeeft, staat deze op de eerste regel met een groter lettertype en het bericht op de tweede regel met een kleiner lettertype.&lt;/p&gt;</helpText>
                     <name>txtTitle</name>
                 </fields>
                 <fields>
+                    <fieldText>URL Label</fieldText>
+                    <helpText>&lt;p&gt;&lt;strong&gt;Optional:&lt;/strong&gt; Dit is het label voor de link in je bericht. Om een klikbare link in het bericht op te nemen, plaats je de tekens {url} in je bericht. Tijdens het uitvoeren zal het bericht worden bijgewerkt om {url} te vervangen door de waarde van je &quot;URL Label&quot; en het zal linken naar het adres dat je hebt opgegeven in de URL Link.&lt;/p&gt;</helpText>
                     <name>txtURLLabel</name>
                 </fields>
                 <fields>
+                    <fieldText>URL Link</fieldText>
+                    <helpText>&lt;p&gt;Voeg een externe link toe (bijvoorbeeld een belangrijk nieuwsartikel) of een interne link in Salesforce naar bijvoorbeeld een opportunity record.&lt;/p&gt;</helpText>
                     <name>urlLink</name>
                 </fields>
                 <name>scrAlert</name>
@@ -1052,6 +1080,7 @@
                     <name>diWarning2</name>
                 </fields>
                 <fields>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-family: verdana;&quot;&gt;Er zijn slechts 4 actieve waarschuwingen toegestaan.&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-family: verdana;&quot;&gt;Selecteer een of meerdere waarschuwingen die moeten worden gedeactiveerd en klik op volgende om een nieuwe waarschuwing aan te maken.&lt;/span&gt;&lt;/p&gt;</fieldText>
                     <name>dtDescription</name>
                 </fields>
                 <fields>
@@ -1061,7 +1090,9 @@
                     </inputParameters>
                     <inputParameters>
                         <name>label</name>
-                        <value/>
+                        <value>
+                            <stringValue>&quot;Data Tabel&quot;</stringValue>
+                        </value>
                     </inputParameters>
                     <inputParameters>
                         <name>maxRowSelection</name>
@@ -1119,6 +1150,7 @@
                     <name>diBu</name>
                 </fields>
                 <fields>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-family: verdana;&quot;&gt;De alert(s) zijn gedeactiveerd.&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
                     <name>dtSuccess</name>
                 </fields>
                 <name>scrSuccess</name>
@@ -1163,6 +1195,7 @@
                     <name>diClock1</name>
                 </fields>
                 <fields>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-family: verdana;&quot;&gt;Het alert record is succesvol aangemaakt. &lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-family: verdana;&quot;&gt;Het activatie proces is ingepland, dus het kan tot een minuut duren, voordat je de nieuwe alert op je scherm ziet.&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
                     <name>dtCreate</name>
                 </fields>
                 <name>scrSuccess_0</name>
@@ -2997,6 +3030,7 @@
                     <name>diWarning</name>
                 </fields>
                 <fields>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-family: verdana; font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Sorry, je hebt al op dit item gestemd! &lt;/strong&gt;&lt;/p&gt;</fieldText>
                     <name>dtWarning</name>
                 </fields>
                 <name>scrWarning</name>
@@ -3018,6 +3052,7 @@
                     <name>Copy_1_of_diWarning</name>
                 </fields>
                 <fields>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-family: verdana; font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Sorry, je hebt al op dit item gestemd!&lt;/strong&gt;&lt;/p&gt;</fieldText>
                     <name>dtWarningDownvoted</name>
                 </fields>
                 <name>scrWarningDownVoted</name>
@@ -3865,7 +3900,7 @@
         <name>NewTask</name>
     </quickActions>
     <quickActions>
-        <label><!-- NewTask --></label>
+        <label><!-- New Task --></label>
         <name>NewTask</name>
     </quickActions>
     <quickActions>
@@ -4522,10 +4557,6 @@
         <sections>
             <label><!-- Gebruikers --></label>
             <name>Gebruikers</name>
-        </sections>
-        <sections>
-            <label><!-- Users --></label>
-            <name>Users</name>
         </sections>
     </reportTypes>
     <reportTypes>

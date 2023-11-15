@@ -57,6 +57,7 @@
     </types>
     <types>
         <members>Former_Positions</members>
+        <members>Involvement</members>
         <members>Partnerships</members>
         <name>CustomLabel</name>
     </types>
@@ -92,11 +93,11 @@
         <name>Document</name>
     </types>
     <types>
-        <members>Heijmans_Account_3_Lightning_Page</members>
         <members>Heijmans_Account_Record_Page</members>
         <members>Heijmans_Feedback_Record_Page</members>
         <members>Heijmans_Former_Position_Record_Page</members>
         <members>Heijmans_Involved_Partner_Record_Page</members>
+        <members>Heijmans_Multi_Account_Lightning_Page</members>
         <members>Heijmans_Multi_Contact_Record_Page</members>
         <members>Heijmans_Partnership_Record_Page</members>
         <name>FlexiPage</name>
