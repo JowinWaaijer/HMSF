@@ -251,7 +251,7 @@
         </rules>
         <rules>
             <name>Step_Back</name>
-            <conditionLogic>and</conditionLogic>
+            <conditionLogic>or</conditionLogic>
             <conditions>
                 <leftValueReference>btnDeceasedEN.value</leftValueReference>
                 <operator>EqualTo</operator>
@@ -520,9 +520,9 @@
         <name>fmDescriptionNewJob</name>
         <dataType>String</dataType>
         <expression>CASE({!fmUserLanguageCode}, 
-&quot;nl_NL&quot;, &quot;Selecteer deze waarde als het contact een nieuwe baan heeft. Het oude contact wordt op inactief gezet.&quot;, 
-&quot;en_US&quot;, &quot;Select this value if the contact has a new job. The old contact will be set to inactive.&quot;,
-&quot;Select this value if the contact has a new job. The old contact will be set to inactive.&quot;)</expression>
+&quot;nl_NL&quot;, &quot;Selecteer deze waarde als het contact een nieuwe baan heeft.&quot;, 
+&quot;en_US&quot;, &quot;Select this value if the contact has a new job.&quot;,
+&quot;Select this value if the contact has a new job.&quot;)</expression>
     </formulas>
     <formulas>
         <description>Sets description of the icon element.</description>
@@ -543,7 +543,10 @@
     <formulas>
         <name>fmInvalidEmail</name>
         <dataType>String</dataType>
-        <expression>{!recordId.Email} &amp; &quot;.invalid&quot;</expression>
+        <expression>IF(NOT(ISBLANK({!recordId.Email})),
+{!recordId.Email} &amp; &quot;.invalid&quot;,
+&quot;&quot;
+)</expression>
     </formulas>
     <formulas>
         <description>Sets the label of the icon element.</description>
@@ -1072,34 +1075,9 @@
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
         <fields>
-            <name>Copy_1_of_dtRetireNL</name>
-            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Je staat op het punt om {!recordId.Name} te categoriseren als overleden. Zo ja klik op &quot;Doorvoeren&quot; of ga terug naar het vorige scherm om je keuze aan te passen of klik op stop om het proces te beëindigen. &lt;/span&gt;&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-            <visibilityRule>
-                <conditionLogic>and</conditionLogic>
-                <conditions>
-                    <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
-                    <rightValue>
-                        <stringValue>nl_NL</stringValue>
-                    </rightValue>
-                </conditions>
-            </visibilityRule>
-        </fields>
-        <fields>
-            <name>Copy_1_of_dtRetireEN</name>
+            <name>dtDeceasedEN</name>
             <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;You are about to categorize {!recordId.Name} as deceased. If correct, click on &quot;Proceed&quot; or go back to the previous screen to adjust your choice or click &quot;&lt;/span&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Cancel&lt;/span&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&quot; the operation.&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <visibilityRule>
-                <conditionLogic>and</conditionLogic>
-                <conditions>
-                    <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
-                    <rightValue>
-                        <stringValue>en_US</stringValue>
-                    </rightValue>
-                </conditions>
-            </visibilityRule>
         </fields>
         <fields>
             <name>btnDeceasedNL</name>
@@ -1190,9 +1168,9 @@
                 <conditionLogic>and</conditionLogic>
                 <conditions>
                     <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
+                    <operator>NotEqualTo</operator>
                     <rightValue>
-                        <stringValue>en_US</stringValue>
+                        <stringValue>nl_NL</stringValue>
                     </rightValue>
                 </conditions>
             </visibilityRule>
@@ -1239,34 +1217,9 @@
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
         <fields>
-            <name>dtRetireNL</name>
-            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Je staat op het punt om {!recordId.Name} te categoriseren als gepensioneerd. Zo ja klik op &quot;Doorvoeren&quot; of ga terug naar het vorige scherm om je keuze aan te passen of klik op stop om het proces te beëindigen. &lt;/span&gt;&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-            <visibilityRule>
-                <conditionLogic>and</conditionLogic>
-                <conditions>
-                    <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
-                    <rightValue>
-                        <stringValue>nl_NL</stringValue>
-                    </rightValue>
-                </conditions>
-            </visibilityRule>
-        </fields>
-        <fields>
             <name>dtRetireEN</name>
             <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;You are about to categorize {!recordId.Name} as retired. If correct, click on &quot;Proceed&quot; or go back to the previous screen to adjust your choice or cancel the operation.&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <visibilityRule>
-                <conditionLogic>and</conditionLogic>
-                <conditions>
-                    <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
-                    <rightValue>
-                        <stringValue>en_US</stringValue>
-                    </rightValue>
-                </conditions>
-            </visibilityRule>
         </fields>
         <fields>
             <name>btnRetireNL</name>
@@ -1357,9 +1310,9 @@
                 <conditionLogic>and</conditionLogic>
                 <conditions>
                     <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
+                    <operator>NotEqualTo</operator>
                     <rightValue>
-                        <stringValue>en_US</stringValue>
+                        <stringValue>nl_NL</stringValue>
                     </rightValue>
                 </conditions>
             </visibilityRule>
@@ -1405,34 +1358,9 @@
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
         <fields>
-            <name>dtCreateAccountNL</name>
-            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Vul alle gegevens om een nieuw account aan te maken.&lt;/span&gt;&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-            <visibilityRule>
-                <conditionLogic>and</conditionLogic>
-                <conditions>
-                    <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
-                    <rightValue>
-                        <stringValue>nl_NL</stringValue>
-                    </rightValue>
-                </conditions>
-            </visibilityRule>
-        </fields>
-        <fields>
             <name>dtCreateAccountEN</name>
             <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Provide all the required information to create a new account.&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <visibilityRule>
-                <conditionLogic>and</conditionLogic>
-                <conditions>
-                    <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
-                    <rightValue>
-                        <stringValue>en_US</stringValue>
-                    </rightValue>
-                </conditions>
-            </visibilityRule>
         </fields>
         <fields>
             <name>txtAccountName</name>
@@ -1538,7 +1466,7 @@
                 <conditionLogic>and</conditionLogic>
                 <conditions>
                     <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
+                    <operator>NotEqualTo</operator>
                     <rightValue>
                         <stringValue>nl_NL</stringValue>
                     </rightValue>
@@ -1588,7 +1516,7 @@
                     <leftValueReference>fmUserLanguageCode</leftValueReference>
                     <operator>EqualTo</operator>
                     <rightValue>
-                        <stringValue>en_US</stringValue>
+                        <stringValue>nl_NL</stringValue>
                     </rightValue>
                 </conditions>
             </visibilityRule>
@@ -1635,34 +1563,9 @@
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
         <fields>
-            <name>dtDutchIntroduction</name>
-            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Om de werkstatus van {!recordId.Name} bij {!recordId.Account.Name} bij te werken, kun je kiezen uit de volgende opties:&lt;/span&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Registreer deze contactpersoon bij een ander bedrijf.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Maak een aantekening van pensionering.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Zet de contactpersoon op overleden.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Klik eenvoudig op &quot;Contact verplaatsen&quot; en de opties worden aan je gepresenteerd.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Zorg ervoor dat je alle benodigde gegevens klaar hebt voor deze update.&lt;/span&gt;&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-            <visibilityRule>
-                <conditionLogic>and</conditionLogic>
-                <conditions>
-                    <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
-                    <rightValue>
-                        <stringValue>nl_NL</stringValue>
-                    </rightValue>
-                </conditions>
-            </visibilityRule>
-        </fields>
-        <fields>
             <name>dtNewPostion</name>
             <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Söhne, ui-sans-serif, system-ui, -apple-system, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 14px;&quot;&gt;To update the employment status of &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Söhne, ui-sans-serif, system-ui, -apple-system, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;{!recordId.Name}&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Söhne, ui-sans-serif, system-ui, -apple-system, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 14px;&quot;&gt; at {!recordId.Account.Name}, you can choose from the following options:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Söhne, ui-sans-serif, system-ui, -apple-system, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 14px;&quot;&gt;Register this contact with another company.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Söhne, ui-sans-serif, system-ui, -apple-system, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 14px;&quot;&gt;Make note of a retirement.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Söhne, ui-sans-serif, system-ui, -apple-system, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 14px;&quot;&gt;Set the contact to deceased.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Söhne, ui-sans-serif, system-ui, -apple-system, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 14px;&quot;&gt;Simply click on &quot;Move Contact&quot; and the options will be presented to you.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Söhne, ui-sans-serif, system-ui, -apple-system, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 14px;&quot;&gt;Please make sure you have all the required details prepared for this update.&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <visibilityRule>
-                <conditionLogic>and</conditionLogic>
-                <conditions>
-                    <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
-                    <rightValue>
-                        <stringValue>en_US</stringValue>
-                    </rightValue>
-                </conditions>
-            </visibilityRule>
         </fields>
         <fields>
             <name>btnTypeOfMoveEN</name>
@@ -1705,9 +1608,9 @@
                 <conditionLogic>and</conditionLogic>
                 <conditions>
                     <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
+                    <operator>NotEqualTo</operator>
                     <rightValue>
-                        <stringValue>en_US</stringValue>
+                        <stringValue>nl_NL</stringValue>
                     </rightValue>
                 </conditions>
             </visibilityRule>
@@ -1847,31 +1750,6 @@
             <name>dtCreateNewAccountEN</name>
             <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Is the contact now working at a company that does not exist in Salesforce? When in doubt use the search bar below.&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <visibilityRule>
-                <conditionLogic>and</conditionLogic>
-                <conditions>
-                    <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
-                    <rightValue>
-                        <stringValue>en_US</stringValue>
-                    </rightValue>
-                </conditions>
-            </visibilityRule>
-        </fields>
-        <fields>
-            <name>dtCreateNewAccountNL</name>
-            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 14px; color: rgb(68, 68, 68);&quot;&gt;Werkt het contact bij een account wat al bestaat in de database van Salesforce? Controleer het hieronder of maak een nieuw account aan.&lt;/span&gt;&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-            <visibilityRule>
-                <conditionLogic>and</conditionLogic>
-                <conditions>
-                    <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
-                    <rightValue>
-                        <stringValue>nl_NL</stringValue>
-                    </rightValue>
-                </conditions>
-            </visibilityRule>
         </fields>
         <fields>
             <name>luFindAccount</name>
@@ -1940,9 +1818,9 @@
                 <conditionLogic>and</conditionLogic>
                 <conditions>
                     <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
+                    <operator>NotEqualTo</operator>
                     <rightValue>
-                        <stringValue>en_US</stringValue>
+                        <stringValue>nl_NL</stringValue>
                     </rightValue>
                 </conditions>
             </visibilityRule>
@@ -2036,34 +1914,9 @@
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
         <fields>
-            <name>dtChooseOptionNL</name>
-            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Gelieve de optie te kiezen die de status van {!recordId.Name} nauwkeurig weergeeft.&lt;/span&gt;&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-            <visibilityRule>
-                <conditionLogic>and</conditionLogic>
-                <conditions>
-                    <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
-                    <rightValue>
-                        <stringValue>nl_NL</stringValue>
-                    </rightValue>
-                </conditions>
-            </visibilityRule>
-        </fields>
-        <fields>
             <name>dtChooseOptionEN</name>
             <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: rgb(0, 0, 0);&quot;&gt;Kindly choose the option that accurately represents the status of &lt;/span&gt;&lt;span style=&quot;font-size: 14px; color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;{!recordId.Name}&lt;/span&gt;&lt;span style=&quot;font-size: 14px; color: rgb(0, 0, 0);&quot;&gt;.&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <visibilityRule>
-                <conditionLogic>and</conditionLogic>
-                <conditions>
-                    <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
-                    <rightValue>
-                        <stringValue>en_US</stringValue>
-                    </rightValue>
-                </conditions>
-            </visibilityRule>
         </fields>
         <fields>
             <name>qcSelection</name>
@@ -2174,9 +2027,9 @@
                 <conditionLogic>and</conditionLogic>
                 <conditions>
                     <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
+                    <operator>NotEqualTo</operator>
                     <rightValue>
-                        <stringValue>en_US</stringValue>
+                        <stringValue>nl_NL</stringValue>
                     </rightValue>
                 </conditions>
             </visibilityRule>
@@ -2271,34 +2124,9 @@
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
         <fields>
-            <name>dtContactInfoNL</name>
-            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Vul de juiste gegevens in van de contactpersoon. &lt;/span&gt;&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-            <visibilityRule>
-                <conditionLogic>and</conditionLogic>
-                <conditions>
-                    <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
-                    <rightValue>
-                        <stringValue>nl_NL</stringValue>
-                    </rightValue>
-                </conditions>
-            </visibilityRule>
-        </fields>
-        <fields>
             <name>dtContactInfoEN</name>
             <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Please provide the contact details for the new postion.&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <visibilityRule>
-                <conditionLogic>and</conditionLogic>
-                <conditions>
-                    <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
-                    <rightValue>
-                        <stringValue>en_US</stringValue>
-                    </rightValue>
-                </conditions>
-            </visibilityRule>
         </fields>
         <fields>
             <name>scrSetupNewRole_Section1</name>
@@ -2516,9 +2344,9 @@
                 <conditionLogic>and</conditionLogic>
                 <conditions>
                     <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
+                    <operator>NotEqualTo</operator>
                     <rightValue>
-                        <stringValue>en_US</stringValue>
+                        <stringValue>nl_NL</stringValue>
                     </rightValue>
                 </conditions>
             </visibilityRule>
@@ -2615,31 +2443,6 @@
             <name>scrSuccesNewPositionEN</name>
             <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;You&apos;ve successfully create a new position! &lt;/span&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Click on open record to view the contact.&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <visibilityRule>
-                <conditionLogic>and</conditionLogic>
-                <conditions>
-                    <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
-                    <rightValue>
-                        <stringValue>en_US</stringValue>
-                    </rightValue>
-                </conditions>
-            </visibilityRule>
-        </fields>
-        <fields>
-            <name>dtSuccesJobNL</name>
-            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Het is gelukt om een nieuwe baan aan te maken! Klik op record openen om het contactpersoon te bekijken. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;﻿&lt;/span&gt;&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-            <visibilityRule>
-                <conditionLogic>and</conditionLogic>
-                <conditions>
-                    <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
-                    <rightValue>
-                        <stringValue>nl_NL</stringValue>
-                    </rightValue>
-                </conditions>
-            </visibilityRule>
         </fields>
         <fields>
             <name>btnOpenRecordEN</name>
@@ -2682,9 +2485,9 @@
                 <conditionLogic>and</conditionLogic>
                 <conditions>
                     <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
+                    <operator>NotEqualTo</operator>
                     <rightValue>
-                        <stringValue>en_US</stringValue>
+                        <stringValue>nl_NL</stringValue>
                     </rightValue>
                 </conditions>
             </visibilityRule>
@@ -2781,31 +2584,6 @@
             <name>dtSuccesEN</name>
             <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;You&apos;ve successfully set the contact to inactive! Click on open record to view the contact.&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <visibilityRule>
-                <conditionLogic>and</conditionLogic>
-                <conditions>
-                    <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
-                    <rightValue>
-                        <stringValue>en_US</stringValue>
-                    </rightValue>
-                </conditions>
-            </visibilityRule>
-        </fields>
-        <fields>
-            <name>dtSuccesNL</name>
-            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255); font-size: 14px;&quot;&gt;Het is gelukt om het contactpersoon op inactief te zetten! Klik op record openen om het contactpersoon te bekijken. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255); font-size: 14px;&quot;&gt;﻿&lt;/span&gt;&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-            <visibilityRule>
-                <conditionLogic>and</conditionLogic>
-                <conditions>
-                    <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
-                    <rightValue>
-                        <stringValue>nl_NL</stringValue>
-                    </rightValue>
-                </conditions>
-            </visibilityRule>
         </fields>
         <fields>
             <name>btnOpenRecordRetireEN</name>
@@ -2848,9 +2626,9 @@
                 <conditionLogic>and</conditionLogic>
                 <conditions>
                     <leftValueReference>fmUserLanguageCode</leftValueReference>
-                    <operator>EqualTo</operator>
+                    <operator>NotEqualTo</operator>
                     <rightValue>
-                        <stringValue>en_US</stringValue>
+                        <stringValue>nl_NL</stringValue>
                     </rightValue>
                 </conditions>
             </visibilityRule>
