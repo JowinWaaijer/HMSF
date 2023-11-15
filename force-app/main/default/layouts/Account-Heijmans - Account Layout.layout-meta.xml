@@ -335,6 +335,14 @@
         <relatedList>RelatedHistoryList</relatedList>
     </relatedLists>
     <relatedLists>
+        <fields>NAME</fields>
+        <fields>StatusPick__c</fields>
+        <fields>ExpectedChangeDate__c</fields>
+        <relatedList>Signal__c.AccountRef__c</relatedList>
+        <sortField>ExpectedChangeDate__c</sortField>
+        <sortOrder>Asc</sortOrder>
+    </relatedLists>
+    <relatedLists>
         <fields>MEMBER_NAME</fields>
         <fields>TEAM_MEMBER_ROLE</fields>
         <relatedList>RelatedAccountSalesTeam</relatedList>

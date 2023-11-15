@@ -13,6 +13,7 @@
         <members>Account.Heijmans_klant</members>
         <members>InvolvedPartner__c.Heijmans_Involved_Partner_Compact_Layout</members>
         <members>Partnership__c.Heijmans_Partnerships_Compact_Layout</members>
+        <members>Signal__c.HeijmansSignalCompactLayout</members>
         <name>CompactLayout</name>
     </types>
     <types>
@@ -53,6 +54,16 @@
         <members>Partnership__c.StartDate__c</members>
         <members>Partnership__c.TypePick__c</members>
         <members>Partnership__c.Website__c</members>
+        <members>Signal__c.AccountOwnerForm__c</members>
+        <members>Signal__c.AccountRef__c</members>
+        <members>Signal__c.ExpectedChangeDate__c</members>
+        <members>Signal__c.OpportunityRef__c</members>
+        <members>Signal__c.ParentSignalRef__c</members>
+        <members>Signal__c.PartnershipRef__c</members>
+        <members>Signal__c.SetSignalReminderPick__c</members>
+        <members>Signal__c.SourcePick__c</members>
+        <members>Signal__c.SourceURL__c</members>
+        <members>Signal__c.StatusPick__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -67,6 +78,7 @@
         <members>FormerPosition__c</members>
         <members>InvolvedPartner__c</members>
         <members>Partnership__c</members>
+        <members>Signal__c</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -81,11 +93,13 @@
         <members>InvolvedPartner__c-nl_NL</members>
         <members>Partnership__c-en_US</members>
         <members>Partnership__c-nl_NL</members>
+        <members>Signal__c-nl_NL</members>
         <name>CustomObjectTranslation</name>
     </types>
     <types>
         <members>InvolvedPartner__c</members>
         <members>Partnership__c</members>
+        <members>Signal__c</members>
         <name>CustomTab</name>
     </types>
     <types>
@@ -93,6 +107,7 @@
         <name>Document</name>
     </types>
     <types>
+        <members>HeijmansSignalRecordPage</members>
         <members>Heijmans_Account_Record_Page</members>
         <members>Heijmans_Feedback_Record_Page</members>
         <members>Heijmans_Former_Position_Record_Page</members>
@@ -151,6 +166,7 @@
         <members>InvolvedPartner__c-Involved Partner Layout</members>
         <members>Partnership__c-Heijmans - Partnership Layout</members>
         <members>Partnership__c-Partnership Layout</members>
+        <members>Signal__c-Heijmans - Signal Layout</members>
         <name>Layout</name>
     </types>
     <types>
@@ -170,6 +186,7 @@
         <members>Partnership__c.Alle_active_tijdelijke_samenwerkingen</members>
         <members>Partnership__c.Alle_inactieve_samenwerkingsverbanden</members>
         <members>Partnership__c.Alle_samenwerkingen_zonder_startdatum</members>
+        <members>Signal__c.All</members>
         <name>ListView</name>
     </types>
     <types>
