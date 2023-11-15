@@ -3,7 +3,7 @@
     <fullName>SourcePick__c</fullName>
     <description>This vield will show the Source of the Signal.</description>
     <externalId>false</externalId>
-    <inlineHelpText>Wat is de bron van dit signaal?</inlineHelpText>
+    <inlineHelpText>Select the Source of your Signal.</inlineHelpText>
     <label>Source</label>
     <required>false</required>
     <trackHistory>false</trackHistory>
