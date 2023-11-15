@@ -11,6 +11,7 @@ localStorageBranchTargets:
   features/config/US-69987-BugFixQuickChoiceV2: integration
   features/config/US-Branding: integration
   features/config/US-BugfixesContact: integration
+  features/config/US-BUGFIX-AccountFlexiPage: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
