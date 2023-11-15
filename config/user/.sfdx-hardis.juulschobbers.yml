@@ -10,6 +10,7 @@ localStorageBranchTargets:
   features/config/US-69987-BugfixQuickChoice: integration
   features/config/US-69987-BugFixQuickChoiceV2: integration
   features/config/US-Branding: integration
+  features/config/US-BugfixesContact: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
