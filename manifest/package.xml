@@ -10,6 +10,7 @@
     </types>
     <types>
         <members>Account.Heijmans_Account_Compact_Layout</members>
+        <members>Account.Heijmans_klant</members>
         <members>InvolvedPartner__c.Heijmans_Involved_Partner_Compact_Layout</members>
         <members>Partnership__c.Heijmans_Partnerships_Compact_Layout</members>
         <name>CompactLayout</name>
@@ -59,6 +60,7 @@
         <name>CustomLabel</name>
     </types>
     <types>
+        <members>Account</members>
         <members>Alert__c</members>
         <members>FormerPosition__c</members>
         <members>InvolvedPartner__c</members>
@@ -89,6 +91,7 @@
         <name>Document</name>
     </types>
     <types>
+        <members>Heijmans_Account_3_Lightning_Page</members>
         <members>Heijmans_Account_Record_Page</members>
         <members>Heijmans_Feedback_Record_Page</members>
         <members>Heijmans_Former_Position_Record_Page</members>
