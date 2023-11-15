@@ -14,6 +14,7 @@ localStorageBranchTargets:
   features/config/icon-set-2: integration
   features/config/US-Former-Positions-Feedback: integration
   features/config/flow-translations: integration
+  features/config/us-70858-signals: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
