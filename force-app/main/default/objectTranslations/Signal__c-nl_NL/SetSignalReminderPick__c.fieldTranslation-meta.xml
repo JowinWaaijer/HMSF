@@ -5,14 +5,14 @@
     <name>SetSignalReminderPick__c</name>
     <picklistValues>
         <masterLabel>One month</masterLabel>
-        <translation></translation>
+        <translation>1 maand</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Three months</masterLabel>
-        <translation></translation>
+        <translation>2 maanden</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Two months</masterLabel>
-        <translation></translation>
+        <translation>3 maanden</translation>
     </picklistValues>
 </CustomFieldTranslation>
