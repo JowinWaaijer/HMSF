@@ -109,10 +109,6 @@
         <name>FeedbackRequestTitle</name>
     </customLabels>
     <customLabels>
-        <label>Voorgaande Posities</label>
-        <name>Former_Positions</name>
-    </customLabels>
-    <customLabels>
         <label><!-- GeneratePDF --></label>
         <name>GeneratePDF</name>
     </customLabels>
@@ -2870,10 +2866,6 @@
             </screens>
         </flows>
         <fullName>Strategie</fullName>
-    </flowDefinitions>
-    <flowDefinitions>
-        <flows/>
-        <fullName>TEST_FAULT</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows>
