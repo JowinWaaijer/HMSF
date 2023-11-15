@@ -2164,36 +2164,6 @@
                 </fields>
                 <name>scrFeature</name>
             </screens>
-            <screens>
-                <fields>
-                    <inputParameters>
-                        <name>displayMode</name>
-                        <value/>
-                    </inputParameters>
-                    <inputParameters>
-                        <name>iconSize</name>
-                        <value/>
-                    </inputParameters>
-                    <inputParameters>
-                        <name>includeIcons</name>
-                        <value/>
-                    </inputParameters>
-                    <inputParameters>
-                        <name>inputMode</name>
-                        <value/>
-                    </inputParameters>
-                    <inputParameters>
-                        <name>navOnSelect</name>
-                        <value/>
-                    </inputParameters>
-                    <inputParameters>
-                        <name>numberOfColumns</name>
-                        <value/>
-                    </inputParameters>
-                    <name>qcRecordTypesFeedback</name>
-                </fields>
-                <name>scrSelection</name>
-            </screens>
         </flows>
         <fullName>Feedback_SCFL01_Add_Feedback_via_Utility_Bar</fullName>
     </flowDefinitions>
