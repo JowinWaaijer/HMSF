@@ -25,3 +25,6 @@ mergeRequests:
   - branch: features/config/sprint-1-fixes-icons-layouts
     urlCreate: >-
       https://github.com/JowinWaaijer/heijmans-infra/pull/new/features/config/sprint-1-fixes-icons-layouts
+  - branch: features/config/US-Former-Positions-Feedback
+    urlCreate: >-
+      https://github.com/JowinWaaijer/heijmans-infra/pull/new/features/config/US-Former-Positions-Feedback
