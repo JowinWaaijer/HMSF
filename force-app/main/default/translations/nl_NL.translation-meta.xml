@@ -109,10 +109,6 @@
         <name>FeedbackRequestTitle</name>
     </customLabels>
     <customLabels>
-        <label>Voorgaande Posities</label>
-        <name>Former_Positions</name>
-    </customLabels>
-    <customLabels>
         <label><!-- GeneratePDF --></label>
         <name>GeneratePDF</name>
     </customLabels>
