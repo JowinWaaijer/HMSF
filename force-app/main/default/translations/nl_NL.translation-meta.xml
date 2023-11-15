@@ -2837,14 +2837,6 @@
         <fullName>Quick_scan</fullName>
     </flowDefinitions>
     <flowDefinitions>
-        <flows>
-            <textTemplates>
-                <name>ttDescriptionText</name>
-            </textTemplates>
-        </flows>
-        <fullName>STFL</fullName>
-    </flowDefinitions>
-    <flowDefinitions>
         <flows/>
         <fullName>Set_all_to_Angebot</fullName>
     </flowDefinitions>
