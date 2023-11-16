@@ -64,6 +64,12 @@
         <members>Signal__c.SourcePick__c</members>
         <members>Signal__c.SourceURL__c</members>
         <members>Signal__c.StatusPick__c</members>
+        <members>albiraSolutions__AccountChart__c.ParentChartNameTrig__c</members>
+        <members>albiraSolutions__ContactChart__c.ParentChartNameTrig__c</members>
+        <members>albiraSolutions__ContactChart__c.albiraSolutions__AccountChart__c</members>
+        <members>albiraSolutions__ContactChart__c.albiraSolutions__AccountID__c</members>
+        <members>albiraSolutions__ContactChart__c.albiraSolutions__Contact__c</members>
+        <members>albiraSolutions__ContactChart__c.albiraSolutions__CreatedDate__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -79,6 +85,7 @@
         <members>InvolvedPartner__c</members>
         <members>Partnership__c</members>
         <members>Signal__c</members>
+        <members>albiraSolutions__ContactChart__c</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -107,6 +114,10 @@
         <name>Document</name>
     </types>
     <types>
+        <members>albiraSolutions__ContactChart__c.Duplicate_Contact_Chart</members>
+        <name>DuplicateRule</name>
+    </types>
+    <types>
         <members>HeijmansSignalRecordPage</members>
         <members>Heijmans_Account_Record_Page</members>
         <members>Heijmans_Feedback_Record_Page</members>
@@ -120,11 +131,16 @@
     <types>
         <members>ACC_RTFL01_Create_BUSA_records</members>
         <members>ACC_RTFL02_Manually_Create_BUSA_records</members>
+        <members>AccountChart_RTFL01_Update_ContactCharts_when_Department_is_Changed</members>
+        <members>AccountChart_RTFL02_Update_Parent_Accountchart_Name_at_Create_and_Change</members>
         <members>AccountContactRelationship_RTFL01_Set_to_Inactive_on_Enddate</members>
         <members>Account_SCFL01_Add_New_Alert_to_Account_Record</members>
         <members>Account_SCFL02_Show_Alert_on_Account_Record</members>
         <members>Account_STFL01_Activate_Deactivate_Alert_Message</members>
         <members>CON_SCFL01_Create_Former_Position</members>
+        <members>ContactChart_RTFL01_Update_Department_of_all_Contacts</members>
+        <members>ContactChart_RTFL02_Update_ParentChartName_and_Contact_Department</members>
+        <members>Contact_RTFL01_Update_Department_Info_on_Account_and_Contact_Chart</members>
         <members>Contact_SCFL02_Display_Contact_s_Picture</members>
         <members>FAULT_CONNECTOR</members>
         <members>FAULT_CONNECTOR_SCREENFLOW</members>
@@ -167,6 +183,7 @@
         <members>Partnership__c-Heijmans - Partnership Layout</members>
         <members>Partnership__c-Partnership Layout</members>
         <members>Signal__c-Heijmans - Signal Layout</members>
+        <members>albiraSolutions__ContactChart__c-albiraSolutions__ContactChart Layout</members>
         <name>Layout</name>
     </types>
     <types>
@@ -187,19 +204,25 @@
         <members>Partnership__c.Alle_inactieve_samenwerkingsverbanden</members>
         <members>Partnership__c.Alle_samenwerkingen_zonder_startdatum</members>
         <members>Signal__c.All</members>
+        <members>albiraSolutions__ContactChart__c.albiraSolutions__All</members>
         <name>ListView</name>
     </types>
     <types>
+        <members>Contact.Contact_Email_and_Phone_Matching</members>
         <members>Contact.Heijmans_Standard_Contact_Matching</members>
+        <members>albiraSolutions__ContactChart__c.Duplicate_Contact_Chart</members>
         <name>MatchingRule</name>
     </types>
     <types>
         <members>Contact</members>
+        <members>albiraSolutions__ContactChart__c</members>
         <name>MatchingRules</name>
     </types>
     <types>
         <members>Heijmans_Accountmanagement_User</members>
         <members>Heijmans_Administrator</members>
+        <members>Heijmans_Contactmanagement_Manager</members>
+        <members>Heijmans_Contactmanagement_User</members>
         <name>PermissionSet</name>
     </types>
     <types>
