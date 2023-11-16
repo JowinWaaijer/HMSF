@@ -3,9 +3,10 @@
     <fullName>StatusPick__c</fullName>
     <description>This field will show the status of the Signal.</description>
     <externalId>false</externalId>
-    <inlineHelpText>Choose the value that fits your Signal.</inlineHelpText>
+    <inlineHelpText>Welke status heeft dit signaal?</inlineHelpText>
     <label>Status</label>
     <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

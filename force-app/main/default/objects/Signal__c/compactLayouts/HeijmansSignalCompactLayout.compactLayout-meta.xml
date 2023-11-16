@@ -5,6 +5,6 @@
     <fields>AccountRef__c</fields>
     <fields>PartnershipRef__c</fields>
     <fields>StatusPick__c</fields>
-    <fields>ExpectedChangeDate__c</fields>
+    <fields>ExpectedStatusChange__c</fields>
     <label>Heijmans - Signal Compact Layout</label>
 </CompactLayout>

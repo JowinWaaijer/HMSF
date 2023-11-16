@@ -337,9 +337,9 @@
     <relatedLists>
         <fields>NAME</fields>
         <fields>StatusPick__c</fields>
-        <fields>ExpectedChangeDate__c</fields>
+        <fields>ExpectedStatusChange__c</fields>
         <relatedList>Signal__c.AccountRef__c</relatedList>
-        <sortField>ExpectedChangeDate__c</sortField>
+        <sortField>ExpectedStatusChange__c</sortField>
         <sortOrder>Asc</sortOrder>
     </relatedLists>
     <relatedLists>

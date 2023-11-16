@@ -12,6 +12,10 @@
     <layouts>
         <layout>Heijmans - Signal Layout</layout>
         <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
             <label>Conversie informatie</label>
             <section>Conversion Information</section>
         </sections>
