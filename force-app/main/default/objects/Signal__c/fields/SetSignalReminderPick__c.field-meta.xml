@@ -3,9 +3,10 @@
     <fullName>SetSignalReminderPick__c</fullName>
     <description>This field shows the values to pick a reminder date.</description>
     <externalId>false</externalId>
-    <inlineHelpText>What period in advance should the account team be notified based on the expected change date?</inlineHelpText>
+    <inlineHelpText>Hoe ver van te voren moet het account team een herrinering ontvang (o.b.v. mutatiedatum))</inlineHelpText>
     <label>Set Signal Reminder</label>
     <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

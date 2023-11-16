@@ -152,7 +152,7 @@
     <description>Signals, a pivotal Salesforce object, functions as an early-warning system for potential sales opportunities. It intelligently tracks key indicators, offering predictive insights to guide strategic decision-making. Designed to streamline prospect identification, Signals equips sales teams with actionable intelligence, enabling proactive engagement and maximizing conversion chances.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
+    <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
@@ -162,6 +162,7 @@
     <label>Signal</label>
     <nameField>
         <label>Signal Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Text</type>
     </nameField>

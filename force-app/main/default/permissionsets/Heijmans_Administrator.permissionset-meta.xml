@@ -1163,7 +1163,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Signal__c.ExpectedChangeDate__c</field>
+        <field>Signal__c.ContactRef__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Signal__c.Description__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Signal__c.ExpectedStatusChange__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

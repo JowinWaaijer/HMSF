@@ -56,7 +56,9 @@
         <members>Partnership__c.Website__c</members>
         <members>Signal__c.AccountOwnerForm__c</members>
         <members>Signal__c.AccountRef__c</members>
-        <members>Signal__c.ExpectedChangeDate__c</members>
+        <members>Signal__c.ContactRef__c</members>
+        <members>Signal__c.Description__c</members>
+        <members>Signal__c.ExpectedStatusChange__c</members>
         <members>Signal__c.OpportunityRef__c</members>
         <members>Signal__c.ParentSignalRef__c</members>
         <members>Signal__c.PartnershipRef__c</members>
@@ -203,6 +205,7 @@
         <members>Partnership__c.Alle_active_tijdelijke_samenwerkingen</members>
         <members>Partnership__c.Alle_inactieve_samenwerkingsverbanden</members>
         <members>Partnership__c.Alle_samenwerkingen_zonder_startdatum</members>
+        <members>Signal__c.Al_mijn_signalen_aankomende_3_maanden</members>
         <members>Signal__c.All</members>
         <members>albiraSolutions__ContactChart__c.albiraSolutions__All</members>
         <name>ListView</name>
@@ -217,6 +220,10 @@
         <members>Contact</members>
         <members>albiraSolutions__ContactChart__c</members>
         <name>MatchingRules</name>
+    </types>
+    <types>
+        <members>Signal</members>
+        <name>PathAssistant</name>
     </types>
     <types>
         <members>Heijmans_Accountmanagement_User</members>
