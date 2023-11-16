@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>albiraSolutions__AccountChart__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>AccountChart</label>
+    <referenceTo>albiraSolutions__AccountChart__c</referenceTo>
+    <relationshipLabel>ContactCharts</relationshipLabel>
+    <relationshipName>ContactCharts</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>
