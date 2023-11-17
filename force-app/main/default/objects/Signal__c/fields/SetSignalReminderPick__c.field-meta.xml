@@ -6,6 +6,7 @@
     <inlineHelpText>What period in advance should the account team be notified based on the expected change date?</inlineHelpText>
     <label>Set Signal Reminder</label>
     <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

@@ -6,7 +6,7 @@
     <columns>SourcePick__c</columns>
     <columns>PartnershipRef__c</columns>
     <columns>AccountRef__c</columns>
-    <columns>ExpectedChangeDate__c</columns>
+    <columns>ExpectedStatusChange__c</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>

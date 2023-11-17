@@ -6,6 +6,7 @@
     <inlineHelpText>Select the Source of your Signal.</inlineHelpText>
     <label>Source</label>
     <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

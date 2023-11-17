@@ -6,6 +6,7 @@
     <inlineHelpText>Choose the value that fits your Signal.</inlineHelpText>
     <label>Status</label>
     <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

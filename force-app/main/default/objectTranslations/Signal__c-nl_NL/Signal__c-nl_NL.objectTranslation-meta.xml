@@ -12,6 +12,10 @@
     <layouts>
         <layout>Heijmans - Signal Layout</layout>
         <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
             <label>Conversie informatie</label>
             <section>Conversion Information</section>
         </sections>
@@ -28,4 +32,9 @@
             <section>Signal information</section>
         </sections>
     </layouts>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Verwijderen</label>
+        <name>Delete</name>
+    </quickActions>
 </CustomObjectTranslation>
