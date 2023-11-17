@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MonthsLastModifiedForm__c</fullName>
+    <description>Calculates the difference in months since date last modified.</description>
+    <externalId>false</externalId>
+    <formula>MONTH(TODAY()) + (12*(YEAR(TODAY())- YEAR(DATEVALUE(LastModifiedDate)))) - MONTH(DATEVALUE(LastModifiedDate))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Months Last Modified</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>
