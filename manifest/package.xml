@@ -59,6 +59,7 @@
         <members>Signal__c.ContactRef__c</members>
         <members>Signal__c.Description__c</members>
         <members>Signal__c.ExpectedStatusChange__c</members>
+        <members>Signal__c.MonthsLastModifiedForm__c</members>
         <members>Signal__c.OpportunityRef__c</members>
         <members>Signal__c.ParentSignalRef__c</members>
         <members>Signal__c.PartnershipRef__c</members>
