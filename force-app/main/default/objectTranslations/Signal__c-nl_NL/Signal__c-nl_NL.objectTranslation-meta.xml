@@ -32,4 +32,9 @@
             <section>Signal information</section>
         </sections>
     </layouts>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Verwijderen</label>
+        <name>Delete</name>
+    </quickActions>
 </CustomObjectTranslation>
