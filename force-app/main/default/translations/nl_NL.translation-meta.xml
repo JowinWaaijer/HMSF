@@ -1431,7 +1431,7 @@
                     <name>diHeijmans</name>
                 </fields>
                 <fields>
-                    <fieldText>&lt;p&gt; &lt;span style=&quot;font-size: 14px;&quot;&gt; Om de werkstatus van {!recordId.Name} bij {!recordId.Account.Name} bij te werken, kun je kiezen uit de volgende opties: &lt;/span&gt; &lt;/p&gt; &lt;ol&gt; &lt;li&gt;Registreer deze contactpersoon bij een ander bedrijf.&lt;/li&gt; &lt;li&gt;Maak een aantekening van pensionering.&lt;/li&gt; &lt;li&gt;Zet de contactpersoon op overleden.&lt;/li&gt; &lt;/ol&gt; &lt;p&gt; &lt;span style=&quot;font-size: 14px;&quot;&gt; Klik eenvoudig op &quot;Contact verplaatsen&quot; en de opties worden aan je gepresenteerd. Zorg ervoor dat je alle benodigde gegevens klaar hebt voor deze update. &lt;/span&gt; &lt;/p&gt;</fieldText>
+                    <fieldText></fieldText>
                     <name>dtNewPostion</name>
                 </fields>
                 <name>scrCreateANewPosition</name>
