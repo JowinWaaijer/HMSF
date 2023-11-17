@@ -1431,6 +1431,7 @@
                     <name>diHeijmans</name>
                 </fields>
                 <fields>
+                    <fieldText>&lt;p&gt; &lt;span style=&quot;font-size: 14px;&quot;&gt; Om de werkstatus van {!recordId.Name} bij {!recordId.Account.Name} bij te werken, kun je kiezen uit de volgende opties: &lt;/span&gt; &lt;/p&gt; &lt;ol&gt; &lt;li&gt;Registreer deze contactpersoon bij een ander bedrijf.&lt;/li&gt; &lt;li&gt;Maak een aantekening van pensionering.&lt;/li&gt; &lt;li&gt;Zet de contactpersoon op overleden.&lt;/li&gt; &lt;/ol&gt; &lt;p&gt; &lt;span style=&quot;font-size: 14px;&quot;&gt; Klik eenvoudig op &quot;Contact verplaatsen&quot; en de opties worden aan je gepresenteerd. Zorg ervoor dat je alle benodigde gegevens klaar hebt voor deze update. &lt;/span&gt; &lt;/p&gt;</fieldText>
                     <name>dtNewPostion</name>
                 </fields>
                 <name>scrCreateANewPosition</name>
@@ -3701,6 +3702,223 @@
         <fullName>Set_all_to_Angebot</fullName>
     </flowDefinitions>
     <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>ttDescriptionText</name>
+            </textTemplates>
+        </flows>
+        <fullName>Signal</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>btnDeleteCheckEN</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>btnDeleteCheckNL</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
+                    <name>diLogoHeijmans1</name>
+                </fields>
+                <fields>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-family: verdana;&quot;&gt;Je staat op het punt dit record te verwijderen. Weet je het zeker?&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <name>dtDeleteRecordCheck</name>
+                </fields>
+                <name>scrDeleteRecordCheck</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>btnEndOperationEN</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>btnEndOperationNL</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
+                    <name>diHeijmansLogo2</name>
+                </fields>
+                <fields>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;Je bent niet gemachtigd om dit record te verwijderen. Alleen de recordeigenaar maar het record verwijderen.&lt;/p&gt;</fieldText>
+                    <name>dtNotAllowedToDelete</name>
+                </fields>
+                <name>scrNotTheOwner</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
+                    <name>HeijmansLogo3</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>btnSuccesEN</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>btnSuccesNL</name>
+                </fields>
+                <fields>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-family: verdana;&quot;&gt;Het record is succesvol verwijderd&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <name>dtSuccessMessage</name>
+                </fields>
+                <name>scrSuccesfulDelete</name>
+            </screens>
+        </flows>
+        <fullName>Signal_SCFL01_Delete_Signal</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
         <flows/>
         <fullName>Start_SET_ALL_TO_ANGEBOT_Flow</fullName>
     </flowDefinitions>
@@ -3900,7 +4118,7 @@
         <name>NewTask</name>
     </quickActions>
     <quickActions>
-        <label><!-- New Task --></label>
+        <label><!-- NewTask --></label>
         <name>NewTask</name>
     </quickActions>
     <quickActions>
@@ -4557,6 +4775,10 @@
         <sections>
             <label><!-- Gebruikers --></label>
             <name>Gebruikers</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
         </sections>
     </reportTypes>
     <reportTypes>

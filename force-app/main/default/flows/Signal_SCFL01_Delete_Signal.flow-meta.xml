@@ -9,9 +9,9 @@
         <actionType>component</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
-            <name>sObject</name>
+            <name>recordId</name>
             <value>
-                <stringValue>Signal__c</stringValue>
+                <elementReference>recordId.AccountRef__r.Id</elementReference>
             </value>
         </inputParameters>
         <nameSegment>c:navigateToRecord</nameSegment>
