@@ -581,6 +581,10 @@
         <label>fcErrorUponDelete</label>
         <locationX>314</locationX>
         <locationY>566</locationY>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>scrNotTheOwner</targetReference>
+        </connector>
         <flowName>FAULT_CONNECTOR_SCREENFLOW</flowName>
         <inputAssignments>
             <name>varErrorLocation</name>
