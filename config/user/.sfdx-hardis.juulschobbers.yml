@@ -13,6 +13,7 @@ localStorageBranchTargets:
   features/config/US-BugfixesContact: integration
   features/config/US-AccountFlexiPage: integration
   features/config/US-BUGFIX-ORGCHARTFLOWS: integration
+  features/config/US-71428-FindingsAnnelies: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:

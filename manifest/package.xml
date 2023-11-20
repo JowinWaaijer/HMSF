@@ -143,6 +143,7 @@
         <members>CON_SCFL01_Create_Former_Position</members>
         <members>ContactChart_RTFL01_Update_Department_of_all_Contacts</members>
         <members>ContactChart_RTFL02_Update_ParentChartName_and_Contact_Department</members>
+        <members>ContactChart_RTFL03_Update_Contact_Department_on_Contact</members>
         <members>Contact_RTFL01_Update_Department_Info_on_Account_and_Contact_Chart</members>
         <members>Contact_SCFL02_Display_Contact_s_Picture</members>
         <members>FAULT_CONNECTOR</members>
