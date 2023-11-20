@@ -1,10 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>59.0</apiVersion>
-    <description>This flow will update on the field ParentChart Name on the ContactChart and the department field on contact when the record is created.</description>
+    <customErrors>
+        <description>This custom error will display the error that a duplicate record will be created.</description>
+        <name>ceDuplicateFound</name>
+        <label>ceDuplicateFound</label>
+        <locationX>884</locationX>
+        <locationY>493</locationY>
+        <customErrorMessages>
+            <errorMessage>This contact is already connected to a department. Please remove it first and that connect it to another department.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <description>This element will check if any duplicates are found.</description>
+        <name>dcsDuplicateCheck</name>
+        <label>dcsDuplicateCheck</label>
+        <locationX>660</locationX>
+        <locationY>492</locationY>
+        <defaultConnector>
+            <targetReference>ruContactChart</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Found</defaultConnectorLabel>
+        <rules>
+            <name>Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>getDuplicateContactChart</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ceDuplicateFound</targetReference>
+            </connector>
+            <label>Found</label>
+        </rules>
+    </decisions>
+    <description>This before save record triggered flow will update the field ParentChart Name on the ContactChart and shows a custom error when a duplicate record is found.</description>
     <environments>Default</environments>
     <interviewLabel>ContactChart - RTFL02 - Update ParentChart Name {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>ContactChart - RTFL02 - Update ParentChartName and Contact Department</label>
+    <label>ContactChart - RTFL02 - Update ParentChartName</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -24,42 +61,41 @@
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
-    <recordUpdates>
-        <name>ruContact</name>
-        <label>ruContact</label>
-        <locationX>649</locationX>
-        <locationY>550</locationY>
-        <faultConnector>
-            <targetReference>subFaultConnector</targetReference>
-        </faultConnector>
+    <recordLookups>
+        <description>This element will retrieve all contact chart record from this contact under this account.</description>
+        <name>getDuplicateContactChart</name>
+        <label>getDuplicateContactChart</label>
+        <locationX>668</locationX>
+        <locationY>353</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>dcsDuplicateCheck</targetReference>
+        </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>Id</field>
+            <field>albiraSolutions__AccountID__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>$Record.albiraSolutions__Contact__c</elementReference>
+                <elementReference>$Record.albiraSolutions__AccountID__c</elementReference>
             </value>
         </filters>
-        <inputAssignments>
-            <field>Department</field>
+        <filters>
+            <field>albiraSolutions__Contact__c</field>
+            <operator>EqualTo</operator>
             <value>
-                <elementReference>$Record.albiraSolutions__AccountChart__r.Name</elementReference>
+                <elementReference>$Record.Id</elementReference>
             </value>
-        </inputAssignments>
-        <object>Contact</object>
-    </recordUpdates>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>albiraSolutions__ContactChart__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <recordUpdates>
         <description>This element copies the parentchart name from the related accountchart record.</description>
         <name>ruContactChart</name>
         <label>ruContactChart</label>
-        <locationX>657</locationX>
-        <locationY>371</locationY>
-        <connector>
-            <targetReference>ruContact</targetReference>
-        </connector>
-        <faultConnector>
-            <targetReference>subFaultConnector</targetReference>
-        </faultConnector>
+        <locationX>671</locationX>
+        <locationY>655</locationY>
         <inputAssignments>
             <field>Name</field>
             <value>
@@ -75,65 +111,15 @@
         <inputReference>$Record</inputReference>
     </recordUpdates>
     <start>
-        <locationX>531</locationX>
-        <locationY>48</locationY>
+        <locationX>547</locationX>
+        <locationY>50</locationY>
         <connector>
-            <targetReference>ruContactChart</targetReference>
+            <targetReference>getDuplicateContactChart</targetReference>
         </connector>
         <filterFormula>{!$Setup.BypassSettings__c.Flows__c} = False</filterFormula>
         <object>albiraSolutions__ContactChart__c</object>
         <recordTriggerType>Create</recordTriggerType>
-        <triggerType>RecordAfterSave</triggerType>
+        <triggerType>RecordBeforeSave</triggerType>
     </start>
     <status>Active</status>
-    <subflows>
-        <description>This subflow connects the flow to the fault connector for better error handling.</description>
-        <name>subFaultConnector</name>
-        <label>subFaultConnector</label>
-        <locationX>921</locationX>
-        <locationY>479</locationY>
-        <flowName>FAULT_CONNECTOR</flowName>
-        <inputAssignments>
-            <name>varEmailCurrentUser</name>
-            <value>
-                <elementReference>$User.Email</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <name>varErrorLocation</name>
-            <value>
-                <elementReference>$Flow.CurrentStage</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <name>varFlowFaultMessage</name>
-            <value>
-                <elementReference>$Flow.FaultMessage</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <name>varFlowName</name>
-            <value>
-                <stringValue>ContactChart - RTFL02 - Update ParentChartName and Contact Department</stringValue>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <name>varNameCurrentUser</name>
-            <value>
-                <elementReference>$User.FullNameForm__c</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <name>varObject</name>
-            <value>
-                <stringValue>ContactChart</stringValue>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <name>varRecordId</name>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </inputAssignments>
-    </subflows>
 </Flow>
