@@ -25,3 +25,6 @@ mergeRequests:
   - branch: features/config/US-Hotfix-AlertFlow
     urlCreate: >-
       https://github.com/JowinWaaijer/heijmans-infra/pull/new/features/config/US-Hotfix-AlertFlow
+  - branch: features/config/US-71338-AccountTranslationsandPositions
+    urlCreate: >-
+      https://github.com/JowinWaaijer/heijmans-infra/pull/new/features/config/US-71338-AccountTranslationsandPositions
