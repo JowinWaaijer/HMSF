@@ -41,6 +41,10 @@
         <name>Tendermanagement</name>
     </customApplications>
     <customLabels>
+        <label>Account Informatie</label>
+        <name>AccountInformation</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Account Name --></label>
         <name>AccountName</name>
     </customLabels>
@@ -171,6 +175,10 @@
     <customLabels>
         <label><!-- Search --></label>
         <name>Search</name>
+    </customLabels>
+    <customLabels>
+        <label>Segmentatie</label>
+        <name>Segmentation</name>
     </customLabels>
     <customLabels>
         <label><!-- Select --></label>
@@ -459,6 +467,14 @@
     <flowDefinitions>
         <flows/>
         <fullName>ACC_RTFL02_Manually_Create_BUSA_records</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>AccountChart_RTFL01_Update_ContactCharts_when_Department_is_Changed</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>AccountChart_RTFL02_Update_Parent_Accountchart_Name_at_Create_and_Change</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows/>
@@ -1431,7 +1447,6 @@
                     <name>diHeijmans</name>
                 </fields>
                 <fields>
-                    <fieldText></fieldText>
                     <name>dtNewPostion</name>
                 </fields>
                 <name>scrCreateANewPosition</name>
@@ -2032,6 +2047,26 @@
             </screens>
         </flows>
         <fullName>CON_SCFL01_Create_Former_Position</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>ContactChart_RTFL01_Update_Department_of_all_Contacts</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <customErrorMessages>
+                <developerName>ceDuplicateFound</developerName>
+            </customErrorMessages>
+        </flows>
+        <fullName>ContactChart_RTFL02_Update_ParentChartName_and_Contact_Department</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>ContactChart_RTFL03_Update_Contact_Department_on_Contact</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Contact_RTFL01_Update_Department_Info_on_Account_and_Contact_Chart</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows>
@@ -4110,7 +4145,7 @@
         <name>NewTask</name>
     </quickActions>
     <quickActions>
-        <label><!-- NewTask --></label>
+        <label><!-- New Task --></label>
         <name>NewTask</name>
     </quickActions>
     <quickActions>
@@ -4653,6 +4688,108 @@
         </sections>
     </reportTypes>
     <reportTypes>
+        <description><!-- Accounts with Account Plans with Account Plan Colleague Roles --></description>
+        <label><!-- Accounts with Account Plans with Account Plan Colleague Roles --></label>
+        <name>Accounts_with_Account_Plans_with_Account_Plan_Colleague_Roles</name>
+        <sections>
+            <label><!-- Account Plan Colleague Roles --></label>
+            <name>Account Plan Colleague Roles</name>
+        </sections>
+        <sections>
+            <label><!-- Account Plans --></label>
+            <name>Account Plans</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Account Plans with Account Plan Contact Roles --></description>
+        <label><!-- Accounts with Account Plans with Account Plan Contact Roles --></label>
+        <name>Accounts_with_Account_Plans_with_Account_Plan_Contact_Roles</name>
+        <sections>
+            <label><!-- Account Plan Contact Roles --></label>
+            <name>Account Plan Contact Roles</name>
+        </sections>
+        <sections>
+            <label><!-- Account Plans --></label>
+            <name>Account Plans</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Account Plans with Account Plan Partner Roles --></description>
+        <label><!-- Accounts with Account Plans with Account Plan Partner Roles --></label>
+        <name>Accounts_with_Account_Plans_with_Account_Plan_Partner_Roles</name>
+        <sections>
+            <label><!-- Account Plan Partner Roles --></label>
+            <name>Account Plan Partner Roles</name>
+        </sections>
+        <sections>
+            <label><!-- Account Plans --></label>
+            <name>Account Plans</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Account Plans with Account Plan Themes --></description>
+        <label><!-- Accounts with Account Plans with Account Plan Themes --></label>
+        <name>Accounts_with_Account_Plans_with_Account_Plan_Themes</name>
+        <sections>
+            <label><!-- Account Plan Themes --></label>
+            <name>Account Plan Themes</name>
+        </sections>
+        <sections>
+            <label><!-- Account Plans --></label>
+            <name>Account Plans</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Account Plans with Objectives --></description>
+        <label><!-- Accounts with Account Plans with Objectives --></label>
+        <name>Accounts_with_Account_Plans_with_Objectives</name>
+        <sections>
+            <label><!-- Account Plans --></label>
+            <name>Account Plans</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Objectives --></label>
+            <name>Objectives</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Account Plans with Whitespaces --></description>
+        <label><!-- Accounts with Account Plans with Whitespaces --></label>
+        <name>Accounts_with_Account_Plans_with_Whitespaces</name>
+        <sections>
+            <label><!-- Account Plans --></label>
+            <name>Account Plans</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Whitespaces --></label>
+            <name>Whitespaces</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
         <description><!-- Accounts with inactive users --></description>
         <label><!-- Accounts with inactive users --></label>
         <name>Accounts_with_inactive_users</name>
@@ -4767,10 +4904,6 @@
         <sections>
             <label><!-- Gebruikers --></label>
             <name>Gebruikers</name>
-        </sections>
-        <sections>
-            <label><!-- Users --></label>
-            <name>Users</name>
         </sections>
     </reportTypes>
     <reportTypes>
