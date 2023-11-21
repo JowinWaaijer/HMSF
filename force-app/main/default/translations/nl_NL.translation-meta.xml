@@ -41,6 +41,10 @@
         <name>Tendermanagement</name>
     </customApplications>
     <customLabels>
+        <label>Accountinformatie</label>
+        <name>AccountInformation</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Account Name --></label>
         <name>AccountName</name>
     </customLabels>
@@ -171,6 +175,10 @@
     <customLabels>
         <label><!-- Search --></label>
         <name>Search</name>
+    </customLabels>
+    <customLabels>
+        <label>Segmentatie</label>
+        <name>Segmentation</name>
     </customLabels>
     <customLabels>
         <label><!-- Select --></label>
@@ -459,6 +467,14 @@
     <flowDefinitions>
         <flows/>
         <fullName>ACC_RTFL02_Manually_Create_BUSA_records</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>AccountChart_RTFL01_Update_ContactCharts_when_Department_is_Changed</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>AccountChart_RTFL02_Update_Parent_Accountchart_Name_at_Create_and_Change</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows/>
@@ -2032,6 +2048,26 @@
             </screens>
         </flows>
         <fullName>CON_SCFL01_Create_Former_Position</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>ContactChart_RTFL01_Update_Department_of_all_Contacts</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <customErrorMessages>
+                <developerName>ceDuplicateFound</developerName>
+            </customErrorMessages>
+        </flows>
+        <fullName>ContactChart_RTFL02_Update_ParentChartName_and_Contact_Department</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>ContactChart_RTFL03_Update_Contact_Department_on_Contact</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Contact_RTFL01_Update_Department_Info_on_Account_and_Contact_Chart</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows>

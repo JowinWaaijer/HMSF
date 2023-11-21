@@ -4,14 +4,14 @@
     <name>StatusPick__c</name>
     <picklistValues>
         <masterLabel>Changed Jobs</masterLabel>
-        <translation></translation>
+        <translation>Nieuwe baan</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Deceased</masterLabel>
-        <translation></translation>
+        <translation>Overleden</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Retired</masterLabel>
-        <translation></translation>
+        <translation>Gepensioneerd</translation>
     </picklistValues>
 </CustomFieldTranslation>
