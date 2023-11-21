@@ -532,6 +532,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Signal__c.AccountRef__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Signal__c.ContactRef__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -543,6 +548,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Signal__c.ExpectedStatusChange__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Signal__c.MonthsLastModifiedForm__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
