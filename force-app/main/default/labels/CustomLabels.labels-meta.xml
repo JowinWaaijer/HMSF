@@ -134,4 +134,20 @@
         <shortDescription>Involvement</shortDescription>
         <value>Involvement</value>
     </labels>
+    <labels>
+        <fullName>AccountInformation</fullName>
+        <categories>Section</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Information</shortDescription>
+        <value>Account Information</value>
+    </labels>
+    <labels>
+        <fullName>Segmentation</fullName>
+        <categories>Section</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Segmentation</shortDescription>
+        <value>Segmentation</value>
+    </labels>
 </CustomLabels>
