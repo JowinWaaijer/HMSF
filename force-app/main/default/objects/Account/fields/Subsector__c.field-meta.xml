@@ -13,32 +13,207 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
+                <fullName>Z</fullName>
+                <default>false</default>
+                <label>Z</label>
+            </value>
+            <value>
+                <fullName>Agencies</fullName>
+                <default>false</default>
+                <label>Agencies</label>
+            </value>
+            <value>
+                <fullName>Provinces</fullName>
+                <default>false</default>
+                <label>Provinces</label>
+            </value>
+            <value>
+                <fullName>Municipalities</fullName>
+                <default>false</default>
+                <label>Municipalities</label>
+            </value>
+            <value>
+                <fullName>Ministries</fullName>
+                <default>false</default>
+                <label>Ministries</label>
+            </value>
+            <value>
+                <fullName>Water Authorities</fullName>
+                <default>false</default>
+                <label>Water Authorities</label>
+            </value>
+            <value>
+                <fullName>Industry</fullName>
+                <default>false</default>
+                <label>Industry</label>
+            </value>
+            <value>
+                <fullName>Energy</fullName>
+                <default>false</default>
+                <label>Energy</label>
+            </value>
+            <value>
+                <fullName>Real Estate</fullName>
+                <default>false</default>
+                <label>Real Estate</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>Logistics</fullName>
+                <default>false</default>
+                <label>Logistics</label>
+            </value>
+            <value>
+                <fullName>Professional Services</fullName>
+                <default>false</default>
+                <label>Professional Services</label>
+            </value>
+            <value>
+                <fullName>Health</fullName>
+                <default>false</default>
+                <label>Health</label>
+            </value>
+            <value>
+                <fullName>Food &amp; Agri</fullName>
+                <default>false</default>
+                <label>Food &amp; Agri</label>
+            </value>
+            <value>
+                <fullName>ICT-TMT</fullName>
+                <default>false</default>
+                <label>ICT-TMT</label>
+            </value>
+            <value>
+                <fullName>Construction</fullName>
+                <default>false</default>
+                <label>Construction</label>
+            </value>
+            <value>
+                <fullName>Leisure</fullName>
+                <default>false</default>
+                <label>Leisure</label>
+            </value>
+            <value>
+                <fullName>Infra</fullName>
+                <default>false</default>
+                <label>Infra</label>
+            </value>
+            <value>
+                <fullName>Housing Corporations</fullName>
+                <default>false</default>
+                <label>Housing Corporations</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Public Transport Providers</fullName>
+                <default>false</default>
+                <label>Public Transport Providers</label>
+            </value>
+            <value>
                 <fullName>X</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>X</label>
             </value>
             <value>
                 <fullName>Y</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Y</label>
-            </value>
-            <value>
-                <fullName>Z</fullName>
-                <default>false</default>
-                <label>Z</label>
             </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Public Sector</controllingFieldValue>
-            <valueName>X</valueName>
+            <valueName>Agencies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Public Sector</controllingFieldValue>
+            <valueName>Provinces</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Public Sector</controllingFieldValue>
+            <valueName>Municipalities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Public Sector</controllingFieldValue>
+            <valueName>Ministries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Public Sector</controllingFieldValue>
+            <valueName>Water Authorities</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Semi-Public Sector</controllingFieldValue>
-            <valueName>Y</valueName>
+            <controllingFieldValue>Private Sector</controllingFieldValue>
+            <valueName>Energy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semi-Public Sector</controllingFieldValue>
+            <controllingFieldValue>Private Sector</controllingFieldValue>
+            <valueName>Professional Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semi-Public Sector</controllingFieldValue>
+            <controllingFieldValue>Private Sector</controllingFieldValue>
+            <valueName>Health</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semi-Public Sector</controllingFieldValue>
+            <valueName>Housing Corporations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semi-Public Sector</controllingFieldValue>
+            <valueName>Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semi-Public Sector</controllingFieldValue>
+            <valueName>Public Transport Providers</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Private Sector</controllingFieldValue>
-            <valueName>Z</valueName>
+            <valueName>Industry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Private Sector</controllingFieldValue>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Real Estate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Private Sector</controllingFieldValue>
+            <valueName>Retail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Private Sector</controllingFieldValue>
+            <valueName>Logistics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Private Sector</controllingFieldValue>
+            <valueName>Food &amp; Agri</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Private Sector</controllingFieldValue>
+            <valueName>ICT-TMT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Private Sector</controllingFieldValue>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Construction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Private Sector</controllingFieldValue>
+            <valueName>Leisure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Infra</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

@@ -21,6 +21,8 @@
         <name>CustomApplication</name>
     </types>
     <types>
+        <members>Account.PrimarySectorPick__c</members>
+        <members>Account.Subsector__c</members>
         <members>Alert__c.Account__c</members>
         <members>Alert__c.Duration__c</members>
         <members>Alert__c.EndDate__c</members>

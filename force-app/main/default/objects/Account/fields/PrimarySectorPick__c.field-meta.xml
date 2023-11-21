@@ -30,6 +30,11 @@ Private: Use this option if the record primarily represents private sector entit
                 <default>false</default>
                 <label>Private Sector</label>
             </value>
+            <value>
+                <fullName>Internal</fullName>
+                <default>false</default>
+                <label>Internal</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

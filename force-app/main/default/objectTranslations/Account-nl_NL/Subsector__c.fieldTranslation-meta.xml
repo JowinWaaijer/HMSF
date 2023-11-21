@@ -3,12 +3,84 @@
     <label></label>
     <name>Subsector__c</name>
     <picklistValues>
-        <masterLabel>X</masterLabel>
-        <translation></translation>
+        <masterLabel>Agencies</masterLabel>
+        <translation>Agentschappen</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Y</masterLabel>
-        <translation></translation>
+        <masterLabel>Construction</masterLabel>
+        <translation>Bouw</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Education</masterLabel>
+        <translation>Onderwijs</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Energy</masterLabel>
+        <translation>Energie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food &amp; Agri</masterLabel>
+        <translation>Food &amp; Agri</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health</masterLabel>
+        <translation>Zorg</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Housing Corporations</masterLabel>
+        <translation>Woning Corporaties</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ICT-TMT</masterLabel>
+        <translation>ICT-TMT</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industry</masterLabel>
+        <translation>Industrie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infra</masterLabel>
+        <translation>Infra</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leisure</masterLabel>
+        <translation>Leisure</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Logistics</masterLabel>
+        <translation>Logistiek</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ministries</masterLabel>
+        <translation>Ministeries</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Municipalities</masterLabel>
+        <translation>Gemeenten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professional Services</masterLabel>
+        <translation>Zakelijke Dienstverlening</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Provinces</masterLabel>
+        <translation>Provincies</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Transport Providers</masterLabel>
+        <translation>Openbaarvervoerbedrijven</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Real Estate</masterLabel>
+        <translation>Real Estate</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail</masterLabel>
+        <translation>Retail</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Authorities</masterLabel>
+        <translation>Waterschappen</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Z</masterLabel>

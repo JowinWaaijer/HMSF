@@ -77,6 +77,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>BrightfoxHardis__c</picklist>
+        <values>
+            <fullName>Doesn%27t work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Works</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Doel_Algemeen__c</picklist>
         <values>
             <fullName>1e opdracht</fullName>
@@ -811,6 +822,10 @@
     <picklistValues>
         <picklist>PrimarySectorPick__c</picklist>
         <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Private Sector</fullName>
             <default>false</default>
         </values>
@@ -970,15 +985,83 @@
     <picklistValues>
         <picklist>Subsector__c</picklist>
         <values>
-            <fullName>X</fullName>
+            <fullName>Agencies</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Y</fullName>
+            <fullName>Construction</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Z</fullName>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Agri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housing Corporations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ICT-TMT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leisure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ministries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Municipalities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provinces</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Transport Providers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Authorities</fullName>
             <default>false</default>
         </values>
     </picklistValues>
