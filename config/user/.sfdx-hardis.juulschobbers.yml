@@ -15,6 +15,7 @@ localStorageBranchTargets:
   features/config/US-BUGFIX-ORGCHARTFLOWS: integration
   features/config/US-71428-FindingsAnnelies: integration
   features/config/US-71338-FeedbackAccountEM: integration
+  features/config/US-71338-AccountFlexiPageChanges: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
