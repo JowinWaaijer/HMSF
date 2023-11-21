@@ -4,15 +4,15 @@
     <label></label>
     <name>StatusPick__c</name>
     <picklistValues>
-        <masterLabel>Waarde 1</masterLabel>
-        <translation></translation>
+        <masterLabel>Exploration</masterLabel>
+        <translation>Verkenning</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Waarde 2</masterLabel>
-        <translation></translation>
+        <masterLabel>Initiative</masterLabel>
+        <translation>Initiatief</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Waarde 3</masterLabel>
-        <translation></translation>
+        <masterLabel>Problem</masterLabel>
+        <translation>Probleem</translation>
     </picklistValues>
 </CustomFieldTranslation>
