@@ -4,6 +4,10 @@
     <label></label>
     <name>PrimarySectorPick__c</name>
     <picklistValues>
+        <masterLabel>Internal</masterLabel>
+        <translation>Intern</translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Private Sector</masterLabel>
         <translation>Private Sector</translation>
     </picklistValues>
