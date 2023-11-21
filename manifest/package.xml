@@ -36,6 +36,8 @@
         <members>Alert__c.URLLink__c</members>
         <members>BusinessUnitSpecificAttribute__c.StatusPick__c</members>
         <members>Contact.OrganizationLevelPick__c</members>
+        <members>Contact.ReportsToId</members>
+        <members>InvolvedPartner__c.AccountNameForm__c</members>
         <members>InvolvedPartner__c.AccountRef__c</members>
         <members>InvolvedPartner__c.EndDate__c</members>
         <members>InvolvedPartner__c.IsActive__c</members>
@@ -76,9 +78,11 @@
         <name>CustomField</name>
     </types>
     <types>
+        <members>AccountInformation</members>
         <members>Former_Positions</members>
         <members>Involvement</members>
         <members>Partnerships</members>
+        <members>Segmentation</members>
         <name>CustomLabel</name>
     </types>
     <types>
