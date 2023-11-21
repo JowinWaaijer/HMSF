@@ -76,9 +76,75 @@
         <name>CustomField</name>
     </types>
     <types>
+        <members>AccountInformation</members>
+        <members>AccountName</members>
+        <members>Attendees</members>
+        <members>Back</members>
+        <members>ContactPerson</members>
+        <members>Edit</members>
         <members>Former_Positions</members>
+        <members>GeneratePDF</members>
         <members>Involvement</members>
+        <members>Login</members>
+        <members>LoginID</members>
+        <members>Maak_aanbieding</members>
+        <members>MeetingReportTitle</members>
+        <members>New</members>
+        <members>Next</members>
+        <members>OpportunityName</members>
         <members>Partnerships</members>
+        <members>Password</members>
+        <members>Save</members>
+        <members>Search</members>
+        <members>Segmentation</members>
+        <members>Select</members>
+        <members>Tasks</members>
+        <members>ers_CancelButton</members>
+        <members>ers_ClearFilterAction</members>
+        <members>ers_ClearFilterButton</members>
+        <members>ers_ClearSelectionButton</members>
+        <members>ers_ColumnHeader</members>
+        <members>ers_EmptyTableMessage</members>
+        <members>ers_ErrorRequiredEntry</members>
+        <members>ers_FilterHeader</members>
+        <members>ers_LabelHeader</members>
+        <members>ers_SaveButton</members>
+        <members>ers_SearchPlaceholder</members>
+        <members>ers_SetFilterAction</members>
+        <members>fsc_AccessLevel</members>
+        <members>fsc_Back</members>
+        <members>fsc_ButtonIsNotSupportedMessage</members>
+        <members>fsc_ConditionLogicHelpText</members>
+        <members>fsc_Delete</members>
+        <members>fsc_FieldIsNotSupportedMessage</members>
+        <members>fsc_FieldTypeNotSuportedMessage</members>
+        <members>fsc_For</members>
+        <members>fsc_Key_Label</members>
+        <members>fsc_LackingPermissions</members>
+        <members>fsc_ManagerEmptyMessage</members>
+        <members>fsc_MultipleGroupsForRole</members>
+        <members>fsc_Name</members>
+        <members>fsc_NonePicklistValueLabel</members>
+        <members>fsc_OWDReadWrite</members>
+        <members>fsc_OwnerAdminModify</members>
+        <members>fsc_PublicGroups</members>
+        <members>fsc_Queues</members>
+        <members>fsc_Read</members>
+        <members>fsc_ReadWrite</members>
+        <members>fsc_Reason</members>
+        <members>fsc_RelatedUsers</members>
+        <members>fsc_Roles</members>
+        <members>fsc_Search</members>
+        <members>fsc_SearchFor</members>
+        <members>fsc_SetAccessLevel</members>
+        <members>fsc_SupportedAddCapabilitiesEmptyMessage</members>
+        <members>fsc_SupportedButtonsEmptyMessage</members>
+        <members>fsc_SupportedEditCapabilitiesEmptyMessage</members>
+        <members>fsc_TooManyResultsMessage</members>
+        <members>fsc_Type</members>
+        <members>fsc_UserOrGroup</members>
+        <members>fsc_Users</members>
+        <members>fsc_Value_Label</members>
         <name>CustomLabel</name>
     </types>
     <types>
