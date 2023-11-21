@@ -8,6 +8,13 @@
         </sections>
     </layouts>
     <layouts>
+        <layout>Extern contact</layout>
+        <sections>
+            <label></label>
+            <section>Accountmanagement</section>
+        </sections>
+    </layouts>
+    <layouts>
         <layout>Heijmans - Contact Layout</layout>
         <sections>
             <label></label>
