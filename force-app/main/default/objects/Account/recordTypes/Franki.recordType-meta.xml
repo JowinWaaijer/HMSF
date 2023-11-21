@@ -76,6 +76,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>BrightfoxHardis__c</picklist>
+        <values>
+            <fullName>Doesn%27t work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Works</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Doel_Algemeen__c</picklist>
         <values>
             <fullName>1e opdracht</fullName>
@@ -904,14 +915,6 @@
     </picklistValues>
     <picklistValues>
         <picklist>Subsector__c</picklist>
-        <values>
-            <fullName>X</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Y</fullName>
-            <default>false</default>
-        </values>
         <values>
             <fullName>Z</fullName>
             <default>false</default>
