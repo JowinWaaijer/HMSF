@@ -17,6 +17,7 @@ localStorageBranchTargets:
   features/config/US-71338-FeedbackAccountEM: integration
   features/config/US-71338-AccountFlexiPageChanges: integration
   features/config/US-Hotfix-PMsetsadminuser: integration
+  features/config/US-Hotfix-AccountFlexiPage: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
