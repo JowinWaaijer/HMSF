@@ -15,19 +15,19 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Waarde 1</fullName>
+                <fullName>Problem</fullName>
                 <default>true</default>
-                <label>Waarde 1</label>
+                <label>Problem</label>
             </value>
             <value>
-                <fullName>Waarde 2</fullName>
+                <fullName>Initiative</fullName>
                 <default>false</default>
-                <label>Waarde 2</label>
+                <label>Initiative</label>
             </value>
             <value>
-                <fullName>Waarde 3</fullName>
+                <fullName>Exploration</fullName>
                 <default>false</default>
-                <label>Waarde 3</label>
+                <label>Exploration</label>
             </value>
             <value>
                 <fullName>Create Opportunity</fullName>
