@@ -2,6 +2,16 @@
 <Translations xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <customApplications>
         <description xsi:nil="true"/>
+        <label><!-- Declarative Lookup Rollup Summaries --></label>
+        <name>DeclarativeLookupRollupSummaries</name>
+    </customApplications>
+    <customApplications>
+        <description xsi:nil="true"/>
+        <label><!-- Declarative Lookup Rollup Summaries --></label>
+        <name>DeclarativeLookupRollupSummaries2</name>
+    </customApplications>
+    <customApplications>
+        <description xsi:nil="true"/>
         <label><!-- Franki --></label>
         <name>Franki</name>
     </customApplications>
@@ -257,6 +267,34 @@
         <name>albiraSolutions__delete_contact_confirmation</name>
     </customLabels>
     <customLabels>
+        <label><!-- fflib_security_error_field_not_insertable --></label>
+        <name>dlrs__fflib_security_error_field_not_insertable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- fflib_security_error_field_not_readable --></label>
+        <name>dlrs__fflib_security_error_field_not_readable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- fflib_security_error_field_not_updateable --></label>
+        <name>dlrs__fflib_security_error_field_not_updateable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- fflib_security_error_object_not_deletable --></label>
+        <name>dlrs__fflib_security_error_object_not_deletable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- fflib_security_error_object_not_insertable --></label>
+        <name>dlrs__fflib_security_error_object_not_insertable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- fflib_security_error_object_not_readable --></label>
+        <name>dlrs__fflib_security_error_object_not_readable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- fflib_security_error_object_not_updateable --></label>
+        <name>dlrs__fflib_security_error_object_not_updateable</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Cancel --></label>
         <name>ers_CancelButton</name>
     </customLabels>
@@ -440,6 +478,10 @@
         <label><!-- Value Label --></label>
         <name>fsc_Value_Label</name>
     </customLabels>
+    <customPageWebLinks>
+        <label><!-- Welcome --></label>
+        <name>Welcome</name>
+    </customPageWebLinks>
     <customTabs>
         <label><!-- Capacity Planning --></label>
         <name>Capacity_Planning</name>
@@ -447,6 +489,18 @@
     <customTabs>
         <label><!-- Graphics Pack --></label>
         <name>GraphicsPack</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Lookup Rollup List View --></label>
+        <name>LookupRollupListView</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Lookup Rollup Summaries Tools --></label>
+        <name>LookupRollupSummariesHome</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Manage Lookup Rollup Summaries --></label>
+        <name>ManageLookupRollupSummaries</name>
     </customTabs>
     <customTabs>
         <label><!-- S-Docs Setup --></label>
@@ -459,6 +513,10 @@
     <customTabs>
         <label><!-- Test --></label>
         <name>Test</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Welcome --></label>
+        <name>Welcome</name>
     </customTabs>
     <flowDefinitions>
         <flows/>
@@ -1447,7 +1505,6 @@
                     <name>diHeijmans</name>
                 </fields>
                 <fields>
-                    <fieldText></fieldText>
                     <name>dtNewPostion</name>
                 </fields>
                 <name>scrCreateANewPosition</name>
@@ -4146,7 +4203,7 @@
         <name>NewTask</name>
     </quickActions>
     <quickActions>
-        <label><!-- NewTask --></label>
+        <label><!-- New Task --></label>
         <name>NewTask</name>
     </quickActions>
     <quickActions>
@@ -4689,6 +4746,108 @@
         </sections>
     </reportTypes>
     <reportTypes>
+        <description><!-- Accounts with Account Plans with Account Plan Colleague Roles --></description>
+        <label><!-- Accounts with Account Plans with Account Plan Colleague Roles --></label>
+        <name>Accounts_with_Account_Plans_with_Account_Plan_Colleague_Roles</name>
+        <sections>
+            <label><!-- Account Plan Colleague Roles --></label>
+            <name>Account Plan Colleague Roles</name>
+        </sections>
+        <sections>
+            <label><!-- Account Plans --></label>
+            <name>Account Plans</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Account Plans with Account Plan Contact Roles --></description>
+        <label><!-- Accounts with Account Plans with Account Plan Contact Roles --></label>
+        <name>Accounts_with_Account_Plans_with_Account_Plan_Contact_Roles</name>
+        <sections>
+            <label><!-- Account Plan Contact Roles --></label>
+            <name>Account Plan Contact Roles</name>
+        </sections>
+        <sections>
+            <label><!-- Account Plans --></label>
+            <name>Account Plans</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Account Plans with Account Plan Partner Roles --></description>
+        <label><!-- Accounts with Account Plans with Account Plan Partner Roles --></label>
+        <name>Accounts_with_Account_Plans_with_Account_Plan_Partner_Roles</name>
+        <sections>
+            <label><!-- Account Plan Partner Roles --></label>
+            <name>Account Plan Partner Roles</name>
+        </sections>
+        <sections>
+            <label><!-- Account Plans --></label>
+            <name>Account Plans</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Account Plans with Account Plan Themes --></description>
+        <label><!-- Accounts with Account Plans with Account Plan Themes --></label>
+        <name>Accounts_with_Account_Plans_with_Account_Plan_Themes</name>
+        <sections>
+            <label><!-- Account Plan Themes --></label>
+            <name>Account Plan Themes</name>
+        </sections>
+        <sections>
+            <label><!-- Account Plans --></label>
+            <name>Account Plans</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Account Plans with Objectives --></description>
+        <label><!-- Accounts with Account Plans with Objectives --></label>
+        <name>Accounts_with_Account_Plans_with_Objectives</name>
+        <sections>
+            <label><!-- Account Plans --></label>
+            <name>Account Plans</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Objectives --></label>
+            <name>Objectives</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Account Plans with Whitespaces --></description>
+        <label><!-- Accounts with Account Plans with Whitespaces --></label>
+        <name>Accounts_with_Account_Plans_with_Whitespaces</name>
+        <sections>
+            <label><!-- Account Plans --></label>
+            <name>Account Plans</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Whitespaces --></label>
+            <name>Whitespaces</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
         <description><!-- Accounts with inactive users --></description>
         <label><!-- Accounts with inactive users --></label>
         <name>Accounts_with_inactive_users</name>
@@ -4803,10 +4962,6 @@
         <sections>
             <label><!-- Gebruikers --></label>
             <name>Gebruikers</name>
-        </sections>
-        <sections>
-            <label><!-- Users --></label>
-            <name>Users</name>
         </sections>
     </reportTypes>
     <reportTypes>

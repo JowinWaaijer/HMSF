@@ -5,6 +5,7 @@
     <permissionSets>Heijmans_Accountmanagement_User</permissionSets>
     <permissionSets>Heijmans_Contactmanagement_User</permissionSets>
     <permissionSets>Heijmans_Feedback_User</permissionSets>
+    <permissionSets>Heijmans_Theme_User</permissionSets>
     <permissionSets>Heijmans_User_Fields</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>
