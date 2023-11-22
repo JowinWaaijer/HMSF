@@ -111,12 +111,14 @@
         <members>Partnership__c-en_US</members>
         <members>Partnership__c-nl_NL</members>
         <members>Signal__c-nl_NL</members>
+        <members>Theme__c-nl_NL</members>
         <name>CustomObjectTranslation</name>
     </types>
     <types>
         <members>InvolvedPartner__c</members>
         <members>Partnership__c</members>
         <members>Signal__c</members>
+        <members>Theme__c</members>
         <name>CustomTab</name>
     </types>
     <types>
@@ -195,6 +197,7 @@
         <members>Partnership__c-Heijmans - Partnership Layout</members>
         <members>Partnership__c-Partnership Layout</members>
         <members>Signal__c-Heijmans - Signal Layout</members>
+        <members>Theme__c-Heijmans - Theme Layout</members>
         <members>albiraSolutions__ContactChart__c-albiraSolutions__ContactChart Layout</members>
         <name>Layout</name>
     </types>
@@ -240,6 +243,8 @@
         <members>Heijmans_Administrator</members>
         <members>Heijmans_Contactmanagement_Manager</members>
         <members>Heijmans_Contactmanagement_User</members>
+        <members>Heijmans_Theme_Manager</members>
+        <members>Heijmans_Theme_User</members>
         <name>PermissionSet</name>
     </types>
     <types>
