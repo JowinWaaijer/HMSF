@@ -19,6 +19,7 @@ localStorageBranchTargets:
   features/config/US-Hotfix-PMsetsadminuser: integration
   features/config/US-Hotfix-AccountFlexiPage: integration
   features/config/US-Subsector: integration
+  features/config/US-ThemeObject: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
