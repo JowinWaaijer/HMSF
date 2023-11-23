@@ -22,7 +22,15 @@
     </layouts>
     <nameFieldLabel>Betrokken partner</nameFieldLabel>
     <validationRules>
-        <errorMessage></errorMessage>
+        <errorMessage>De einddatum kan niet voor de begindatum liggen. [VR01]</errorMessage>
         <name>INP_VR01_EndDateBeforeStartDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inactieve betrokken partners moeten een einddatum hebben. [VR02]</errorMessage>
+        <name>INP_VR02_InactiveWithNoEndDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>De primaire account kan niet inactief zijn terwijl het partnerschap nog actief is. [VR03]</errorMessage>
+        <name>INP_VR03_PrimairAccountCannotBeInactive</name>
     </validationRules>
 </CustomObjectTranslation>
