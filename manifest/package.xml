@@ -40,6 +40,7 @@
         <members>Contact.FullNameForm__c</members>
         <members>Contact.OrganizationLevelPick__c</members>
         <members>Contact.ReportsToId</members>
+        <members>FormerPosition__c.OldContactRef__c</members>
         <members>InvolvedPartner__c.AccountNameForm__c</members>
         <members>InvolvedPartner__c.AccountRef__c</members>
         <members>InvolvedPartner__c.EndDate__c</members>
