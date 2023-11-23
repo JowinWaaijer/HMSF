@@ -214,6 +214,7 @@
     <types>
         <members>Contact.Alle_contacten_Directieniveau</members>
         <members>Contact.Alle_contacten_Senior_management</members>
+        <members>Contact.Alle_inactieve_contactpersonen</members>
         <members>Contact.Alle_incomplete_contactpersonen</members>
         <members>Contact.Mijn_nieuwe_contacten_afgelopen_14_dgn</members>
         <members>InvolvedPartner__c.All</members>
@@ -394,11 +395,15 @@
         <name>Translations</name>
     </types>
     <types>
+        <members>Contact.VR03_CON_AccountChangeNotAllowed</members>
         <members>InvolvedPartner__c.INP_VR01_EndDateBeforeStartDate</members>
+        <members>InvolvedPartner__c.INP_VR02_InactiveWithNoEndDate</members>
+        <members>InvolvedPartner__c.INP_VR03_PrimairAccountCannotBeInactive</members>
         <members>Partnership__c.PAR_VR01_EndDateBeforeStartDate</members>
         <members>Partnership__c.PAR_VR02_PhoneFormat</members>
         <members>Partnership__c.PAR_VR03_MobileFormat</members>
         <members>Partnership__c.PAR_VR04_StardAndEndDateRequiredTemp</members>
+        <members>Partnership__c.PAR_VR05_EndDateIsRequiredWhenInactive</members>
         <name>ValidationRule</name>
     </types>
     <version>59.0</version>
