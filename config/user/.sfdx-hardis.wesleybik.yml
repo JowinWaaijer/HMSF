@@ -21,6 +21,7 @@ localStorageBranchTargets:
   features/config/us-busa-partner-feedback: integration
   features/config/permission-set-update: integration
   features/config/US-user-feedback-from-testing: integration
+  features/config/us-former-positions-flow-feedback: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
