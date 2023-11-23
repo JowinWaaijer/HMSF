@@ -13,5 +13,10 @@
         <operation>equals</operation>
         <value>BoardLevel</value>
     </filters>
+    <filters>
+        <field>IsNoLongerWorking__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
     <label>Alle contacten - Directieniveau</label>
 </ListView>

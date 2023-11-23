@@ -46,12 +46,16 @@
         <name>Anrede_Plichtfeld</name>
     </validationRules>
     <validationRules>
-        <errorMessage></errorMessage>
+        <errorMessage>Je moet het telefoonnummer in het juiste format invoegen. Zie voorbeeld: +31735345111 [VR01]</errorMessage>
         <name>VR01_CON_PhoneFormat</name>
     </validationRules>
     <validationRules>
-        <errorMessage></errorMessage>
+        <errorMessage>Je moet het telefoonnummer in het juiste format invoegen. Zie voorbeeld: +31611111111 [VR02]</errorMessage>
         <name>VR02_CON_MobileFormat</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Accountwijzigingen voor een contact nadat deze is aangemaakt, zijn beperkt. Gebruik in plaats daarvan de functie &quot;Contactpersoon verplaatsen&quot;. [VR03]</errorMessage>
+        <name>VR03_CON_AccountChangeNotAllowed</name>
     </validationRules>
     <webLinks>
         <label></label>

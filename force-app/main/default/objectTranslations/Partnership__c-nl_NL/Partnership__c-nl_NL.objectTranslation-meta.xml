@@ -26,19 +26,23 @@
     </layouts>
     <nameFieldLabel>Samenwerkingsverband Naam</nameFieldLabel>
     <validationRules>
-        <errorMessage></errorMessage>
+        <errorMessage>De einddatum kan niet voor de begindatum liggen. [VR01]</errorMessage>
         <name>PAR_VR01_EndDateBeforeStartDate</name>
     </validationRules>
     <validationRules>
-        <errorMessage></errorMessage>
+        <errorMessage>Je moet het telefoonnummer in het juiste format invoeren. Zie voorbeeld: +31111000111 [VR02]</errorMessage>
         <name>PAR_VR02_PhoneFormat</name>
     </validationRules>
     <validationRules>
-        <errorMessage></errorMessage>
+        <errorMessage>Je moet het telefoonnummer in het juiste format invoeren. Zie voorbeeld: +31111000111 [VR03]</errorMessage>
         <name>PAR_VR03_MobileFormat</name>
     </validationRules>
     <validationRules>
-        <errorMessage></errorMessage>
+        <errorMessage>Zorg ervoor dat u de einddatum van de samenwerking instelt. [VR04]</errorMessage>
         <name>PAR_VR04_StardAndEndDateRequiredTemp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Inactieve samenwerkingen moeten een einddatum hebben. [VR05]</errorMessage>
+        <name>PAR_VR05_EndDateIsRequiredWhenInactive</name>
     </validationRules>
 </CustomObjectTranslation>
