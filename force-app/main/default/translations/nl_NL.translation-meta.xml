@@ -4201,14 +4201,6 @@
     </flowDefinitions>
     <flowDefinitions>
         <flows>
-            <textTemplates>
-                <name>ttDescriptionText</name>
-            </textTemplates>
-        </flows>
-        <fullName>Signal</fullName>
-    </flowDefinitions>
-    <flowDefinitions>
-        <flows>
             <screens>
                 <fields>
                     <inputParameters>
@@ -4415,14 +4407,6 @@
             </screens>
         </flows>
         <fullName>Signal_SCFL01_Delete_Signal</fullName>
-    </flowDefinitions>
-    <flowDefinitions>
-        <flows>
-            <textTemplates>
-                <name>ttDescriptionText</name>
-            </textTemplates>
-        </flows>
-        <fullName>Signal_STFL01_Create_Task</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows/>
