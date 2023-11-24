@@ -1445,6 +1445,129 @@
             <screens>
                 <fields>
                     <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Logo10</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>btnPreviousEmployerEN</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>btnPreviousEmployerNL</name>
+                </fields>
+                <fields>
+                    <fieldText>&lt;p&gt;Gaat de contactpersoon in dienst bij zijn vorige werkgever? Kies &apos;Ja&apos; om door te gaan of selecteer &apos;Nee&apos; als u een ander account wilt kiezen.&lt;/p&gt;</fieldText>
+                    <name>dtBackToFormerEmployer</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>cb_hideCheckboxColumn</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>cb_isRequired</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>cb_navigateNextOnSave</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>cb_singleRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>cb_suppressBottomBar</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>columnFields</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>columnFilters</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>columnFlexes</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>columnIcons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>columnWidths</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>hideCheckboxColumn</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectName</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>singleRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <name>td</name>
+                </fields>
+                <name>scrBackToEmployer</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
                         <name>actionMode</name>
                         <value/>
                     </inputParameters>
@@ -1505,6 +1628,7 @@
                     <name>diHeijmans</name>
                 </fields>
                 <fields>
+                    <fieldText></fieldText>
                     <name>dtNewPostion</name>
                 </fields>
                 <name>scrCreateANewPosition</name>
@@ -1819,6 +1943,133 @@
                         <name>imageName</name>
                         <value/>
                     </inputParameters>
+                    <name>Copy_1_of_Logo10</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>btnEmployerSelectedEN</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>btnEmployerSelectedNL</name>
+                </fields>
+                <fields>
+                    <fieldText>&lt;p&gt;Voor welke werkgever gaat de contactpersoon werken?&lt;/p&gt;</fieldText>
+                    <name>dtSelectBackToFormerEmployer</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>cb_hideCheckboxColumn</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>cb_isRequired</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>cb_navigateNextOnSave</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>cb_singleRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>cb_suppressBottomBar</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>cb_tableBorder</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>columnFields</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>columnFilters</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>columnFlexes</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>columnIcons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>columnWidths</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectName</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>singleRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>tableBorder</name>
+                        <value/>
+                    </inputParameters>
+                    <name>tdEmployerSelect</name>
+                </fields>
+                <name>scrSelectEmployer</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
                     <name>Logo5</name>
                 </fields>
                 <fields>
@@ -1877,10 +2128,6 @@
                 <fields>
                     <inputParameters>
                         <name>placeholder</name>
-                        <value/>
-                    </inputParameters>
-                    <inputParameters>
-                        <name>required</name>
                         <value/>
                     </inputParameters>
                     <inputParameters>
@@ -1966,6 +2213,164 @@
                     <name>scrSetupNewRole_Section2_Column1</name>
                 </fields>
                 <name>scrSetupNewRole</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Logo5</name>
+                </fields>
+                <fields>
+                    <name>TitleExisting</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>btnReopenPositionEN</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>btnReopenPositionNL</name>
+                </fields>
+                <fields>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Geef de contactgegevens voor de nieuwe functie op.&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <name>dtContactInfo</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>placeholder</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>value</name>
+                        <value/>
+                    </inputParameters>
+                    <name>fieldEmailExisting</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>placeholder</name>
+                        <value/>
+                    </inputParameters>
+                    <name>fieldMobileExisting</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>disabled</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>firstName</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>lastName</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>readonly</name>
+                        <value/>
+                    </inputParameters>
+                    <name>fieldNameExisting</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>placeholder</name>
+                        <value/>
+                    </inputParameters>
+                    <name>fieldPhoneExisting</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>fieldApiName</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectApiName</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>required</name>
+                        <value/>
+                    </inputParameters>
+                    <name>luExisitingAccount</name>
+                </fields>
+                <fields>
+                    <name>scrSetupRole_Section1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>scrSetupRole_Section1_Column1</name>
+                </fields>
+                <fields>
+                    <name>scrSetupRole_Section2</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>scrSetupRole_Section2_Column1</name>
+                </fields>
+                <name>scrSetupRole</name>
             </screens>
             <screens>
                 <fields>
@@ -4203,7 +4608,7 @@
         <name>NewTask</name>
     </quickActions>
     <quickActions>
-        <label><!-- New Task --></label>
+        <label><!-- NewTask --></label>
         <name>NewTask</name>
     </quickActions>
     <quickActions>
@@ -4746,6 +5151,15 @@
         </sections>
     </reportTypes>
     <reportTypes>
+        <description><!-- Accounts with inactive users --></description>
+        <label><!-- Accounts with inactive users --></label>
+        <name>Accounts_with_inactive_users</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
         <description><!-- Activititeiten-Contactpersonen --></description>
         <label><!-- Activititeiten-Contactpersonen --></label>
         <name>Activititeiten_Contactpersonen</name>
@@ -4851,6 +5265,10 @@
         <sections>
             <label><!-- Gebruikers --></label>
             <name>Gebruikers</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
         </sections>
     </reportTypes>
     <reportTypes>
