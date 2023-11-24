@@ -3,8 +3,8 @@
     <actionCalls>
         <name>navigateToRecordOld</name>
         <label>navigateToRecordOld</label>
-        <locationX>2426</locationX>
-        <locationY>3494</locationY>
+        <locationX>3605</locationX>
+        <locationY>3950</locationY>
         <actionName>c:navigateToRecord</actionName>
         <actionType>component</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -21,15 +21,15 @@
     <actionCalls>
         <name>navigateToRecrod</name>
         <label>navigateToRecrod</label>
-        <locationX>314</locationX>
-        <locationY>3002</locationY>
+        <locationX>1749</locationX>
+        <locationY>3542</locationY>
         <actionName>c:navigateToRecord</actionName>
         <actionType>component</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>recordId</name>
             <value>
-                <elementReference>rcContact</elementReference>
+                <elementReference>varContactId</elementReference>
             </value>
         </inputParameters>
         <nameSegment>c:navigateToRecord</nameSegment>
@@ -38,9 +38,25 @@
     </actionCalls>
     <apiVersion>58.0</apiVersion>
     <assignments>
+        <name>assContactIdToLoop</name>
+        <label>assContactIdToLoop</label>
+        <locationX>1898</locationX>
+        <locationY>2138</locationY>
+        <assignmentItems>
+            <assignToReference>varContactId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>rcContact</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>rcFormerPositionNewJob</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <name>assIcons</name>
         <label>assIcons</label>
-        <locationX>3306</locationX>
+        <locationX>4665</locationX>
         <locationY>350</locationY>
         <assignmentItems>
             <assignToReference>colIcons</assignToReference>
@@ -113,8 +129,8 @@
         <description>Sets the AccountId used in the scrSetupNew Role</description>
         <name>assSelectedAccountId</name>
         <label>ssSelectedAccountId</label>
-        <locationX>666</locationX>
-        <locationY>998</locationY>
+        <locationX>2030</locationX>
+        <locationY>1214</locationY>
         <assignmentItems>
             <assignToReference>varSelectedAccountId</assignToReference>
             <operator>Assign</operator>
@@ -130,8 +146,8 @@
         <description>Sets the AccountId used in the scrSetupNew Role</description>
         <name>assSelectedAccountIdNew</name>
         <label>assSelectedAccountIdNew</label>
-        <locationX>930</locationX>
-        <locationY>1322</locationY>
+        <locationX>2294</locationX>
+        <locationY>1538</locationY>
         <assignmentItems>
             <assignToReference>varSelectedAccountId</assignToReference>
             <operator>Assign</operator>
@@ -144,11 +160,41 @@
         </connector>
     </assignments>
     <assignments>
+        <name>assSetAccountId</name>
+        <label>assSetAccountId</label>
+        <locationX>446</locationX>
+        <locationY>1430</locationY>
+        <assignmentItems>
+            <assignToReference>varSelectedAccountId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tdEmployerSelect.outputSelectedRow.AccountRef__r.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varContactId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tdEmployerSelect.outputSelectedRow.OldContactRef__r.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varOldContactId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tdEmployerSelect.outputSelectedRow.OldContactRef__r.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>getOldContactInfo</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <description>Sets the contact id to the new contact.</description>
         <name>assSetContactId</name>
         <label>assSetContactId</label>
-        <locationX>138</locationX>
-        <locationY>2354</locationY>
+        <locationX>1573</locationX>
+        <locationY>2894</locationY>
         <assignmentItems>
             <assignToReference>rFormerPosition.Id</assignToReference>
             <operator>Assign</operator>
@@ -160,7 +206,7 @@
             <assignToReference>rFormerPosition.ContactRef__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>rcContact</elementReference>
+                <elementReference>varContactId</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -195,8 +241,8 @@
     <decisions>
         <name>dcs</name>
         <label>dcsSelectedOption</label>
-        <locationX>930</locationX>
-        <locationY>1706</locationY>
+        <locationX>2294</locationX>
+        <locationY>1922</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Created</name>
@@ -224,7 +270,7 @@
     <decisions>
         <name>dcsContineDeceased</name>
         <label>dcsContineDeceased</label>
-        <locationX>3130</locationX>
+        <locationX>4670</locationX>
         <locationY>890</locationY>
         <defaultConnectorLabel>Stop</defaultConnectorLabel>
         <rules>
@@ -277,7 +323,7 @@
         <description>Check if the users wants to continue the process.</description>
         <name>dcsContinueProcess</name>
         <label>dcsContinueProcess</label>
-        <locationX>3306</locationX>
+        <locationX>4665</locationX>
         <locationY>566</locationY>
         <defaultConnectorLabel>Exit</defaultConnectorLabel>
         <rules>
@@ -307,8 +353,8 @@
         <description>Check what value the user selected in the button bar.</description>
         <name>dcsCreateAccount</name>
         <label>dcsCreateAccount</label>
-        <locationX>1194</locationX>
-        <locationY>1106</locationY>
+        <locationX>2558</locationX>
+        <locationY>1322</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
             <targetReference>scrNewAccountNeeded</targetReference>
@@ -338,11 +384,45 @@
         </rules>
     </decisions>
     <decisions>
+        <description>Check what option the user selected</description>
+        <name>dcsEmployerSelected</name>
+        <label>dcsEmployerSelected</label>
+        <locationX>776</locationX>
+        <locationY>1322</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>scrBackToEmployer</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Back</defaultConnectorLabel>
+        <rules>
+            <name>ContineFormerEmployer</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>btnEmployerSelectedEN.value</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Continue</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>btnEmployerSelectedNL.value</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Continue</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>assSetAccountId</targetReference>
+            </connector>
+            <label>Continue</label>
+        </rules>
+    </decisions>
+    <decisions>
         <description>Check if there are any Former Positions to update.</description>
         <name>dcsFormerPositionsFound</name>
         <label>dcsFormerPositionsFound</label>
-        <locationX>314</locationX>
-        <locationY>2138</locationY>
+        <locationX>1749</locationX>
+        <locationY>2678</locationY>
         <defaultConnector>
             <targetReference>ruSetContactToInactive</targetReference>
         </defaultConnector>
@@ -364,10 +444,36 @@
         </rules>
     </decisions>
     <decisions>
+        <description>Checks if this contact has any former positions in the data base.</description>
+        <name>dcsFormerPositionsRecordsFound</name>
+        <label>dcsFormerPositionsRecordsFound</label>
+        <locationX>1749</locationX>
+        <locationY>890</locationY>
+        <defaultConnector>
+            <targetReference>scrNewAccountNeeded</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Former Positions</defaultConnectorLabel>
+        <rules>
+            <name>FmYes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>getAllFormerPositions</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>scrBackToEmployer</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
         <description>Check if the contact needs to be moved to another organization or if the contact is not related anymore.</description>
         <name>dcsMoveContact</name>
         <label>dcsMoveContact</label>
-        <locationX>3878</locationX>
+        <locationX>5327</locationX>
         <locationY>242</locationY>
         <defaultConnectorLabel>Cancel Operation</defaultConnectorLabel>
         <rules>
@@ -397,8 +503,8 @@
         <description>Check what the user selected in the previous screen.</description>
         <name>dcsNewAccountCreation</name>
         <label>dcsNewAccountCreation</label>
-        <locationX>930</locationX>
-        <locationY>890</locationY>
+        <locationX>2294</locationX>
+        <locationY>1106</locationY>
         <defaultConnector>
             <targetReference>scrCreateAccount</targetReference>
         </defaultConnector>
@@ -427,10 +533,86 @@
         </rules>
     </decisions>
     <decisions>
+        <description>Check if the old contact is found.</description>
+        <name>dcsOldContactFound</name>
+        <label>dcsOldContactFound</label>
+        <locationX>446</locationX>
+        <locationY>1646</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>OldContactFound</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>getOldContactInfo</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>scrSetupRole</targetReference>
+            </connector>
+            <label>OldContactFound</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks what option the user selected</description>
+        <name>dcsPreviousEmployerSelected</name>
+        <label>dcsPreviousEmployerSelected</label>
+        <locationX>1205</locationX>
+        <locationY>1106</locationY>
+        <defaultConnectorLabel>Stop</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>btnPreviousEmployerEN.value</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>btnPreviousEmployerNL.value</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>scrSelectEmployer</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+        <rules>
+            <name>No</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>btnPreviousEmployerEN.value</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>No</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>btnPreviousEmployerNL.value</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>No</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <isGoTo>true</isGoTo>
+                <targetReference>scrNewAccountNeeded</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <decisions>
         <description>Check what value the user selected in the icon screen.</description>
         <name>dcsSelectedType</name>
         <label>dcsSelectedType</label>
-        <locationX>2426</locationX>
+        <locationX>3605</locationX>
         <locationY>674</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
@@ -448,7 +630,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>scrNewAccountNeeded</targetReference>
+                <targetReference>getAllFormerPositions</targetReference>
             </connector>
             <label>New Job</label>
         </rules>
@@ -590,8 +772,8 @@
         <description>Loops all the former postions to update the contact.</description>
         <name>lpFormerPositions</name>
         <label>lpFormerPositions</label>
-        <locationX>50</locationX>
-        <locationY>2246</locationY>
+        <locationX>1485</locationX>
+        <locationY>2786</locationY>
         <collectionReference>getFormerPositions</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -624,7 +806,7 @@
         <description>Creates a former position for the deceased contact.</description>
         <name>crFormerPositionDeceased</name>
         <label>crFormerPositionDeceased</label>
-        <locationX>2602</locationX>
+        <locationX>4142</locationX>
         <locationY>1106</locationY>
         <connector>
             <targetReference>scrSuccesRetireOrDeceasedNL</targetReference>
@@ -657,6 +839,12 @@
             </value>
         </inputAssignments>
         <inputAssignments>
+            <field>OldContactRef__c</field>
+            <value>
+                <elementReference>recordId.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>StartDate__c</field>
             <value>
                 <elementReference>fmStartDateEstimatedContact</elementReference>
@@ -675,8 +863,8 @@
         <description>Creates a new account record</description>
         <name>rcAccount</name>
         <label>rcAccount</label>
-        <locationX>930</locationX>
-        <locationY>1214</locationY>
+        <locationX>2294</locationX>
+        <locationY>1430</locationY>
         <assignRecordIdToReference>varNewAccountId</assignRecordIdToReference>
         <connector>
             <targetReference>assSelectedAccountIdNew</targetReference>
@@ -715,10 +903,10 @@
         <description>Creates a new Contact</description>
         <name>rcContact</name>
         <label>rcContact</label>
-        <locationX>314</locationX>
-        <locationY>1814</locationY>
+        <locationX>1898</locationX>
+        <locationY>2030</locationY>
         <connector>
-            <targetReference>rcFormerPositionNewJob</targetReference>
+            <targetReference>assContactIdToLoop</targetReference>
         </connector>
         <faultConnector>
             <isGoTo>true</isGoTo>
@@ -779,8 +967,8 @@
         <description>Creates a former postition related to the newly created contact.</description>
         <name>rcFormerPositionNewJob</name>
         <label>rcFormerPositionNewJob</label>
-        <locationX>314</locationX>
-        <locationY>1922</locationY>
+        <locationX>1898</locationX>
+        <locationY>2246</locationY>
         <connector>
             <targetReference>getFormerPositions</targetReference>
         </connector>
@@ -807,6 +995,12 @@
             </value>
         </inputAssignments>
         <inputAssignments>
+            <field>OldContactRef__c</field>
+            <value>
+                <elementReference>recordId.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>StartDate__c</field>
             <value>
                 <elementReference>fmStartDateEstimatedContact</elementReference>
@@ -822,10 +1016,62 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordCreates>
+        <description>Creates a former position based on the record that triggerd the flow related to the old contact.</description>
+        <name>rcFormerPositionOld</name>
+        <label>rcFormerPositionOld</label>
+        <locationX>50</locationX>
+        <locationY>1970</locationY>
+        <connector>
+            <targetReference>getFormerPositions</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>subFaultConnector</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>AccountRef__c</field>
+            <value>
+                <elementReference>recordId.Account.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactRef__c</field>
+            <value>
+                <elementReference>varContactId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>EndDate__c</field>
+            <value>
+                <elementReference>fmStartDateEstimatedContact</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OldContactRef__c</field>
+            <value>
+                <elementReference>recordId.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>StartDate__c</field>
+            <value>
+                <elementReference>fmToday</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Title__c</field>
+            <value>
+                <elementReference>recordId.Title</elementReference>
+            </value>
+        </inputAssignments>
+        <object>FormerPosition__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
         <description>Creates a former position for the retired contact.</description>
         <name>rcFormerPositionRetired</name>
         <label>rcFormerPositionRetired</label>
-        <locationX>1810</locationX>
+        <locationX>3350</locationX>
         <locationY>998</locationY>
         <connector>
             <targetReference>scrSuccesRetireOrDeceasedNL</targetReference>
@@ -859,6 +1105,12 @@
             </value>
         </inputAssignments>
         <inputAssignments>
+            <field>OldContactRef__c</field>
+            <value>
+                <elementReference>recordId.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>StartDate__c</field>
             <value>
                 <elementReference>fmStartDateEstimatedContact</elementReference>
@@ -874,10 +1126,31 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordLookups>
+        <name>getAllFormerPositions</name>
+        <label>getAllFormerPositions</label>
+        <locationX>1749</locationX>
+        <locationY>782</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>dcsFormerPositionsRecordsFound</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ContactRef__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>FormerPosition__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
         <name>getFormerPositions</name>
         <label>getFormerPositions</label>
-        <locationX>314</locationX>
-        <locationY>2030</locationY>
+        <locationX>1749</locationX>
+        <locationY>2570</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>dcsFormerPositionsFound</targetReference>
@@ -894,11 +1167,103 @@
         <object>FormerPosition__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
+    <recordLookups>
+        <description>Gets the old contact information.</description>
+        <name>getOldContactInfo</name>
+        <label>getOldContactInfo</label>
+        <locationX>446</locationX>
+        <locationY>1538</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>dcsOldContactFound</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varOldContactId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>ruActivateOldContact</name>
+        <label>ruActivateOldContact</label>
+        <locationX>50</locationX>
+        <locationY>1862</locationY>
+        <connector>
+            <targetReference>rcFormerPositionOld</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>subFaultConnector</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varOldContactId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Email</field>
+            <value>
+                <elementReference>fieldEmailExisting.value</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FirstName</field>
+            <value>
+                <elementReference>fieldNameExisting.firstName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HomePhone</field>
+            <value>
+                <elementReference>fieldPhoneExisting.value</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>IsNoLongerWorking__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LastName</field>
+            <value>
+                <elementReference>fieldNameExisting.lastName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MobilePhone</field>
+            <value>
+                <elementReference>fieldMobileExisting.value</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>StatusPick__c</field>
+            <value>
+                <stringValue>Changed Jobs</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Title</field>
+            <value>
+                <elementReference>TitleExisting</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
     <recordUpdates>
         <description>Sets the contact to deceased.</description>
         <name>ruContactDeceased</name>
         <label>ruContactDeceased</label>
-        <locationX>2602</locationX>
+        <locationX>4142</locationX>
         <locationY>998</locationY>
         <connector>
             <targetReference>crFormerPositionDeceased</targetReference>
@@ -939,7 +1304,7 @@
         <description>Sets the contact to retired.</description>
         <name>ruContactRetire</name>
         <label>ruContactRetire</label>
-        <locationX>1810</locationX>
+        <locationX>3350</locationX>
         <locationY>890</locationY>
         <connector>
             <targetReference>rcFormerPositionRetired</targetReference>
@@ -985,8 +1350,8 @@
     <recordUpdates>
         <name>ruSetContactToInactive</name>
         <label>ruSetContactToInactive</label>
-        <locationX>314</locationX>
-        <locationY>2786</locationY>
+        <locationX>1749</locationX>
+        <locationY>3326</locationY>
         <connector>
             <targetReference>scrSucces</targetReference>
         </connector>
@@ -1025,8 +1390,8 @@
     <recordUpdates>
         <name>ruSetNewContactIdFormerPosition</name>
         <label>ruSetNewContactIdFormerPosition</label>
-        <locationX>50</locationX>
-        <locationY>2546</locationY>
+        <locationX>1485</locationX>
+        <locationY>3086</locationY>
         <connector>
             <targetReference>ruSetContactToInactive</targetReference>
         </connector>
@@ -1040,7 +1405,7 @@
         <description>Double check if the contact needs to be set to deceased.</description>
         <name>dtCheckDeceased</name>
         <label>dtCheckDeceased</label>
-        <locationX>3130</locationX>
+        <locationX>4670</locationX>
         <locationY>782</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
@@ -1182,7 +1547,7 @@
         <description>Double check if the contact needs to be retired.</description>
         <name>dtCheckRetire</name>
         <label>dtCheckRetire</label>
-        <locationX>1810</locationX>
+        <locationX>3350</locationX>
         <locationY>782</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
@@ -1321,10 +1686,247 @@
         <showHeader>false</showHeader>
     </screens>
     <screens>
+        <name>scrBackToEmployer</name>
+        <label>scrBackToEmployer</label>
+        <locationX>1205</locationX>
+        <locationY>998</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>dcsPreviousEmployerSelected</targetReference>
+        </connector>
+        <fields>
+            <name>Logo10</name>
+            <extensionName>flowruntime:image</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>imageName</name>
+                <value>
+                    <stringValue>HeijmansLogo</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>horizontalAlignment</name>
+                <value>
+                    <stringValue>center</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>imageHeight</name>
+                <value>
+                    <stringValue>25</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>dtBackToFormerEmployer</name>
+            <fieldText>&lt;p&gt;Will the contact be employed by a previous employer of theirs? Choose &apos;Yes&apos; to proceed or select &quot;No&quot; if you wish to choose a different account.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>td</name>
+            <dataTypeMappings>
+                <typeName>T</typeName>
+                <typeValue>FormerPosition__c</typeValue>
+            </dataTypeMappings>
+            <extensionName>c:datatable</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>objectName</name>
+                <value>
+                    <stringValue>FormerPosition__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>cb_suppressBottomBar</name>
+                <value>
+                    <stringValue>CB_FALSE</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>cb_navigateNextOnSave</name>
+                <value>
+                    <stringValue>CB_FALSE</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>columnFields</name>
+                <value>
+                    <stringValue>AccountRef__c,Title__c,StartDate__c,EndDate__c,Comment__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>columnFilters</name>
+                <value>
+                    <stringValue>All</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>columnFlexes</name>
+                <value>
+                    <stringValue>All</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>columnWidths</name>
+                <value>
+                    <stringValue>AccountRef__c:0, Title__c:0, StartDate__c:0, EndDate__c:0, Comment__c:0</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>cb_singleRowSelection</name>
+                <value>
+                    <stringValue>CB_FALSE</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>singleRowSelection</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>hideCheckboxColumn</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>cb_hideCheckboxColumn</name>
+                <value>
+                    <stringValue>CB_TRUE</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>cb_isRequired</name>
+                <value>
+                    <stringValue>CB_FALSE</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>tableData</name>
+                <value>
+                    <elementReference>getAllFormerPositions</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>columnIcons</name>
+                <value>
+                    <stringValue>AccountRef__c:standard:account, Title__c:standard:hierarchy, StartDate__c:utility:date_input, EndDate__c:utility:date_input, Comment__c:standard:display_text</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>btnPreviousEmployerEN</name>
+            <extensionName>c:fsc_flowButtonBar</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>alignment</name>
+                <value>
+                    <stringValue>right</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>orientation</name>
+                <value>
+                    <stringValue>horizontal</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>showLines</name>
+                <value>
+                    <stringValue>neither</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>actionMode</name>
+                <value>
+                    <stringValue>navigation</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>buttons</name>
+                <value>
+                    <stringValue>[{&quot;label&quot;:&quot;Cancel&quot;,&quot;value&quot;:&quot;Cancel&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;destructive&quot;,&quot;iconName&quot;:&quot;utility:close&quot;,&quot;index&quot;:0},{&quot;label&quot;:&quot;No&quot;,&quot;value&quot;:&quot;No&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;neutral&quot;,&quot;iconName&quot;:&quot;utility:ban&quot;,&quot;index&quot;:1},{&quot;label&quot;:&quot;Yes&quot;,&quot;value&quot;:&quot;Yes&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;brand&quot;,&quot;iconName&quot;:&quot;utility:arrow_right&quot;,&quot;index&quot;:2}]</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>fmUserLanguageCode</leftValueReference>
+                    <operator>NotEqualTo</operator>
+                    <rightValue>
+                        <stringValue>nl_NL</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>btnPreviousEmployerNL</name>
+            <extensionName>c:fsc_flowButtonBar</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>alignment</name>
+                <value>
+                    <stringValue>right</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>orientation</name>
+                <value>
+                    <stringValue>horizontal</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>showLines</name>
+                <value>
+                    <stringValue>neither</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>actionMode</name>
+                <value>
+                    <stringValue>navigation</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>buttons</name>
+                <value>
+                    <stringValue>[{&quot;label&quot;:&quot;Stop&quot;,&quot;value&quot;:&quot;Cancel&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;destructive&quot;,&quot;iconName&quot;:&quot;utility:close&quot;,&quot;index&quot;:0},{&quot;label&quot;:&quot;Nee&quot;,&quot;value&quot;:&quot;No&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;neutral&quot;,&quot;iconName&quot;:&quot;utility:ban&quot;,&quot;index&quot;:1},{&quot;label&quot;:&quot;Ja&quot;,&quot;value&quot;:&quot;Yes&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;brand&quot;,&quot;iconName&quot;:&quot;utility:arrow_right&quot;,&quot;index&quot;:2}]</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>fmUserLanguageCode</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>nl_NL</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
         <name>scrCreateAccount</name>
         <label>scrCreateAccount</label>
-        <locationX>1194</locationX>
-        <locationY>998</locationY>
+        <locationX>2558</locationX>
+        <locationY>1214</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -1528,7 +2130,7 @@
         <description>Asks the user if the contact is no longer working for this organization.</description>
         <name>scrCreateANewPosition</name>
         <label>scrCreateANewPosition</label>
-        <locationX>3878</locationX>
+        <locationX>5327</locationX>
         <locationY>134</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
@@ -1669,7 +2271,7 @@
     <screens>
         <name>scrErrorMessage</name>
         <label>scrErrorMessage</label>
-        <locationX>2866</locationX>
+        <locationX>4406</locationX>
         <locationY>1322</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
@@ -1712,8 +2314,8 @@
         <description>Checks if a new account is needed for this new job.</description>
         <name>scrNewAccountNeeded</name>
         <label>scrNewAccountNeeded</label>
-        <locationX>930</locationX>
-        <locationY>782</locationY>
+        <locationX>2294</locationX>
+        <locationY>998</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -1879,7 +2481,7 @@
     <screens>
         <name>scrQuickChoice</name>
         <label>scrQuickChoice</label>
-        <locationX>3306</locationX>
+        <locationX>4665</locationX>
         <locationY>458</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
@@ -2086,11 +2688,254 @@
         <showHeader>false</showHeader>
     </screens>
     <screens>
+        <name>scrSelectEmployer</name>
+        <label>scrSelectEmployer</label>
+        <locationX>776</locationX>
+        <locationY>1214</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>dcsEmployerSelected</targetReference>
+        </connector>
+        <fields>
+            <name>Copy_1_of_Logo10</name>
+            <extensionName>flowruntime:image</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>imageName</name>
+                <value>
+                    <stringValue>HeijmansLogo</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>horizontalAlignment</name>
+                <value>
+                    <stringValue>center</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>imageHeight</name>
+                <value>
+                    <stringValue>25</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>dtSelectBackToFormerEmployer</name>
+            <fieldText>&lt;p&gt;For which employer will the contact be working?&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>tdEmployerSelect</name>
+            <dataTypeMappings>
+                <typeName>T</typeName>
+                <typeValue>FormerPosition__c</typeValue>
+            </dataTypeMappings>
+            <extensionName>c:datatable</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>objectName</name>
+                <value>
+                    <stringValue>FormerPosition__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>cb_suppressBottomBar</name>
+                <value>
+                    <stringValue>CB_FALSE</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>cb_navigateNextOnSave</name>
+                <value>
+                    <stringValue>CB_FALSE</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>columnFields</name>
+                <value>
+                    <stringValue>AccountRef__c,Title__c,StartDate__c,EndDate__c,Comment__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>columnFilters</name>
+                <value>
+                    <stringValue>All</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>columnFlexes</name>
+                <value>
+                    <stringValue>All</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>columnWidths</name>
+                <value>
+                    <stringValue>AccountRef__c:0, Title__c:0, StartDate__c:0, EndDate__c:0, Comment__c:0</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>cb_singleRowSelection</name>
+                <value>
+                    <stringValue>CB_TRUE</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>singleRowSelection</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>cb_hideCheckboxColumn</name>
+                <value>
+                    <stringValue>CB_FALSE</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>cb_isRequired</name>
+                <value>
+                    <stringValue>CB_TRUE</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>cb_tableBorder</name>
+                <value>
+                    <stringValue>CB_TRUE</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>tableBorder</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>tableData</name>
+                <value>
+                    <elementReference>getAllFormerPositions</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>columnIcons</name>
+                <value>
+                    <stringValue>AccountRef__c:standard:account, Title__c:standard:hierarchy, StartDate__c:utility:date_input, EndDate__c:utility:date_input, Comment__c:standard:display_text</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>btnEmployerSelectedEN</name>
+            <extensionName>c:fsc_flowButtonBar</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>alignment</name>
+                <value>
+                    <stringValue>right</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>orientation</name>
+                <value>
+                    <stringValue>horizontal</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>showLines</name>
+                <value>
+                    <stringValue>neither</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>actionMode</name>
+                <value>
+                    <stringValue>navigation</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>buttons</name>
+                <value>
+                    <stringValue>[{&quot;label&quot;:&quot;Back&quot;,&quot;value&quot;:&quot;Back&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;neutral&quot;,&quot;iconName&quot;:&quot;utility:arrow_left&quot;,&quot;index&quot;:0},{&quot;label&quot;:&quot;Continue&quot;,&quot;value&quot;:&quot;Continue&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;brand&quot;,&quot;iconName&quot;:&quot;utility:arrow_right&quot;,&quot;index&quot;:1}]</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>fmUserLanguageCode</leftValueReference>
+                    <operator>NotEqualTo</operator>
+                    <rightValue>
+                        <stringValue>nl_NL</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>btnEmployerSelectedNL</name>
+            <extensionName>c:fsc_flowButtonBar</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>alignment</name>
+                <value>
+                    <stringValue>right</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>orientation</name>
+                <value>
+                    <stringValue>horizontal</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>showLines</name>
+                <value>
+                    <stringValue>neither</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>actionMode</name>
+                <value>
+                    <stringValue>navigation</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>buttons</name>
+                <value>
+                    <stringValue>[{&quot;label&quot;:&quot;Terug&quot;,&quot;value&quot;:&quot;Back&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;neutral&quot;,&quot;iconName&quot;:&quot;utility:arrow_left&quot;,&quot;index&quot;:0},{&quot;label&quot;:&quot;Volgende&quot;,&quot;value&quot;:&quot;Continue&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;brand&quot;,&quot;iconName&quot;:&quot;utility:arrow_right&quot;,&quot;index&quot;:1}]</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>fmUserLanguageCode</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>nl_NL</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
         <description>Screen to setup the new role of the contact.</description>
         <name>scrSetupNewRole</name>
         <label>scrSetupNewRole</label>
-        <locationX>930</locationX>
-        <locationY>1598</locationY>
+        <locationX>2294</locationX>
+        <locationY>1814</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -2236,12 +3081,6 @@
                     <name>fieldEmail</name>
                     <extensionName>flowruntime:email</extensionName>
                     <fieldType>ComponentInstance</fieldType>
-                    <inputParameters>
-                        <name>required</name>
-                        <value>
-                            <booleanValue>true</booleanValue>
-                        </value>
-                    </inputParameters>
                     <inputParameters>
                         <name>value</name>
                         <value>
@@ -2403,10 +3242,321 @@
         <showHeader>false</showHeader>
     </screens>
     <screens>
+        <description>Screen to setup the new role of the contact.</description>
+        <name>scrSetupRole</name>
+        <label>scrSetupRole</label>
+        <locationX>50</locationX>
+        <locationY>1754</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>ruActivateOldContact</targetReference>
+        </connector>
+        <fields>
+            <name>Copy_1_of_Logo5</name>
+            <extensionName>flowruntime:image</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>imageName</name>
+                <value>
+                    <stringValue>HeijmansLogo</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>horizontalAlignment</name>
+                <value>
+                    <stringValue>center</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>imageHeight</name>
+                <value>
+                    <stringValue>25</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>dtContactInfo</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Please provide the contact details for the new postion.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>scrSetupRole_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>scrSetupRole_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>luExisitingAccount</name>
+                    <extensionName>flowruntime:lookup</extensionName>
+                    <fieldType>ComponentInstance</fieldType>
+                    <inputParameters>
+                        <name>fieldApiName</name>
+                        <value>
+                            <stringValue>AccountId</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectApiName</name>
+                        <value>
+                            <stringValue>Contact</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value>
+                            <stringValue>Account Name</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>required</name>
+                        <value>
+                            <booleanValue>true</booleanValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>recordId</name>
+                        <value>
+                            <elementReference>varSelectedAccountId</elementReference>
+                        </value>
+                    </inputParameters>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <storeOutputAutomatically>true</storeOutputAutomatically>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>scrSetupRole_Section2</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>scrSetupRole_Section2_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>TitleExisting</name>
+                    <dataType>String</dataType>
+                    <defaultValue>
+                        <elementReference>getOldContactInfo.Title</elementReference>
+                    </defaultValue>
+                    <fieldText>Title</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>false</isRequired>
+                </fields>
+                <fields>
+                    <name>fieldNameExisting</name>
+                    <extensionName>flowruntime:name</extensionName>
+                    <fieldType>ComponentInstance</fieldType>
+                    <inputParameters>
+                        <name>disabled</name>
+                        <value>
+                            <booleanValue>false</booleanValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>firstName</name>
+                        <value>
+                            <elementReference>getOldContactInfo.FirstName</elementReference>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>lastName</name>
+                        <value>
+                            <elementReference>getOldContactInfo.LastName</elementReference>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>readonly</name>
+                        <value>
+                            <booleanValue>false</booleanValue>
+                        </value>
+                    </inputParameters>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <storeOutputAutomatically>true</storeOutputAutomatically>
+                </fields>
+                <fields>
+                    <name>fieldEmailExisting</name>
+                    <extensionName>flowruntime:email</extensionName>
+                    <fieldType>ComponentInstance</fieldType>
+                    <inputParameters>
+                        <name>value</name>
+                        <value>
+                            <elementReference>recordId.Email</elementReference>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>placeholder</name>
+                        <value>
+                            <elementReference>getOldContactInfo.Email</elementReference>
+                        </value>
+                    </inputParameters>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <storeOutputAutomatically>true</storeOutputAutomatically>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>fieldMobileExisting</name>
+            <extensionName>flowruntime:phone</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Mobile</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>placeholder</name>
+                <value>
+                    <elementReference>getOldContactInfo.MobilePhone</elementReference>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>fieldPhoneExisting</name>
+            <extensionName>flowruntime:phone</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>placeholder</name>
+                <value>
+                    <elementReference>getOldContactInfo.Phone</elementReference>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>btnReopenPositionEN</name>
+            <extensionName>c:fsc_flowButtonBar</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>alignment</name>
+                <value>
+                    <stringValue>right</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>orientation</name>
+                <value>
+                    <stringValue>horizontal</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>showLines</name>
+                <value>
+                    <stringValue>neither</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>actionMode</name>
+                <value>
+                    <stringValue>navigation</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>buttons</name>
+                <value>
+                    <stringValue>[{&quot;label&quot;:&quot;Cancel&quot;,&quot;value&quot;:&quot;Cancel&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;destructive&quot;,&quot;iconName&quot;:&quot;utility:close&quot;,&quot;index&quot;:0},{&quot;label&quot;:&quot;Create New Position&quot;,&quot;value&quot;:&quot;Save&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;brand&quot;,&quot;iconName&quot;:&quot;utility:adduser&quot;,&quot;index&quot;:1}]</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>fmUserLanguageCode</leftValueReference>
+                    <operator>NotEqualTo</operator>
+                    <rightValue>
+                        <stringValue>nl_NL</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>btnReopenPositionNL</name>
+            <extensionName>c:fsc_flowButtonBar</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>alignment</name>
+                <value>
+                    <stringValue>right</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>orientation</name>
+                <value>
+                    <stringValue>horizontal</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>showLines</name>
+                <value>
+                    <stringValue>neither</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>actionMode</name>
+                <value>
+                    <stringValue>navigation</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>buttons</name>
+                <value>
+                    <stringValue>[{&quot;label&quot;:&quot;Stop&quot;,&quot;value&quot;:&quot;Cancel&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;destructive&quot;,&quot;iconName&quot;:&quot;utility:close&quot;,&quot;index&quot;:0},{&quot;label&quot;:&quot;Aanmaken&quot;,&quot;value&quot;:&quot;Save&quot;,&quot;iconPosition&quot;:&quot;left&quot;,&quot;variant&quot;:&quot;brand&quot;,&quot;iconName&quot;:&quot;utility:adduser&quot;,&quot;index&quot;:1}]</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>fmUserLanguageCode</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>nl_NL</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
         <name>scrSucces</name>
         <label>scrSucces!</label>
-        <locationX>314</locationX>
-        <locationY>2894</locationY>
+        <locationX>1749</locationX>
+        <locationY>3434</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -2546,8 +3696,8 @@
     <screens>
         <name>scrSuccesRetireOrDeceasedNL</name>
         <label>scrSuccesRetireOrDeceasedNL</label>
-        <locationX>2426</locationX>
-        <locationY>3386</locationY>
+        <locationX>3605</locationX>
+        <locationY>3842</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -2685,7 +3835,7 @@
         <showHeader>false</showHeader>
     </screens>
     <start>
-        <locationX>3752</locationX>
+        <locationX>5201</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>scrCreateANewPosition</targetReference>
@@ -2696,7 +3846,7 @@
         <description>This is a subflow to start the fault handling when a create / update / delete is giving an error. In this case a feedback record will be created.</description>
         <name>subFaultConnector</name>
         <label>subFaultConnector</label>
-        <locationX>2866</locationX>
+        <locationX>4406</locationX>
         <locationY>1214</locationY>
         <connector>
             <targetReference>scrErrorMessage</targetReference>
@@ -2786,7 +3936,21 @@
         <objectType>FormerPosition__c</objectType>
     </variables>
     <variables>
+        <name>varContactId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
         <name>varNewAccountId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varOldContactId</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>
