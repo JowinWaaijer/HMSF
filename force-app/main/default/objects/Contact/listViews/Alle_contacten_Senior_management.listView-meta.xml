@@ -13,5 +13,10 @@
         <operation>equals</operation>
         <value>SeniorManagement</value>
     </filters>
+    <filters>
+        <field>IsNoLongerWorking__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
     <label>Alle contacten - Senior management</label>
 </ListView>

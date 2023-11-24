@@ -389,6 +389,11 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>adminFilters</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>IsActive__c|EQUALS|true</value>
+                        </valueListItems>
+                    </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>maxRecordsToDisplay</name>
@@ -416,13 +421,16 @@
                             <value>PartnershipActiveForm__c</value>
                         </valueListItems>
                         <valueListItems>
+                            <value>PrimaryContactRef__c</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>IsActive__c</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListLabel</name>
-                    <value>Betrokken Partners</value>
+                    <value>Samenwerkingen</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>showActionBar</name>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAR_VR05_EndDateIsRequiredWhenInactive</fullName>
+    <active>true</active>
+    <description>When a partnership is inactive an end date is required.</description>
+    <errorConditionFormula>AND(IsActive__c = false,
+ISBLANK( EndDate__c )
+)</errorConditionFormula>
+    <errorDisplayField>EndDate__c</errorDisplayField>
+    <errorMessage>Inactive partnerships must have an end date specified. [VR05]</errorMessage>
+</ValidationRule>

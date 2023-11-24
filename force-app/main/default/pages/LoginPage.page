@@ -1,0 +1,31 @@
+<apex:page showHeader="false" cache="false">
+    <style>
+        .img {
+            width: 100%; /* Use width instead of max-width for better control */
+            height: auto;
+            display: block; /* Ensures the image behaves responsively */
+            margin: 0 auto; /* Centers the image horizontally */
+            
+
+        }
+
+        @media (max-width: 992px) {
+            .img {
+                max-width: 100%; /* Adjust the size for laptops */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .img {
+                max-width: 100%; /* Adjust the size for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .img {
+                max-width: 90%; /* Further adjustment for mobile devices */
+            }
+        }
+    </style>
+    <apex:image url="{!URLFOR($Resource.LandingImage)}" styleClass="img"/>
+</apex:page>

@@ -20,6 +20,7 @@ localStorageBranchTargets:
   features/config/US-Hotfix-AccountFlexiPage: integration
   features/config/US-Subsector: integration
   features/config/US-ThemeObject: integration
+  features/config/US-72003-LoginPage: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:

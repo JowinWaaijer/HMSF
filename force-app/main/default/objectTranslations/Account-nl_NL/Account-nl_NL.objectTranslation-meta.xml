@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <layouts>
-        <layout>Account Layout SDoc</layout>
-        <sections>
-            <label></label>
-            <section>Custom Links</section>
-        </sections>
-    </layouts>
-    <layouts>
         <layout>AccountLayout Franki</layout>
         <sections>
             <label></label>
@@ -164,11 +157,7 @@
         <name>Heijmans_partner</name>
     </recordTypes>
     <validationRules>
-        <errorMessage></errorMessage>
-        <name>Firmennamen_adres_plichtfeld</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage></errorMessage>
+        <errorMessage>Je moet het telefoonnummer in het juiste format invoeren. Zie voorbeeld: +31735435111 [VR01]</errorMessage>
         <name>VR01_ACC_PhoneFormat</name>
     </validationRules>
     <webLinks>
@@ -202,9 +191,5 @@
     <webLinks>
         <label></label>
         <name>SDOC__S_Docs</name>
-    </webLinks>
-    <webLinks>
-        <label></label>
-        <name>YahooMaps</name>
     </webLinks>
 </CustomObjectTranslation>
