@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
+        <members>LoginPage</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
         <members>AppSwitcher</members>
         <name>AppMenu</name>
     </types>
@@ -118,6 +122,10 @@
         <members>Signal__c-nl_NL</members>
         <members>Theme__c-nl_NL</members>
         <name>CustomObjectTranslation</name>
+    </types>
+    <types>
+        <members>RightSideLogin</members>
+        <name>CustomSite</name>
     </types>
     <types>
         <members>InvolvedPartner__c</members>
@@ -382,6 +390,7 @@
         <members>IconLock</members>
         <members>IconNotification</members>
         <members>IconPriority</members>
+        <members>LandingImage</members>
         <members>TypeError</members>
         <members>TypeInfo</members>
         <members>TypeOther</members>
