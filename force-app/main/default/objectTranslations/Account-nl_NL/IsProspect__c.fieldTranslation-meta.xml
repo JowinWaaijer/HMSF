@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label>Volledige Naam</label>
-    <name>FullNameForm__c</name>
+    <help>Geeft aan of de klant de status Prospect heeft in SAP C4C.</help>
+    <label>Prospect</label>
+    <name>IsProspect__c</name>
 </CustomFieldTranslation>

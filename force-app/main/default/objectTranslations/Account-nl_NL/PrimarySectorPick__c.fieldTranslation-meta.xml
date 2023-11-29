@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <help>Publiek: Gebruik deze optie als record voornamelijk behoort tot de publieke sector, wat doorgaans overheidsinstanties, openbare diensten en organisaties gefinancierd door belastingbetalers. Semi: Gebruik deze optie als record betrekking heeft op semi-publieke entiteiten zoals non-profitorganisaties, publiek-private samenwerkingen. Privaat: Gebruik deze optie als record voornamelijk privésector entiteiten vertegenwoordigt, inclusief winstgevende bedrijven, particulier eigendom.</help>
-    <label></label>
+    <label>Primaire Sector</label>
     <name>PrimarySectorPick__c</name>
     <picklistValues>
         <masterLabel>Internal</masterLabel>
