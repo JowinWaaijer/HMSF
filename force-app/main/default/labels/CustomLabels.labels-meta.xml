@@ -1,12 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
     <labels>
+        <fullName>AccountInformation</fullName>
+        <categories>Section</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Information</shortDescription>
+        <value>Account Information</value>
+    </labels>
+    <labels>
+        <fullName>AccountName</fullName>
+        <categories>meetingReport</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Name</shortDescription>
+        <value>Accountnaam</value>
+    </labels>
+    <labels>
+        <fullName>Attendees</fullName>
+        <categories>meetingReport</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Attendees</shortDescription>
+        <value>Attendees</value>
+    </labels>
+    <labels>
+        <fullName>Back</fullName>
+        <categories>meetingReport</categories>
+        <language>nl_NL</language>
+        <protected>false</protected>
+        <shortDescription>Back</shortDescription>
+        <value>Terug</value>
+    </labels>
+    <labels>
         <fullName>BusinessUnitSpecificAttributes</fullName>
         <categories>Tab</categories>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Business Unit Specific Attributes</shortDescription>
         <value>Business Unit Specific Attributes</value>
+    </labels>
+    <labels>
+        <fullName>ContactPerson</fullName>
+        <categories>meetingReport</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contact Person</shortDescription>
+        <value>Contact Person</value>
     </labels>
     <labels>
         <fullName>Contacts</fullName>
@@ -23,6 +63,14 @@
         <protected>false</protected>
         <shortDescription>Description</shortDescription>
         <value>Description</value>
+    </labels>
+    <labels>
+        <fullName>Edit</fullName>
+        <categories>meetingReport</categories>
+        <language>nl_NL</language>
+        <protected>false</protected>
+        <shortDescription>Edit</shortDescription>
+        <value>Bewerken</value>
     </labels>
     <labels>
         <fullName>FeedbackBugDescription</fullName>
@@ -97,12 +145,19 @@
         <value>Request a new Feature</value>
     </labels>
     <labels>
-        <fullName>OrganizationChart</fullName>
-        <categories>Organization Charts</categories>
+        <fullName>Former_Positions</fullName>
         <language>en_US</language>
         <protected>false</protected>
-        <shortDescription>Organization Chart</shortDescription>
-        <value>Organization Chart</value>
+        <shortDescription>Former Positions</shortDescription>
+        <value>Former Positions</value>
+    </labels>
+    <labels>
+        <fullName>GeneratePDF</fullName>
+        <categories>meetingReport</categories>
+        <language>nl_NL</language>
+        <protected>false</protected>
+        <shortDescription>GeneratePDF</shortDescription>
+        <value>Generate PDF</value>
     </labels>
     <labels>
         <fullName>Hierarchy</fullName>
@@ -113,18 +168,28 @@
         <value>Hierarchy</value>
     </labels>
     <labels>
-        <fullName>Partnerships</fullName>
+        <fullName>HomepageComponentDashboardsDescriptions1</fullName>
+        <categories>Help Links</categories>
         <language>en_US</language>
         <protected>false</protected>
-        <shortDescription>Partnerships</shortDescription>
-        <value>Partnerships</value>
+        <shortDescription>HomepageComponentDashboardsDescriptions1</shortDescription>
+        <value>Overview of my ongoing opportunities;Overview of my prio 1 customers</value>
     </labels>
     <labels>
-        <fullName>Former_Positions</fullName>
+        <fullName>HomepageComponentDashboardsTitles1</fullName>
+        <categories>Help Links</categories>
         <language>en_US</language>
         <protected>false</protected>
-        <shortDescription>Former Positions</shortDescription>
-        <value>Former Positions</value>
+        <shortDescription>HomepageComponentDashboardsTitles1</shortDescription>
+        <value>Opportunity Dashboard;Account Dashboard</value>
+    </labels>
+    <labels>
+        <fullName>HomepageComponentDashboardsURLS1</fullName>
+        <categories>Help Links</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HomepageComponentDashboardsURLS1</shortDescription>
+        <value>01Z2X000001R8sPUAS;01Z2X000001R8sPUAS</value>
     </labels>
     <labels>
         <fullName>Involvement</fullName>
@@ -135,12 +200,98 @@
         <value>Involvement</value>
     </labels>
     <labels>
-        <fullName>AccountInformation</fullName>
-        <categories>Section</categories>
+        <fullName>Login</fullName>
+        <categories>meetingReport</categories>
+        <language>nl_NL</language>
+        <protected>false</protected>
+        <shortDescription>Login</shortDescription>
+        <value>Aanmelden</value>
+    </labels>
+    <labels>
+        <fullName>LoginID</fullName>
+        <categories>meetingReport</categories>
+        <language>nl_NL</language>
+        <protected>false</protected>
+        <shortDescription>LoginID</shortDescription>
+        <value>Login ID</value>
+    </labels>
+    <labels>
+        <fullName>Maak_aanbieding</fullName>
         <language>en_US</language>
         <protected>false</protected>
-        <shortDescription>Account Information</shortDescription>
-        <value>Account Information</value>
+        <shortDescription>Maak aanbieding</shortDescription>
+        <value>Maak aanbieding</value>
+    </labels>
+    <labels>
+        <fullName>MeetingReportTitle</fullName>
+        <categories>meetingReport</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Meeting Report Title</shortDescription>
+        <value>Meeting minutes</value>
+    </labels>
+    <labels>
+        <fullName>New</fullName>
+        <categories>meetingReport</categories>
+        <language>nl_NL</language>
+        <protected>false</protected>
+        <shortDescription>New</shortDescription>
+        <value>Nieuw</value>
+    </labels>
+    <labels>
+        <fullName>Next</fullName>
+        <categories>meetingReport</categories>
+        <language>nl_NL</language>
+        <protected>false</protected>
+        <shortDescription>Next</shortDescription>
+        <value>Verder</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityName</fullName>
+        <categories>meetingReport</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Name</shortDescription>
+        <value>Opportunitynaam</value>
+    </labels>
+    <labels>
+        <fullName>OrganizationChart</fullName>
+        <categories>Organization Charts</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Organization Chart</shortDescription>
+        <value>Organization Chart</value>
+    </labels>
+    <labels>
+        <fullName>Partnerships</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Partnerships</shortDescription>
+        <value>Partnerships</value>
+    </labels>
+    <labels>
+        <fullName>Password</fullName>
+        <categories>meetingReport</categories>
+        <language>nl_NL</language>
+        <protected>false</protected>
+        <shortDescription>Password</shortDescription>
+        <value>Wachtwoord</value>
+    </labels>
+    <labels>
+        <fullName>Save</fullName>
+        <categories>meetingReport</categories>
+        <language>nl_NL</language>
+        <protected>false</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Opslaan</value>
+    </labels>
+    <labels>
+        <fullName>Search</fullName>
+        <categories>meetingReport</categories>
+        <language>nl_NL</language>
+        <protected>false</protected>
+        <shortDescription>Search</shortDescription>
+        <value>Zoeken</value>
     </labels>
     <labels>
         <fullName>Segmentation</fullName>
@@ -149,5 +300,395 @@
         <protected>false</protected>
         <shortDescription>Segmentation</shortDescription>
         <value>Segmentation</value>
+    </labels>
+    <labels>
+        <fullName>Select</fullName>
+        <categories>meetingReport</categories>
+        <language>nl_NL</language>
+        <protected>false</protected>
+        <shortDescription>Select</shortDescription>
+        <value>Select</value>
+    </labels>
+    <labels>
+        <fullName>Tasks</fullName>
+        <categories>meetingReport</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tasks label</shortDescription>
+        <value>Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Timeline</fullName>
+        <categories>Tab,Contact</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Timeline</shortDescription>
+        <value>Timeline</value>
+    </labels>
+    <labels>
+        <fullName>ers_CancelButton</fullName>
+        <categories>buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>ers_ClearFilterAction</fullName>
+        <categories>actions</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Clear Filter</shortDescription>
+        <value>Clear Filter</value>
+    </labels>
+    <labels>
+        <fullName>ers_ClearFilterButton</fullName>
+        <categories>buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Clear All Filters</shortDescription>
+        <value>Clear All Filters</value>
+    </labels>
+    <labels>
+        <fullName>ers_ClearSelectionButton</fullName>
+        <categories>buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Clear Selection</shortDescription>
+        <value>Clear Selection</value>
+    </labels>
+    <labels>
+        <fullName>ers_ColumnHeader</fullName>
+        <categories>headers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Column</shortDescription>
+        <value>Column</value>
+    </labels>
+    <labels>
+        <fullName>ers_EmptyTableMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Empty</shortDescription>
+        <value>This table currently has no data to display</value>
+    </labels>
+    <labels>
+        <fullName>ers_ErrorRequiredEntry</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required</shortDescription>
+        <value>This is a required entry.  At least 1 row must be selected.</value>
+    </labels>
+    <labels>
+        <fullName>ers_FilterHeader</fullName>
+        <categories>headers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Filter</shortDescription>
+        <value>Filter</value>
+    </labels>
+    <labels>
+        <fullName>ers_LabelHeader</fullName>
+        <categories>headers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label</shortDescription>
+        <value>Label</value>
+    </labels>
+    <labels>
+        <fullName>ers_SaveButton</fullName>
+        <categories>buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>ers_SearchPlaceholder</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search Term</shortDescription>
+        <value>Enter search term ...</value>
+    </labels>
+    <labels>
+        <fullName>ers_SetFilterAction</fullName>
+        <categories>actions</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Set Filter</shortDescription>
+        <value>Set Filter</value>
+    </labels>
+    <labels>
+        <fullName>fsc_AccessLevel</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccessLevel</shortDescription>
+        <value>Access Level</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Back</fullName>
+        <categories>Buttons,Filters,Title</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Back</shortDescription>
+        <value>Back</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ButtonIsNotSupportedMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ButtonIsNotSupportedMessage</shortDescription>
+        <value>Following buttons are note supported:</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ConditionLogicHelpText</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConditionLogicHelpText</shortDescription>
+        <value>Use parentheses, AND, OR, and NOT to customize the logic. For example, if you enter “(1 AND 2 AND 3) OR 4”, the flow evaluates whether the first three conditions are true or only the fourth condition is true.</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Delete</fullName>
+        <categories>labels, buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>fsc_FieldIsNotSupportedMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FieldIsNotSupportedMessage</shortDescription>
+        <value>Following fields are not supported:</value>
+    </labels>
+    <labels>
+        <fullName>fsc_FieldTypeNotSuportedMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fsc_FieldTypeNotSuportedMessage</shortDescription>
+        <value>You provided an unsupported value for the DataTypeFilter input on Object and Field Picker. Currently the only supported value is ’picklist’</value>
+    </labels>
+    <labels>
+        <fullName>fsc_For</fullName>
+        <categories>Buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>For</shortDescription>
+        <value>For</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Key_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Key Label</shortDescription>
+        <value>Key</value>
+    </labels>
+    <labels>
+        <fullName>fsc_LackingPermissions</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LackingPermissions</shortDescription>
+        <value>You don\&apos;t have the proper permissions for ths action</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ManagerEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ManagerEmptyMessage</shortDescription>
+        <value>&quot;Manager APEX Class&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_MultipleGroupsForRole</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MultipleGroupsForRole</shortDescription>
+        <value>There are multiple groups for that role</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Name</fullName>
+        <categories>quicklinks, Labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>fsc_NonePicklistValueLabel</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NonePicklistValueLabel</shortDescription>
+        <value>-- None --</value>
+    </labels>
+    <labels>
+        <fullName>fsc_OWDReadWrite</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OWDReadWrite</shortDescription>
+        <value>Sharing Settings must be private or public read/write to enable manual sharing</value>
+    </labels>
+    <labels>
+        <fullName>fsc_OwnerAdminModify</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OwnerAdminModify</shortDescription>
+        <value>Only the record owner or administrators can modify permissions</value>
+    </labels>
+    <labels>
+        <fullName>fsc_PublicGroups</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PublicGroups</shortDescription>
+        <value>Public Groups</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Queues</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Queues</shortDescription>
+        <value>Queues</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Read</fullName>
+        <categories>labels, buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Read</shortDescription>
+        <value>Read</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ReadWrite</fullName>
+        <categories>labels, buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ReadWrite</shortDescription>
+        <value>Read / Write</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Reason</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Reason</shortDescription>
+        <value>Reason</value>
+    </labels>
+    <labels>
+        <fullName>fsc_RelatedUsers</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RelatedUsers</shortDescription>
+        <value>Related Users</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Roles</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Roles</shortDescription>
+        <value>Roles</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Search</fullName>
+        <categories>Actions,Buttons,quicklinks</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search in</shortDescription>
+        <value>Search in</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SearchFor</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SearchFor</shortDescription>
+        <value>For</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SetAccessLevel</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SetAccessLevel</shortDescription>
+        <value>Set Access Level</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SupportedAddCapabilitiesEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SupportedAddCapabilitiesEmptyMessage</shortDescription>
+        <value>&quot;Add Capabilities&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SupportedButtonsEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SupportedButtonsEmptyMessage</shortDescription>
+        <value>&quot;Supported Buttons&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SupportedEditCapabilitiesEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SupportedEditCapabilitiesEmptyMessage</shortDescription>
+        <value>&quot;Edit Capabilities&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_TooManyResultsMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TooManyResultsMessage</shortDescription>
+        <value>Your search found more than 200 results.  Keep typing to make it more specific</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Type</fullName>
+        <categories>Buttons,Filters,Title</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Type</shortDescription>
+        <value>Type</value>
+    </labels>
+    <labels>
+        <fullName>fsc_UserOrGroup</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UserOrGroup</shortDescription>
+        <value>User Or Group</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Users</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Users</shortDescription>
+        <value>Users</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Value_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Value Label</shortDescription>
+        <value>Value</value>
     </labels>
 </CustomLabels>

@@ -24,6 +24,7 @@ localStorageBranchTargets:
   features/config/US-72315-TaskType: integration
   features/config/US-72315-Task-Layout-and-Global: integration
   features/config/US-FIXPROFILE: integration
+  features/config/US-FlexipageContactIssue: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
