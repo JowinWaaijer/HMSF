@@ -357,7 +357,12 @@
     </types>
     <types>
         <members>SalesTeamRole</members>
+        <members>TaskType</members>
         <name>StandardValueSet</name>
+    </types>
+    <types>
+        <members>TaskType-nl_NL</members>
+        <name>StandardValueSetTranslation</name>
     </types>
     <types>
         <members>Active</members>

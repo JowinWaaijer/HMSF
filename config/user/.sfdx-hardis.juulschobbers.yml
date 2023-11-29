@@ -21,6 +21,7 @@ localStorageBranchTargets:
   features/config/US-Subsector: integration
   features/config/US-ThemeObject: integration
   features/config/US-72003-LoginPage: integration
+  features/config/US-72315-TaskType: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
