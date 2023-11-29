@@ -9,6 +9,7 @@
         <name>AppMenu</name>
     </types>
     <types>
+        <members>BFAccountChart</members>
         <members>showToast</members>
         <name>AuraDefinitionBundle</name>
     </types>
@@ -107,6 +108,7 @@
         <members>Attendees</members>
         <members>Back</members>
         <members>ContactPerson</members>
+        <members>DepartmentChart</members>
         <members>Edit</members>
         <members>Former_Positions</members>
         <members>GeneratePDF</members>
@@ -243,7 +245,9 @@
         <members>AccountContactRelationship_RTFL01_Set_to_Inactive_on_Enddate</members>
         <members>Account_SCFL01_Add_New_Alert_to_Account_Record</members>
         <members>Account_SCFL02_Show_Alert_on_Account_Record</members>
+        <members>Account_SCFL03_Change_Department_Structure</members>
         <members>Account_STFL01_Activate_Deactivate_Alert_Message</members>
+        <members>Account_STFL01_Create_Standard_Department_at_Create</members>
         <members>CON_SCFL01_Create_Former_Position</members>
         <members>ContactChart_RTFL01_Update_Department_of_all_Contacts</members>
         <members>ContactChart_RTFL02_Update_ParentChartName_and_Contact_Department</members>
