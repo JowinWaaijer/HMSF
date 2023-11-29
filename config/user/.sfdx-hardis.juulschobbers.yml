@@ -33,5 +33,7 @@ installedApps:
   - git
 sfdxPluginsStdout: "packaging \e[2m1.27.1\e[22m\nsfdmu \e[2m4.30.0\e[22m\nsfdx-essentials \e[2m2.12.0\e[22m\nsfdx-git-delta \e[2m5.27.0\e[22m\nsfdx-hardis \e[2m4.10.1\e[22m\ntexei-sfdx-plugin \e[2m2.1.3\e[22m\n\e[2m\e[22m\n\e[2mUninstalled JIT Plugins:\e[22m\ncommunity \e[2m2.4.2\e[22m\ncustom-metadata \e[2m2.2.2\e[22m\ndev \e[2m1.2.0\e[22m\ndevops-center \e[2m1.2.0\e[22m\nenv \e[2m2.2.1\e[22m\nfunctions \e[2m1.22.3\e[22m\nsignups \e[2m1.5.0\e[22m\n@salesforce/sfdx-plugin-lwc-test \e[2m1.1.0\e[22m\n@salesforce/sfdx-scanner \e[2m3.16.0\e[22m\n"
 mergeRequests:
-  - null
   - branch: features/config/US-ThemeObject
+  - branch: features/config/US-FlowsforAccountChart
+    urlCreate: >-
+      https://github.com/JowinWaaijer/HMSF/pull/new/features/config/US-FlowsforAccountChart
