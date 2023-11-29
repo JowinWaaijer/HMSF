@@ -464,6 +464,7 @@
         <members>HeijmansGear</members>
         <members>HeijmansHelmet</members>
         <members>HeijmansLeaf</members>
+        <members>HeijmansOrg</members>
         <members>HeijmansPawn</members>
         <members>HeijmansPerson</members>
         <members>HeijmansTodo</members>
