@@ -691,4 +691,12 @@
         <shortDescription>Value Label</shortDescription>
         <value>Value</value>
     </labels>
+    <labels>
+        <fullName>DepartmentChart</fullName>
+        <categories>Tab</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DepartmentChart</shortDescription>
+        <value>Department Chart</value>
+    </labels>
 </CustomLabels>
