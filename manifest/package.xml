@@ -95,6 +95,7 @@
         <members>Involvement</members>
         <members>Partnerships</members>
         <members>Segmentation</members>
+        <members>Timeline</members>
         <name>CustomLabel</name>
     </types>
     <types>
