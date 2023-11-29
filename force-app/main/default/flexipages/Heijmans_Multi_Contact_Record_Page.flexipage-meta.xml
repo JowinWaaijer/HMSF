@@ -244,6 +244,44 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>daysToShow</name>
+                    <value>60</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>earliestRange</name>
+                    <value>3</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>latestRange</name>
+                    <value>0.5</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>preferredHeight</name>
+                    <value>3 - Default</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>timelineParent</name>
+                    <value>Default_Picklist_Value</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>timelineTitle</name>
+                    <value>Timeline</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>zoomTo</name>
+                    <value>Current Date</value>
+                </componentInstanceProperties>
+                <componentName>bmpyrckt:timeline</componentName>
+                <identifier>bmpyrckt_timeline</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-f064c059-0672-462a-adac-5ee57f97ff22</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>active</name>
                     <value>true</value>
                 </componentInstanceProperties>
@@ -271,6 +309,20 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>detailTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-f064c059-0672-462a-adac-5ee57f97ff22</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>{!$Label.Timeline}</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tab</identifier>
             </componentInstance>
         </itemInstances>
         <name>maintabs</name>

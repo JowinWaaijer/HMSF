@@ -150,4 +150,12 @@
         <shortDescription>Segmentation</shortDescription>
         <value>Segmentation</value>
     </labels>
+    <labels>
+        <fullName>Timeline</fullName>
+        <categories>Tab</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Timeline</shortDescription>
+        <value>Timeline</value>
+    </labels>
 </CustomLabels>
