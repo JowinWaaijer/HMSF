@@ -51,11 +51,11 @@
         <name>Tendermanagement</name>
     </customApplications>
     <customLabels>
-        <label>Accountinformatie</label>
-        <name>AccountInformation</name>
+        <label>informatie</label>
+        <name>Information</name>
     </customLabels>
     <customLabels>
-        <label><!-- Account Name --></label>
+        <label><!--  Name --></label>
         <name>AccountName</name>
     </customLabels>
     <customLabels>
@@ -6443,108 +6443,6 @@
         <sections>
             <label><!-- Accounts --></label>
             <name>Accounts</name>
-        </sections>
-    </reportTypes>
-    <reportTypes>
-        <description><!-- Accounts with Account Plans with Account Plan Colleague Roles --></description>
-        <label><!-- Accounts with Account Plans with Account Plan Colleague Roles --></label>
-        <name>Accounts_with_Account_Plans_with_Account_Plan_Colleague_Roles</name>
-        <sections>
-            <label><!-- Account Plan Colleague Roles --></label>
-            <name>Account Plan Colleague Roles</name>
-        </sections>
-        <sections>
-            <label><!-- Account Plans --></label>
-            <name>Account Plans</name>
-        </sections>
-        <sections>
-            <label><!-- Accounts --></label>
-            <name>Accounts</name>
-        </sections>
-    </reportTypes>
-    <reportTypes>
-        <description><!-- Accounts with Account Plans with Account Plan Contact Roles --></description>
-        <label><!-- Accounts with Account Plans with Account Plan Contact Roles --></label>
-        <name>Accounts_with_Account_Plans_with_Account_Plan_Contact_Roles</name>
-        <sections>
-            <label><!-- Account Plan Contact Roles --></label>
-            <name>Account Plan Contact Roles</name>
-        </sections>
-        <sections>
-            <label><!-- Account Plans --></label>
-            <name>Account Plans</name>
-        </sections>
-        <sections>
-            <label><!-- Accounts --></label>
-            <name>Accounts</name>
-        </sections>
-    </reportTypes>
-    <reportTypes>
-        <description><!-- Accounts with Account Plans with Account Plan Partner Roles --></description>
-        <label><!-- Accounts with Account Plans with Account Plan Partner Roles --></label>
-        <name>Accounts_with_Account_Plans_with_Account_Plan_Partner_Roles</name>
-        <sections>
-            <label><!-- Account Plan Partner Roles --></label>
-            <name>Account Plan Partner Roles</name>
-        </sections>
-        <sections>
-            <label><!-- Account Plans --></label>
-            <name>Account Plans</name>
-        </sections>
-        <sections>
-            <label><!-- Accounts --></label>
-            <name>Accounts</name>
-        </sections>
-    </reportTypes>
-    <reportTypes>
-        <description><!-- Accounts with Account Plans with Account Plan Themes --></description>
-        <label><!-- Accounts with Account Plans with Account Plan Themes --></label>
-        <name>Accounts_with_Account_Plans_with_Account_Plan_Themes</name>
-        <sections>
-            <label><!-- Account Plan Themes --></label>
-            <name>Account Plan Themes</name>
-        </sections>
-        <sections>
-            <label><!-- Account Plans --></label>
-            <name>Account Plans</name>
-        </sections>
-        <sections>
-            <label><!-- Accounts --></label>
-            <name>Accounts</name>
-        </sections>
-    </reportTypes>
-    <reportTypes>
-        <description><!-- Accounts with Account Plans with Objectives --></description>
-        <label><!-- Accounts with Account Plans with Objectives --></label>
-        <name>Accounts_with_Account_Plans_with_Objectives</name>
-        <sections>
-            <label><!-- Account Plans --></label>
-            <name>Account Plans</name>
-        </sections>
-        <sections>
-            <label><!-- Accounts --></label>
-            <name>Accounts</name>
-        </sections>
-        <sections>
-            <label><!-- Objectives --></label>
-            <name>Objectives</name>
-        </sections>
-    </reportTypes>
-    <reportTypes>
-        <description><!-- Accounts with Account Plans with Whitespaces --></description>
-        <label><!-- Accounts with Account Plans with Whitespaces --></label>
-        <name>Accounts_with_Account_Plans_with_Whitespaces</name>
-        <sections>
-            <label><!-- Account Plans --></label>
-            <name>Account Plans</name>
-        </sections>
-        <sections>
-            <label><!-- Accounts --></label>
-            <name>Accounts</name>
-        </sections>
-        <sections>
-            <label><!-- Whitespaces --></label>
-            <name>Whitespaces</name>
         </sections>
     </reportTypes>
     <reportTypes>
