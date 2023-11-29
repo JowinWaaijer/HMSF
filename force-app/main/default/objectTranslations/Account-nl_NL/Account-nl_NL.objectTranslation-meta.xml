@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <layouts>
+        <layout>Account Layout SDoc</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
         <layout>AccountLayout Franki</layout>
         <sections>
             <label></label>
@@ -24,19 +31,27 @@
     <layouts>
         <layout>Heijmans - Account Layout</layout>
         <sections>
-            <label></label>
+            <label>Adres Informatie</label>
             <section>Address Information</section>
         </sections>
         <sections>
-            <label></label>
+            <label>Omschrijving</label>
             <section>Description</section>
         </sections>
         <sections>
-            <label></label>
+            <label>SAP Blokkeringen</label>
+            <section>SAP Block</section>
+        </sections>
+        <sections>
+            <label>SAP Integratie</label>
+            <section>SAP Integration</section>
+        </sections>
+        <sections>
+            <label>Segmentatie</label>
             <section>Segmentation</section>
         </sections>
         <sections>
-            <label></label>
+            <label>Systeem Informatie</label>
             <section>System Info</section>
         </sections>
     </layouts>
@@ -157,6 +172,10 @@
         <name>Heijmans_partner</name>
     </recordTypes>
     <validationRules>
+        <errorMessage></errorMessage>
+        <name>Firmennamen_adres_plichtfeld</name>
+    </validationRules>
+    <validationRules>
         <errorMessage>Je moet het telefoonnummer in het juiste format invoeren. Zie voorbeeld: +31735435111 [VR01]</errorMessage>
         <name>VR01_ACC_PhoneFormat</name>
     </validationRules>
@@ -191,5 +210,9 @@
     <webLinks>
         <label></label>
         <name>SDOC__S_Docs</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>YahooMaps</name>
     </webLinks>
 </CustomObjectTranslation>

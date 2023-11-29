@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsSalesSupportBlocked__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Part of the integration with SAP.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates if the client has a sales support block in SAP C4C.</inlineHelpText>
+    <label>Sales Support Block</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>
