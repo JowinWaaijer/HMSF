@@ -22,6 +22,8 @@ localStorageBranchTargets:
   features/config/US-ThemeObject: integration
   features/config/US-72003-LoginPage: integration
   features/config/US-72315-TaskType: integration
+  features/config/US-72315-Task-Layout-and-Global: integration
+  features/config/US-FIXPROFILE: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
