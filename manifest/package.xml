@@ -257,6 +257,7 @@
         <members>Feedback_SCFL02_Vote_on_Feedback_via_Lightning_Page</members>
         <members>Feedback_SCFL03_Total_Score_Feedback</members>
         <members>Partnerships_STFL01_Set_Partnership_to_Inactive</members>
+        <members>Quick_Choice_Fix</members>
         <members>Signal_SCFL01_Delete_Signal</members>
         <name>Flow</name>
     </types>
