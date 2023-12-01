@@ -52,6 +52,7 @@
             <targetReference>scrQuickChoice</targetReference>
         </connector>
     </assignments>
+    <description>Fix for Quick Choice component. When starting a new flow the component is giving an error.</description>
     <environments>Default</environments>
     <formulas>
         <description>Extracts this user language code from the current user.</description>
@@ -225,7 +226,7 @@
             <targetReference>assIcons</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>colDescription</name>
         <dataType>String</dataType>
