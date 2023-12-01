@@ -26,6 +26,7 @@ localStorageBranchTargets:
   features/config/US-FIXPROFILE: integration
   features/config/US-FlexipageContactIssue: integration
   features/config/US-72364-SAP-Integratie-velden: integration
+  features/config/US-Quickchoicefix: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
