@@ -1,0 +1,9 @@
+/**
+ * Created by krisjacobs on 29/11/2023.
+ */
+
+.THIS.myCard {
+    display: block;
+    padding-bottom: 10px;
+    padding-right: 10px !important;
+}

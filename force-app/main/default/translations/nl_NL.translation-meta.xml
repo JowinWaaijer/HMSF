@@ -79,6 +79,10 @@
         <name>Contacts</name>
     </customLabels>
     <customLabels>
+        <label>Afdelingsorganogram</label>
+        <name>DepartmentChart</name>
+    </customLabels>
+    <customLabels>
         <label>Omschrijving</label>
         <name>Description</name>
     </customLabels>
@@ -135,6 +139,18 @@
         <name>Hierarchy</name>
     </customLabels>
     <customLabels>
+        <label>Overzicht van mijn lopende opportunities;Overzicht van mij Prio 1 klanten</label>
+        <name>HomepageComponentDashboardsDescriptions1</name>
+    </customLabels>
+    <customLabels>
+        <label>Dashboard 1;Dashboard 2</label>
+        <name>HomepageComponentDashboardsTitles1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- HomepageComponentDashboardsURLS1 --></label>
+        <name>HomepageComponentDashboardsURLS1</name>
+    </customLabels>
+    <customLabels>
         <label>Betrokkenheid</label>
         <name>Involvement</name>
     </customLabels>
@@ -153,6 +169,70 @@
     <customLabels>
         <label><!-- Meeting Report Title --></label>
         <name>MeetingReportTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MOPSY Date Constant - No Due Date --></label>
+        <name>Mopsy__MOPSY_Date_Constant_No_Due_Date</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MOPSY Date Constant - Today --></label>
+        <name>Mopsy__MOPSY_Date_Constant_Today</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MOPSY Date Constant - Tomorrow --></label>
+        <name>Mopsy__MOPSY_Date_Constant_Tomorrow</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MOPSY Date Constant - Yesterday --></label>
+        <name>Mopsy__MOPSY_Date_Constant_Yesterday</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MOPSY Field - Assigned To --></label>
+        <name>Mopsy__MOPSY_Field_Assigned_To</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MOPSY Listview Option - All Open --></label>
+        <name>Mopsy__MOPSY_Listview_Option_All_Open</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MOPSY Listview Option - Delegated --></label>
+        <name>Mopsy__MOPSY_Listview_Option_Delegated</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MOPSY Listview Option - Next 7 Days --></label>
+        <name>Mopsy__MOPSY_Listview_Option_Next_7_Days</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MOPSY Listview Option - Next 7 days + Overdue --></label>
+        <name>Mopsy__MOPSY_Listview_Option_Next_7_days_Overdue</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MOPSY Listview Option - Overdue --></label>
+        <name>Mopsy__MOPSY_Listview_Option_Overdue</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MOPSY Listview Option - Today --></label>
+        <name>Mopsy__MOPSY_Listview_Option_Today</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MOPSY Listview Option - Today+Overdue --></label>
+        <name>Mopsy__MOPSY_Listview_Option_Today_Overdue</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MOPSY Listview Option - Tomorrow --></label>
+        <name>Mopsy__MOPSY_Listview_Option_Tomorrow</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MOPSY Listview - View All --></label>
+        <name>Mopsy__MOPSY_Listview_View_All</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MOPSY Listview View Unscheduled --></label>
+        <name>Mopsy__MOPSY_Listview_View_Unscheduled</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MOPSY No Tasks Empty State --></label>
+        <name>Mopsy__No_Tasks_Empty_State</name>
     </customLabels>
     <customLabels>
         <label><!-- New --></label>
@@ -197,6 +277,10 @@
     <customLabels>
         <label><!-- Tasks label --></label>
         <name>Tasks</name>
+    </customLabels>
+    <customLabels>
+        <label>Tijdlijn</label>
+        <name>Timeline</name>
     </customLabels>
     <customLabels>
         <label><!-- Add --></label>
@@ -265,6 +349,78 @@
     <customLabels>
         <label><!-- delete contact confirmation --></label>
         <name>albiraSolutions__delete_contact_confirmation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Timeline_Error_Apex --></label>
+        <name>bmpyrckt__Timeline_Error_Apex</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Timeline_Error_JavaScriptResources --></label>
+        <name>bmpyrckt__Timeline_Error_JavaScriptResources</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Timeline_Error_NoDataHeader --></label>
+        <name>bmpyrckt__Timeline_Error_NoDataHeader</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Timeline_Error_NoDataSubHeader --></label>
+        <name>bmpyrckt__Timeline_Error_NoDataSubHeader</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Timeline_Error_Setup --></label>
+        <name>bmpyrckt__Timeline_Error_Setup</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Timeline_Error_Unhandled --></label>
+        <name>bmpyrckt__Timeline_Error_Unhandled</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Timeline_Label_Apply --></label>
+        <name>bmpyrckt__Timeline_Label_Apply</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Timeline_Label_Cancel --></label>
+        <name>bmpyrckt__Timeline_Label_Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Timeline_Label_Date_Range_Legend --></label>
+        <name>bmpyrckt__Timeline_Label_Date_Range_Legend</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Timeline_Label_Days --></label>
+        <name>bmpyrckt__Timeline_Label_Days</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Timeline_Label_Files --></label>
+        <name>bmpyrckt__Timeline_Label_Files</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Timeline_Label_Filter_All_Types --></label>
+        <name>bmpyrckt__Timeline_Label_Filter_All_Types</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Timeline_Label_Filter_Type_Legend --></label>
+        <name>bmpyrckt__Timeline_Label_Filter_Type_Legend</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Timeline_Label_Filters --></label>
+        <name>bmpyrckt__Timeline_Label_Filters</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Timeline_Label_Items --></label>
+        <name>bmpyrckt__Timeline_Label_Items</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Timeline_Label_Showing --></label>
+        <name>bmpyrckt__Timeline_Label_Showing</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Timeline_Navigation_Toast_Body --></label>
+        <name>bmpyrckt__Timeline_Navigation_Toast_Body</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Timeline_Navigation_Toast_Header --></label>
+        <name>bmpyrckt__Timeline_Navigation_Toast_Header</name>
     </customLabels>
     <customLabels>
         <label><!-- fflib_security_error_field_not_insertable --></label>
@@ -1295,8 +1451,221 @@
         <fullName>Account_SCFL02_Show_Alert_on_Account_Record</fullName>
     </flowDefinitions>
     <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>btnBarEn</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>btnBarNL</name>
+                </fields>
+                <name>scrButton</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>btnBarChangeEN</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>btnBarChangeNL</name>
+                </fields>
+                <fields>
+                    <name>dfAvailableAccountCharts</name>
+                </fields>
+                <fields>
+                    <name>dfAvailableParentAccountCharts</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
+                    <name>diOrg</name>
+                </fields>
+                <fields>
+                    <name>dtDummy</name>
+                </fields>
+                <fields>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-family: verdana;&quot;&gt;Wijzig de indeling van onderstaande afdelingsorganogram. &lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-family: verdana;&quot;&gt;1. Selecteer de afdeling die verplaatst moet worden (linker tabel).&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-family: verdana;&quot;&gt;2. Selecteer de bovenliggende afdeling (rechter tabel).&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-family: verdana;&quot;&gt;3. Klik op de knop &quot;Aanpassen&quot;. &lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+                    <name>dtTitle</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>columns</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>maxRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>minRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>selectionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>shouldDisplayLabel</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>tableData</name>
+                        <value/>
+                    </inputParameters>
+                    <name>dtbAvailableDepartments</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>columns</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>maxRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>minRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>selectionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>shouldDisplayLabel</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>tableData</name>
+                        <value/>
+                    </inputParameters>
+                    <name>dtbAvailableParents</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>marginTop</name>
+                        <value/>
+                    </inputParameters>
+                    <name>linLine</name>
+                </fields>
+                <fields>
+                    <name>scrChangeOrgChart_Section1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>scrChangeOrgChart_Section1_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>scrChangeOrgChart_Section1_Column2</name>
+                </fields>
+                <name>scrChangeOrgChart</name>
+            </screens>
+        </flows>
+        <fullName>Account_SCFL03_Change_Department_Structure</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
         <flows/>
         <fullName>Account_STFL01_Activate_Deactivate_Alert_Message</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Account_STFL01_Create_Standard_Department_at_Create</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows>
@@ -1628,7 +1997,6 @@
                     <name>diHeijmans</name>
                 </fields>
                 <fields>
-                    <fieldText></fieldText>
                     <name>dtNewPostion</name>
                 </fields>
                 <name>scrCreateANewPosition</name>
@@ -4135,6 +4503,80 @@
     </flowDefinitions>
     <flowDefinitions>
         <flows>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
+                    <name>diFlag</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>displayMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>iconSize</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>includeIcons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>inputMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>isResponsive</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>numberOfColumns</name>
+                        <value/>
+                    </inputParameters>
+                    <name>qcSelection</name>
+                </fields>
+                <fields>
+                    <name>scrQuickChoice_Section1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>scrQuickChoice_Section1_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>scrQuickChoice_Section1_Column2</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>scrQuickChoice_Section1_Column3</name>
+                </fields>
+                <name>scrQuickChoice</name>
+            </screens>
+        </flows>
+        <fullName>Quick_Choice_Fix</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
             <choices>
                 <name>Groot</name>
             </choices>
@@ -4608,7 +5050,7 @@
         <name>NewTask</name>
     </quickActions>
     <quickActions>
-        <label><!-- NewTask --></label>
+        <label><!-- New Task --></label>
         <name>NewTask</name>
     </quickActions>
     <quickActions>

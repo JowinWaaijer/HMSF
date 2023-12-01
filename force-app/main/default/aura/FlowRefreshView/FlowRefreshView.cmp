@@ -1,0 +1,6 @@
+<!--
+ - Created by krisjacobs on 29/11/2023.
+ -->
+
+<aura:component description="FlowRefreshView" implements="lightning:availableForFlowActions" access="global">
+</aura:component>
