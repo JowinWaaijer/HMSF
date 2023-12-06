@@ -28,6 +28,8 @@
     </types>
     <types>
         <members>Account.COCNumber__c</members>
+        <members>Account.Employees__c</members>
+        <members>Account.Inhabitants__c</members>
         <members>Account.IsBillingBlocked__c</members>
         <members>Account.IsOrderBlocked__c</members>
         <members>Account.IsProspect__c</members>
@@ -37,6 +39,8 @@
         <members>Account.StatusPick__c</members>
         <members>Account.Subsector__c</members>
         <members>Account.VATNumber__c</members>
+        <members>Activity.CreatedbyNameForm__c</members>
+        <members>Activity.IsAccountplanningApproval__c</members>
         <members>Alert__c.Account__c</members>
         <members>Alert__c.Duration__c</members>
         <members>Alert__c.EndDate__c</members>
@@ -279,6 +283,7 @@
         <members>Account-Heijmans partner</members>
         <members>Account-Heijmans_Account</members>
         <members>AccountContactRelation-Heijmans - Contact Relationship Layout</members>
+        <members>Account_Plan__c-Heijmans - Account Plan Layout</members>
         <members>Alert__c-Heijmans - Alert Layout</members>
         <members>BusinessUnitSpecificAttribute__c-Heijmans - Business Unit Specific Attribute Layout</members>
         <members>BusinessUnits__mdt-Lay-out voor Business Unit</members>
@@ -324,6 +329,7 @@
         <members>Partnership__c.Alle_samenwerkingen_zonder_startdatum</members>
         <members>Signal__c.Al_mijn_signalen_aankomende_3_maanden</members>
         <members>Signal__c.All</members>
+        <members>Signal__c.Mijn_Signalen</members>
         <members>Theme__c.All</members>
         <members>albiraSolutions__ContactChart__c.albiraSolutions__All</members>
         <name>ListView</name>
