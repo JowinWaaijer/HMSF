@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>All</fullName>
+    <fullName>Mijn_Signalen</fullName>
     <columns>NAME</columns>
     <columns>StatusPick__c</columns>
     <columns>SourcePick__c</columns>
@@ -9,6 +9,6 @@
     <columns>ExpectedStatusChange__c</columns>
     <columns>SetSignalReminderPick__c</columns>
     <columns>ExpectedChangeDate__c</columns>
-    <filterScope>Everything</filterScope>
-    <label>All</label>
+    <filterScope>Mine</filterScope>
+    <label>Mijn Signalen</label>
 </ListView>
