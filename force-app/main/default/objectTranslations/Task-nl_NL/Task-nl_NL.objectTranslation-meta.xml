@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Heijmans - Task Layout</layout>
+        <sections>
+            <label></label>
+            <section>Aangepaste koppelingen</section>
+        </sections>
+        <sections>
+            <label>Opportunity Informatie</label>
+            <section>Opportunity Information</section>
+        </sections>
+        <sections>
+            <label>Gerelateerd Aan</label>
+            <section>Related To</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Defer</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>EditDescription</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>UpdatePriority</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>UpdateStatus</name>
+    </quickActions>
+    <webLinks>
+        <label></label>
+        <name>SDOC__S_Docs</name>
+    </webLinks>
+</CustomObjectTranslation>

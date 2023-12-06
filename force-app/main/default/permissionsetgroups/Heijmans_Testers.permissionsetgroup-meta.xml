@@ -3,6 +3,7 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>Heijmans - Testers</label>
     <permissionSets>Heijmans_Accountmanagement_User</permissionSets>
+    <permissionSets>Heijmans_Activity_User</permissionSets>
     <permissionSets>Heijmans_Contactmanagement_User</permissionSets>
     <permissionSets>Heijmans_Feedback_User</permissionSets>
     <permissionSets>Heijmans_Theme_User</permissionSets>
