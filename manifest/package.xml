@@ -204,6 +204,7 @@
         <members>Partnership__c-en_US</members>
         <members>Partnership__c-nl_NL</members>
         <members>Signal__c-nl_NL</members>
+        <members>Task-nl_NL</members>
         <members>Theme__c-nl_NL</members>
         <name>CustomObjectTranslation</name>
     </types>
@@ -344,6 +345,7 @@
     </types>
     <types>
         <members>Heijmans_Accountmanagement_User</members>
+        <members>Heijmans_Activity_User</members>
         <members>Heijmans_Administrator</members>
         <members>Heijmans_Contactmanagement_Manager</members>
         <members>Heijmans_Contactmanagement_User</members>
