@@ -15,6 +15,12 @@
         <default>false</default>
         <label>Prio 3</label>
     </customValue>
+    <customValue>
+        <fullName>No</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>No</label>
+    </customValue>
     <description>Global picklist to define the focus for a client within the Heijmans org.</description>
     <masterLabel>Focus Client</masterLabel>
     <sorted>false</sorted>

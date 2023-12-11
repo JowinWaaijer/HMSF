@@ -35,6 +35,24 @@
                 <isActive>false</isActive>
                 <label>Create Opportunity</label>
             </value>
+            <value>
+                <fullName>Waarde 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Waarde 1</label>
+            </value>
+            <value>
+                <fullName>Waarde 2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Waarde 2</label>
+            </value>
+            <value>
+                <fullName>Waarde 3</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Waarde 3</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

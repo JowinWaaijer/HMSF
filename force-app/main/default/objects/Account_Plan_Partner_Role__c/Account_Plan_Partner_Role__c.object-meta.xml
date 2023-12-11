@@ -128,46 +128,40 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>HeijmansSignalRecordPage</content>
-        <formFactor>Small</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
+        <type>Default</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>HeijmansSignalRecordPage</content>
         <formFactor>Large</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
+        <type>Default</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
+        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>true</allowInChatterGroups>
-    <compactLayoutAssignment>HeijmansSignalCompactLayout</compactLayoutAssignment>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Signals, a pivotal Salesforce object, functions as an early-warning system for potential sales opportunities. It intelligently tracks key indicators, offering predictive insights to guide strategic decision-making. Designed to streamline prospect identification, Signals equips sales teams with actionable intelligence, enabling proactive engagement and maximizing conversion chances.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>true</enableFeeds>
+    <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
+    <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <label>Signal</label>
+    <label>Account Plan Partner Role</label>
     <nameField>
-        <label>Signal Name</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Text</type>
+        <displayFormat>APPR-{0}</displayFormat>
+        <label>Account Plan Partner Role Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Signals</pluralLabel>
+    <pluralLabel>Account Plan Partner Roles</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts></searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
