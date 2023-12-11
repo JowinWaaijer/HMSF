@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsAccountplanningApproval__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field created to have an extra indicator that the task is set to the approval process of the focus clients. We already created a type with &quot;Accountplanning&quot; but this can be used as a type in every task which could be not related to the approval process. Not displayed on the layout.</description>
+    <externalId>false</externalId>
+    <label>Accountplanning Approval</label>
+    <type>Checkbox</type>
+</CustomField>

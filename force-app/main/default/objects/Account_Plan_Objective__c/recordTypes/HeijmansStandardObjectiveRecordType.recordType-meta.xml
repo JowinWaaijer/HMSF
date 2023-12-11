@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HeijmansStandardObjectiveRecordType</fullName>
+    <active>true</active>
+    <label>Standard Objective</label>
+    <picklistValues>
+        <picklist>OutcomePick__c</picklist>
+        <values>
+            <fullName>Fully Achieved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Achieved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially Achieved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>StatusPick__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

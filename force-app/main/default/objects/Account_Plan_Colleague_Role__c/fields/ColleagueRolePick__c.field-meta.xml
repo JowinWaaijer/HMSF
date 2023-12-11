@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ColleagueRolePick__c</fullName>
+    <externalId>false</externalId>
+    <label>Colleague Role</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Project Manager</fullName>
+                <default>false</default>
+                <label>Project Manager</label>
+            </value>
+            <value>
+                <fullName>Project Director</fullName>
+                <default>false</default>
+                <label>Project Director</label>
+            </value>
+            <value>
+                <fullName>Chief Executor</fullName>
+                <default>false</default>
+                <label>Chief Executor</label>
+            </value>
+            <value>
+                <fullName>Executor</fullName>
+                <default>false</default>
+                <label>Executor</label>
+            </value>
+            <value>
+                <fullName>Work Planner</fullName>
+                <default>false</default>
+                <label>Work Planner</label>
+            </value>
+            <value>
+                <fullName>Commercial Manager</fullName>
+                <default>false</default>
+                <label>Commercial Manager</label>
+            </value>
+            <value>
+                <fullName>Business Analist</fullName>
+                <default>false</default>
+                <label>Business Analist</label>
+            </value>
+            <value>
+                <fullName>Marketeer</fullName>
+                <default>false</default>
+                <label>Marketeer</label>
+            </value>
+            <value>
+                <fullName>EMVI-Manager</fullName>
+                <default>false</default>
+                <label>EMVI-Manager</label>
+            </value>
+            <value>
+                <fullName>EMVI-Writer</fullName>
+                <default>false</default>
+                <label>EMVI-Writer</label>
+            </value>
+            <value>
+                <fullName>Tender Coordinator</fullName>
+                <default>false</default>
+                <label>Tender Coordinator</label>
+            </value>
+            <value>
+                <fullName>Tender Leader</fullName>
+                <default>false</default>
+                <label>Tender Leader</label>
+            </value>
+            <value>
+                <fullName>Tender Manager</fullName>
+                <default>false</default>
+                <label>Tender Manager</label>
+            </value>
+            <value>
+                <fullName>Contract Manager</fullName>
+                <default>false</default>
+                <label>Contract Manager</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CreatedbyNameForm__c</fullName>
+    <description>Formula created to use the full name of the user that created a task to approve the focus clients. This is used in the flow for accountplanning to show the avaiiable accountplans to approve.</description>
+    <externalId>false</externalId>
+    <formula>CreatedBy.FullNameForm__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Created by Name</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

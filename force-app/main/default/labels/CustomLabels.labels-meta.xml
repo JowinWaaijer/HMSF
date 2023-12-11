@@ -17,6 +17,14 @@
         <value>Accountnaam</value>
     </labels>
     <labels>
+        <fullName>Approval</fullName>
+        <categories>Tab</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Approval</shortDescription>
+        <value>Approval</value>
+    </labels>
+    <labels>
         <fullName>Attendees</fullName>
         <categories>meetingReport</categories>
         <language>en_US</language>
@@ -271,6 +279,14 @@
         <value>Organization Chart</value>
     </labels>
     <labels>
+        <fullName>Overview</fullName>
+        <categories>Tab</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Overview</shortDescription>
+        <value>Overview</value>
+    </labels>
+    <labels>
         <fullName>Partnerships</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -284,6 +300,14 @@
         <protected>false</protected>
         <shortDescription>Password</shortDescription>
         <value>Wachtwoord</value>
+    </labels>
+    <labels>
+        <fullName>Prioritizing</fullName>
+        <categories>Tab</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Prioritizing</shortDescription>
+        <value>Prioritizing</value>
     </labels>
     <labels>
         <fullName>Save</fullName>
