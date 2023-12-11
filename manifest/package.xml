@@ -90,6 +90,9 @@
         <members>Account_Plan__c.Weaknesses__c</members>
         <members>Account_Plan__c.WhereWeAddValue__c</members>
         <members>Account_Plan__c.WonRevenueTrig__c</members>
+        <members>Activity.CreatedbyNameForm__c</members>
+        <members>Activity.IsAccountplanningApproval__c</members>
+        <members>Activity.Type__c</members>
         <members>Alert__c.Account__c</members>
         <members>Alert__c.Duration__c</members>
         <members>Alert__c.EndDate__c</members>
@@ -124,6 +127,7 @@
         <members>InvolvedPartner__c.PartnershipRef__c</members>
         <members>InvolvedPartner__c.PrimaryContactRef__c</members>
         <members>InvolvedPartner__c.StartDate__c</members>
+        <members>OpportunityClone__c.AccountPlanRef__c</members>
         <members>Partnership__c.Description__c</members>
         <members>Partnership__c.Email__c</members>
         <members>Partnership__c.EndDate__c</members>
@@ -334,6 +338,7 @@
         <members>AccountChart_RTFL01_Update_ContactCharts_when_Department_is_Changed</members>
         <members>AccountChart_RTFL02_Update_Parent_Accountchart_Name_at_Create_and_Change</members>
         <members>AccountContactRelationship_RTFL01_Set_to_Inactive_on_Enddate</members>
+        <members>Account_Plan_RTFL01_Update_Focus_Client</members>
         <members>Account_SCFL01_Add_New_Alert_to_Account_Record</members>
         <members>Account_SCFL02_Show_Alert_on_Account_Record</members>
         <members>Account_SCFL03_Change_Department_Structure</members>
@@ -375,6 +380,7 @@
         <members>Account_Plan_Colleague_Role__c-Heijmans - Account Plan Colleague Role Layout</members>
         <members>Account_Plan_Contact_Role__c-Heijmans - Account Plan Contact Role Layout</members>
         <members>Account_Plan_Objective__c-Heijmans - Objective Layout</members>
+        <members>Account_Plan_Objective__c-Heijmans - Themed Objective Layout</members>
         <members>Account_Plan_Theme__c-Heijmans - Account Plan Theme Layout</members>
         <members>Account_Plan__c-Heijmans - Account Plan Layout</members>
         <members>Alert__c-Heijmans - Alert Layout</members>
@@ -395,8 +401,10 @@
         <members>InvolvedPartner__c-Heijmans - Involved Partner Layout</members>
         <members>InvolvedPartner__c-Involved Partner Layout</members>
         <members>Partnership__c-Heijmans - Partnership Layout</members>
+        <members>Partnership__c-Heijmans - Town Centers Layout</members>
         <members>Partnership__c-Partnership Layout</members>
         <members>Signal__c-Heijmans - Signal Layout</members>
+        <members>Signal__c-Signal Layout</members>
         <members>Task-Heijmans - Task Layout</members>
         <members>Theme__c-Heijmans - Theme Layout</members>
         <members>Whitespace__c-Heijmans - Whitespace Layout</members>
