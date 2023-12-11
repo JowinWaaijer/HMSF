@@ -188,7 +188,7 @@
     </platformActionList>
     <relatedLists>
         <fields>Gespreksverslag__c</fields>
-        <relatedList>Gespreksverslag__c.Objective__c</relatedList>
+        <relatedList>Gespreksverslag__c.ObjectiveRef__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
