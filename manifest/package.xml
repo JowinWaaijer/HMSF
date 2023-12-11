@@ -118,6 +118,7 @@
         <members>Contact.ReportsToId</members>
         <members>Contact.ResponsibleFor__c</members>
         <members>FormerPosition__c.OldContactRef__c</members>
+        <members>Gespreksverslag__c.AccountPlanRef__c</members>
         <members>InvolvedPartner__c.AccountNameForm__c</members>
         <members>InvolvedPartner__c.AccountRef__c</members>
         <members>InvolvedPartner__c.EndDate__c</members>
@@ -139,6 +140,7 @@
         <members>Partnership__c.TypePick__c</members>
         <members>Partnership__c.Website__c</members>
         <members>Signal__c.AccountOwnerForm__c</members>
+        <members>Signal__c.AccountPlanRef__c</members>
         <members>Signal__c.AccountRef__c</members>
         <members>Signal__c.ContactRef__c</members>
         <members>Signal__c.Description__c</members>
@@ -344,6 +346,8 @@
         <members>Account_SCFL03_Change_Department_Structure</members>
         <members>Account_STFL01_Activate_Deactivate_Alert_Message</members>
         <members>Account_STFL01_Create_Standard_Department_at_Create</members>
+        <members>Business_Unit_SCFL01_Prioritize_Focus_Clients</members>
+        <members>Business_Unit_SCFL02_Approve_Focus_Clients</members>
         <members>CON_SCFL01_Create_Former_Position</members>
         <members>ContactChart_RTFL01_Update_Department_of_all_Contacts</members>
         <members>ContactChart_RTFL02_Update_ParentChartName_and_Contact_Department</members>
