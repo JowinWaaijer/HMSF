@@ -129,6 +129,7 @@
         <members>InvolvedPartner__c.PartnershipRef__c</members>
         <members>InvolvedPartner__c.PrimaryContactRef__c</members>
         <members>InvolvedPartner__c.StartDate__c</members>
+        <members>Opportunity.AccountPlanRef__c</members>
         <members>OpportunityClone__c.AccountPlanRef__c</members>
         <members>Partnership__c.Description__c</members>
         <members>Partnership__c.Email__c</members>
