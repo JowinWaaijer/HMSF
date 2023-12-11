@@ -4181,20 +4181,6 @@
         <fullName>Datatable_Configuration_Wizard5</fullName>
     </flowDefinitions>
     <flowDefinitions>
-        <flows>
-            <screens>
-                <name>Not_Created_a_Clone</name>
-            </screens>
-            <screens>
-                <fields>
-                    <name>Voor_welk_jaar_geldt_dit_account_plan</name>
-                </fields>
-                <name>Screen_2</name>
-            </screens>
-        </flows>
-        <fullName>Deep_Clone_Account_Plan</fullName>
-    </flowDefinitions>
-    <flowDefinitions>
         <flows/>
         <fullName>DemoFlow_DeepClone</fullName>
     </flowDefinitions>
