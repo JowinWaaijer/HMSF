@@ -17,6 +17,7 @@
     <types>
         <members>Account.Heijmans_Account_Compact_Layout</members>
         <members>Account.Heijmans_klant</members>
+        <members>Account_Plan__c.Heijmans_Account_Plan_Compact_Layout</members>
         <members>InvolvedPartner__c.Heijmans_Involved_Partner_Compact_Layout</members>
         <members>Partnership__c.Heijmans_Partnerships_Compact_Layout</members>
         <members>Signal__c.HeijmansSignalCompactLayout</members>
@@ -28,6 +29,8 @@
     </types>
     <types>
         <members>Account.COCNumber__c</members>
+        <members>Account.Employees__c</members>
+        <members>Account.Inhabitants__c</members>
         <members>Account.IsBillingBlocked__c</members>
         <members>Account.IsOrderBlocked__c</members>
         <members>Account.IsProspect__c</members>
@@ -37,6 +40,56 @@
         <members>Account.StatusPick__c</members>
         <members>Account.Subsector__c</members>
         <members>Account.VATNumber__c</members>
+        <members>Account_Plan_Colleague_Role__c.AccountPlanRef__c</members>
+        <members>Account_Plan_Colleague_Role__c.Business_Unit__c</members>
+        <members>Account_Plan_Colleague_Role__c.ColleagueRolePick__c</members>
+        <members>Account_Plan_Colleague_Role__c.User__c</members>
+        <members>Account_Plan_Contact_Role__c.AccountPlanRef__c</members>
+        <members>Account_Plan_Contact_Role__c.ContactNameForm__c</members>
+        <members>Account_Plan_Contact_Role__c.ContactRef__c</members>
+        <members>Account_Plan_Contact_Role__c.Function__c</members>
+        <members>Account_Plan_Contact_Role__c.RelationshipStrengthPick__c</members>
+        <members>Account_Plan_Contact_Role__c.RolePick__c</members>
+        <members>Account_Plan_Objective__c.AccountPlanRef__c</members>
+        <members>Account_Plan_Objective__c.Approach__c</members>
+        <members>Account_Plan_Objective__c.ManagerReviewComments__c</members>
+        <members>Account_Plan_Objective__c.Objective__c</members>
+        <members>Account_Plan_Objective__c.OutcomePick__c</members>
+        <members>Account_Plan_Objective__c.OwnerRef__c</members>
+        <members>Account_Plan_Objective__c.OwnerReviewComments__c</members>
+        <members>Account_Plan_Objective__c.StatusPick__c</members>
+        <members>Account_Plan_Objective__c.TargetDate__c</members>
+        <members>Account_Plan_Objective__c.Theme__c</members>
+        <members>Account_Plan_Partner_Role__c.AccountPlanRef__c</members>
+        <members>Account_Plan_Partner_Role__c.PartnerAccountRef__c</members>
+        <members>Account_Plan_Partner_Role__c.PartnerRolePick__c</members>
+        <members>Account_Plan_Theme__c.AccountPlanRef__c</members>
+        <members>Account_Plan_Theme__c.Description__c</members>
+        <members>Account_Plan_Theme__c.ThemeRef__c</members>
+        <members>Account_Plan__c.AccountNameForm__c</members>
+        <members>Account_Plan__c.AccountPlanOwnerRef__c</members>
+        <members>Account_Plan__c.AccountRef__c</members>
+        <members>Account_Plan__c.ActiveForm__c</members>
+        <members>Account_Plan__c.ApprovalStatusPick__c</members>
+        <members>Account_Plan__c.BudgetForThisYear__c</members>
+        <members>Account_Plan__c.BudgetFromLastYear__c</members>
+        <members>Account_Plan__c.BudgetFromTwoYearsAgo__c</members>
+        <members>Account_Plan__c.BudgetUpcomingYear__c</members>
+        <members>Account_Plan__c.CustomerGoals__c</members>
+        <members>Account_Plan__c.EndDate__c</members>
+        <members>Account_Plan__c.FocusClientOwnerPick__c</members>
+        <members>Account_Plan__c.HeijmansStrategy__c</members>
+        <members>Account_Plan__c.Opportunities__c</members>
+        <members>Account_Plan__c.OurGoals__c</members>
+        <members>Account_Plan__c.PipelineTrig__c</members>
+        <members>Account_Plan__c.SalesTarget__c</members>
+        <members>Account_Plan__c.StartDate__c</members>
+        <members>Account_Plan__c.Strengths__c</members>
+        <members>Account_Plan__c.TargetAchievedForm__c</members>
+        <members>Account_Plan__c.Threats__c</members>
+        <members>Account_Plan__c.Weaknesses__c</members>
+        <members>Account_Plan__c.WhereWeAddValue__c</members>
+        <members>Account_Plan__c.WonRevenueTrig__c</members>
         <members>Alert__c.Account__c</members>
         <members>Alert__c.Duration__c</members>
         <members>Alert__c.EndDate__c</members>
@@ -50,10 +103,17 @@
         <members>Alert__c.TypePick__c</members>
         <members>Alert__c.URLLabel__c</members>
         <members>Alert__c.URLLink__c</members>
+        <members>BusinessUnitSpecificAttribute__c.AccountNameForm__c</members>
+        <members>BusinessUnitSpecificAttribute__c.BusinessUnitOwnerLoggedInForm__c</members>
+        <members>BusinessUnitSpecificAttribute__c.BusinessUnitOwnerManagerLoggedIn__c</members>
+        <members>BusinessUnitSpecificAttribute__c.FocusClientApproved__c</members>
+        <members>BusinessUnitSpecificAttribute__c.FocusClientNextYearPick__c</members>
         <members>BusinessUnitSpecificAttribute__c.StatusPick__c</members>
+        <members>Contact.ContactRelationshipStrengthPick__c</members>
         <members>Contact.FullNameForm__c</members>
         <members>Contact.OrganizationLevelPick__c</members>
         <members>Contact.ReportsToId</members>
+        <members>Contact.ResponsibleFor__c</members>
         <members>FormerPosition__c.OldContactRef__c</members>
         <members>InvolvedPartner__c.AccountNameForm__c</members>
         <members>InvolvedPartner__c.AccountRef__c</members>
@@ -91,6 +151,16 @@
         <members>Theme__c.EndDate__c</members>
         <members>Theme__c.IsActive__c</members>
         <members>Theme__c.StartDate__c</members>
+        <members>User.BusinessUnitPick__c</members>
+        <members>User.ManagerFullName__c</members>
+        <members>User.RoleDeveloperNameForm__c</members>
+        <members>Whitespace__c.AccountPlanRef__c</members>
+        <members>Whitespace__c.Comments__c</members>
+        <members>Whitespace__c.CompetitorRef__c</members>
+        <members>Whitespace__c.ContractEndDate__c</members>
+        <members>Whitespace__c.Spend__c</members>
+        <members>Whitespace__c.WithPick__c</members>
+        <members>Whitespace__c.Year__c</members>
         <members>albiraSolutions__AccountChart__c.ParentChartNameTrig__c</members>
         <members>albiraSolutions__ContactChart__c.ParentChartNameTrig__c</members>
         <members>albiraSolutions__ContactChart__c.albiraSolutions__AccountChart__c</members>
@@ -106,6 +176,7 @@
     <types>
         <members>AccountInformation</members>
         <members>AccountName</members>
+        <members>Approval</members>
         <members>Attendees</members>
         <members>Back</members>
         <members>ContactPerson</members>
@@ -124,8 +195,10 @@
         <members>New</members>
         <members>Next</members>
         <members>OpportunityName</members>
+        <members>Overview</members>
         <members>Partnerships</members>
         <members>Password</members>
+        <members>Prioritizing</members>
         <members>Save</members>
         <members>Search</members>
         <members>Segmentation</members>
@@ -182,20 +255,33 @@
     </types>
     <types>
         <members>Account</members>
+        <members>Account_Plan_Colleague_Role__c</members>
+        <members>Account_Plan_Contact_Role__c</members>
+        <members>Account_Plan_Objective__c</members>
+        <members>Account_Plan_Partner_Role__c</members>
+        <members>Account_Plan_Theme__c</members>
+        <members>Account_Plan__c</members>
         <members>Alert__c</members>
         <members>FormerPosition__c</members>
         <members>InvolvedPartner__c</members>
         <members>Partnership__c</members>
         <members>Signal__c</members>
         <members>Theme__c</members>
+        <members>Whitespace__c</members>
         <members>albiraSolutions__ContactChart__c</members>
         <name>CustomObject</name>
     </types>
     <types>
         <members>Account-nl_NL</members>
         <members>AccountContactRelation-nl_NL</members>
+        <members>Account_Plan_Colleague_Role__c-nl_NL</members>
+        <members>Account_Plan_Contact_Role__c-nl_NL</members>
+        <members>Account_Plan_Objective__c-nl_NL</members>
+        <members>Account_Plan_Theme__c-nl_NL</members>
+        <members>Account_Plan__c-nl_NL</members>
         <members>Activity-nl_NL</members>
         <members>Alert__c-nl_NL</members>
+        <members>Busines_Door_picklist__c-nl_NL</members>
         <members>BusinessUnitSpecificAttribute__c-nl_NL</members>
         <members>Contact-nl_NL</members>
         <members>FormerPosition__c-nl_NL</members>
@@ -205,6 +291,8 @@
         <members>Partnership__c-nl_NL</members>
         <members>Signal__c-nl_NL</members>
         <members>Theme__c-nl_NL</members>
+        <members>User-nl_NL</members>
+        <members>Whitespace__c-nl_NL</members>
         <name>CustomObjectTranslation</name>
     </types>
     <types>
@@ -212,6 +300,7 @@
         <name>CustomSite</name>
     </types>
     <types>
+        <members>Account_Plan__c</members>
         <members>InvolvedPartner__c</members>
         <members>Partnership__c</members>
         <members>Signal__c</members>
@@ -228,6 +317,7 @@
     </types>
     <types>
         <members>HeijmansSignalRecordPage</members>
+        <members>Heijmans_Account_Plan_Record_Page</members>
         <members>Heijmans_Account_Record_Page</members>
         <members>Heijmans_Feedback_Record_Page</members>
         <members>Heijmans_Former_Position_Record_Page</members>
@@ -271,6 +361,10 @@
         <name>FlowDefinition</name>
     </types>
     <types>
+        <members>FocusClient</members>
+        <name>GlobalValueSet</name>
+    </types>
+    <types>
         <members>Account-Heijmans - Account Layout</members>
         <members>Account-Heijmans concurrent</members>
         <members>Account-Heijmans klant</members>
@@ -278,6 +372,11 @@
         <members>Account-Heijmans partner</members>
         <members>Account-Heijmans_Account</members>
         <members>AccountContactRelation-Heijmans - Contact Relationship Layout</members>
+        <members>Account_Plan_Colleague_Role__c-Heijmans - Account Plan Colleague Role Layout</members>
+        <members>Account_Plan_Contact_Role__c-Heijmans - Account Plan Contact Role Layout</members>
+        <members>Account_Plan_Objective__c-Heijmans - Objective Layout</members>
+        <members>Account_Plan_Theme__c-Heijmans - Account Plan Theme Layout</members>
+        <members>Account_Plan__c-Heijmans - Account Plan Layout</members>
         <members>Alert__c-Heijmans - Alert Layout</members>
         <members>BusinessUnitSpecificAttribute__c-Heijmans - Business Unit Specific Attribute Layout</members>
         <members>BusinessUnits__mdt-Lay-out voor Business Unit</members>
@@ -300,6 +399,7 @@
         <members>Signal__c-Heijmans - Signal Layout</members>
         <members>Task-Heijmans - Task Layout</members>
         <members>Theme__c-Heijmans - Theme Layout</members>
+        <members>Whitespace__c-Heijmans - Whitespace Layout</members>
         <members>albiraSolutions__ContactChart__c-albiraSolutions__ContactChart Layout</members>
         <name>Layout</name>
     </types>
@@ -308,6 +408,7 @@
         <name>LightningComponentBundle</name>
     </types>
     <types>
+        <members>Account_Plan__c.All</members>
         <members>Contact.Alle_contacten_Directieniveau</members>
         <members>Contact.Alle_contacten_Senior_management</members>
         <members>Contact.Alle_inactieve_contactpersonen</members>
@@ -344,6 +445,7 @@
     </types>
     <types>
         <members>Heijmans_Accountmanagement_User</members>
+        <members>Heijmans_Activity_User</members>
         <members>Heijmans_Administrator</members>
         <members>Heijmans_Contactmanagement_Manager</members>
         <members>Heijmans_Contactmanagement_User</members>
@@ -382,6 +484,8 @@
         <members>Contact.UpdateContact</members>
         <members>NewContact</members>
         <members>NewTask</members>
+        <members>Partnership__c.NewPartner</members>
+        <members>Partnership__c.NewTownCenter</members>
         <members>Signal__c.Delete</members>
         <name>QuickAction</name>
     </types>
@@ -392,6 +496,10 @@
         <members>Account.Heijmans_klant</members>
         <members>Account.Heijmans_onderdeel</members>
         <members>Account.Heijmans_partner</members>
+        <members>Account_Plan_Objective__c.HeijmansStandardObjectiveRecordType</members>
+        <members>Account_Plan_Objective__c.HeijmansThemedObjectiveRecordType</members>
+        <members>Account_Plan_Partner_Role__c.Account_Plan_Competitor_Role_Record_Type</members>
+        <members>Account_Plan_Partner_Role__c.Heijmans_Account_Plan_Partner_Role_Record_Type</members>
         <members>Contact.Extern_contact</members>
         <members>Contact.Heijmans_contact</members>
         <members>Feedback__c.Bug</members>
@@ -424,6 +532,12 @@
         <members>Accounts_met_Oppty_met_Uitvoering</members>
         <members>Accounts_met_en_zonder_Oppty_en_Partner</members>
         <members>Accounts_oppty_aanbiedingen_uitslagen</members>
+        <members>Accounts_with_Account_Plans_with_Account_Plan_Colleague_Roles</members>
+        <members>Accounts_with_Account_Plans_with_Account_Plan_Contact_Roles</members>
+        <members>Accounts_with_Account_Plans_with_Account_Plan_Partner_Roles</members>
+        <members>Accounts_with_Account_Plans_with_Account_Plan_Themes</members>
+        <members>Accounts_with_Account_Plans_with_Objectives</members>
+        <members>Accounts_with_Account_Plans_with_Whitespaces</members>
         <members>Accounts_with_inactive_users</members>
         <members>Contactpersonen</members>
         <members>Contactpersonen_Accounts</members>
@@ -433,6 +547,12 @@
         <members>Opportunity</members>
         <members>account_oppertunities_uitslagen</members>
         <name>ReportType</name>
+    </types>
+    <types>
+        <members>CommercieelManagerInfraZuid</members>
+        <members>DirectieHeijmansInfra</members>
+        <members>DirectieInfraZuid</members>
+        <name>Role</name>
     </types>
     <types>
         <members>Account</members>
