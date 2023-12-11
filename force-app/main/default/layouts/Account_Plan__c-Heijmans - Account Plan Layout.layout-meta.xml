@@ -289,7 +289,7 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <relatedList>Account_Plan_Partner_Competitor_Role__c.AccountPlanRef__c</relatedList>
+        <relatedList>Account_Plan_Partner_Role__c.AccountPlanRef__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
