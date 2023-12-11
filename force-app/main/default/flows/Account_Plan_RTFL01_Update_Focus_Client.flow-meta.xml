@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <decisions>
+        <description>This element will check if the business unit is found.</description>
+        <name>dcsBusinessUnitFound</name>
+        <label>dcsBusinessUnitFound</label>
+        <locationX>182</locationX>
+        <locationY>395</locationY>
+        <defaultConnectorLabel>Not Found</defaultConnectorLabel>
+        <rules>
+            <name>Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>getBusinessUnitFocusClient</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ruAccountPlan</targetReference>
+            </connector>
+            <label>Found</label>
+        </rules>
+    </decisions>
+    <description>Before Save. This flow will copy the focus client field from the business unit specific attribute where the owner is equal to the account plan owner.</description>
+    <environments>Default</environments>
+    <interviewLabel>Account Plan - RTFL01 - Update Focus Client {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account Plan - RTFL01 - Update Focus Client</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Based on the owner of the account plan we will retrieve the Focus Client value of the specific Business Unit.</description>
+        <name>getBusinessUnitFocusClient</name>
+        <label>getBusinessUnitFocusClient</label>
+        <locationX>182</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>dcsBusinessUnitFound</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>BusinessUnitOwnerRef__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AccountPlanOwnerRef__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AccountRef__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AccountRef__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>BusinessUnitSpecificAttribute__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>This element will update the focus client picklist on the account plan with the value found on the owners&apos; business unit.</description>
+        <name>ruAccountPlan</name>
+        <label>ruAccountPlan</label>
+        <locationX>50</locationX>
+        <locationY>503</locationY>
+        <inputAssignments>
+            <field>FocusClientOwnerPick__c</field>
+            <value>
+                <elementReference>getBusinessUnitFocusClient.FocusClientPick__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>getBusinessUnitFocusClient</targetReference>
+        </connector>
+        <filterFormula>OR (
+ISNEW(),
+ISCHANGED({!$Record.AccountPlanOwnerRef__c}))</filterFormula>
+        <object>Account_Plan__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

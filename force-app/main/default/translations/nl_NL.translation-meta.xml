@@ -59,6 +59,10 @@
         <name>AccountName</name>
     </customLabels>
     <customLabels>
+        <label>Goedkeuring</label>
+        <name>Approval</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Attendees --></label>
         <name>Attendees</name>
     </customLabels>
@@ -251,12 +255,20 @@
         <name>OrganizationChart</name>
     </customLabels>
     <customLabels>
+        <label>Overzicht</label>
+        <name>Overview</name>
+    </customLabels>
+    <customLabels>
         <label>Samenwerkingsverbanden</label>
         <name>Partnerships</name>
     </customLabels>
     <customLabels>
         <label><!-- Password --></label>
         <name>Password</name>
+    </customLabels>
+    <customLabels>
+        <label>Prioritering</label>
+        <name>Prioritizing</name>
     </customLabels>
     <customLabels>
         <label><!-- Save --></label>
@@ -634,6 +646,14 @@
         <label><!-- Value Label --></label>
         <name>fsc_Value_Label</name>
     </customLabels>
+    <customLabels>
+        <label><!-- Err_insufficient_privileges --></label>
+        <name>sharinpix_free__Err_insufficient_privileges</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- err_unknown --></label>
+        <name>sharinpix_free__err_unknown</name>
+    </customLabels>
     <customPageWebLinks>
         <label><!-- Welcome --></label>
         <name>Welcome</name>
@@ -693,6 +713,10 @@
     <flowDefinitions>
         <flows/>
         <fullName>AccountContactRelationship_RTFL01_Set_to_Inactive_on_Enddate</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Account_Plan_RTFL01_Update_Focus_Client</fullName>
     </flowDefinitions>
     <flowDefinitions>
         <flows>
@@ -3345,6 +3369,10 @@
         <fullName>Datatable_Configuration_Wizard5</fullName>
     </flowDefinitions>
     <flowDefinitions>
+        <flows/>
+        <fullName>DemoFlow_DeepClone</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
         <flows>
             <textTemplates>
                 <name>tmpEmailBodyAdmin</name>
@@ -5593,6 +5621,108 @@
         </sections>
     </reportTypes>
     <reportTypes>
+        <description><!-- Accounts with Account Plans with Account Plan Colleague Roles --></description>
+        <label><!-- Accounts with Account Plans with Account Plan Colleague Roles --></label>
+        <name>Accounts_with_Account_Plans_with_Account_Plan_Colleague_Roles</name>
+        <sections>
+            <label><!-- Account Plan Colleague Roles --></label>
+            <name>Account Plan Colleague Roles</name>
+        </sections>
+        <sections>
+            <label><!-- Account Plans --></label>
+            <name>Account Plans</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Account Plans with Account Plan Contact Roles --></description>
+        <label><!-- Accounts with Account Plans with Account Plan Contact Roles --></label>
+        <name>Accounts_with_Account_Plans_with_Account_Plan_Contact_Roles</name>
+        <sections>
+            <label><!-- Account Plan Contact Roles --></label>
+            <name>Account Plan Contact Roles</name>
+        </sections>
+        <sections>
+            <label><!-- Account Plans --></label>
+            <name>Account Plans</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Account Plans with Account Plan Partner Roles --></description>
+        <label><!-- Accounts with Account Plans with Account Plan Partner Roles --></label>
+        <name>Accounts_with_Account_Plans_with_Account_Plan_Partner_Roles</name>
+        <sections>
+            <label><!-- Account Plan Partner Roles --></label>
+            <name>Account Plan Partner Roles</name>
+        </sections>
+        <sections>
+            <label><!-- Account Plans --></label>
+            <name>Account Plans</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Account Plans with Account Plan Themes --></description>
+        <label><!-- Accounts with Account Plans with Account Plan Themes --></label>
+        <name>Accounts_with_Account_Plans_with_Account_Plan_Themes</name>
+        <sections>
+            <label><!-- Account Plan Themes --></label>
+            <name>Account Plan Themes</name>
+        </sections>
+        <sections>
+            <label><!-- Account Plans --></label>
+            <name>Account Plans</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Account Plans with Objectives --></description>
+        <label><!-- Accounts with Account Plans with Objectives --></label>
+        <name>Accounts_with_Account_Plans_with_Objectives</name>
+        <sections>
+            <label><!-- Account Plans --></label>
+            <name>Account Plans</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Objectives --></label>
+            <name>Objectives</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Account Plans with Whitespaces --></description>
+        <label><!-- Accounts with Account Plans with Whitespaces --></label>
+        <name>Accounts_with_Account_Plans_with_Whitespaces</name>
+        <sections>
+            <label><!-- Account Plans --></label>
+            <name>Account Plans</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Whitespaces --></label>
+            <name>Whitespaces</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
         <description><!-- Accounts with inactive users --></description>
         <label><!-- Accounts with inactive users --></label>
         <name>Accounts_with_inactive_users</name>
@@ -5608,6 +5738,10 @@
         <sections>
             <label><!-- Activiteiten --></label>
             <name>Activiteiten</name>
+        </sections>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
         </sections>
         <sections>
             <label><!-- Toegewezen aan --></label>
@@ -5847,6 +5981,10 @@
             <name>Activiteiten</name>
         </sections>
         <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
             <label><!-- Opportunities --></label>
             <name>Opportunities</name>
         </sections>
@@ -6030,6 +6168,10 @@
             <name>Activiteiten</name>
         </sections>
         <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
             <label><!-- Product Opportunities --></label>
             <name>Product Opportunities</name>
         </sections>
@@ -6047,6 +6189,10 @@
             <name>Activiteiten</name>
         </sections>
         <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
             <label><!-- Product Opportunities --></label>
             <name>Product Opportunities</name>
         </sections>
@@ -6062,6 +6208,10 @@
         <sections>
             <label><!-- Activiteiten --></label>
             <name>Activiteiten</name>
+        </sections>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
         </sections>
         <sections>
             <label><!-- TFDT --></label>
