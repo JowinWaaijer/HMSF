@@ -29,6 +29,7 @@ localStorageBranchTargets:
   features/config/US-Quickchoicefix: integration
   features/config/US-AccountchartFinal: integration
   features/config/US-PMSetsAccountplan: integration
+  features/config/US-AccountPlanTranslation: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
