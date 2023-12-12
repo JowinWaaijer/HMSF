@@ -28,6 +28,7 @@ localStorageBranchTargets:
   features/config/US-72364-SAP-Integratie-velden: integration
   features/config/US-Quickchoicefix: integration
   features/config/US-AccountchartFinal: integration
+  features/config/US-PMSetsAccountplan: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
