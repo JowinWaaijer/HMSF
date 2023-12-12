@@ -4500,50 +4500,6 @@
     </flowDefinitions>
     <flowDefinitions>
         <flows>
-            <screens>
-                <fields>
-                    <name>test</name>
-                </fields>
-                <fields>
-                    <name>test9</name>
-                </fields>
-                <fields>
-                    <name>testr5_Section1</name>
-                </fields>
-                <fields>
-                    <inputParameters>
-                        <name>width</name>
-                        <value/>
-                    </inputParameters>
-                    <name>testr5_Section1_Column1</name>
-                </fields>
-                <fields>
-                    <inputParameters>
-                        <name>width</name>
-                        <value/>
-                    </inputParameters>
-                    <name>testr5_Section1_Column2</name>
-                </fields>
-                <fields>
-                    <inputParameters>
-                        <name>width</name>
-                        <value/>
-                    </inputParameters>
-                    <name>testr5_Section1_Column3</name>
-                </fields>
-                <name>testr5</name>
-            </screens>
-            <textTemplates>
-                <name>TextinaBox</name>
-            </textTemplates>
-            <textTemplates>
-                <name>textinabox2</name>
-            </textTemplates>
-        </flows>
-        <fullName>Test</fullName>
-    </flowDefinitions>
-    <flowDefinitions>
-        <flows>
             <choices>
                 <name>Geen_bijzonderheden</name>
             </choices>
