@@ -25,4 +25,12 @@
         <errorMessage></errorMessage>
         <name>INP_VR01_EndDateBeforeStartDate</name>
     </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>INP_VR02_InactiveWithNoEndDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>INP_VR03_PrimairAccountCannotBeInactive</name>
+    </validationRules>
 </CustomObjectTranslation>
