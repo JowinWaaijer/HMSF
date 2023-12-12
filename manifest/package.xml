@@ -520,6 +520,8 @@
         <members>Feedback__c.BusinessIdea</members>
         <members>Feedback__c.Compliment</members>
         <members>Feedback__c.FeatureRequest</members>
+        <members>Partnership__c.HeijmansPartnershipRecordType</members>
+        <members>Partnership__c.HeijmansTownCentersRecordType</members>
         <name>RecordType</name>
     </types>
     <types>
