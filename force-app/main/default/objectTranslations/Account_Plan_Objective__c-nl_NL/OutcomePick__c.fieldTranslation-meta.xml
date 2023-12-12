@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label></label>
+    <label>Uitkomst</label>
     <name>OutcomePick__c</name>
     <picklistValues>
         <masterLabel>Fully Achieved</masterLabel>
-        <translation></translation>
+        <translation>Vollledig Behaald</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Not Achieved</masterLabel>
-        <translation></translation>
+        <translation>Niet Behaald</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Partially Achieved</masterLabel>
-        <translation></translation>
+        <translation>Deels Behaald</translation>
     </picklistValues>
 </CustomFieldTranslation>

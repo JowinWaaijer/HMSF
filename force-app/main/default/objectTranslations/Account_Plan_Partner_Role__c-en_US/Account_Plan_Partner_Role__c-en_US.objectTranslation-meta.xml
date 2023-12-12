@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Plan Partner Role</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Account Plan Partner Roles</value>
+    </caseValues>
+    <layouts>
+        <layout>Heijmans - Account Plan Partner Role Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel></nameFieldLabel>
+    <recordTypes>
+        <label></label>
+        <name>Account_Plan_Competitor_Role_Record_Type</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Heijmans_Account_Plan_Partner_Role_Record_Type</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

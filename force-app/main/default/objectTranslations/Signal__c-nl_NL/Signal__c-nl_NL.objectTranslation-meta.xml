@@ -32,6 +32,7 @@
             <section>Signal information</section>
         </sections>
     </layouts>
+    <nameFieldLabel></nameFieldLabel>
     <quickActions>
         <aspect>Master</aspect>
         <label>Verwijderen</label>

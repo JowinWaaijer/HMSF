@@ -24,7 +24,50 @@
             <section>Partnership Description</section>
         </sections>
     </layouts>
+    <layouts>
+        <layout>Heijmans - Town Centers Layout</layout>
+        <sections>
+            <label>Contactgegevens</label>
+            <section>Contact details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Samenwerkingsverband beschrijving</label>
+            <section>Partnership Description</section>
+        </sections>
+    </layouts>
     <nameFieldLabel>Samenwerkingsverband Naam</nameFieldLabel>
+    <quickActions>
+        <aspect>InfoMessage</aspect>
+        <label>Nieuwe partner is toegevoegd.</label>
+        <name>NewPartner</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Nieuwe Partner</label>
+        <name>NewPartner</name>
+    </quickActions>
+    <quickActions>
+        <aspect>InfoMessage</aspect>
+        <label>Nieuwe dorpskern is toegevoegd.</label>
+        <name>NewTownCenter</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Nieuwe Dorpskern</label>
+        <name>NewTownCenter</name>
+    </quickActions>
+    <recordTypes>
+        <label>Heijmans - Samenwerking</label>
+        <name>HeijmansPartnershipRecordType</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Heijmans - Dorpskernen</label>
+        <name>HeijmansTownCentersRecordType</name>
+    </recordTypes>
     <validationRules>
         <errorMessage>De einddatum kan niet voor de begindatum liggen. [VR01]</errorMessage>
         <name>PAR_VR01_EndDateBeforeStartDate</name>
