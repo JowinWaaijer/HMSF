@@ -31,6 +31,7 @@ localStorageBranchTargets:
   features/config/US-PMSetsAccountplan: integration
   features/config/US-AccountPlanTranslation: integration
   features/config/US-FocusClientApp: integration
+  features/config/US-UserFieldPermissions: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
