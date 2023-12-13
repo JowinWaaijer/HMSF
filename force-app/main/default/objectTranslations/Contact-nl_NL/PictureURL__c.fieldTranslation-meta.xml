@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help>Voeg hier de url van de afbeelding van de contactpersoon in. Om een afbeelding van LinkedIn te kopiëren, klik je eerst op de afbeelding van de contactpersoon zodat deze tevoorschijn komt, klik vervolgens met je rechtermuis op &quot;Adres afbeelding kopiëren” / &quot;Copy Image Address” en plak je deze url in dit veld.</help>
-    <label>Afbeelding URL</label>
-    <name>PictureURL__c</name>
-</CustomFieldTranslation>

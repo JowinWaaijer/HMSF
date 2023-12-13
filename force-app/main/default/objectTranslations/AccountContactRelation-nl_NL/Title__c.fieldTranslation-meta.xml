@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help>Voer de titel of rol in van de externe contactpersoon binnen deze account. In het veld &apos;Titel&apos; kunt je de functie of specifieke verantwoordelijkheden van de contactpersoon met betrekking tot deze relatie opgeven.</help>
-    <label>Functie</label>
-    <name>Title__c</name>
-</CustomFieldTranslation>

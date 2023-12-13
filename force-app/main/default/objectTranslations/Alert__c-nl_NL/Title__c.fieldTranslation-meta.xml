@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help>De titel is optioneel. Als je een titel opgeeft, staat deze op de eerste regel met een groter lettertype en het bericht op de tweede regel met een kleiner lettertype.</help>
-    <label>Titel</label>
-    <name>Title__c</name>
-</CustomFieldTranslation>

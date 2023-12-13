@@ -659,6 +659,8 @@
         <members>TypeSuccess</members>
         <members>TypeWarning</members>
         <members>Warning</members>
+        <members>customHeaderImages</members>
+        <members>noAppPageHeader</members>
         <name>StaticResource</name>
     </types>
     <types>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help>Dit selectievakje moet worden ingeschakeld als het partnerschap is geregistreerd als rechtspersoon.</help>
-    <label>Juridische Entiteit</label>
-    <name>IsLegalEntity__c</name>
-</CustomFieldTranslation>

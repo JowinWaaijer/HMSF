@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Sharing_Heijmans_Franki__c</fullName>
-    <externalId>false</externalId>
-    <formula>Account.Sharing_Heijmans_Franki__c</formula>
-    <label>Sharing Heijmans-Franki</label>
-    <trackHistory>false</trackHistory>
-    <type>Checkbox</type>
-</CustomField>

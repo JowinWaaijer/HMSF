@@ -1,8 +1,0 @@
-<!--
- - Created by krisjacobs on 29/11/2023.
- -->
-
-<design:component>
-    <design:attribute name="iconName"/>
-    <design:attribute name="title"/>
-</design:component>
