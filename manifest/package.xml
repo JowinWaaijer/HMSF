@@ -11,6 +11,7 @@
     <types>
         <members>BFAccountChart</members>
         <members>FlowRefreshView</members>
+        <members>HomePageCollapsingRegion</members>
         <members>showToast</members>
         <name>AuraDefinitionBundle</name>
     </types>
@@ -184,6 +185,7 @@
     <types>
         <members>AccountInformation</members>
         <members>AccountName</members>
+        <members>Account_Plans</members>
         <members>Approval</members>
         <members>Attendees</members>
         <members>Back</members>
@@ -319,6 +321,7 @@
     </types>
     <types>
         <members>Account_Plan__c</members>
+        <members>FocusClients</members>
         <members>InvolvedPartner__c</members>
         <members>Partnership__c</members>
         <members>Signal__c</members>
@@ -338,7 +341,9 @@
         <members>Heijmans_Account_Plan_Record_Page</members>
         <members>Heijmans_Account_Record_Page</members>
         <members>Heijmans_Feedback_Record_Page</members>
+        <members>Heijmans_Focus_Clients</members>
         <members>Heijmans_Former_Position_Record_Page</members>
+        <members>Heijmans_General_Homepage</members>
         <members>Heijmans_Involved_Partner_Record_Page</members>
         <members>Heijmans_Multi_Account_Lightning_Page</members>
         <members>Heijmans_Multi_Contact_Record_Page</members>
@@ -372,6 +377,11 @@
         <members>Feedback_SCFL02_Vote_on_Feedback_on_Lightning_Page</members>
         <members>Feedback_SCFL02_Vote_on_Feedback_via_Lightning_Page</members>
         <members>Feedback_SCFL03_Total_Score_Feedback</members>
+        <members>Focus_Client_SCFL01_Focus_Client_Prioritizing_Button_Home_Page</members>
+        <members>Focus_Client_SCFL02_Overview_Focus_Clients_Director_Homepage</members>
+        <members>Focus_Client_SCFL03_Overview_of_Focus_Clients_on_Homepage</members>
+        <members>Focus_Client_SCFL04_Prioritize_Focus_Clients</members>
+        <members>Focus_Client_SCFL05_Approve_Focus_Clients</members>
         <members>Partnerships_STFL01_Set_Partnership_to_Inactive</members>
         <members>Quick_Choice_Fix</members>
         <members>Signal_SCFL01_Delete_Signal</members>
@@ -429,6 +439,7 @@
     </types>
     <types>
         <members>fsc_toastMessage</members>
+        <members>removePageHeader</members>
         <name>LightningComponentBundle</name>
     </types>
     <types>
@@ -473,11 +484,14 @@
         <members>Heijmans_Administrator</members>
         <members>Heijmans_Contactmanagement_Manager</members>
         <members>Heijmans_Contactmanagement_User</members>
+        <members>Heijmans_Focus_Clients</members>
         <members>Heijmans_Theme_Manager</members>
         <members>Heijmans_Theme_User</members>
         <name>PermissionSet</name>
     </types>
     <types>
+        <members>Heijmans_Commercial_Managers</members>
+        <members>Heijmans_Directors</members>
         <members>Heijmans_Testers</members>
         <name>PermissionSetGroup</name>
     </types>
@@ -614,8 +628,15 @@
         <members>HeijmansOrg</members>
         <members>HeijmansPawn</members>
         <members>HeijmansPerson</members>
+        <members>HeijmansPrio1</members>
+        <members>HeijmansPrio2</members>
+        <members>HeijmansPrio3</members>
         <members>HeijmansTodo</members>
+        <members>HeijmansTodoRed</members>
+        <members>HeijmansTodoYellow</members>
         <members>HeijmansTools</members>
+        <members>HeijmansToolsRed</members>
+        <members>HeijmansToolsYellow</members>
         <members>HeijmansWarning</members>
         <members>IconAnnouncement</members>
         <members>IconCase</members>
@@ -631,12 +652,15 @@
         <members>IconNotification</members>
         <members>IconPriority</members>
         <members>LandingImage</members>
+        <members>NoHeader</members>
         <members>TypeError</members>
         <members>TypeInfo</members>
         <members>TypeOther</members>
         <members>TypeSuccess</members>
         <members>TypeWarning</members>
         <members>Warning</members>
+        <members>customHeaderImages</members>
+        <members>noAppPageHeader</members>
         <name>StaticResource</name>
     </types>
     <types>
