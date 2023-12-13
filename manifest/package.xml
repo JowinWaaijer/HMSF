@@ -459,6 +459,7 @@
         <members>Partnership__c.Alle_samenwerkingen_zonder_startdatum</members>
         <members>Signal__c.Al_mijn_signalen_aankomende_3_maanden</members>
         <members>Signal__c.All</members>
+        <members>Signal__c.Mijn_Signalen</members>
         <members>Theme__c.All</members>
         <members>albiraSolutions__ContactChart__c.albiraSolutions__All</members>
         <name>ListView</name>
