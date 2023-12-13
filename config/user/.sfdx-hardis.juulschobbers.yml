@@ -40,3 +40,6 @@ mergeRequests:
   - branch: features/config/US-PMSetsAccountplan
     urlCreate: >-
       https://github.com/JowinWaaijer/HMSF/pull/new/features/config/US-PMSetsAccountplan
+  - branch: features/config/US-FocusClients
+    urlCreate: >-
+      https://github.com/JowinWaaijer/HMSF/pull/new/features/config/US-FocusClients
