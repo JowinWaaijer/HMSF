@@ -440,6 +440,7 @@
     </types>
     <types>
         <members>fsc_toastMessage</members>
+        <members>removePageHeader</members>
         <name>LightningComponentBundle</name>
     </types>
     <types>
