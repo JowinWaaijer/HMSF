@@ -1496,8 +1496,23 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>User.BusinessUnitPick__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>User.FullNameForm__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.ManagerFullName__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.RoleDeveloperNameForm__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
@@ -1706,10 +1721,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <recordType>Partnership__c.HeijmansPartnershipRecordType</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <recordType>Partnership__c.HeijmansTownCentersRecordType</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <tabSettings>

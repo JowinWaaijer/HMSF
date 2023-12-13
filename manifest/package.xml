@@ -488,6 +488,7 @@
         <members>Heijmans_Focus_Clients</members>
         <members>Heijmans_Theme_Manager</members>
         <members>Heijmans_Theme_User</members>
+        <members>Heijmans_User_Fields</members>
         <name>PermissionSet</name>
     </types>
     <types>
