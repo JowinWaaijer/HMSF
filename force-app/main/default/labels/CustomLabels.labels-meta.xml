@@ -17,6 +17,14 @@
         <value>Accountnaam</value>
     </labels>
     <labels>
+        <fullName>Account_Plans</fullName>
+        <categories>Related List</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Plans</shortDescription>
+        <value>Account Plans</value>
+    </labels>
+    <labels>
         <fullName>Approval</fullName>
         <categories>Tab</categories>
         <language>en_US</language>
