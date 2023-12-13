@@ -34,6 +34,7 @@ localStorageBranchTargets:
   features/config/US-UserFieldPermissions: integration
   features/config/US-UpdateButtononFocusClientFlow: integration
   features/config/US-FocusClientSCFL01: integration
+  features/config/US-DeleteErkenningenObject: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
