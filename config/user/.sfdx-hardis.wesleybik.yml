@@ -23,6 +23,7 @@ localStorageBranchTargets:
   features/config/US-user-feedback-from-testing: integration
   features/config/us-former-positions-flow-feedback: integration
   features/config/US-71103-MeetingReports: integration
+  features/config/update-account-page-lighting: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
@@ -33,3 +34,4 @@ sfdxPluginsStdout: "functions \e[2m1.22.3\e[22m\e[2m (1.22.3)\e[22m\npackaging \
 mergeRequests:
   - null
   - branch: features/config/US-71103-MeetingReports
+canForcePush: true
