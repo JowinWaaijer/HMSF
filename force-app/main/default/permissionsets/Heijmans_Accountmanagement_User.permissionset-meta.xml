@@ -817,11 +817,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Partnership__c.TypeOfPartnershipPick__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Partnership__c.TypePick__c</field>
         <readable>true</readable>
     </fieldPermissions>
