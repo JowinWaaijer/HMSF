@@ -63,4 +63,4 @@ jobs:
         sfdx sgd:source:delta --to "HEAD" --from "HEAD~1" --output ./manifest
         mv -f ./manifest/package/package.xml ./manifest/package.xml
         mv -f ./manifest/destructiveChanges/destructiveChanges.xml ./manifest/destructiveChanges.xml
-        sfdx hardis:project:deploy:sources:dx
+        sfdx hardis:project:deploy:sources:dx -l RunSpecifiedTests -r MonthlyFinancials_Test
