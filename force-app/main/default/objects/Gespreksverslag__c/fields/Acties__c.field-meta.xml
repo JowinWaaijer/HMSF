@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acties__c</fullName>
+    <description>Verzameling van de acties. Wordt samengesteld door de flow: flow_Gespreksverslag_Taken</description>
+    <externalId>false</externalId>
+    <label>Acties</label>
+    <length>1000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

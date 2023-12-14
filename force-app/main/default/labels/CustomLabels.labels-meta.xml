@@ -731,4 +731,25 @@
         <shortDescription>Value Label</shortDescription>
         <value>Value</value>
     </labels>
+    <labels>
+        <fullName>General_Information</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General Information</shortDescription>
+        <value>General Information</value>
+    </labels>
+    <labels>
+        <fullName>Meeting_Report</fullName>
+        <language>nl_NL</language>
+        <protected>false</protected>
+        <shortDescription>Meeting Report</shortDescription>
+        <value>Meeting Report</value>
+    </labels>
+    <labels>
+        <fullName>New_Meeting_Report</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New Meeting Report</shortDescription>
+        <value>New Meeting Report</value>
+    </labels>
 </CustomLabels>
