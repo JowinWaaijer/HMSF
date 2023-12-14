@@ -39,6 +39,7 @@ localStorageBranchTargets:
   features/config/US-DestructiveErkenningen: integration
   features/config/US-RemoveRequiredFromNameinTask: integration
   features/config/US-DeletePart2: integration
+  features/config/US-DeleteEkenningen: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
