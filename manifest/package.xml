@@ -29,6 +29,20 @@
         <name>CustomApplication</name>
     </types>
     <types>
+        <members>Aanwezige__c.AccountName__c</members>
+        <members>Aanwezige__c.AccountRef__c</members>
+        <members>Aanwezige__c.Account__c</members>
+        <members>Aanwezige__c.ContactRef__c</members>
+        <members>Aanwezige__c.Creator__c</members>
+        <members>Aanwezige__c.Date__c</members>
+        <members>Aanwezige__c.Doel__c</members>
+        <members>Aanwezige__c.Gesprek__c</members>
+        <members>Aanwezige__c.HeijmansContactContactRef__c</members>
+        <members>Aanwezige__c.HeijmansContactUserRef__c</members>
+        <members>Aanwezige__c.IsUserNotFound__c</members>
+        <members>Aanwezige__c.MeetingReportRef__c</members>
+        <members>Aanwezige__c.Verslag_gemaakt_door__c</members>
+        <members>Aanwezige__c.update__c</members>
         <members>Account.COCNumber__c</members>
         <members>Account.Employees__c</members>
         <members>Account.Inhabitants__c</members>
@@ -120,7 +134,32 @@
         <members>Contact.ResponsibleFor__c</members>
         <members>FormerPosition__c.OldContactRef__c</members>
         <members>Gespreksverslag__c.AccountPlanRef__c</members>
+        <members>Gespreksverslag__c.AccountRef__c</members>
+        <members>Gespreksverslag__c.Acties__c</members>
+        <members>Gespreksverslag__c.ContactRef__c</members>
+        <members>Gespreksverslag__c.Date__c</members>
+        <members>Gespreksverslag__c.Deelnemers__c</members>
+        <members>Gespreksverslag__c.Gemaakte_afspraak__c</members>
+        <members>Gespreksverslag__c.Gespreksverslag__c</members>
+        <members>Gespreksverslag__c.Heijmans_imago__c</members>
+        <members>Gespreksverslag__c.Location__c</members>
+        <members>Gespreksverslag__c.Markt__c</members>
+        <members>Gespreksverslag__c.MeetingGoal__c</members>
+        <members>Gespreksverslag__c.Notes__c</members>
         <members>Gespreksverslag__c.ObjectiveRef__c</members>
+        <members>Gespreksverslag__c.Opportunity__c</members>
+        <members>Gespreksverslag__c.Oppty__c</members>
+        <members>Gespreksverslag__c.Organisatie_informatie__c</members>
+        <members>Gespreksverslag__c.PartnershipRef__c</members>
+        <members>Gespreksverslag__c.Problematiek__c</members>
+        <members>Gespreksverslag__c.Projecten__c</members>
+        <members>Gespreksverslag__c.Propositie__c</members>
+        <members>Gespreksverslag__c.Regio_Infra__c</members>
+        <members>Gespreksverslag__c.Sector__c</members>
+        <members>Gespreksverslag__c.Type__c</members>
+        <members>Gespreksverslag__c.Verslag_gemaakt_door__c</members>
+        <members>Gespreksverslag__c.YearAndQuarterForm__c</members>
+        <members>Gespreksverslag__c.YearForm__c</members>
         <members>InvolvedPartner__c.AccountNameForm__c</members>
         <members>InvolvedPartner__c.AccountRef__c</members>
         <members>InvolvedPartner__c.EndDate__c</members>
@@ -130,6 +169,10 @@
         <members>InvolvedPartner__c.PartnershipRef__c</members>
         <members>InvolvedPartner__c.PrimaryContactRef__c</members>
         <members>InvolvedPartner__c.StartDate__c</members>
+        <members>MeetingReportTheme__c.MeetingReportRef__c</members>
+        <members>MeetingReportTheme__c.Note__c</members>
+        <members>MeetingReportTheme__c.ThemeNameForm__c</members>
+        <members>MeetingReportTheme__c.ThemeRef__c</members>
         <members>Opportunity.AccountPlanRef__c</members>
         <members>OpportunityClone__c.AccountPlanRef__c</members>
         <members>Partnership__c.Description__c</members>
@@ -193,6 +236,7 @@
         <members>DepartmentChart</members>
         <members>Edit</members>
         <members>Former_Positions</members>
+        <members>General_Information</members>
         <members>GeneratePDF</members>
         <members>HomepageComponentDashboardsDescriptions1</members>
         <members>HomepageComponentDashboardsTitles1</members>
@@ -202,7 +246,9 @@
         <members>LoginID</members>
         <members>Maak_aanbieding</members>
         <members>MeetingReportTitle</members>
+        <members>Meeting_Report</members>
         <members>New</members>
+        <members>New_Meeting_Report</members>
         <members>Next</members>
         <members>OpportunityName</members>
         <members>Overview</members>
@@ -264,6 +310,7 @@
         <name>CustomLabel</name>
     </types>
     <types>
+        <members>Aanwezige__c</members>
         <members>Account</members>
         <members>Account_Plan_Colleague_Role__c</members>
         <members>Account_Plan_Contact_Role__c</members>
@@ -273,7 +320,9 @@
         <members>Account_Plan__c</members>
         <members>Alert__c</members>
         <members>FormerPosition__c</members>
+        <members>Gespreksverslag__c</members>
         <members>InvolvedPartner__c</members>
+        <members>MeetingReportTheme__c</members>
         <members>Partnership__c</members>
         <members>Signal__c</members>
         <members>Theme__c</members>
@@ -282,6 +331,7 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>Aanwezige__c-nl_NL</members>
         <members>Account-nl_NL</members>
         <members>AccountContactRelation-nl_NL</members>
         <members>Account_Plan_Colleague_Role__c-en_US</members>
@@ -303,8 +353,10 @@
         <members>Contact-nl_NL</members>
         <members>FormerPosition__c-en_US</members>
         <members>FormerPosition__c-nl_NL</members>
+        <members>Gespreksverslag__c-nl_NL</members>
         <members>InvolvedPartner__c-en_US</members>
         <members>InvolvedPartner__c-nl_NL</members>
+        <members>MeetingReportTheme__c-nl_NL</members>
         <members>Partnership__c-en_US</members>
         <members>Partnership__c-nl_NL</members>
         <members>Signal__c-en_US</members>
@@ -320,8 +372,10 @@
         <name>CustomSite</name>
     </types>
     <types>
+        <members>Aanwezige__c</members>
         <members>Account_Plan__c</members>
         <members>FocusClients</members>
+        <members>Gespreksverslag__c</members>
         <members>InvolvedPartner__c</members>
         <members>Partnership__c</members>
         <members>Signal__c</members>
@@ -340,11 +394,14 @@
         <members>HeijmansSignalRecordPage</members>
         <members>Heijmans_Account_Plan_Record_Page</members>
         <members>Heijmans_Account_Record_Page</members>
+        <members>Heijmans_Attendee_External_Record_Page</members>
+        <members>Heijmans_Attendee_Internal_Record_Page</members>
         <members>Heijmans_Feedback_Record_Page</members>
         <members>Heijmans_Focus_Clients</members>
         <members>Heijmans_Former_Position_Record_Page</members>
         <members>Heijmans_General_Homepage</members>
         <members>Heijmans_Involved_Partner_Record_Page</members>
+        <members>Heijmans_Meeting_Report_Record_Page</members>
         <members>Heijmans_Multi_Account_Lightning_Page</members>
         <members>Heijmans_Multi_Contact_Record_Page</members>
         <members>Heijmans_Partnership_Record_Page</members>
@@ -361,6 +418,7 @@
         <members>Account_SCFL01_Add_New_Alert_to_Account_Record</members>
         <members>Account_SCFL02_Show_Alert_on_Account_Record</members>
         <members>Account_SCFL03_Change_Department_Structure</members>
+        <members>Account_SCFL04_Create_New_Meeting_Report</members>
         <members>Account_STFL01_Activate_Deactivate_Alert_Message</members>
         <members>Account_STFL01_Create_Standard_Department_at_Create</members>
         <members>Business_Unit_SCFL01_Prioritize_Focus_Clients</members>
@@ -396,6 +454,9 @@
         <name>GlobalValueSet</name>
     </types>
     <types>
+        <members>Aanwezige__c-Heijmans - Attendees %28External%29 Page Layout</members>
+        <members>Aanwezige__c-Heijmans - Attendees %28Internal%29 Page Layout</members>
+        <members>Aanwezige__c-Lay-out voor Aanwezige</members>
         <members>Account-Heijmans - Account Layout</members>
         <members>Account-Heijmans concurrent</members>
         <members>Account-Heijmans klant</members>
@@ -423,9 +484,12 @@
         <members>Feedback__c-Heijmans - Feedback Layout</members>
         <members>FormerPosition__c-Former Position Layout</members>
         <members>FormerPosition__c-Heijmans - Former Position Layout</members>
+        <members>Gespreksverslag__c-Heijmans - Meeting Reports Layout</members>
+        <members>Gespreksverslag__c-Heijmans - Partnergesprek</members>
         <members>Global-Global Layout</members>
         <members>InvolvedPartner__c-Heijmans - Involved Partner Layout</members>
         <members>InvolvedPartner__c-Involved Partner Layout</members>
+        <members>MeetingReportTheme__c-Meeting Report Theme Layout</members>
         <members>Partnership__c-Heijmans - Partnership Layout</members>
         <members>Partnership__c-Heijmans - Town Centers Layout</members>
         <members>Partnership__c-Partnership Layout</members>
@@ -443,12 +507,15 @@
         <name>LightningComponentBundle</name>
     </types>
     <types>
+        <members>Aanwezige__c.All</members>
         <members>Account_Plan__c.All</members>
         <members>Contact.Alle_contacten_Directieniveau</members>
         <members>Contact.Alle_contacten_Senior_management</members>
         <members>Contact.Alle_inactieve_contactpersonen</members>
         <members>Contact.Alle_incomplete_contactpersonen</members>
         <members>Contact.Mijn_nieuwe_contacten_afgelopen_14_dgn</members>
+        <members>Gespreksverslag__c.All</members>
+        <members>Gespreksverslag__c.Gespreksverslagen_Alle</members>
         <members>InvolvedPartner__c.All</members>
         <members>Partnership__c.All</members>
         <members>Partnership__c.Alle_actieve_samenwerkingsverbanden</members>
@@ -530,6 +597,8 @@
         <name>QuickAction</name>
     </types>
     <types>
+        <members>Aanwezige__c.ExternalContact</members>
+        <members>Aanwezige__c.InternalContact</members>
         <members>Account.Franki</members>
         <members>Account.Heijmans</members>
         <members>Account.Heijmans_concurrent</members>
@@ -546,6 +615,7 @@
         <members>Feedback__c.BusinessIdea</members>
         <members>Feedback__c.Compliment</members>
         <members>Feedback__c.FeatureRequest</members>
+        <members>Gespreksverslag__c.MeetingReport</members>
         <members>Partnership__c.HeijmansPartnershipRecordType</members>
         <members>Partnership__c.HeijmansTownCentersRecordType</members>
         <name>RecordType</name>

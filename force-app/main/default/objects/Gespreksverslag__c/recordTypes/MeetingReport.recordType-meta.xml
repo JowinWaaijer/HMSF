@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MeetingReport</fullName>
+    <active>true</active>
+    <description>Standard meeting report</description>
+    <label>Meeting Report</label>
+    <picklistValues>
+        <picklist>Heijmans_imago__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Markt__c</picklist>
+        <values>
+            <fullName>Energie%3A Distributie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energie%3A Hoofdtransport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energie%3A Productie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobiliteit%3A A-wegen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobiliteit%3A Hoofd-hubs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobiliteit%3A N-wegen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobiliteit%3A Rail en OV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stedelijk%3A Afvalwater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stedelijk%3A Binnenstedelijk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stedelijk%3A Drinkwater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stedelijk%3A Industrieel gebied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stedelijk%3A Publieke Ruimte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waterveiligheid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Propositie__c</picklist>
+        <values>
+            <fullName>Assetlife</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bloemkoolwijken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complexe Ondergronden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laadinfra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PV Cellen Gemeenten</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toekomstbestendige Bedrijventerreinen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Acquisitie gesprek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bouwvergadering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Innovatie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marktconsultatie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Openbare bijeenkomst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overig</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project bezoek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relatie onderhoud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategische contract bespreking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategische samenwerking</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Telefonisch Contact</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

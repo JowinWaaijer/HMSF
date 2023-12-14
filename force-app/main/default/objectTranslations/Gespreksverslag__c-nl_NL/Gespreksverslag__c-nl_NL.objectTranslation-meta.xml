@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Meeting Report</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Meeting Reports</value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Heijmans - Meeting Reports Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Meeting Report</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Heijmans - Partnergesprek</layout>
+        <sections>
+            <label></label>
+            <section>Aangepaste koppelingen</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Verslag</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Klantgesprek</layout>
+        <sections>
+            <label></label>
+            <section>Aangepaste koppelingen</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Verslag</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Partnergesprek</layout>
+        <sections>
+            <label></label>
+            <section>Aangepaste koppelingen</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Verslag</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>New_Meeting</name>
+    </quickActions>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Klantgesprek</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>MeetingReport</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Partnergesprek</name>
+    </recordTypes>
+    <webLinks>
+        <label></label>
+        <name>New</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_Meeting</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>PDF_Gespreksverslag</name>
+    </webLinks>
+</CustomObjectTranslation>

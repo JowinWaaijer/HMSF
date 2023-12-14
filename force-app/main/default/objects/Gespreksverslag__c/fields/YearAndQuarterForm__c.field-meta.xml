@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>YearAndQuarterForm__c</fullName>
+    <description>Year and quarter of the meeting report.</description>
+    <externalId>false</externalId>
+    <formula>IF (MONTH(Date__c)&lt;4 , TEXT(YEAR(Date__c)) &amp;&quot;-Q1&quot; , IF (MONTH(Date__c)&lt;7 , TEXT(YEAR(Date__c )) &amp;&quot;-Q2&quot; , IF (MONTH(Date__c)&lt;10 , TEXT(YEAR(Date__c )) &amp;&quot;-Q3&quot; ,TEXT(YEAR(Date__c )) &amp;&quot;-Q4&quot;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Year and quarter of the meeting report.</inlineHelpText>
+    <label>Year &amp; Quarter</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
