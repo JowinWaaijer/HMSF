@@ -41,6 +41,7 @@ localStorageBranchTargets:
   features/config/US-DeletePart2: integration
   features/config/US-DeleteEkenningen: integration
   features/config/US-DeleteEkenningen2: integration
+  features/config/US-UpdatePMSetAccountmanagement: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
