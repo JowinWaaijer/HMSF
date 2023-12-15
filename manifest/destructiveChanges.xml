@@ -7,7 +7,7 @@
         <name>CustomField</name>
     </types>
     <types>
-        <members>Erkenningen__c</members>
+        <members>Ekenningen__c</members>
         <name>CustomObject</name>
     </types>
     <types>

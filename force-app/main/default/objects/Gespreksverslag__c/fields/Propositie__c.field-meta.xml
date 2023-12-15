@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Propositie__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Zijn er proposities aan bod gekomen in het (klant)gesprek? Hier zijn meerdere keuzes mogelijk</inlineHelpText>
+    <label>Propositie</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Laadinfra</fullName>
+                <default>false</default>
+                <label>Laadinfra</label>
+            </value>
+            <value>
+                <fullName>Assetlife</fullName>
+                <default>false</default>
+                <label>Assetlife</label>
+            </value>
+            <value>
+                <fullName>PV Cellen Gemeenten</fullName>
+                <default>false</default>
+                <label>PV Cellen Gemeenten</label>
+            </value>
+            <value>
+                <fullName>Toekomstbestendige Bedrijventerreinen</fullName>
+                <default>false</default>
+                <label>Toekomstbestendige Bedrijventerreinen</label>
+            </value>
+            <value>
+                <fullName>Bloemkoolwijken</fullName>
+                <default>false</default>
+                <label>Bloemkoolwijken</label>
+            </value>
+            <value>
+                <fullName>Complexe Ondergronden</fullName>
+                <default>false</default>
+                <label>Complexe Ondergronden</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

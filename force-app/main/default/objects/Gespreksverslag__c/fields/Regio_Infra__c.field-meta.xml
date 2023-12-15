@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Regio_Infra__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(INCLUDES(AccountRef__r.Regio_Infra__c,&quot;Zuid&quot;),&quot;Regio Zuid&quot;,
+IF(INCLUDES(AccountRef__r.Regio_Infra__c,&quot;Zuid West&quot;),&quot;Regio Zuid West&quot;,
+IF(INCLUDES(AccountRef__r.Regio_Infra__c,&quot;Noord West&quot;),&quot;Regio Noord West&quot;,
+IF(INCLUDES(AccountRef__r.Regio_Infra__c,&quot;Midden Oost&quot;),&quot;Regio Midden Oost&quot;,
+&quot;--&quot;))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Neem de Regio Infra over van de account</inlineHelpText>
+    <label>Regio Infra</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

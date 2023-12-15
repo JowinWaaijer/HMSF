@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExternalContact</fullName>
+    <active>true</active>
+    <description>Contact related to clients or partners of Heijmans.</description>
+    <label>External Contact</label>
+</RecordType>
