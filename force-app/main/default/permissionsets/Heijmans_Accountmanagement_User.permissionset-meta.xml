@@ -827,11 +827,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Gespreksverslag__c.Datum__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Gespreksverslag__c.Deelnemers__c</field>
         <readable>true</readable>
     </fieldPermissions>
