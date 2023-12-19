@@ -59,6 +59,10 @@
         <name>AccountName</name>
     </customLabels>
     <customLabels>
+        <label>Bijlagen</label>
+        <name>Attachments</name>
+    </customLabels>
+    <customLabels>
         <label>Aanwezigen</label>
         <name>Attendees</name>
     </customLabels>
@@ -2039,6 +2043,9 @@
                 </fields>
                 <fields>
                     <name>el_10</name>
+                </fields>
+                <fields>
+                    <name>el_11</name>
                 </fields>
                 <fields>
                     <name>el_4</name>

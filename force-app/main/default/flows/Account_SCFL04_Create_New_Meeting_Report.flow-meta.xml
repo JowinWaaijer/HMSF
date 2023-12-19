@@ -1385,6 +1385,12 @@
             <fieldType>ObjectProvided</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>false</isRequired>
+            <objectFieldReference>getNewMeetingReport.Opportunity__c</objectFieldReference>
+        </fields>
+        <fields>
+            <fieldType>ObjectProvided</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
             <objectFieldReference>getNewMeetingReport.AccountRef__c</objectFieldReference>
         </fields>
         <fields>

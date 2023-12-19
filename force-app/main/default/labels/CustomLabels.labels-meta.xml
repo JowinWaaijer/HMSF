@@ -759,4 +759,11 @@
         <shortDescription>Report Visability</shortDescription>
         <value>Report Visability</value>
     </labels>
+    <labels>
+        <fullName>Attachments</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Attachments</shortDescription>
+        <value>Attachments</value>
+    </labels>
 </CustomLabels>
