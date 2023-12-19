@@ -231,6 +231,7 @@
         <members>AccountName</members>
         <members>Account_Plans</members>
         <members>Approval</members>
+        <members>Attachments</members>
         <members>Attendees</members>
         <members>Back</members>
         <members>ContactPerson</members>
