@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mijn_gespreksverslagen_Alle</fullName>
+    <columns>Gespreksverslag__c</columns>
+    <columns>YearAndQuarterForm__c</columns>
+    <columns>Date__c</columns>
+    <columns>Type__c</columns>
+    <columns>AccountRef__c</columns>
+    <columns>PartnershipRef__c</columns>
+    <columns>MeetingGoal__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Gespreksverslag__c.MeetingReport</value>
+    </filters>
+    <label>Mijn gespreksverslagen - Alle</label>
+</ListView>

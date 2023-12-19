@@ -142,6 +142,7 @@
         <members>Gespreksverslag__c.Gemaakte_afspraak__c</members>
         <members>Gespreksverslag__c.Gespreksverslag__c</members>
         <members>Gespreksverslag__c.Heijmans_imago__c</members>
+        <members>Gespreksverslag__c.IsPrivate__c</members>
         <members>Gespreksverslag__c.Location__c</members>
         <members>Gespreksverslag__c.Markt__c</members>
         <members>Gespreksverslag__c.MeetingGoal__c</members>
@@ -230,6 +231,7 @@
         <members>AccountName</members>
         <members>Account_Plans</members>
         <members>Approval</members>
+        <members>Attachments</members>
         <members>Attendees</members>
         <members>Back</members>
         <members>ContactPerson</members>
@@ -255,6 +257,7 @@
         <members>Partnerships</members>
         <members>Password</members>
         <members>Prioritizing</members>
+        <members>ReportVisability</members>
         <members>Save</members>
         <members>Search</members>
         <members>Segmentation</members>
@@ -516,6 +519,9 @@
         <members>Contact.Mijn_nieuwe_contacten_afgelopen_14_dgn</members>
         <members>Gespreksverslag__c.All</members>
         <members>Gespreksverslag__c.Gespreksverslagen_Alle</members>
+        <members>Gespreksverslag__c.Mijn_gespreksverslagen_Afgelopen_2_wkn</members>
+        <members>Gespreksverslag__c.Mijn_gespreksverslagen_Alle</members>
+        <members>Gespreksverslag__c.Mijn_gespreksverslagen_prive</members>
         <members>InvolvedPartner__c.All</members>
         <members>Partnership__c.All</members>
         <members>Partnership__c.Alle_actieve_samenwerkingsverbanden</members>
@@ -673,6 +679,14 @@
         <members>Name</members>
         <members>Security</members>
         <name>Settings</name>
+    </types>
+    <types>
+        <members>Gespreksverslag__c.MRP_SR01_Open_Public_Meeting_Reports_to_All_Users</members>
+        <name>SharingCriteriaRule</name>
+    </types>
+    <types>
+        <members>Gespreksverslag__c</members>
+        <name>SharingRules</name>
     </types>
     <types>
         <members>SalesTeamRole</members>

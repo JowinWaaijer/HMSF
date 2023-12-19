@@ -59,6 +59,10 @@
         <name>AccountName</name>
     </customLabels>
     <customLabels>
+        <label>Bijlagen</label>
+        <name>Attachments</name>
+    </customLabels>
+    <customLabels>
         <label>Aanwezigen</label>
         <name>Attendees</name>
     </customLabels>
@@ -269,6 +273,10 @@
     <customLabels>
         <label><!-- Password --></label>
         <name>Password</name>
+    </customLabels>
+    <customLabels>
+        <label>Zichtbaarheid gespreksverslag</label>
+        <name>ReportVisability</name>
     </customLabels>
     <customLabels>
         <label><!-- Save --></label>
@@ -2034,6 +2042,12 @@
                     <name>dtInformation</name>
                 </fields>
                 <fields>
+                    <name>el_10</name>
+                </fields>
+                <fields>
+                    <name>el_11</name>
+                </fields>
+                <fields>
                     <name>el_4</name>
                 </fields>
                 <fields>
@@ -2401,7 +2415,6 @@
                     <name>diHeijmans</name>
                 </fields>
                 <fields>
-                    <fieldText></fieldText>
                     <name>dtNewPostion</name>
                 </fields>
                 <name>scrCreateANewPosition</name>

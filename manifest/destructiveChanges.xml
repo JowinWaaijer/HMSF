@@ -3,6 +3,7 @@
     <version>58.0</version>
     <types>
         <members>Contact.Function__c</members>
+        <members>Gespreksverslag__c.Plaats__c</members>
         <members>Signal__c.ExpectedChangeDate__c</members>
         <name>CustomField</name>
     </types>

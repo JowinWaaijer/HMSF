@@ -57,10 +57,6 @@
             <section>Verslag</section>
         </sections>
     </layouts>
-    <quickActions>
-        <label></label>
-        <name>New_Meeting</name>
-    </quickActions>
     <recordTypes>
         <description></description>
         <label></label>
@@ -79,10 +75,6 @@
     <webLinks>
         <label></label>
         <name>New</name>
-    </webLinks>
-    <webLinks>
-        <label></label>
-        <name>New_Meeting</name>
     </webLinks>
     <webLinks>
         <label></label>
