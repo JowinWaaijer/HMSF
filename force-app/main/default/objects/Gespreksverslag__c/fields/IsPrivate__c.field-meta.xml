@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsPrivate__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>User can set this checkbox to make the meeting report private. Sharing is set with sharing rules.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If you check this checkbox the meeting report will only be visible to you.</inlineHelpText>
+    <label>Is Private</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
