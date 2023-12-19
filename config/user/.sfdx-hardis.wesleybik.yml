@@ -24,6 +24,7 @@ localStorageBranchTargets:
   features/config/us-former-positions-flow-feedback: integration
   features/config/US-71103-MeetingReports: integration
   features/config/update-account-page-lighting: integration
+  features/config/us-meeting-report-feedback: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:

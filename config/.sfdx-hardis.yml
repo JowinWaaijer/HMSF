@@ -2,4 +2,8 @@ developmentBranch: integration
 autoCleanTypes:
   - destructivechanges
 deploymentPlan:
-  packages: []
+  packages:
+    - label: Deploy SharingRules - Gespreksverslag__c
+      packageXmlFile: manifest/splits/packageXmlSharingRulesGespreksverslag__c.xml
+      order: 30
+      waitAfter: 30
