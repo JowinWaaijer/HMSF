@@ -1187,7 +1187,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Gespreksverslag__c.AccountPlanRef__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Gespreksverslag__c.AccountRef__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Gespreksverslag__c.Account__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1207,7 +1217,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Gespreksverslag__c.Datum__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Gespreksverslag__c.Deelnemers__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Gespreksverslag__c.Doel__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1252,6 +1272,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Gespreksverslag__c.ObjectiveRef__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Gespreksverslag__c.Opportunity__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1268,6 +1293,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Gespreksverslag__c.PartnershipRef__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Gespreksverslag__c.Plaats__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
