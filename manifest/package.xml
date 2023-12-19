@@ -518,6 +518,9 @@
         <members>Contact.Mijn_nieuwe_contacten_afgelopen_14_dgn</members>
         <members>Gespreksverslag__c.All</members>
         <members>Gespreksverslag__c.Gespreksverslagen_Alle</members>
+        <members>Gespreksverslag__c.Mijn_gespreksverslagen_Afgelopen_2_wkn</members>
+        <members>Gespreksverslag__c.Mijn_gespreksverslagen_Alle</members>
+        <members>Gespreksverslag__c.Mijn_gespreksverslagen_prive</members>
         <members>InvolvedPartner__c.All</members>
         <members>Partnership__c.All</members>
         <members>Partnership__c.Alle_actieve_samenwerkingsverbanden</members>
