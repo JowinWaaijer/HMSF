@@ -1412,6 +1412,12 @@
             <objectFieldReference>getNewMeetingReport.Type__c</objectFieldReference>
         </fields>
         <fields>
+            <fieldType>ObjectProvided</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+            <objectFieldReference>getNewMeetingReport.IsPrivate__c</objectFieldReference>
+        </fields>
+        <fields>
             <name>rtMeetingReport</name>
             <extensionName>c:inputRichTextFSC</extensionName>
             <fieldType>ComponentInstance</fieldType>
