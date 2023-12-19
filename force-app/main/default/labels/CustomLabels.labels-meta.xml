@@ -752,4 +752,11 @@
         <shortDescription>New Meeting Report</shortDescription>
         <value>New Meeting Report</value>
     </labels>
+    <labels>
+        <fullName>ReportVisability</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Report Visability</shortDescription>
+        <value>Report Visability</value>
+    </labels>
 </CustomLabels>
