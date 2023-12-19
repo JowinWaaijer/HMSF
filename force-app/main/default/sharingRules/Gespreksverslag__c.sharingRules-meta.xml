@@ -11,7 +11,7 @@
         <criteriaItems>
             <field>IsPrivate__c</field>
             <operation>equals</operation>
-            <value>False (onwaar)</value>
+            <value>False</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
