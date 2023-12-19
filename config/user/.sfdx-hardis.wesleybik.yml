@@ -25,6 +25,7 @@ localStorageBranchTargets:
   features/config/US-71103-MeetingReports: integration
   features/config/update-account-page-lighting: integration
   features/config/us-meeting-report-feedback: integration
+  features/config/permissions-set-update: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
