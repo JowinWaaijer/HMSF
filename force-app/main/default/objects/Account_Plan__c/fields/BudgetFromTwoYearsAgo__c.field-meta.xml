@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>BudgetFromTwoYearsAgo__c</fullName>
-    <description>The budget from two years ago.</description>
     <externalId>false</externalId>
-    <inlineHelpText>What is was the budget from two years ago.</inlineHelpText>
+    <inlineHelpText>What is was the budget from two years ago?</inlineHelpText>
     <label>Budget From Two Years Ago</label>
     <precision>13</precision>
     <required>false</required>
