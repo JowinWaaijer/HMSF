@@ -19,6 +19,10 @@
                 <behavior>Edit</behavior>
                 <field>IsLegalEntity__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>TypeOfPartnershipPick__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

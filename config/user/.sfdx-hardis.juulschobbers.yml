@@ -42,6 +42,7 @@ localStorageBranchTargets:
   features/config/US-DeleteEkenningen: integration
   features/config/US-DeleteEkenningen2: integration
   features/config/US-UpdatePMSetAccountmanagement: integration
+  features/config/US-AccountPlanFixesRik: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
@@ -55,3 +56,6 @@ mergeRequests:
   - branch: features/config/US-FocusClientApp
     urlCreate: >-
       https://github.com/JowinWaaijer/HMSF/pull/new/features/config/US-FocusClientApp
+  - branch: features/config/US-AccountPlanFixesRik
+    urlCreate: >-
+      https://github.com/JowinWaaijer/HMSF/pull/new/features/config/US-AccountPlanFixesRik

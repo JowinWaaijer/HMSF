@@ -12,6 +12,26 @@
                         <valueListItems>
                             <value>ChangeOwnerOne</value>
                         </valueListItems>
+                        <valueListItems>
+                            <value>Partnership__c.NewPartner</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.TypeOfPartnershipPick__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Partnership</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Partnership__c.NewTownCenter</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.TypeOfPartnershipPick__c}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Town Center</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>

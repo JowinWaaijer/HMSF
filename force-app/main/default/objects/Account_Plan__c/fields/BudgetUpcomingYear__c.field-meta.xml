@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>BudgetUpcomingYear__c</fullName>
-    <description>The budget from the upcoming year.</description>
     <externalId>false</externalId>
-    <inlineHelpText>What is the budget for the upcoming year.</inlineHelpText>
+    <inlineHelpText>What is the budget for the upcoming year?</inlineHelpText>
     <label>Budget Upcoming Year</label>
     <precision>13</precision>
     <required>false</required>

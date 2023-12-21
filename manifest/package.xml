@@ -90,6 +90,7 @@
         <members>Account_Plan__c.BudgetFromLastYear__c</members>
         <members>Account_Plan__c.BudgetFromTwoYearsAgo__c</members>
         <members>Account_Plan__c.BudgetUpcomingYear__c</members>
+        <members>Account_Plan__c.Comments__c</members>
         <members>Account_Plan__c.CustomerGoals__c</members>
         <members>Account_Plan__c.EndDate__c</members>
         <members>Account_Plan__c.FocusClientOwnerPick__c</members>
@@ -170,6 +171,7 @@
         <members>InvolvedPartner__c.PartnershipRef__c</members>
         <members>InvolvedPartner__c.PrimaryContactRef__c</members>
         <members>InvolvedPartner__c.StartDate__c</members>
+        <members>InvolvedPartner__c.TypeOfPartnershipForm__c</members>
         <members>MeetingReportTheme__c.MeetingReportRef__c</members>
         <members>MeetingReportTheme__c.Note__c</members>
         <members>MeetingReportTheme__c.ThemeNameForm__c</members>
@@ -184,6 +186,7 @@
         <members>Partnership__c.Mobile__c</members>
         <members>Partnership__c.Phone__c</members>
         <members>Partnership__c.StartDate__c</members>
+        <members>Partnership__c.TypeOfPartnershipPick__c</members>
         <members>Partnership__c.TypePick__c</members>
         <members>Partnership__c.Website__c</members>
         <members>Signal__c.AccountOwnerForm__c</members>

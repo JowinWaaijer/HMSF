@@ -4,5 +4,18 @@
     <entityName>Signal__c</entityName>
     <fieldName>StatusPick__c</fieldName>
     <masterLabel>Signal</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;ul&gt;&lt;li&gt;Preferred solution is worked out. Decision on deployment of external parties. A project decision follows at the end of this phase.&lt;/li&gt;&lt;li&gt;More info under description. Quarterly indication when a decision is expected.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Exploration</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;ul&gt;&lt;li&gt;The problem analysed. Possible solutions are considered. Consideration of whether to solve this yourself or by external parties.&lt;/li&gt;&lt;li&gt;Fill in contact person and task to explore whether it is interesting to elaborate this in a collaborative form. Checkbox field? Yes, then task to contact.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Initiative</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>SourcePick__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;A problem or bottleneck has been initiated, requiring a solution.&lt;/li&gt;&lt;li&gt;Minimum fields &amp;gt; source required. optional account and contacts.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Problem</picklistValueName>
+    </pathAssistantSteps>
     <recordTypeName>__MASTER__</recordTypeName>
 </PathAssistant>

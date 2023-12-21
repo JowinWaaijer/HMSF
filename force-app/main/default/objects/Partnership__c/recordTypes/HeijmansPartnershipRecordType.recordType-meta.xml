@@ -4,6 +4,17 @@
     <active>true</active>
     <label>Heijmans - Partnership</label>
     <picklistValues>
+        <picklist>TypeOfPartnershipPick__c</picklist>
+        <values>
+            <fullName>Partnership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Town Center</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>TypePick__c</picklist>
         <values>
             <fullName>Indefinite</fullName>
