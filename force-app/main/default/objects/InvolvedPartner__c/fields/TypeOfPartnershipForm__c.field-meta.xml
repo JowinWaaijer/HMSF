@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TypeOfPartnershipForm__c</fullName>
+    <description>Formula field that shows the type of partnership from the related Partnership</description>
+    <externalId>false</externalId>
+    <formula>TEXT(PartnershipRef__r.TypeOfPartnershipPick__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Type Of Partnership</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
