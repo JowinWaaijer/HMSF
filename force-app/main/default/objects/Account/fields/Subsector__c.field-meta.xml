@@ -118,6 +118,11 @@
                 <label>Public Transport Providers</label>
             </value>
             <value>
+                <fullName>Town Center</fullName>
+                <default>false</default>
+                <label>Town Center</label>
+            </value>
+            <value>
                 <fullName>X</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
@@ -149,6 +154,10 @@
         <valueSettings>
             <controllingFieldValue>Public Sector</controllingFieldValue>
             <valueName>Water Authorities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Public Sector</controllingFieldValue>
+            <valueName>Town Center</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Semi-Public Sector</controllingFieldValue>
