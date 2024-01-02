@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>ResponsibleFor__c</fullName>
+    <description>Extra field added to describe the responsibilities of the contact.</description>
     <externalId>false</externalId>
     <label>Responsible for</label>
     <required>false</required>

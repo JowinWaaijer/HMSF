@@ -983,6 +983,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>StatusPick__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Subsector__c</picklist>
         <values>
             <fullName>Agencies</fullName>
@@ -1058,6 +1069,10 @@
         </values>
         <values>
             <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Town Center</fullName>
             <default>false</default>
         </values>
         <values>

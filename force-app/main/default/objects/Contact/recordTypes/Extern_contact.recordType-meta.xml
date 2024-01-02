@@ -21,6 +21,41 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>ContactRelationshipStrengthPick__c</picklist>
+        <values>
+            <fullName>Interested in You</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mildly Negative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sees You Same As Everyone Else</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strong Supporter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strongly for Competition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supporter of Yours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Will Recommend Competition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Will Recommend You</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>DMU_Positie__c</picklist>
         <values>
             <fullName>-</fullName>
