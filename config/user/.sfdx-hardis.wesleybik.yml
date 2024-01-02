@@ -26,6 +26,7 @@ localStorageBranchTargets:
   features/config/update-account-page-lighting: integration
   features/config/us-meeting-report-feedback: integration
   features/config/set-org-correct: integration
+  features/config/US-73393-close-partnership-flow: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:

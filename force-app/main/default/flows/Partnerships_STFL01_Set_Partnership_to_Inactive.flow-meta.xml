@@ -267,6 +267,12 @@
         <locationY>984</locationY>
         <flowName>FAULT_CONNECTOR</flowName>
         <inputAssignments>
+            <name>varEmailCurrentUser</name>
+            <value>
+                <elementReference>$User.Email</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <name>varErrorLocation</name>
             <value>
                 <elementReference>$Flow.CurrentStage</elementReference>
