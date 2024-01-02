@@ -1352,6 +1352,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Gespreksverslag__c.IsPrivate__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Gespreksverslag__c.Location__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1368,6 +1373,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Gespreksverslag__c.Notes__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Gespreksverslag__c.OpportunityCloneRef__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
