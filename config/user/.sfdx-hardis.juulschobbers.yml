@@ -43,6 +43,7 @@ localStorageBranchTargets:
   features/config/US-DeleteEkenningen2: integration
   features/config/US-UpdatePMSetAccountmanagement: integration
   features/config/US-AccountPlanFixesRik: integration
+  features/config/US-MissingItemsRik: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:

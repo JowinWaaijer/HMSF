@@ -5,7 +5,7 @@
     <externalId>false</externalId>
     <inlineHelpText>Public: Use this option if the record primarily belongs to the public sector, which typically includes government agencies, public services, and organizations funded by taxpayers.
 Semi-public: Use this option if the record primarily pertains to semi-public entities, such as non-profit organizations, public-private partnerships, or institutions with mixed funding sources.
-Private: Use this option if the record primarily represents private sector entities, including for-profit businesses, privately owned</inlineHelpText>
+Private: Use this option if the record primarily represents private sector entities, including for-profit businesses, privately owned.</inlineHelpText>
     <label>Primary Sector</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
