@@ -4,8 +4,9 @@
     <active>true</active>
     <description>The primary account cannot be inactive while the partnership is still active.</description>
     <errorConditionFormula>AND( IsActive__c = false, 
-     PartnershipRef__r.IsActive__c = true, 
-     IsPrimaryAccount__c = true
+ PartnershipRef__r.IsActive__c = true,
+ ISBLANK(EndDate__c ),
+ IsPrimaryAccount__c = true
 )</errorConditionFormula>
     <errorDisplayField>IsPrimaryAccount__c</errorDisplayField>
     <errorMessage>The primary account cannot be inactive while the partnership is still active. [VR03]</errorMessage>
