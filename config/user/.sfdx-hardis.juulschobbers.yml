@@ -45,6 +45,7 @@ localStorageBranchTargets:
   features/config/US-AccountPlanFixesRik: integration
   features/config/US-MissingItemsRik: integration
   features/config/US-ContactLayout: integration
+  features/config/US-Vertalingen: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
