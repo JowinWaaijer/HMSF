@@ -21,4 +21,8 @@
         <members>Heijmans_Former_Positions_User</members>
         <name>PermissionSet</name>
     </types>
+    <types>
+        <members>Gespreksverslag__c.MRP_SR01_Open_Public_Meeting_Reports_to_All_Users</members>
+        <name>SharingCriteriaRule</name>
+    </types>
 </Package>

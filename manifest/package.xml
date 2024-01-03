@@ -584,6 +584,7 @@
         <members>Force%2Ecom Heijmans %28LB%29 Admin</members>
         <members>Force%2Ecom Heijmans %28LB%29 Niet Civiel</members>
         <members>HRM Civiel</members>
+        <members>Heijmans - Basic User</members>
         <members>Heijmans - Standard Minimum Access</members>
         <members>Heijmans - System Administrator</members>
         <members>Innovatie</members>
@@ -685,7 +686,7 @@
         <name>Settings</name>
     </types>
     <types>
-        <members>Gespreksverslag__c.MRP_SR01_Open_Public_Meeting_Reports_to_All_Users</members>
+        <members>Gespreksverslag__c.MRP_SR01_Open_Public_Meeting_Reports_to_All_Internal_Users</members>
         <name>SharingCriteriaRule</name>
     </types>
     <types>
