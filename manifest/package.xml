@@ -149,6 +149,7 @@
         <members>Gespreksverslag__c.MeetingGoal__c</members>
         <members>Gespreksverslag__c.Notes__c</members>
         <members>Gespreksverslag__c.ObjectiveRef__c</members>
+        <members>Gespreksverslag__c.OpportunityCloneRef__c</members>
         <members>Gespreksverslag__c.Opportunity__c</members>
         <members>Gespreksverslag__c.Oppty__c</members>
         <members>Gespreksverslag__c.Organisatie_informatie__c</members>
