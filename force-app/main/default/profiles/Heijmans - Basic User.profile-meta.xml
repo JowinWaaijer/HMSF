@@ -988,11 +988,6 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.Function__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Contact.GenderIdentity</field>
         <readable>false</readable>
@@ -1445,11 +1440,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Gespreksverslag__c.PartnershipRef__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Gespreksverslag__c.Plaats__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4250,11 +4240,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Signal__c.Description__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Signal__c.ExpectedChangeDate__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
