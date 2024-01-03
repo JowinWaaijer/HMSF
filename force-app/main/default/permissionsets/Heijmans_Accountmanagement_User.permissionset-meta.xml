@@ -26,11 +26,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Aanwezige__c.Contactpersoon__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Aanwezige__c.Creator__c</field>
         <readable>true</readable>
