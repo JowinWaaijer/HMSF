@@ -65,6 +65,10 @@
                 <stringValue></stringValue>
             </value>
         </assignmentItems>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>scrAddAttendees</targetReference>
+        </connector>
     </assignments>
     <assignments>
         <description>Assigns the account id that is used in the create meeting report functionality.</description>
@@ -456,6 +460,10 @@
         <label>dcsSaveReport</label>
         <locationX>776</locationX>
         <locationY>2462</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>scrAddAttendees</targetReference>
+        </defaultConnector>
         <defaultConnectorLabel>Back</defaultConnectorLabel>
         <rules>
             <name>Save_Report</name>
