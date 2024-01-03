@@ -149,6 +149,7 @@
         <members>Gespreksverslag__c.MeetingGoal__c</members>
         <members>Gespreksverslag__c.Notes__c</members>
         <members>Gespreksverslag__c.ObjectiveRef__c</members>
+        <members>Gespreksverslag__c.OpportunityCloneRef__c</members>
         <members>Gespreksverslag__c.Opportunity__c</members>
         <members>Gespreksverslag__c.Oppty__c</members>
         <members>Gespreksverslag__c.Organisatie_informatie__c</members>
@@ -446,6 +447,7 @@
         <members>Focus_Client_SCFL03_Overview_of_Focus_Clients_on_Homepage</members>
         <members>Focus_Client_SCFL04_Prioritize_Focus_Clients</members>
         <members>Focus_Client_SCFL05_Approve_Focus_Clients</members>
+        <members>Meeting_Report_SCFL01_Create_New_Meeting_Report</members>
         <members>Partnerships_STFL01_Set_Partnership_to_Inactive</members>
         <members>Quick_Choice_Fix</members>
         <members>Signal_SCFL01_Delete_Signal</members>
@@ -583,6 +585,7 @@
         <members>Force%2Ecom Heijmans %28LB%29 Admin</members>
         <members>Force%2Ecom Heijmans %28LB%29 Niet Civiel</members>
         <members>HRM Civiel</members>
+        <members>Heijmans - Basic User</members>
         <members>Heijmans - Standard Minimum Access</members>
         <members>Heijmans - System Administrator</members>
         <members>Innovatie</members>
@@ -684,7 +687,7 @@
         <name>Settings</name>
     </types>
     <types>
-        <members>Gespreksverslag__c.MRP_SR01_Open_Public_Meeting_Reports_to_All_Users</members>
+        <members>Gespreksverslag__c.MRP_SR01_Open_Public_Meeting_Reports_to_All_Internal_Users</members>
         <name>SharingCriteriaRule</name>
     </types>
     <types>

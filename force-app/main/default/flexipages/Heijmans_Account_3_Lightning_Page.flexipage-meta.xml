@@ -897,7 +897,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>flowName</name>
-                    <value>Account_SCFL04_Create_New_Meeting_Report</value>
+                    <value>Meeting_Report_SCFL01_Create_New_Meeting_Report</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideButton</name>
