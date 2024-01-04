@@ -79,10 +79,6 @@
         <translation>Retail</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Town Center</masterLabel>
-        <translation>Dorpskernen</translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>Water Authorities</masterLabel>
         <translation>Waterschappen</translation>
     </picklistValues>
