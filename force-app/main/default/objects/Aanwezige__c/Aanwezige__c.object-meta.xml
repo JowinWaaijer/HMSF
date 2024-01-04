@@ -143,6 +143,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <description>The Attendee object in Salesforce is designed to capture and store information about individuals participating in meetings, closely associated with meeting reports. This object plays a crucial role in tracking and managing the attendance details for various meetings within the Salesforce platform. The attendee object has a master detail relation to the Meeting Report object.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
