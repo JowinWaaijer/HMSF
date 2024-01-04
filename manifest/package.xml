@@ -407,6 +407,7 @@
         <members>Heijmans_Account_Record_Page</members>
         <members>Heijmans_Attendee_External_Record_Page</members>
         <members>Heijmans_Attendee_Internal_Record_Page</members>
+        <members>Heijmans_Business_Unit_Specific_Attribute_Record_Page</members>
         <members>Heijmans_Feedback_Record_Page</members>
         <members>Heijmans_Focus_Clients</members>
         <members>Heijmans_Former_Position_Record_Page</members>
