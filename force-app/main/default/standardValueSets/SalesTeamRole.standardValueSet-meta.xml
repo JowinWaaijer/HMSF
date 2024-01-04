@@ -31,4 +31,94 @@
         <default>false</default>
         <label>Verkoper</label>
     </standardValue>
+    <standardValue>
+        <fullName>Directeur</fullName>
+        <default>false</default>
+        <label>Directeur</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unit Manager</fullName>
+        <default>false</default>
+        <label>Unit Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Bedrijfsleider</fullName>
+        <default>false</default>
+        <label>Bedrijfsleider</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Projectmanager</fullName>
+        <default>false</default>
+        <label>Projectmanager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Projectleider</fullName>
+        <default>false</default>
+        <label>Projectleider</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hoofduitvoerder</fullName>
+        <default>false</default>
+        <label>Hoofduitvoerder</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Uitvoerder</fullName>
+        <default>false</default>
+        <label>Uitvoerder</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Werkvoorbereider</fullName>
+        <default>false</default>
+        <label>Werkvoorbereider</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Afdelingsleider</fullName>
+        <default>false</default>
+        <label>Afdelingsleider</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Commercieel Manager</fullName>
+        <default>false</default>
+        <label>Commercieel Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Business Analist</fullName>
+        <default>false</default>
+        <label>Business Analist</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketeer</fullName>
+        <default>false</default>
+        <label>Marketeer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EMVI-manager</fullName>
+        <default>false</default>
+        <label>EMVI-manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EMVI-schrijver</fullName>
+        <default>false</default>
+        <label>EMVI-schrijver</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tendercoördinator</fullName>
+        <default>false</default>
+        <label>Tendercoördinator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tenderleider</fullName>
+        <default>false</default>
+        <label>Tenderleider</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tendermanager</fullName>
+        <default>false</default>
+        <label>Tendermanager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contractmanager</fullName>
+        <default>false</default>
+        <label>Contractmanager</label>
+    </standardValue>
 </StandardValueSet>
