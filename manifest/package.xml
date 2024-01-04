@@ -45,6 +45,7 @@
         <members>Aanwezige__c.update__c</members>
         <members>Account.COCNumber__c</members>
         <members>Account.Employees__c</members>
+        <members>Account.Historie__c</members>
         <members>Account.Inhabitants__c</members>
         <members>Account.IsBillingBlocked__c</members>
         <members>Account.IsOrderBlocked__c</members>
@@ -52,9 +53,12 @@
         <members>Account.IsSalesSupportBlocked__c</members>
         <members>Account.PrimarySectorPick__c</members>
         <members>Account.SAPC4CId__c</members>
+        <members>Account.SAPId__c</members>
         <members>Account.StatusPick__c</members>
         <members>Account.Subsector__c</members>
         <members>Account.VATNumber__c</members>
+        <members>Account.Waarde_van__c</members>
+        <members>Account.Waarde_voor__c</members>
         <members>Account_Plan_Colleague_Role__c.AccountPlanRef__c</members>
         <members>Account_Plan_Colleague_Role__c.Business_Unit__c</members>
         <members>Account_Plan_Colleague_Role__c.ColleagueRolePick__c</members>
