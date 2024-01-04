@@ -5,7 +5,7 @@
     <label>Subsector</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>false</trackHistory>
+    <trackHistory>true</trackHistory>
     <type>Picklist</type>
     <valueSet>
         <controllingField>PrimarySectorPick__c</controllingField>
@@ -185,6 +185,10 @@
         <valueSettings>
             <controllingFieldValue>Semi-Public Sector</controllingFieldValue>
             <valueName>Public Transport Providers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Private Sector</controllingFieldValue>
+            <valueName>Z</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Private Sector</controllingFieldValue>
