@@ -94,8 +94,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.AccountRef__c</fieldItem>
-                <identifier>RecordAccount_cField</identifier>
+                <fieldItem>Record.OpportunityCloneRef__c</fieldItem>
+                <identifier>RecordOpportunityCloneRef_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -104,8 +104,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Opportunity__c</fieldItem>
-                <identifier>RecordOpportunity_cField</identifier>
+                <fieldItem>Record.AccountRef__c</fieldItem>
+                <identifier>RecordAccount_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
