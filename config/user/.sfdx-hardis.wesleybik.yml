@@ -41,4 +41,7 @@ mergeRequests:
   - branch: features/config/us-meeting-reports-updates
     urlCreate: >-
       https://github.com/JowinWaaijer/HMSF/pull/new/features/config/us-meeting-reports-updates
+  - branch: features/config/us-deployment-us-rik-sprint-3
+    urlCreate: >-
+      https://github.com/JowinWaaijer/HMSF/pull/new/features/config/us-deployment-us-rik-sprint-3
 canForcePush: false
