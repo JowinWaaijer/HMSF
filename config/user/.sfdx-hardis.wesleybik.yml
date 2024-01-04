@@ -28,6 +28,7 @@ localStorageBranchTargets:
   features/config/set-org-correct: integration
   features/config/US-73393-close-partnership-flow: integration
   features/config/us-meeting-reports-updates: integration
+  features/config/us-deployment-us-rik-sprint-3: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
