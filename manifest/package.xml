@@ -413,6 +413,7 @@
         <members>Heijmans_Multi_Contact_Record_Page</members>
         <members>Heijmans_Partnership_Record_Page</members>
         <members>Heijmans_Theme_Record_Page</members>
+        <members>Opportunity_Recordpagina</members>
         <name>FlexiPage</name>
     </types>
     <types>
