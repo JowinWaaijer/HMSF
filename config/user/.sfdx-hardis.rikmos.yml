@@ -1,0 +1,7 @@
+localStorageBranchTargets:
+  features/config/us-testveld-rik: integration
+scratchOrgAlias: null
+scratchOrgUsername: null
+installedApps:
+  - git
+sfdxPluginsStdout: "packaging \e[2m2.0.2\e[22m\nsfdmu \e[2m4.32.2\e[22m\nsfdx-essentials \e[2m2.12.0\e[22m\nsfdx-git-delta \e[2m5.31.1\e[22m\nsfdx-hardis \e[2m4.23.3\e[22m\ntexei-sfdx-plugin \e[2m2.2.2\e[22m\n\e[2m\e[22m\n\e[2mUninstalled JIT Plugins:\e[22m\ncommunity \e[2m3.0.5\e[22m\ncustom-metadata \e[2m3.0.7\e[22m\ndev \e[2m2.0.4\e[22m\ndevops-center \e[2m1.2.5\e[22m\nenv \e[2m3.0.8\e[22m\nfunctions \e[2m1.22.10\e[22m\nsignups \e[2m2.0.5\e[22m\n@salesforce/sfdx-plugin-lwc-test \e[2m1.1.1\e[22m\n@salesforce/sfdx-scanner \e[2m3.19.0\e[22m\n"

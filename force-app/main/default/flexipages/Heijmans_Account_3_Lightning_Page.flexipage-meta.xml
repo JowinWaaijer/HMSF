@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Heijmans Account Lightning Record Page</description>
     <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
@@ -201,7 +202,57 @@
                 <identifier>force_detailPanel3</identifier>
             </componentInstance>
         </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>allowDownload</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>displayFilename</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>height</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>interval</name>
+                    <value>0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>multiple</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>prefix</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>recordId</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>uploadChoice</name>
+                    <value>Files</value>
+                </componentInstanceProperties>
+                <componentName>sharinpix_free:Image</componentName>
+                <identifier>sharinpix_free_Image</identifier>
+            </componentInstance>
+        </itemInstances>
         <name>Facet-d567e0ac-eb41-4e30-aa81-ea4fafe7a7a5</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>showLegacyActivityComposer</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentName>runtime_sales_activities:activityPanel</componentName>
+                <identifier>runtime_sales_activities_activityPanel2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-4475d1ff-d75f-4529-9852-4b81184c4788</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -676,7 +727,7 @@
                     <value>true</value>
                 </componentInstanceProperties>
                 <componentName>force:relatedListSingleContainer</componentName>
-                <identifier>force_relatedListSingleContainer4</identifier>
+                <identifier>force_relatedListSingleContainer6</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-3q5s2rwa9m7</name>
@@ -702,6 +753,24 @@
                 <componentInstanceProperties>
                     <name>active</name>
                     <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-4475d1ff-d75f-4529-9852-4b81184c4788</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Standard.Tab.activity</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tab9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>active</name>
+                    <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>body</name>
@@ -827,20 +896,6 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>showLegacyActivityComposer</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentName>runtime_sales_activities:activityPanel</componentName>
-                <identifier>runtime_sales_activities_activityPanel</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-d43038b2-0ebd-4cf1-b84a-0e998acb5d9e</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
                     <name>align</name>
                     <value>Center</value>
                 </componentInstanceProperties>
@@ -897,7 +952,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>flowName</name>
-                    <value>Meeting_Report_SCFL01_Create_New_Meeting_Report</value>
+                    <value>Account_SCFL04_Create_New_Meeting_Report</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideButton</name>
@@ -1006,24 +1061,6 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>active</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-d43038b2-0ebd-4cf1-b84a-0e998acb5d9e</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                    <value>Standard.Tab.activity</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tab</componentName>
-                <identifier>flexipage_tab</identifier>
-            </componentInstance>
-        </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
