@@ -1,5 +1,6 @@
 localStorageBranchTargets:
   features/config/us-testveld-rik: integration
+  features/config/us-updatesprint3items-rik: integration
 scratchOrgAlias: null
 scratchOrgUsername: null
 installedApps:
